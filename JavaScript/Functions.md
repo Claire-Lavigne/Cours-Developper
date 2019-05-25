@@ -1,3 +1,10 @@
+## What are functions ?
+* Used for repetitive tasks
+* Contains series of instructions
+* Have to explain : how, what, when, how many times, and so forth
+* Functions can receive messages through parameters
+* Functions can send messages through return values
+
 ```javascript
 const add = (firstNumber, secondNumber) => {
   const result = firstNumber + secondNumber;
