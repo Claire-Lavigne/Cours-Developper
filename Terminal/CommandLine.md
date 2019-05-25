@@ -10,9 +10,6 @@ ls                  // What's in here ?
 ls -a               // List all (even hidden files)
 ls -la              // List all with infos
 ls -lS              // Sort by file size (-laS for hidden files as well)
-ls -lh              // Show size per kilobytes (-lah for hidden files as well)
-ls -le              // List per permissions
-ls -lt              // List per modification date
 ```
 
 ```
