@@ -1,3 +1,7 @@
+# While or For ?
+* For : Safe (no infinite loop) but need to know how many times the turns will be executed
+* While : Risqued (infinite lopp) but usefull if doesn't know how many times the turns will be executed
+
 ## For
 
 ```javascript
