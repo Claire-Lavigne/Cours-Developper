@@ -1,15 +1,22 @@
 ## If / Else
 
-### Booleans
+### Booleans & variables
 ```javascript
 let userLoggedIn = true;
+let welcomeMessage = ''; // declare the variable here
 
 if (userLoggedIn) {
     console.log('User logged in!');
+    welcomeMessage = 'Welcome back!'; // modify the outer variable
 } else {
     console.log('Intruder alert!');
+    welcomeMessage = 'Welcome new user!'; // modify the outer variable
 }
+
+console.log(welcomeMessage);
 ```
+:warning: A variable created inside of the block can't be called outside !
+
 
 ### Comparative expressions
 ```javascript
@@ -24,32 +31,6 @@ if (numberOfGuests == numberOfSeats) {
     // do not allow any more guests
 }
 ```
-
-### Operators simples & logicals
-*  <  >  <=  >=
-*  ==   Equal to (in value) --> Loose equality
-*  ===  Equal to (in value and type) --> Strict equality BETTER
-*  !=   Not equal to (in value) --> Loose
-*  !==  Not equal to (in value and type) --> Strict BETTER
-*  &&  (and) To check if two conditions are both true
-*  ||  (or) To check if at least one condition is true.
-*  !   (NOT) To check if a condition is not true (if it's false)
-
-### Declaring variables
-
-```javascript
-let userLoggedIn = true;
-let welcomeMessage = ''; // declare the variable here
-
-if (userLoggedIn) {
-    welcomeMessage = 'Welcome back!'; // modify the outer variable
-} else {
-    welcomeMessage = 'Welcome new user!'; // modify the outer variable
-}
-
-console.log(welcomeMessage);
-```
-:warning: A variable created inside of the block can't be called outside !
 
 ## Switch
 ```javascript
