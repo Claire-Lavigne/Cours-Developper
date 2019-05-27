@@ -22,6 +22,7 @@ let lastName = "Sanchez";
 
 // concatenate
 console.log(firstName + ' ' + lastName);
+console.log(`Voici ${firstName}`);
  
 const longueurMot = firstName.length; // 5 lettres
 console.log(firstName.toLowerCase());  // "pedro"
