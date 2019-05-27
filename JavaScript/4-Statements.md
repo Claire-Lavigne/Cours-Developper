@@ -35,22 +35,8 @@ if (numberOfGuests == numberOfSeats) {
 *  ||  (or) To check if at least one condition is true.
 *  !   (NOT) To check if a condition is not true (if it's false)
 
-### :warning: Declaring variables
+### Declaring variables
 
-#### Shows an error
-```javascript
-let userLoggedIn = true;
-
-if (userLoggedIn) {
-    let welcomeMessage = 'Welcome back!';
-} else {
-    let welcomeMessage = 'Welcome new user!';
-}
-
-console.log(welcomeMessage);
-```
-
-#### Prints 'Welcome back!'
 ```javascript
 let userLoggedIn = true;
 let welcomeMessage = ''; // declare the variable here
@@ -63,6 +49,7 @@ if (userLoggedIn) {
 
 console.log(welcomeMessage);
 ```
+:warning: A variable created inside of the block can't be called outside !
 
 ## Switch
 ```javascript
