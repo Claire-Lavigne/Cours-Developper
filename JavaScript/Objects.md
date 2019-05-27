@@ -37,3 +37,19 @@ Result in console :
     pages: 250
 }
 ```
+
+
+```javascript
+const monObjet = {
+propriete1: valeur1,        // propriété = clé
+propriete2: valeur2,
+// ... ,
+methode1(/* ... */) {
+// ...
+},
+methode2(/* ... */) {
+// ...
+}
+// ...
+};
+```
