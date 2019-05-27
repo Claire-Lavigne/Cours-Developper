@@ -13,6 +13,11 @@ for (let i = 0; i < passengers.length; i++) {
     console.log('Boarding ' + passengers[i]);
 }
 
+// other : forEach
+passengers.forEach(passenger => {
+  console.log(passenger);
+});
+
 // simple code : for + in
 for (let i in passengers) {
     console.log('Boarding ' + passengers[i]);
