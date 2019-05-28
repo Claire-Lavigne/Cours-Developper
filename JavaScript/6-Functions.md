@@ -8,7 +8,7 @@
 - Functions can send messages through return values
 - There are predefinied functions name already !!
 
-### Example1
+### Option1
 ```javascript
 // Déclaration d'une fonction nommée maFonction
 function maFonction() {
@@ -18,7 +18,7 @@ maFonction();
 // Appel de la fonction maFonction
 ```
 
-### Example2
+### Option2
 ```javascript
 // Affectation d'une fonction anonyme à la variable maVariable
 const maVariable = function(param1, param2, ...) {
@@ -30,7 +30,7 @@ const maVariable = function(param1, param2, ...) {
 maVariable(arg1, arg2, ...);
 ```
 
-### Example3
+### Option3
 ```javascript
 // Affectation d'une fonction anonyme à la variable maVariable
 const maVariable=(param1,param2,...)=>{
@@ -40,7 +40,7 @@ const maVariable=(param1,param2,...)=>{
 // param1 reçoit la valeur de arg1, param2 la valeur de arg2, ...
 maVariable(arg1,arg2,...);
 ```
-
+Example :
 ```javascript
 const add = (firstNumber, secondNumber) => {
   const result = firstNumber + secondNumber;
