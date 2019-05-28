@@ -33,4 +33,7 @@ class MaClasse {
 }
 
 const monObjet = new MaClasse(arg1, arg2, ...);
+
+// Crée un objet ayant monObjetPrototype pour prototype
+const monObjet = Object.create(monObjetPrototype);
 ```
