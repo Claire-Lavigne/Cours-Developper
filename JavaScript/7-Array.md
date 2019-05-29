@@ -1,32 +1,20 @@
-**Array** (values <--> index)
+# What's an array ?
+* values <--> index
+
+**Array**
 ```javascript
-var fruits = ["cerise", "banane", "kiwi"];  // declare array
-fruits[0];                                  // access to first index
-fruits[3] = "abricot";                      // add element
+var fruits = ["cerise", "pomme", "raisin"];   // declare array of any value
+
+fruits;                                       // access all index
+fruits[0];                                    // access to first index (for new variable or console.log)
+fruits[3];                                    // undefined
+fruits[3] = "ananas";                         // add element
+fruits.lenght;                                // know how many elements are in the array
 ```
-
-## Simple
+**Ajouter / Enlever du contenu**
 ```javascript
-// Declaration d'un tableau (The content can be of any value)
-let guests = ['Sarah Kate', 'Audrey Simon', 'Will Alexander'];
-
-// Voir résultat
-console.log(guests);
-console.log(guests[0]); // 'Sarah Kate'
-console.log(guests.lenght); // tell me how much elements are in the array : 3
-
-// Ajouter / Enlever contenu
-guests.push('Paul Handerson'); // add this element at the end of the array
-guests.unshift('Tau Perkington'); // add this element at the beginning of the array
-guests.pop(); // remove the last value of array
-films.splice(0, 1); // Remove 1 element starting from number 0
-
-// redéfinir avec variables :
-let firstGuest = 'Sarah Kate';
-// ou
-let firstGuest = guests[0]; // 'Sarah Kate'
-let thirdGuest = guests[2]; // 'Will Alexander'
-let undefinedGuest = guests[12] // undefined
-let guests = [firstGuest, secondGuest];
-console.log(guests); // show 2 variables
+fruits.push('banane');                        // add this element at the end of the array
+fruits.unshift('orange');                     // add this element at the beginning of the array
+fruits.pop();                                 // remove the last value of array
+fruits.splice(0, 1);                          // Remove 1 element starting from number 0
 ```
