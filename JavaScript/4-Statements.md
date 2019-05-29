@@ -1,6 +1,6 @@
 # If / Else if / Else
 
-**Booleans & Variables**
+**With Booleans & Variables**
 
 :warning: A variable created inside of the block can't be called outside !
 ```javascript
@@ -10,11 +10,10 @@ let welcomeMessage = '';
 if (userLoggedIn) {                       // means (userLoggedIn === true)
     welcomeMessage = 'Welcome back!';     // modify the variable
 } else {
-    console.log('Intruder alert!');
-    welcomeMessage = 'Welcome new user!'; // modify the variable
+    console.log('Intruder alert!');       // instruction
 }
 ```
-**Comparative expressions**
+**With Comparative expressions**
 ```javascript
 const numberOfSeats = 30;
 let numberOfGuests = 25;
@@ -31,21 +30,21 @@ if (numberOfGuests == numberOfSeats) {
 # Switch
 **With Variable**
 ```javascript
-var drink = 'coffee';
+var drink = 'milk';
 
 switch (drink) {
-  case 'coffee':
-    console.log('Expresso or Latte ?');
+  case 'milk:
+    console.log('Entier ou demi-écrémé ?');
     break;
   case 'tea':
-    console.log('Earl Grey or Green Tea ?');
+    console.log('Thé au citron ou Ice Tea ?');
     break;
+  case 'coffee':
   case 'soda':
-  case 'water':
-    console.log('Glass or bottle ?');
+    console.log('Coca ou non ?');
     break;
   default:
-    console.log('Sorry, we don\'t have this here.');
+    console.log('Nous n\'avons rien d\'autre.');
 }
 ```
 **With Objects**
