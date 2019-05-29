@@ -1,3 +1,24 @@
+**Array** (values <--> index)
+```javascript
+var fruits = ["cerise", "banane", "kiwi"];  // declare array
+fruits[0];                                  // access to first index
+```
+**Objects** (array with multiple values <--> key)
+```javascript
+var fruits = {                              // declare object
+  superbon : "cerise",
+  sucre : "banane",
+  acide : "kiwi"
+};
+fruits["key"]                               // Access to elements
+fruits.key                                  // or
+fruits["acide"];                            // Read value
+fruits.acide;                               // or
+fruits.acide = "citron";                    // Modify a value
+```
+
+
+
 ## Simple
 ```javascript
 // Declaration d'un tableau (The content can be of any value)
