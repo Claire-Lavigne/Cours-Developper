@@ -47,13 +47,3 @@ let undefinedGuest = guests[12] // undefined
 let guests = [firstGuest, secondGuest];
 console.log(guests); // show 2 variables
 ```
-
-## Complexe
-
-```javascript
-let firstGuest = {name: 'Sarah Kate', vip: true};
-let secondGuest = {name: 'Audrey Simon', vip: false};
-
-let guests = [firstGuest, secondGuest];
-console.log(guests); // shows 2 objects
-```
