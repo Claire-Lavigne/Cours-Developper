@@ -2,24 +2,7 @@
 ```javascript
 var fruits = ["cerise", "banane", "kiwi"];  // declare array
 fruits[0];                                  // access to first index
-```
-**Objects** (array with multiple values <--> key)
-```javascript
-var fruits = {                              // declare object
-  superbon : "cerise",
-  sucre : "banane",
-  acide : "kiwi"
-};
-fruits["key"]                               // Access to elements
-fruits.key                                  // or
-fruits["acide"];                            // Read value
-fruits.acide;                               // or
-fruits.acide = "citron";                    // Modify a value
-
-
-// assignation d'un valeur à une case d'un tableau :
-var fruits = ['pomme', 'poire'];
-fruits[2] = 'abricot'; // ajoute un élément au tableau
+fruits[3] = "abricot";                      // add element
 ```
 
 ## Simple
