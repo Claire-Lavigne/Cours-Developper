@@ -1,3 +1,7 @@
+https://github.com/O-clock-Alumni/fiches-recap/blob/master/js/fonctions.md
+https://github.com/O-clock-Alumni/fiches-recap/blob/master/js/fonctions-js.md
+https://github.com/O-clock-Alumni/fiches-recap/blob/master/js/dom.md
+
 ## What are functions ?
 
 - Used for repetitive tasks & to divide big tasks
