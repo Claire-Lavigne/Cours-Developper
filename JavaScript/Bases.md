@@ -79,6 +79,20 @@ age !== 10    // Not equal to (in value and type)
 !   // (NOT) To check if a condition is not true (if it's false)
 ```
 
+# Keywords
+**Property**
+```javascript
+const longueurMot = firstName.length;       // 5 letters
+```
+**Methods**
+```javascript
+console.log(firstName.toLowerCase());       // "pedro"
+console.log(firstName.toUpperCase());       // "PEDRO"
+console.log(firstName.indexOf("dr"));       // 1 if true, -1 if false
+console.log(firstName.startsWith("Pe"));    // true
+console.log(firstName.endsWith("ez"));      // false
+```
+
 # Deal with Errors
 **Possible errors**
 - Syntax : typos, missing brackets, wrong number of quotes, etc.
