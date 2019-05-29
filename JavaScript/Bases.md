@@ -11,8 +11,9 @@
 ```
 **Variable**
 ```javascript
-// set a variable
-let numberOfCats = 1;
+let numberOfCats = 1;       // set a variable
+numberOfCats = 5;           // modify a variable already called
+console.log(numberOfCats);  // show result
 ```
 **Constant** = Variable with a value that never change
 
@@ -45,7 +46,8 @@ let lastName = "Pedro's \n Sanchez";
 
 **Arythmetics**
 ```javascript
-25 * (4 + 10 - 2) / 3
+let calcul = 25 * (4 + 10 - 2) / 3;
+let totalAnimals = numberOfCats + numberOfDogs;
 ```
 **Shortcuts (+ - * /)**
 ```javascript
@@ -53,7 +55,7 @@ let numberOfDogs = 6;
 numberOfDogs += 3;      // add 3
 numberofDogs++;         // add 1 
 ```
-**Concatenate** strings
+**Concatenate strings**
 ```javascript
 var firstName = 'Claire';
 var lastName = 'Lavigne';
@@ -75,4 +77,31 @@ age !== 10    // Not equal to (in value and type)
 &&  // (and) To check if two conditions are both true
 ||  // (or) To check if at least one condition is true.
 !   // (NOT) To check if a condition is not true (if it's false)
+```
+
+# Deal with Errors
+**Possible errors**
+- Syntax : typos, missing brackets, wrong number of quotes, etc.
+- Logic : erroneous conditions, forgetting to increment the index in a loop (infinite loop)
+- Runtime : external ressource (networks, databases, or users)
+
+**Resolve errors**
+- Being aware of where they may occur
+- Using error handling techniques
+
+**Testing data**
+```javascript
+if (dataExists && dataIsValid) {
+    // use data here
+} else {
+    // handle error here
+}
+```
+**Trying blocks to catch an error**
+```javascript
+try {
+    // error-prone code here
+} catch (error) {
+    // react to error here
+}
 ```
