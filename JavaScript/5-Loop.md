@@ -3,7 +3,7 @@
 * While : Risqued (infinite lopp) but usefull if doesn't know how many times the turns will be executed
 
 ## For
-**Old code (with variable) : for****
+**Old code (with variable) : for**
 ```javascript
 const numberOfPassengers = 4;
 
@@ -34,7 +34,7 @@ passengers.forEach(passenger => {
   console.log(passenger);
 });
 ```
-**New code (with array) : for + in**
+**New code (with array or object) : for + in**
 ```javascript
 for (let i in passengers) {
     console.log('Boarding ' + passengers[i]);
@@ -64,6 +64,10 @@ for (let passenger of passengers) {
     console.log('Boarding passenger ' + passenger.name + ' with ticket n° ' + passenger.ticketNumber);
 }
 ```
+
+Il est possible d'interrompre une boucle avec l'instruction ``` break; ```.
+
+Il est possible d'interrompre l'itération courante et de passer à la suivante avec l'instruction ``` continue; ```.
 
 
 ## While
