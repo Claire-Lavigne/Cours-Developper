@@ -15,9 +15,12 @@ fruits.key                                  // or
 fruits["acide"];                            // Read value
 fruits.acide;                               // or
 fruits.acide = "citron";                    // Modify a value
+
+
+// assignation d'un valeur à une case d'un tableau :
+var fruits = ['pomme', 'poire'];
+fruits[2] = 'abricot'; // ajoute un élément au tableau
 ```
-
-
 
 ## Simple
 ```javascript
