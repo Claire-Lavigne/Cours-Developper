@@ -12,8 +12,13 @@
 **Variable**
 ```javascript
 let numberOfCats = 1;       // set a variable
+let numberOfDogs = 2;
 numberOfCats = 5;           // modify a variable already called
+
+let animals = [numberOfCats, numberOfDogs];
+
 console.log(numberOfCats);  // show result
+console.log(animals);       // show 2 variables : ["Sarah Kate", "Will Alexander"]
 ```
 **Constant** = Variable with a value that never change
 
