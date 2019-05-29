@@ -1,24 +1,20 @@
-## If / Else
+# If / Else if / Else
 
-### Booleans & variables
+**Booleans & Variables**
+
+:warning: A variable created inside of the block can't be called outside !
 ```javascript
 let userLoggedIn = true;
-let welcomeMessage = ''; // declare the variable here
+let welcomeMessage = '';
 
-if (userLoggedIn) {
-    console.log('User logged in!');
-    welcomeMessage = 'Welcome back!'; // modify the outer variable
+if (userLoggedIn) {                       // means (userLoggedIn === true)
+    welcomeMessage = 'Welcome back!';     // modify the variable
 } else {
     console.log('Intruder alert!');
-    welcomeMessage = 'Welcome new user!'; // modify the outer variable
+    welcomeMessage = 'Welcome new user!'; // modify the variable
 }
-
-console.log(welcomeMessage);
 ```
-:warning: A variable created inside of the block can't be called outside !
-
-
-### Comparative expressions
+**Comparative expressions**
 ```javascript
 const numberOfSeats = 30;
 let numberOfGuests = 25;
@@ -32,7 +28,27 @@ if (numberOfGuests == numberOfSeats) {
 }
 ```
 
-## Switch
+# Switch
+**With Variable**
+```javascript
+var drink = 'coffee';
+
+switch (drink) {
+  case 'coffee':
+    console.log('Expresso or Latte ?');
+    break;
+  case 'tea':
+    console.log('Earl Grey or Green Tea ?');
+    break;
+  case 'soda':
+  case 'water':
+    console.log('Glass or bottle ?');
+    break;
+  default:
+    console.log('Sorry, we don\'t have this here.');
+}
+```
+**With Objects**
 ```javascript
 let firstUser = {
     name: 'Will Alexander',
