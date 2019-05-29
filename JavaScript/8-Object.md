@@ -1,21 +1,33 @@
-### JSON (JavaScript Object Notation)
-One object
+# JSON (JavaScript Object Notation)
+- array with multiple values
+- value <--> key
+
+**Objects**
 ```javascript
-let myBook = {
-    title: 'The Story of Tau',  // key : value
-    author: 'Will Alexander',
-    numberOfPages: 250,
-    isAvailable: true
+var fruits = {                              // declare object
+  rouge : "cerise",                         // declare property (keyName: anyValue)
+  sucre : "raisin",
+  acide : "kiwi",
+   love : true
 };
 
-// show one key of the object
-console.log(myBook.title);      // 'The Story of Tau'
-// also creating a variable
-let bookTitle = myBook.title;
+var legumes = {
+   bon : "patate",
+   top : "artichaut"
+};
+
+console.log(food);                          // shows 2 objects
+console.log(fruits.rouge)                   // shows the key of object
+
+fruits["rouge"];                            // Read value of rouge
+fruits.rouge;                               // Different syntax
+fruits.rouge = "fraise";                    // Modify a value
+
+let fruitsRouges = fruits.rouge;
+let food = [fruits, legumes];
 ```
 
-### CLASS
-Multiple objects
+**CLASS** = Multiple objects
 ```javascript
 class MaClasse {
   constructor(param1, param2 /* ... */) {
