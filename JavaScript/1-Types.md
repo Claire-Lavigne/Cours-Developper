@@ -1,25 +1,23 @@
-## Types
-
-### Numbers
-* Integers : 1 ou -1
-* Float : 1.5 ou -1.5
 ```javascript
-let price = 2599;   // for e-commerce : price = 2599 not 25.99
-```
-:warning: Float à éviter
+let numberOfDogs = 5;
+let numberOfTurtles; // undefined
 
-### Booleans
-```javascript
-let userSignedIn = true;
-let checkboxIsChecked = false;
+// modify a variable already called
+numberOfDogs = 4;
+
+// shortcuts (with + - * / %) 
+numberOfDogs += 3; // numberOfDogs = numberOfDogs + 3
+numberofDogs++;    // j'ajoute 1
+
+// calculs (with + / * - %)
+let totalAnimals = numberOfCats + numberOfDogs;
+
+// show result
+console.log(numberOfCats);
 ```
   
 ### String
 ```javascript
-// I can use : ''  ""  \  \n 
-let firstName = 'Pedro';
-let lastName = "Sanchez";
-
 // concatenate
 console.log(firstName + ' ' + lastName);
 console.log(`Voici ${firstName}`);
