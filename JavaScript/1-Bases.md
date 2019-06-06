@@ -1,6 +1,7 @@
 # JavaScript, pour quoi ?
 - Gestion des interactions (utilisateur <--> navigateur)
 - Dynamiser le contenu
+- Pas de refresh (différent de PHP)
 
 # Syntaxe
 
