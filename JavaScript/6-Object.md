@@ -19,12 +19,17 @@ var legumes = {
 console.log(food);                          // shows 2 objects
 console.log(fruits.rouge)                   // shows the key of object
 
-fruits["rouge"];                            // Read value of rouge
-fruits.rouge;                               // Different syntax
+fruits["rouge"];                            // Read value of rouge, syntax to use variables inside []
+fruits.rouge;                               // Different syntax, prefered one
 fruits.rouge = "fraise";                    // Modify a value
 
 let fruitsRouges = fruits.rouge;
 let food = [fruits, legumes];
+```
+
+```js
+var period = "month";
+date[period];
 ```
 
 **CLASS** = Multiple objects
