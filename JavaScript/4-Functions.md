@@ -1,10 +1,7 @@
-https://github.com/O-clock-Alumni/fiches-recap/blob/master/js/fonctions.md
-
-https://github.com/O-clock-Alumni/fiches-recap/blob/master/js/fonctions-js.md
-
-https://github.com/O-clock-Alumni/fiches-recap/blob/master/js/dom.md
-
-https://github.com/O-clock-Alumni/fiches-recap/blob/master/js/evenements.md
+- https://github.com/O-clock-Alumni/fiches-recap/blob/master/js/fonctions.md
+- https://github.com/O-clock-Alumni/fiches-recap/blob/master/js/fonctions-js.md
+- https://github.com/O-clock-Alumni/fiches-recap/blob/master/js/dom.md
+- https://github.com/O-clock-Alumni/fiches-recap/blob/master/js/evenements.md
 
 ## What are functions ?
 
@@ -18,35 +15,36 @@ https://github.com/O-clock-Alumni/fiches-recap/blob/master/js/evenements.md
 
 ### Option1
 ```javascript
-// Déclaration d'une fonction nommée maFonction
-function maFonction() {
-// Instructions de la fonction
+// Déclaration d'une fonction
+// Paramètre = variable créée automatiquement à l'intérieur de ma fonction
+function nomFonction(param1, param2, ...) {
+  // Instructions de la fonction pouvant utiliser param1, param2, ...
 }
-maFonction(); 
-// Appel de la fonction maFonction
+
+// Appel de ma fonction
+// param1 reçoit la valeur de arg1, param2 la valeur de arg2, ...
+nomFonction(arg1, arg2, ...); 
+```
+**Exemple**
+```javascript
+function direBonjour(prenom) {
+  alert("Salut c'est " + prenom);
+}
+
+direBonjour("Timia");     // Salut c'est Timia
 ```
 
 ### Option2
 ```javascript
-// Affectation d'une fonction anonyme à la variable maVariable
+// Affectation d'une fonction anonyme (car non nommée) à la variable
 const maVariable = function(param1, param2, ...) {
-// Instructions pouvant utiliser param1, param2, ...
+// ou (autre syntaxe)
+const maVariable = (param1,param2,...) => {
+    // Instructions
 }
 
 // Appel de la fonction anonyme
-// param1 reçoit la valeur de arg1, param2 la valeur de arg2, ...
 maVariable(arg1, arg2, ...);
-```
-
-### Option3
-```javascript
-// Affectation d'une fonction anonyme à la variable maVariable
-const maVariable=(param1,param2,...)=>{
-// Instructions pouvant utiliser param1, param2, ...
-}
-// Appel de la fonction anonyme
-// param1 reçoit la valeur de arg1, param2 la valeur de arg2, ...
-maVariable(arg1,arg2,...);
 ```
 Example :
 ```javascript
