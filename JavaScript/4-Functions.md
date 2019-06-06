@@ -25,7 +25,17 @@ function nomFonction(param1, param2, ...) {
 // param1 reçoit la valeur de arg1, param2 la valeur de arg2, ...
 nomFonction(arg1, arg2, ...); 
 ```
-**Exemple**
+**Exemple sans paramètres**
+```javascript
+var prenom = Timia;
+
+function direBonjour() {
+  alert("Salut c'est " + prenom);
+}
+
+direBonjour();     // Salut c'est Timia
+```
+**Exemple avec paramètre**
 ```javascript
 function direBonjour(prenom) {
   alert("Salut c'est " + prenom);
