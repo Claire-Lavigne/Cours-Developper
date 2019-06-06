@@ -105,6 +105,7 @@ console.log(firstName.toUpperCase());       // "PEDRO"
 console.log(firstName.indexOf("dr"));       // 1 if true, -1 if false
 console.log(firstName.startsWith("Pe"));    // true
 console.log(firstName.endsWith("ez"));      // false
+console.error('');                          // affiche une erreur
 ```
 
 # Deal with Errors
