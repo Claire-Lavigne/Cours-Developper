@@ -4,10 +4,10 @@
 - Pas de refresh (différent de PHP)
 
 # Syntaxe
-- On affiche les messages soit dans :
-- html                              
-- console : console.log()           // je veux les infos mais sans les afficher sur le site (et donc l'utilisateur)
-- popup   : alert(), prompt(), 
+On affiche les messages soit dans :
+- html : <script src=".../js/script.js"></script>   ``` // avant la fin du body ```
+- console : console.log()       ``` // je veux les infos mais sans les afficher sur le site (et donc l'utilisateur) ```
+- popup   : alert(), prompt()
 
 **Commentaires**
 ```javascript
