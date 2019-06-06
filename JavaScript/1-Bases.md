@@ -5,8 +5,10 @@
 
 # Syntaxe
 On affiche les messages soit dans :
-- html : <script src=".../js/script.js"></script>   ``` // avant la fin du body ```
-- console : console.log()       ``` // je veux les infos mais sans les afficher sur le site (et donc l'utilisateur) ```
+- html : <script src=".../js/script.js"></script>
+(placer avant la fin du body)
+- console : console.log()
+(si je veux les infos sans les afficher sur le site (et donc à l'utilisateur))
 - popup   : alert(), prompt()
 
 **Commentaires**
