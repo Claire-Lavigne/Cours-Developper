@@ -12,6 +12,7 @@
 ```
 **Variable**
 ```javascript
+var age = 25;               // set a variable (old code)
 let numberOfCats = 1;       // set a variable
 let numberOfDogs = 2;
 numberOfCats = 5;           // modify a variable already called
@@ -21,6 +22,7 @@ let animals = [numberOfCats, numberOfDogs];
 console.log(numberOfCats);  // show result
 console.log(animals);       // show 2 variables : ["Sarah Kate", "Will Alexander"]
 ```
+
 **Constant** = Variable with a value that never change
 
 :warning: Use constants as more as possible
@@ -44,8 +46,8 @@ let checkboxIsChecked = false;
 ```
 **String**
 ```javascript
-let firstName = 'Pedro\'s Sanchez';
-let lastName = "Pedro's \n Sanchez";
+let firstName = 'Pedro\'s Sanchez';     // préféré si pas d'apostrophes et pour concaténation
+let lastName = "Pedro's \n Sanchez";    // préféré si apostrophes
 ```
 
 # Operators
