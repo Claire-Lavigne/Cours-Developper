@@ -19,7 +19,7 @@
 // Paramètre = variable créée automatiquement à l'intérieur de ma fonction
 function nomFonction(param1, param2, ...) {
   // Instructions de la fonction pouvant utiliser param1, param2, ...
-  // Il faut retourner quelque chose (le code créé dans la fonction) pour que je le vois
+  // Il faut retourner quelque chose (le code créé dans la fonction) pour que je le vois au moment où je l'appelle
   return nomDuneFonction;
 }
 
