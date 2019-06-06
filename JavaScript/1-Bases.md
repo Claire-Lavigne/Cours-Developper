@@ -106,6 +106,7 @@ console.log(firstName.indexOf("dr"));       // 1 if true, -1 if false
 console.log(firstName.startsWith("Pe"));    // true
 console.log(firstName.endsWith("ez"));      // false
 console.error('');                          // affiche une erreur
+'string'.slice(0, 3);                       // Coupe le string de l'index 0 à 3 : stri
 ```
 
 # Deal with Errors
