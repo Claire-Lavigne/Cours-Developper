@@ -23,7 +23,7 @@ function nomFonction(param1, param2, ...) {
   return nomDuneFonction;
 }
 
-// Appel de ma fonction
+// Appel de ma fonction pour l'exécuter
 // param1 reçoit la valeur de arg1, param2 la valeur de arg2, ...
 nomFonction(arg1, arg2, ...); 
 ```
