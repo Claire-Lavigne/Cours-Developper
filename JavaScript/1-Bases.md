@@ -18,7 +18,7 @@ On affiche les messages soit dans :
 ```
 **Variable**
 ```javascript
-var age = 25;               // set a variable (old code)
+var age = 25;               // set a variable
 let numberOfCats = 1;       // set a variable
 let numberOfDogs = 2;
 numberOfCats = 5;           // modify a variable already called
@@ -55,6 +55,10 @@ let checkboxIsChecked = false;
 let firstName = 'Pedro\'s Sanchez';     // préféré si pas d'apostrophes et pour concaténation
 let lastName = "Pedro's \n Sanchez";    // préféré si apostrophes
 ```
+**Undefined**
+**Null**
+**Symbol**
+**Object**
 
 # Operators
 
