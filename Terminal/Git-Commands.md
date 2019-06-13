@@ -1,7 +1,7 @@
 # Some links
 
 * [Download Git](https://git-scm.com/downloads)
-* [Gist to share code](https://gist.github.com)
+* [Gist : share code](https://gist.github.com)
 * [Learn about Git & commands](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud)
 * [Learn with OpenClassrooms](https://openclassrooms.com/en/courses/5671626-manage-your-code-project-with-git-github)
 * [Commands help](https://gist.github.com/jedmao/5053440)
@@ -68,6 +68,8 @@ $ git add -p (+ y or n)         # see new changes and accept/refuse to add
 $ git rm --cached <file>        # undo added file
 $ git stash                     # save changes but not for commit
 $ git stash list                # see all files saves
+$ git stash pop                 # recup files saved to work on them again (et vide le stash)
+$ git stash apply               # recup files saved to work on them again (sans vider le stash)
 ```
 
 ### Git commit
@@ -78,7 +80,8 @@ $ git commit --amend            # change commit message
 $ git log                       # list all commits on branch (SHA, who, when, what ; most recent < oldest)
                                 # Press Q to quit "log"
 $ git log --graph               # git branch timeline view
-$ git checkout commitnumber     # come back to good commit to fix bug
+$ git checkout SHA              # come back to good commit to fix bug
+$ git checkout master           # revenir au commit le + récent
 $ git revert HEAD --no-edit     # undo commit (saves corrective mistake as a new commit)
 ```
 
@@ -108,15 +111,21 @@ https://openclassrooms.com/en/courses/5671626-manage-your-code-project-with-git-
 
 ### Git push (send to remote) / pull (take from remote)
 ```bash
-$ git push <remote> <branch>    # remote = origin ; branch can be master
+$ git push <remote> <branch>    # remote = origin ; branch can be master or the branch I worked on
 $ git pull <remote> <branch>    # remote = origin ; branch can be master
 
-# Open source project : on Github, pull request to owner repository + add description (ex : for issue resolved)
+# Open source project on Github :
+  # fork
+  # create branch
+  # work on branch
+  # add, commit, push branch
+  # send pull request to owner of repository (on my fork, on my branch, clic on "Compare & pull request")
+  # add description (ex : issue resolved)
 
 # IF AFTER PUSH => "Permission denied"
-# Windows : Control Panel -> User Accounts -> Manage your credentials -> Windows Credentials -> Remove
-# Mac : Access credential store on the osxkeychain
-# Linux : git config --global --unset credential.helper
+  # Windows : Control Panel -> User Accounts -> Manage your credentials -> Windows Credentials -> Remove
+  # Mac : Access credential store on the osxkeychain
+  # Linux : git config --global --unset credential.helper
 ```
 
 ### Git branch
@@ -149,6 +158,14 @@ squash 8a9fbd7 commit 4
 $ interactive git rebase    # => git rebase -i HEAD~3
 # Manually delete outdated pointers (commits, branches and objects) :
 # Open .git file in local repo, look at folders "objects", "index" and "ref"
+```
+
+### See modifications
+```bash
+git blame <file.ext>        # Voir toutes les modifications de chaque auteur sur le fichier
+git log                     # Comprendre (option1) Regarder le SHA voulu pour voir le message du commit
+git show SHA                # Comprendre (option2) Voir en détail les modifications de l'auteur sélectionné
+
 ```
 
 ### Debug repo
