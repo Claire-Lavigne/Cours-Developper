@@ -91,12 +91,32 @@ $ git blame master -- file      # list all actions & commits of team members (li
 $ git rev-list                  # list historic and actions made on a specific file
 ```
 
+#### Other commands again
+```bash
+$ git revert SHA                # undo this commit (and save correction into new commit)
+# Option 1
+$ git push origin +master                             # forces push to remote repo
+# Option 2
+$ git push <repo name> +<badcommitSHA>^ : <branch>    # Delete a specific commit using git push
+# Exemple : git push myrepo +12345^:master
+$ git push <repo name> :<branch name>                 # Delete entire branch
+
+$ git cherry-pick e5be498bd5e3d2a58cdc6d21e150e00ed6b06b3f      # add that commit to actual branch
+
+https://openclassrooms.com/en/courses/5671626-manage-your-code-project-with-git-github/exercises/3406
+```
+
 ### Git push (send to remote) / pull (take from remote)
 ```bash
 $ git push <remote> <branch>    # remote = origin ; branch can be master
 $ git pull <remote> <branch>    # remote = origin ; branch can be master
 
 # Open source project : on Github, pull request to owner repository + add description (ex : for issue resolved)
+
+# IF AFTER PUSH => "Permission denied"
+# Windows : Control Panel -> User Accounts -> Manage your credentials -> Windows Credentials -> Remove
+# Mac : Access credential store on the osxkeychain
+# Linux : git config --global --unset credential.helper
 ```
 
 ### Git branch
@@ -129,27 +149,6 @@ squash 8a9fbd7 commit 4
 $ interactive git rebase    # => git rebase -i HEAD~3
 # Manually delete outdated pointers (commits, branches and objects) :
 # Open .git file in local repo, look at folders "objects", "index" and "ref"
-```
-
-### Other commands
-```bash
-$ git revert 12345
-Then you can do one of two things:
-# Option 1
-$ git push origin +master                             # forces push to remote repo
-# Option 2
-$ git push <repo name> +<badcommitSHA>^ : <branch>    # Delete a specific commit using git push
-# Exemple : git push myrepo +12345^:master
-$ git push <repo name> :<branch name>                 # Delete entire branch
-
-git push origin master => "Permission denied"
-# Windows : Control Panel -> User Accounts -> Manage your credentials -> Windows Credentials -> Remove
-# Mac : Access credential store on the osxkeychain
-# Linux : git config --global --unset credential.helper
-
-$ git cherry-pick e5be498bd5e3d2a58cdc6d21e150e00ed6b06b3f      # add that commit to actual branch
-
-https://openclassrooms.com/en/courses/5671626-manage-your-code-project-with-git-github/exercises/3406
 ```
 
 ### Debug repo
