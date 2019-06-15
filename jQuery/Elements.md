@@ -1,7 +1,7 @@
-## Link html to jQuery cloud (header) and my jQuery files (end of body)
+## Link html to jQuery
 ```html
 <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
-<script src="../js/jquery.js"></script>
+<script src="jquery.js"></script>
 ````
 
 ### Load DOM
@@ -19,10 +19,12 @@ jQuery(document).ready(function(){})
 ### General syntax of jQuery statement
 ```javascript
 $('selector').method(parameter1, parameter2);
-// exemple : change all the paragraphs' background colors to yellow
+```
+Exemple : 
+```javascript
+// change all the paragraphs' background colors to yellow
 $('p').css('background-color', 'yellow');
 ```
-
 
 ## Select elements with selectors
 ```javascript
@@ -46,7 +48,7 @@ $("li:not('.vegetable')")     // select all li that don't have the class vegetab
 :contains("text")
 :has("element")
 [attribute]
-[attribute="value"]     // exemple : $('ol[type="A"]')
+[attribute="value"]   // $('ol[type="A"]')
 [attribute!="value"]
 :input
 :password
@@ -76,6 +78,7 @@ $(function() {
     $('h2').prepend('***');       // Added three asterisks before each <h2>
     $('#three').before('<hr>');   // Adding a horizontal line before <h2> #three
     $('#three').after('<hr>');    // Adding a horizontal line after <h2> #three
+    
     $('img').replaceWith(':)');   // Replacing all img with the string :)
 
     // Replacing an h2 by an h3
@@ -88,7 +91,9 @@ $(function() {
 
 ### Insert/remove elements in the DOM
 element = content to be inserted
+
 target = element target of the insertion
+
 element + target => jQuery selector, element name, html string or jQuery object
 
 - ```element.appendTo(target)``` inserts an item at the end of the target; (same closing tag)
@@ -103,10 +108,13 @@ element + target => jQuery selector, element name, html string or jQuery object
 $(function() {
     $('<hr>').appendTo($('h2'));    // Add hr after each h2
     $('<hr>').prependTo($('h2'));   // Add hr before each h2
+    
     $('<li>item</li>').insertBefore($('li:nth-child(2)'));   // insert list item before 2nd list item
     $('<li>item</li>').insertAfter($('li:nth-child(2)'));    // insert list item after 2nd list item
-    $('li').wrap('<i></i>');        // wrap all li in italic
-    $('li').wrap('<font color="red"></font>');               // wrap all li with red font color
+    
+    $('li').wrap('<i></i>');                      // wrap all li in italic
+    $('li').wrap('<font color="red"></font>');    // wrap all li with red font color
+    
     $('h2').remove();               // remove all h2
 });
 ```
