@@ -18,7 +18,7 @@
 - ```animation``` = 
 - ```animation-name``` : nom de l’animation
 - ```animation-duration``` : durée de l’animation (en s ou ms)
-- ```animation-delay** : délai de démarrage de l'animation (valeur négative possible)
+- ```animation-delay``` : délai de démarrage de l'animation (valeur négative possible)
 - ```animation-timing-function``` : accélération/vitesse de l'animation
   - ```ease, linear, ease-in, ease-out, ease-in-out```
   - ```cubic-bezier(a, b, c, d)``` [Exemple](https://cubic-bezier.com/#.17,.67,.83,.67)
@@ -65,7 +65,8 @@
 - [formulaires](https://openclassrooms.com/en/courses/5625816-create-modern-css-animations/6155531-manipulate-and-reuse-css-animations)
 - [menu](https://openclassrooms.com/en/courses/5625816-create-modern-css-animations/6155536-refine-your-animations-with-chromes-animation-tool)
 
-## Transformations 2D
+## Exemples codés
+### Transformation 2D
 ```css
 .btn {
     /* indicate the state before */
@@ -98,7 +99,23 @@
 }
 ```
 
-## Animations
+### Transformation 3D
+```css
+body {
+    perspective: 800px;     /* valeur faible = profondeur augmentée / valeur élevée = profondeur diminuée */
+    perspective-origin: 20px 70px;    /* Point de fuite placé aux coordonnées (20 x, 70 y)
+                                      /* Ou : top left center bottom right */
+}
+
+div {
+    transform: translateZ(200px);
+    transform: scale3d(1, 2, 2);
+    transform: rotateX(20deg);
+    backface-visibility: hidden;    /* pour cacher la face cachée des blocs (non cachée par défaut) */
+}
+```
+
+### Keyframe
 On défini une "super animation"
 ```css
 @keyframes masuperanimation {
@@ -129,21 +146,5 @@ div {
 div:hover {
     animation: masuperanimation 2s;
     /* -webkit-animation pour Safari, Chrome et Opera */
-}
-```
-
-## Transformations 3D
-```css
-body {
-    perspective: 800px;     /* valeur faible = profondeur augmentée / valeur élevée = profondeur diminuée */
-    perspective-origin: 20px 70px;    /* Point de fuite placé aux coordonnées (20 x, 70 y)
-                                      /* Ou : top left center bottom right */
-}
-
-div {
-    transform: translateZ(200px);
-    transform: scale3d(1, 2, 2);
-    transform: rotateX(20deg);
-    backface-visibility: hidden;    /* pour cacher la face cachée des blocs (non cachée par défaut) */
 }
 ```
