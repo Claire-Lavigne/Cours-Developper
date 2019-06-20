@@ -1,7 +1,8 @@
+[jQuery Lastest Version](https://code.jquery.com/)
+
 ## Link html to jQuery
-[jQuery website](https://jquery.com/download/)
 ```html
-<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="jquery.js"></script>
 ````
 
