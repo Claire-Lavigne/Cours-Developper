@@ -5,11 +5,12 @@
 
 # Syntaxe
 On affiche les messages soit dans :
-- html : <script src=".../js/script.js"></script>
-(placer avant la fin du body)
-- console : console.log()
-(si je veux les infos sans les afficher sur le site (et donc à l'utilisateur))
-- popup   : alert(), prompt()
+- le **fichier html** avant le tag ```</body>``` : 
+    - ```<script src=".../js/script.js"></script>```
+- la **console** pour obtenir des informations sans les afficher sur le site et les cacher à l'utilisateur : 
+    - ```console.log()``` ou ```console.error()```
+- en **popup** : 
+    - ```alert()``` et ```prompt()```
 
 **Commentaires**
 ```javascript
