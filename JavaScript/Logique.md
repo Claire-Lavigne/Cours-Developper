@@ -1,26 +1,26 @@
-## Variable
-### Variable
-boîte de rangement pour une valeur éphémère
-### Constante
-boîte de rangement pour une valeur invariable
+# Logique de programmation
 
-## Tableaux
+## Variables = boîte de rangement
+### Variable
+valeur éphémère
+### Constante
+valeur invariable
+
+## Tableaux = Ranger des données (similaires) dans un classeur
 ### Simple
-Ranger des données similaires dans une chemise
-```ruby
+```js
 villes = ['Paris', 'New York', 'Berlin', 'Montréal']
 ```
 ### Complexe
-Ranger des chemises dans un classeur
-```ruby
+```js
 nom_du_tableau = {
   clé_1 : valeur_1, 
   clé_2 : valeur_2, 
   ... 
 }
 ```
-### très complexe
-```ruby
+### Très complexe
+```js
 voyages = [
     { ville: "Paris", duree: 10 },
     { ville: "New York", duree: 5 },
@@ -29,14 +29,13 @@ voyages = [
 ]
 ```
 
-## Boucle
-- Effectuer des actions répétitives
-- Répéter une action pour parcourir un tableau (each)
+## Boucle = Répéter une action
+- Ex : Pour parcourir un tableau (each)
 
 ## POO (programmation orientée objet)
-### Classes
-plans pour créer des objets spécifiques (new = instances de classes)
-```ruby
+### Classes = Plan avec des objets
+- New = instances de classes
+```js
 class Eleve
   attr_accessor :prenom, :langage_prefere
 end
@@ -47,9 +46,8 @@ bob.prenom = "Bob"
 bob.langage_prefere = "Ruby !!!"
 ```
 
-### Méthodes / Fonctions
-Série d'actions (à l'intérieur d'une classe) avec ou sans paramètre(s)
-```ruby
+### Méthodes / Fonctions = Actions (dans une classe) avec ou sans paramètre(s)
+```js
 class Eleve
   attr_accessor :prenom, :nom, :langage_prefere
   
@@ -78,3 +76,4 @@ puts "Est-ce que " + jc.nom_complet + " aime le Ruby ?\n" + jc.aime_le("Ruby")
 
 # Est-ce que John Cleese aime le Ruby ?
 # Non :(
+```
