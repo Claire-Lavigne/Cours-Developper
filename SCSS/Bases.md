@@ -1,17 +1,3 @@
-# Media Queries
-
-```scss
-@mixin mobile-only {
-  @media (max-width: 599px) {
-    @content;
-  }
-}
-
-@include mobile-only {
-  css-property: value;
-}
-```
-
 # 7-1 Pattern - Code Base
 
 ```shell
