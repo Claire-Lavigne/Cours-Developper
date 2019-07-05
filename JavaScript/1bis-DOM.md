@@ -16,6 +16,10 @@ var paragraphs = document.getElementsByTagName('p');      // get all elements <p
                  document.querySelectorAll('p.text-white')// get all <p> with a .text-white
                  document.querySelectorAll("#contenu p")  // get all <p> inside a #contenu
                  document.querySelectorAll("#antiques > .existe") // get all .existe child with a #antiques parent
+// get value of attribute's element
+                document.querySelector("a").getAttribute("href");
+                document.querySelector("a").href;
+                document.querySelector("ul").id;
 ```
 
 # Show elements in the DOM
@@ -26,6 +30,13 @@ var textWhite = document.getElementsByClassName('text-white');
 for (var i = 0; i < textWhite.length; i++) {
     console.log(textWhite[i]);
 }
+
+// Afficher la liste de toutes les classes de l'élément 'antiques'
+var classes = document.getElementById('antiques').classList;
+// donne le nombre de classes
+console.log(classes.length);
+// affiche les classes
+console.log(classes[0]);
 ```
 
 # Modify elements in the DOM
