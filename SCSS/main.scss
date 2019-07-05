@@ -1,17 +1,18 @@
-@import 'utils/variables';
-@import 'utils/functions';
-@import 'utils/mixins';
+@import 'utils/variables',
+        'utils/functions',
+        'utils/mediaQueries',
+        'utils/mixins';
 
-@import 'base/base';
-@import 'base/typography';
+@import 'base/base',
+        'base/typography';
 
 @import 'components/buttons';
 
-@import 'layouts/header';
-@import 'layouts/nav';
-@import 'layouts/main';
-@import 'layouts/form';
-@import 'layouts/footer';
+@import 'layouts/header',
+        'layouts/nav',
+        'layouts/main',
+        'layouts/form',
+        'layouts/footer';
 
 @import 'pages/about'; 
 // can be also : work, project...
