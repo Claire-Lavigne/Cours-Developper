@@ -51,6 +51,14 @@ $ cat < ~/.ssh/id_rsa.pub
 # Paste key and add
 ```
 
+### Git branch
+```bash
+$ git branch    # see which branch I'm in
+$ git checkout <branchname>     # go to that branch
+$ git checkout -b   # create and go to that branch
+$ git log --graph --decorate --oneline --all    # graph of all branches and commit
+```
+
 ### Git status
 ```bash
 $ git status
