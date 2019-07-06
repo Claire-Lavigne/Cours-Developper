@@ -93,6 +93,14 @@ $ git checkout master           # revenir au commit le + récent
 $ git revert HEAD --no-edit     # undo commit (saves corrective mistake as a new commit)
 ```
 
+#### Move changes on wrong branch to good branch
+```bash
+# changes made on wrong branch
+$ git stash save
+$ git checkout -b <goodbranch>
+$ git stash pop
+```
+
 #### Other commands for commits
 ```bash
 git reset --soft                # Undo last commit to stage more files
@@ -100,10 +108,7 @@ git reset --soft HEAD~3 ?????   # Go back to the last three commits without lose
 $ git reflog                    # list all actions & commits on local repo
 $ git blame master -- file      # list all actions & commits of team members (lines added in source code)
 $ git rev-list                  # list historic and actions made on a specific file
-```
-
-#### Other commands again
-```bash
+# -------------------
 $ git revert SHA                # undo this commit (and save correction into new commit)
 # Option 1
 $ git push origin +master                             # forces push to remote repo
