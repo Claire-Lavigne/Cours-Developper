@@ -1,24 +1,30 @@
 - DOM = make html elements into js objects
 - Permet de vite parcourir un fichier html sans lire le contenu
+- La manipulation du DOM en JavaScript doit se faire de manière raisonnée afin de ne pas dégrader les performances !!
 
-# Objects in the DOM
-## Access & Show
-```js
-var x = document.head                            // get the <head>
-        document.body                            // get the <body>
-
-console.log(x);
-```
+// ---------------------- PART 1 ----------------------
+// Les propriétés "innerHTML","textContent", "classList" et la méthode "setAttribute"
+// permettent de modifier les informations d'un élément du DOM.
 
 # Elements in the DOM
 ## Access & Show
 ```js
+// get the html content of objects
+var x = document.head
+        document.body
+// get the html content of elements identified
+        document.get...().innerHTML;             // tags included
+        document.get...().textContent;           // tags excluded
+// get the value of attribute's element
+        document.get...().hasAttribute("href");  // Does the element have the attribute ?
+        document.get...().getAttribute("href");  // What is its attribute ?
+        document.get...().href;                  // similar syntax
+        document.get...().id;                    // I can do it with a value as well
+        document.get...().classList.contains("big")     // Does my element has a class called "big" ?
 // get elements existing in html file
-var x = document.getElementsByTagName('p');      // get all elements <p>
+        document.getElementsByTagName('p');      // get all elements <p>
         document.getElementsByClassName('big');  // get all elements with .big
         document.getElementById('blue');         // get the element with #blue
-        document.getElementById("contenu").innerHTML;   // get all html content of the element, tags included
-        document.getElementById("contenu").textContent; // get all html content of the element, tags excluded
 // get elements existing in css file
         document.querySelector('p');             // get the first <p>
         document.querySelectorAll('p');          // get all <p>
@@ -28,24 +34,21 @@ var x = document.getElementsByTagName('p');      // get all elements <p>
         document.querySelectorAll("#contenu p")  // get all <p> inside a #contenu
         document.querySelectorAll("#antiques > .existe") // get all .existe child with a #antiques parent
 // get value of attribute's element
-        document.querySelector("a").getAttribute("href");
-        document.querySelector("a").href;
-        document.querySelector("ul").id;
+        document.querySelector("a").
+        document.querySelector("a")
+        document.querySelector("ul")
 
-// Combien il y en a ?
-console.log(x.length);
 
-// Affiche-les tous (big = class)
-for (var i = 0; i < big.length; i++) {
+console.log(x);                                  // Affiche le html content
+console.log(x.length);                           // Combien il y en a ?
+
+
+for (var i = 0; i < big.length; i++){            // Affiche-les tous (big = class)
     console.log(big[i]);
 }
 
 // Afficher la liste de toutes les classes de l'élément 'antiques'
 var classes = document.getElementById('antiques').classList;
-// donne le nombre de classes
-console.log(classes.length);
-// affiche les classes
-console.log(classes[0]);
 ```
 
 ## Modify
