@@ -1,34 +1,43 @@
-DOM = make html elements into js objects
+- DOM = make html elements into js objects
+- Permet de vite parcourir un fichier html sans lire le contenu
 
-# Access elements in the DOM
+# Objects in the DOM
+## Access & Show
 ```js
-// get elements existing in html file
-var paragraphs = document.getElementsByTagName('p');      // get all elements <p>
-                 document.getElementsByClassName('big');  // get all elements with .big
-                 document.getElementById('blue');         // get the element with #blue
-                 document.getElementById("contenu").innerHTML;   // get all html content of the element, tags included
-                 document.getElementById("contenu").textContent; // get all html content of the element, tags excluded
-// get elements existing in css file
-                 document.querySelector('p');             // get the first <p>
-                 document.querySelectorAll('p');          // get all <p>
-                 document.querySelectorAll('.text-white') // get all .text-white
-                 document.querySelectorAll('#art-001')    // get all #art-001
-                 document.querySelectorAll('p.text-white')// get all <p> with a .text-white
-                 document.querySelectorAll("#contenu p")  // get all <p> inside a #contenu
-                 document.querySelectorAll("#antiques > .existe") // get all .existe child with a #antiques parent
-// get value of attribute's element
-                document.querySelector("a").getAttribute("href");
-                document.querySelector("a").href;
-                document.querySelector("ul").id;
+var x = document.head                            // get the <head>
+        document.body                            // get the <body>
+
+console.log(x);
 ```
 
-# Show elements in the DOM
+# Elements in the DOM
+## Access & Show
 ```js
-// Afficher tous les éléments complets ayant la classe 'text-white'
-// Permet de vite parcourir un fichier html sans lire le contenu
-var textWhite = document.getElementsByClassName('text-white');
-for (var i = 0; i < textWhite.length; i++) {
-    console.log(textWhite[i]);
+// get elements existing in html file
+var x = document.getElementsByTagName('p');      // get all elements <p>
+        document.getElementsByClassName('big');  // get all elements with .big
+        document.getElementById('blue');         // get the element with #blue
+        document.getElementById("contenu").innerHTML;   // get all html content of the element, tags included
+        document.getElementById("contenu").textContent; // get all html content of the element, tags excluded
+// get elements existing in css file
+        document.querySelector('p');             // get the first <p>
+        document.querySelectorAll('p');          // get all <p>
+        document.querySelectorAll('.text-white') // get all .text-white
+        document.querySelectorAll('#art-001')    // get all #art-001
+        document.querySelectorAll('p.text-white')// get all <p> with a .text-white
+        document.querySelectorAll("#contenu p")  // get all <p> inside a #contenu
+        document.querySelectorAll("#antiques > .existe") // get all .existe child with a #antiques parent
+// get value of attribute's element
+        document.querySelector("a").getAttribute("href");
+        document.querySelector("a").href;
+        document.querySelector("ul").id;
+
+// Combien il y en a ?
+console.log(x.length);
+
+// Affiche-les tous (big = class)
+for (var i = 0; i < big.length; i++) {
+    console.log(big[i]);
 }
 
 // Afficher la liste de toutes les classes de l'élément 'antiques'
@@ -39,7 +48,7 @@ console.log(classes.length);
 console.log(classes[0]);
 ```
 
-# Modify elements in the DOM
+## Modify
 ```js
 // get element and modify its content
 const mainHeading = document.getElementById('main-heading');
