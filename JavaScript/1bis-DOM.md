@@ -2,10 +2,6 @@
 - Permet de vite parcourir un fichier html sans lire le contenu
 - La manipulation du DOM en JavaScript doit se faire de manière raisonnée afin de ne pas dégrader les performances !!
 
-// ---------------------- PART 1 ----------------------
-// Les propriétés "innerHTML","textContent", "classList" et la méthode "setAttribute"
-// permettent de modifier les informations d'un élément du DOM.
-
 # Elements in the DOM
 ## Access & Show
 ```js
