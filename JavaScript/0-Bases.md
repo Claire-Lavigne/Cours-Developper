@@ -10,7 +10,7 @@ On affiche les messages soit dans :
 - le **fichier html** avant le tag ```</body>``` : 
     - ```<script src=".../js/script.js"></script>```
 - la **console** pour obtenir des informations sans les afficher sur le site et les cacher à l'utilisateur : 
-    - ```console.log()```
+    - ```console.log()``` affiche le résultat
     - ```console.error()``` affiche une erreur
 - en **popup** : 
     - ```alert()``` message d'alerte
@@ -29,20 +29,8 @@ On affiche les messages soit dans :
 :warning: Use constants as more as possible
 
 ```javascript
-// set variables
-var age = 25;
-const hoursPerDay = 24;
-let numberOfCats = 1;
-let numberOfDogs = 2;
-
-// modify a variable already called
-numberOfCats = 5;
-let animals = [numberOfCats, numberOfDogs];
-
-// show result
-console.log(numberOfCats);
-// show 2 variables : ["Sarah Kate", "Will Alexander"]
-console.log(animals);       
+let age = 6;    // set variable
+age = 25;       // modify a variable already called
 ```
 
 # Types
@@ -66,6 +54,7 @@ let lastName = "Pedro's \n Sanchez";    // préféré si apostrophes
 ```
 **Undefined**
 - absence de valeur
+
 **Null**
 **Symbol**
 **Object**
