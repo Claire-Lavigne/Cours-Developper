@@ -1,0 +1,13 @@
+```javascript
+.length()()()
+.toLowerCase()()
+.toUpperCase()
+.indexOf("dr");        // 1 if true, -1 if false
+.startsWith("Pe");    // true
+.endsWith("ez");      // false
+'string'.slice(0, 3);  // Coupe de l'index 0 à 3 : stri
+
+// Convertion
+String()
+Number()
+```
