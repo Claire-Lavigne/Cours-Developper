@@ -10,9 +10,11 @@ On affiche les messages soit dans :
 - le **fichier html** avant le tag ```</body>``` : 
     - ```<script src=".../js/script.js"></script>```
 - la **console** pour obtenir des informations sans les afficher sur le site et les cacher à l'utilisateur : 
-    - ```console.log()``` ou ```console.error()```
+    - ```console.log()```
+    - ```console.error()``` affiche une erreur
 - en **popup** : 
-    - ```alert()``` (message d'alerte) et ```prompt()``` (boîte de saisie texte)
+    - ```alert()``` message d'alerte
+    - ```prompt()``` idem avec saisie texte
 
 **Commentaires**
 ```javascript
