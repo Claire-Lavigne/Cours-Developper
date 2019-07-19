@@ -1,3 +1,5 @@
+- JS = ECMAScript (ES2015 = ES6)
+
 # JavaScript, pour quoi ?
 - Gestion des interactions (utilisateur <--> navigateur)
 - Dynamiser le contenu
@@ -10,31 +12,35 @@ On affiche les messages soit dans :
 - la **console** pour obtenir des informations sans les afficher sur le site et les cacher à l'utilisateur : 
     - ```console.log()``` ou ```console.error()```
 - en **popup** : 
-    - ```alert()``` et ```prompt()```
+    - ```alert()``` (message d'alerte) et ```prompt()``` (boîte de saisie texte)
 
 **Commentaires**
 ```javascript
 // Une ligne de commentaire
 /* Un bloc de commentaires */
 ```
-**Variable**
-```javascript
-var age = 25;               // set a variable
-let numberOfCats = 1;       // set a variable
-let numberOfDogs = 2;
-numberOfCats = 5;           // modify a variable already called
+**Variable/Constant**
+- Les variables ont une portée de type BLOC
+- var : before ES6
+- let : same as var but starting from ES6
+- const : same as let but its value never changes
+:warning: Use constants as more as possible
 
+```javascript
+// set variables
+var age = 25;
+const hoursPerDay = 24;
+let numberOfCats = 1;
+let numberOfDogs = 2;
+
+// modify a variable already called
+numberOfCats = 5;
 let animals = [numberOfCats, numberOfDogs];
 
-console.log(numberOfCats);  // show result
-console.log(animals);       // show 2 variables : ["Sarah Kate", "Will Alexander"]
-```
-
-**Constant** = Variable with a value that never change
-
-:warning: Use constants as more as possible
-```javascript
-const hoursPerDay = 24;
+// show result
+console.log(numberOfCats);
+// show 2 variables : ["Sarah Kate", "Will Alexander"]
+console.log(animals);       
 ```
 
 # Types
@@ -57,6 +63,7 @@ let firstName = 'Pedro\'s Sanchez';     // préféré si pas d'apostrophes et po
 let lastName = "Pedro's \n Sanchez";    // préféré si apostrophes
 ```
 **Undefined**
+- absence de valeur
 **Null**
 **Symbol**
 **Object**
@@ -78,8 +85,8 @@ numberofDogs++;         // add 1
 ```javascript
 var firstName = 'Claire';
 var lastName = 'Lavigne';
-console.log(firstName + ' ' + lastName);
-console.log(`Voici ${firstName}`);
+console.log(firstName + ' ' + lastName);    // before ES6
+console.log('Voici ${firstName}');          // ES6
 ```
 **Simples (Comparaisons)**
 ```javascript
@@ -96,22 +103,6 @@ age !== 10    // Not equal to (in value and type)
 &&  // (and) To check if two conditions are both true
 ||  // (or) To check if at least one condition is true.
 !   // (NOT) To check if a condition is not true (if it's false)
-```
-
-# Keywords
-**Property**
-```javascript
-const longueurMot = firstName.length;       // 5 letters
-```
-**Methods**
-```javascript
-console.log(firstName.toLowerCase());       // "pedro"
-console.log(firstName.toUpperCase());       // "PEDRO"
-console.log(firstName.indexOf("dr"));       // 1 if true, -1 if false
-console.log(firstName.startsWith("Pe"));    // true
-console.log(firstName.endsWith("ez"));      // false
-console.error('');                          // affiche une erreur
-'string'.slice(0, 3);                       // Coupe le string de l'index 0 à 3 : stri
 ```
 
 # Deal with Errors
