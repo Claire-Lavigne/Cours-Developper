@@ -19,21 +19,9 @@ if (condition) {
 - ```if (!(a))``` means ```if (a === false)```
 - ```if (numberOfGuests === numberOfSeats)```
 
-| Operator |    Meaning   |
-| -------- |:------------:|
-|  ===     | equal to     |
-|  !==     | not equal to |
-|  <       | less than    |
-|  <=      | - or = to    |
-|  >       | greater than |
-|  >=      | + or = to    |
-|  &&      | and          |
-|  ||      | or           |
-|  !       | is not       |
-
-* true  &&|| true = true
-* true  &&|| false = false BUT true or false = true
-* false &&|| false = false
+* true  + true = true
+* true  + false = false BUT true or false = true
+* false + false = false
 * !true = false
 * !false = true
 
