@@ -27,14 +27,20 @@ if (condition) {
 | <=       | - or = to    |
 | >        | greater than |
 | >=       | + or = to    |
+| &&       | and          |
+| ||       | or           |
+| !        | is not       |
 
-| Operator | Meaning |
-| -------- |:-------:|
-| &&       | and     |      true && true = true, true && false = false, false && false = false
-| ||       | or      |      true || true = true, true || false = true,  false || false = false
-| !        | is not  |      !true = false, !false = true
+* true && true = true
+* true && false = false
+* false && false = false
 
+* true || true = true
+* true || false = true
+* false || false = false
 
+* !true = false
+* !false = true
 
 
 # Switch
