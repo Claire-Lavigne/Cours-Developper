@@ -37,6 +37,24 @@ date[period];
 
 
 
+
+Example :
+```javascript
+
+let userOne = {
+    name: 'Will Alexander',
+    age: 33,
+    accountLevel: 'normal'
+};
+
+function describe(userOne) {
+    var description = 'The user ${userOne.name} has ${userOne.age} years-old and a ${userOne.accountLevel} account';
+    return description;
+}
+console.log(describe(userOne));
+```
+
+
 **With Objects**
 ```javascript
 let firstUser = {
@@ -55,7 +73,15 @@ let thirdUser = {
     name: 'Audrey Simon',
     age: 27,
     accountLevel: 'mega-premium',
+    // Describe the user 
+    // METHOD = property with a function value
+    describe: function () {
+        var description = 'The user ${this.name} has ${this.age} years-old and a ${this.accountLevel} account';
+        return description;
+    }
 };
+
+console.log(cake.describe());
 
 switch (firstUser.accountLevel) {
     case 'normal':
