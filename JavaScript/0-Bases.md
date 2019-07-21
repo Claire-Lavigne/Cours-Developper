@@ -23,8 +23,8 @@ On affiche les messages soit dans :
 ```
 **Variable/Constant**
 - Les variables ont une portée de type BLOC
-- var : before ES6
-- let : same as var but starting from ES6
+- var : before ES6 (global scope)
+- let : same as var but starting from ES6 (local scope)
 - const : same as let but its value never changes
 :warning: Use constants as more as possible
 
