@@ -46,6 +46,21 @@ function direBonjour(prenom) {
 
 direBonjour("Timia");     // Salut c'est Timia
 ```
+Example :
+```javascript
+
+let userOne = {
+    name: 'Will Alexander',
+    age: 33,
+    accountLevel: 'normal'
+};
+
+function describe(userOne) {
+    var description = 'The user ${userOne.name} has ${userOne.age} years-old and a ${userOne.accountLevel} account';
+    return description;
+}
+console.log(describe(cake));
+```
 
 ### Option2
 ```javascript
@@ -68,7 +83,7 @@ const add = (firstNumber, secondNumber) => {
 
 console.log(add(4, 3));
 ```
-
+Example :
 ```javascript
 const sendWelcomeMessageToUser = (user) => {
     if (user.online) {
