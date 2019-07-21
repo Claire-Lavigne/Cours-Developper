@@ -1,67 +1,64 @@
 # While or For ?
-* For : Safe (no infinite loop) but need to know how many times the turns will be executed
-* While : Risqued (infinite lopp) but usefull if doesn't know how many times the turns will be executed
+
+* Same result
+* **For** : Safer (no infinite loop) but need to know how many times the turns will be executed
+* **While** : Risqued (infinite lopp) but usefull if doesn't know how many times the turns will be executed
 
 ## For
-**Old code (with variable) : for**
+
+**Old code (variable) : for**
 ```javascript
-const numberOfPassengers = 4;
-
-for (let i = 0; i < numberOfPassengers; i++) {
-    console.log('Passenger boarded!');
+for (let i = 1; i <= 5; ii++) {
+    console.log(i);
 }
-
-console.log(passengersBoarded);
 ```
 
-**Old code (with array) : for + length**
+**Old code (array) : for + length**
 
 ```javascript
-const passengers = [
+const names = [
     'Will Alexander',
     'Sarah Kate',
-    'Audrey Simon',
-    'Tau Perkington'
 ]
 
-for (let i = 0; i < passengers.length; i++) {
-    console.log('Boarding ' + passengers[i]);
+for (let i = 0; i < names.length; i++) {
+    console.log('Boarding ' + names[i]);
 }
 ```
-**New code (with array) : forEach**
+**New code (array) : forEach**
 ```javascript
-passengers.forEach(passenger => {
-  console.log(passenger);
+names.forEach(name => {
+  console.log(name);
 });
 ```
-**New code (with array or object) : for + in**
+**New code (array or object) : for + in**
 ```javascript
-for (let i in passengers) {
-    console.log('Boarding ' + passengers[i]);
+for (let i in names) {
+    console.log(names[i]);
 }
 ```
-**New code (with array) : for + of**
+**New code (array) : for + of**
 ```javascript 
-for (let passenger of passengers) {
-    console.log('Boarding passenger ' + passenger);
+for (let name of names) {
+    console.log(name);
 }
 ```
 
-**New code (with object) : for + of**
+**New code (object) : for + of**
 ```javascript
-const passengers = [
+const names = [
     {
-        name: 'Will Alexander',
+        identity: 'Will Alexander',
         ticketNumber: 209542
     },
     {
-        name: 'Sarah Kate',
+        identity: 'Sarah Kate',
         ticketNumber: 169336
     }
 ]
 
-for (let passenger of passengers) {
-    console.log('Boarding passenger ' + passenger.name + ' with ticket n° ' + passenger.ticketNumber);
+for (let name of names) {
+    console.log(name.identity + '' + name.ticketNumber);
 }
 ```
 
@@ -73,21 +70,17 @@ Il est possible d'interrompre l'itération courante et de passer à la suivante 
 ## While
 **While**
 ```javascript
-let seatsLeft = 10;
-let passengersStillToBoard = 8;
-let passengersBoarded = 0;
-
-while (seatsLeft > 0 && passengersStillToBoard > 0) {
-    passengersBoarded++; // one passenger boards
-    passengersStillToBoard--; // so there is one fewer still to board
-    seatsLeft--; // and one fewer seat
+let i = 1;
+while (i <= 5) {
+    console.log(i);
+    i++;
 }
-
-console.log(passengersBoarded); // prints 8, as there are 8 passengers for 10 seats
+console.log(i);
 ```
+
 **Do...while**
 ```javascript
 do {
-  // ... instructions
+    // instructions
 } while(condition)
 ```
