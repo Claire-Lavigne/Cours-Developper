@@ -11,6 +11,7 @@
 - What's inside a function, only exists in it
 - Functions can receive messages through parameters // Function can have settings (datas to make it work)
 - Functions can send messages through return values
+- A function stops running immediately after a 'return'
 - There are predefinied functions name already !!
 
 ### Option1
