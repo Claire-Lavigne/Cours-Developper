@@ -1,4 +1,4 @@
-# JSON (JavaScript Object Notation)
+# Object-oriented programming (OOP) => JSON (JavaScript Object Notation)
 - array with multiple values
 - value <--> key
 
