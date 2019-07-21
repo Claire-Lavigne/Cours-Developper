@@ -21,27 +21,21 @@ if (condition) {
 
 | Operator |    Meaning   |
 | -------- |:------------:|
-| ===      | equal to     |
-| !==      | not equal to |
-| <        | less than    |
-| <=       | - or = to    |
-| >        | greater than |
-| >=       | + or = to    |
-| &&       | and          |
-| ||       | or           |
-| !        | is not       |
+|  ===     | equal to     |
+|  !==     | not equal to |
+|  <       | less than    |
+|  <=      | - or = to    |
+|  >       | greater than |
+|  >=      | + or = to    |
+|  &&      | and          |
+|  ||      | or           |
+|  !       | is not       |
 
-* true && true = true
-* true && false = false
-* false && false = false
-
-* true || true = true
-* true || false = true
-* false || false = false
-
+* true  &&|| true = true
+* true  &&|| false = false BUT true or false = true
+* false &&|| false = false
 * !true = false
 * !false = true
-
 
 # Switch
 - When I have too much ```else if``` conditions (when a === b), I can write my code this way :
@@ -58,40 +52,5 @@ case 'value2':
 ...
 default:
     // instructions (else)
-}
-```
-
-**With Objects**
-```javascript
-let firstUser = {
-    name: 'Will Alexander',
-    age: 33,
-    accountLevel: 'normal'
-};
-
-let secondUser = {
-    name: 'Sarah Kate',
-    age: 21,
-    accountLevel: 'premium'
-};
-
-let thirdUser = {
-    name: 'Audrey Simon',
-    age: 27,
-    accountLevel: 'mega-premium'
-};
-
-switch (firstUser.accountLevel) {
-    case 'normal':
-        console.log('You have a normal account!');
-        break;
-    case 'premium':
-        console.log('You have a premium account!');
-        break;
-    case 'mega-premium':
-        console.log('You have a mega premium account!');
-        break;
-    default:
-        console.log('Unknown account type!');
 }
 ```
