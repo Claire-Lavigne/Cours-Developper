@@ -54,11 +54,16 @@ let lastName = "Pedro's \n Sanchez";    // préféré si apostrophes
 ```
 **Undefined**
 ```javascript
-let message = '';     // absence de valeur
+let message = '';     // valeur (possible mais) non définie
 ```
 
 **Null**
+```javascript
+let vide = null;     // absence totale de valeur
+```
+
 **Symbol**
+
 **Object**
 
 # Operators
