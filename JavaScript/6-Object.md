@@ -165,3 +165,84 @@ const monObjet = new MaClasse(arg1, arg2, ...);
 // Crée un objet ayant monObjetPrototype pour prototype
 const monObjet = Object.create(monObjetPrototype);
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+_______
+```javascript
+var Pastry = {
+    type: "",
+    flavor: "",
+    levels: 0,
+    price: "",
+    occasion: "",
+
+    // Describe the pastry
+    describe: function () {
+        var description = "The " + this.type + " is a " + this.occasion + " pastry, has a " + this.flavor + " flavor, " + this.levels + " layer(s), and costs " + this.price + ".";
+        return description;
+    }
+};
+
+var muffin = Object.create(Pastry);
+muffin.type = "muffin";
+muffin.flavor = "blueberry";
+muffin.levels = 1;
+muffin.price = "$2";
+muffin.occasion = "breakfast";
+
+var cake = Object.create(Pastry);
+cake.type = "cake";
+cake.flavor = "vanilla";
+cake.levels = 3;
+cake.price = "$10";
+cake.occasion = "birthday";
+
+console.log(muffin.describe());
+console.log(cake.describe());
+```
+
+- Faster way :
+```javascript
+var Pastry = {
+    // initialize the pastry
+    init: function (type, flavor, levels, price, occasion) {
+        this.type = type;
+        this.flavor = flavor;
+        this.levels = levels;
+        this.price = price;
+        this.occasion = occasion;
+    },
+
+    // Describe the pastry
+    describe: function () {
+        var description = "The " + this.type + " is a " + this.occasion + " pastry, has a " + this.flavor + " flavor, " + this.levels + " layer(s), and costs " + this.price + ".";
+        return description;
+    },
+    
+    bake: function() {
+        var baked = "The " + this.flavor + this.type + " was placed in the oven. It's done!"
+    return baked
+    }
+};
+
+var muffin = Object.create(Pastry);
+muffin.init("muffin", "blueberry", 1, "$2", "breakfast");
+
+var cake = Object.create(Pastry);
+cake.init("cake", "vanilla", 3, "$10", "birthday");
+
+console.log(muffin.bake());
+console.log(cake.bake());
+console.log(muffin.describe());
+console.log(cake.describe());
+```
