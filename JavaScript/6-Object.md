@@ -1,23 +1,21 @@
-# Object-oriented programming (OOP) => JSON (JavaScript Object Notation)
+# Object-oriented programming (OOP)
+# JSON (JavaScript Object Notation)
 - array with multiple values
 - value <--> key
 
 **Objects**
 ```javascript
-var fruits = {                              // declare object
-  rouge : "cerise",                         // declare property (keyName: anyValue)
-  sucre : "raisin",
-  acide : "kiwi",
-   love : true
+let fruits = {                              // declare object
+    rouge : "cerise",                         // declare property (keyName: anyValue)
+    sucre : "raisin",
+    acide : "kiwi",
+    love  : true
 };
 
-var legumes = {
-   bon : "patate",
-   top : "artichaut"
+let legumes = {
+    bon : "patate",
+    top : "artichaut"
 };
-
-console.log(food);                          // shows 2 objects
-console.log(fruits.rouge)                   // shows the key of object
 
 fruits["rouge"];                            // Read value of rouge, syntax to use variables inside []
 fruits.rouge;                               // Different syntax, prefered one
@@ -25,6 +23,9 @@ fruits.rouge = "fraise";                    // Modify a value
 
 let fruitsRouges = fruits.rouge;
 let food = [fruits, legumes];
+
+console.log(food);                          // shows 2 objects
+console.log(fruits.rouge)                   // shows the key of object
 ```
 
 ```js
@@ -53,7 +54,7 @@ let secondUser = {
 let thirdUser = {
     name: 'Audrey Simon',
     age: 27,
-    accountLevel: 'mega-premium'
+    accountLevel: 'mega-premium',
 };
 
 switch (firstUser.accountLevel) {
