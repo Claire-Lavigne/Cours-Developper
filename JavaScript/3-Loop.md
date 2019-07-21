@@ -72,10 +72,10 @@ Il est possible d'interrompre l'itération courante et de passer à la suivante 
 ```javascript
 let i = 1;
 while (i <= 5) {
-    console.log(i);
-    i++;
+    console.log(i);         // counts 1 ... 5
+    i++;                    // counts 5
 }
-console.log(i);
+console.log(i);             // counts 6
 ```
 
 **Do...while**
