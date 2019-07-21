@@ -8,7 +8,7 @@
 
 **Old code (variable) : for**
 ```javascript
-for (let i = 1; i <= 5; ii++) {
+for (let i = 1; i <= 5; i++) {
     console.log(i);
 }
 ```
@@ -27,6 +27,12 @@ for (let i = 0; i < names.length; i++) {
 ```
 **New code (array) : forEach**
 ```javascript
+names.forEach(function (name) {
+    console.log(name.describe());
+});
+
+// or
+
 names.forEach(name => {
   console.log(name);
 });
