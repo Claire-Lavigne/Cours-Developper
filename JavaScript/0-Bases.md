@@ -53,7 +53,9 @@ let firstName = 'Pedro\'s Sanchez';     // préféré si pas d'apostrophes et po
 let lastName = "Pedro's \n Sanchez";    // préféré si apostrophes
 ```
 **Undefined**
-- absence de valeur
+```javascript
+let message = '';     // absence de valeur
+```
 
 **Null**
 **Symbol**
