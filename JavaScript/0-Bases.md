@@ -51,7 +51,20 @@ let checkboxIsChecked = false;
 ```javascript
 let firstName = 'Pedro\'s Sanchez';     // préféré si pas d'apostrophes et pour concaténation
 let lastName = "Pedro's \n Sanchez";    // préféré si apostrophes
+
+// Methods over strings
+.length()              // count letters or loop an array
+.toLowerCase()
+.toUpperCase()
+.indexOf("dr");        // 1 if true, -1 if false
+.startsWith("Pe");     // true
+.endsWith("ez");       // false
+'string'.slice(0, 3);  // Coupe de l'index 0 à 3 : stri
+// Convert values
+String()
+Number()
 ```
+
 **Undefined**
 ```javascript
 let message = '';     // valeur (possible mais) non définie
