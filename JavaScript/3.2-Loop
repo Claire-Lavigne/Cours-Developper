@@ -1,0 +1,27 @@
+# While
+
+- Risqued (infinite lopp) : execute the turn until the condition is verified
+
+## Lesson
+**While**
+```javascript
+while (condition) {
+  // instructions exécutées tant que la condition est vérifiée
+}
+```
+**Do... While**
+```javascript
+do {
+    // instructions
+} while(condition)
+```
+
+## Example
+```javascript
+let i = 1;
+while (i <= 5) {
+    console.log(i);         // counts 1 ... 5
+    i++;                    // counts 5
+}
+console.log(i);             // counts 6
+```
