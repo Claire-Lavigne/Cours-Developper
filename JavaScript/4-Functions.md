@@ -1,7 +1,5 @@
 - https://github.com/O-clock-Alumni/fiches-recap/blob/master/js/fonctions.md
 - https://github.com/O-clock-Alumni/fiches-recap/blob/master/js/fonctions-js.md
-- https://github.com/O-clock-Alumni/fiches-recap/blob/master/js/dom.md
-- https://github.com/O-clock-Alumni/fiches-recap/blob/master/js/evenements.md
 
 ## What are functions ?
 
