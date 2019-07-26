@@ -17,6 +17,7 @@ var x = document.head
         document.get...().href;                  // similar syntax
         document.get...().id;                    // I can do it with a value as well
         document.get...().classList.contains("big")     // Does my element has a class called "big" ?
+        document.get...().className;
 // get elements existing in html file
         document.getElementsByTagName('p');      // get all elements <p>
         document.getElementsByClassName('big');  // get all elements with .big
@@ -59,4 +60,52 @@ const header = document.getElementById('page-header');
 // add style to element (property with " - " : remove symbol and use camelCase) 
       header.style.padding = '1em';
       header.style.backgroundColor = ('#B54135');
+```
+
+
+
+## Exécuter quelque chose suite à un événement
+
+Lors d'un clic, d'un envoi de formulaire, d'une pression sur une touche du clavier...
+
+```js
+// event : 'click', 'submit', 'keyup', 'DOMContentLoaded'...
+// handler : fonction exécutée quand l'événement survient
+element.addEventListener(type, handler);
+```
+
+En prenant la situation suivante
+
+```html
+<button id="change">Change le résultat</button>
+<div id="resultat">aucun</div>
+```
+
+```js
+// fonction exécutée lorsque l'événement se produira - communément appelée 'handler'
+function changeResultat() {
+  var resultat = document.querySelector('#resultat');
+  resultat.textContent = 'nouveau résultat';
+}
+
+var boutonAjouter = document.querySelector('#ajouter');
+
+// on ajoute un écouteur d'événement à notre bouton, il écoute le clic
+boutonAjouter.addEventListener('click', changeResultat);
+```
+
+## Exécuter quelque chose après un certain temps
+
+```html
+<div id="resultat">aucun</div>
+```
+
+```js
+function changeResultat() {
+  var resultat = document.querySelector('#resultat');
+  resultat.textContent = 'nouveau résultat';
+}
+
+// la fonction 'changeResultat' sera exécutée au bout 3000ms ou 3 secondes
+setTimeout(changeResultat, 3000);
 ```
