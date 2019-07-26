@@ -14,6 +14,7 @@ On affiche les messages soit dans :
     - ```console.error()``` affiche une erreur
 - en **popup** : 
     - ```alert()``` message d'alerte
+    - ```confirm()``` message d'alerte
     - ```prompt()``` idem avec saisie texte
 
 **Commentaires**
