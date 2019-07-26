@@ -5,14 +5,18 @@
 
 ## What are functions ?
 
-- Used for repetitive tasks & to divide big tasks
-- Contains series of instructions
-- 1 function = 1 task/role (how, what, when, how many times...)
+- A block with instructions
+- 1 function = 1 task/role/objective (how, what, when, how many times...)
+
+## When use functions ?
+- For repetitive tasks
+- To divide a program into little tasks
+
+## Specificities
 - What's inside a function, only exists in it
-- Functions can receive messages through parameters // Function can have settings (datas to make it work)
-- Functions can send messages through return values
+- Function can have settings (datas to make it work)
 - A function stops running immediately after a 'return'
-- There are predefinied functions name already !!
+- There are functions with predefinied names already !!
 
 ### Option1
 ```javascript
@@ -20,15 +24,15 @@
 // Paramètre = variable créée automatiquement à l'intérieur de ma fonction
 function nomFonction(param1, param2, ...) {
   // Instructions de la fonction pouvant utiliser param1, param2, ...
-  // Si j'ai besoin de récupérer des infos (du code créé dans la fonction) j'ai besoin de return pour voir ces infos générées au moment où j'appelle ma fonction
+  // Return : afficher les infos des instructions
   return nomDuneFonction;
 }
 
-// Appel de ma fonction pour l'exécuter
+// Execute function
 // param1 reçoit la valeur de arg1, param2 la valeur de arg2, ...
 nomFonction(arg1, arg2, ...); 
 ```
-**Exemple sans paramètres**
+**Exemple sans paramètres = variable created outside **
 ```javascript
 var prenom = Timia;
 
@@ -38,7 +42,7 @@ function direBonjour() {
 
 direBonjour();     // Salut c'est Timia
 ```
-**Exemple avec paramètre**
+**Exemple avec paramètre = variable created inside**
 ```javascript
 function direBonjour(prenom) {
   alert("Salut c'est " + prenom);
