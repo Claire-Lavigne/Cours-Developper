@@ -10,7 +10,9 @@ On affiche les messages soit dans :
 - le **fichier html** avant le tag ```</body>``` : 
     - ```<script src=".../js/script.js"></script>```
 - la **console** pour obtenir des informations sans les afficher sur le site et les cacher à l'utilisateur : 
-    - ```console.log()``` affiche le résultat
+    - ```console.log()``` affiche un message normal
+    - ```console.info()``` alias
+    - ```console.warn()``` affiche un avertissement
     - ```console.error()``` affiche une erreur
 - en **popup** : 
     - ```alert()``` message d'alerte
@@ -53,18 +55,6 @@ let checkboxIsChecked = false;
 let firstName = 'Pedro\'s Sanchez';     // préféré si pas d'apostrophes et pour concaténation
 let lastName = "Pedro's \n Sanchez";    // préféré si apostrophes
 
-// Methods over strings
-.length()              // count letters or loop an array
-.toLowerCase()
-.toUpperCase()
-.indexOf("dr");        // 1 if true, -1 if false
-.startsWith("Pe");     // true
-.endsWith("ez");       // false
-'string'.slice(0, 3);  // Coupe de l'index 0 à 3 : stri
-// Convert values
-String()
-Number()
-```
 
 **Undefined**
 ```javascript
@@ -115,6 +105,28 @@ age !== 10    // Not equal to (in value and type)
 &&  // (and) To check if two conditions are both true
 ||  // (or) To check if at least one condition is true.
 !   // (NOT) To check if a condition is not true (if it's false)
+```
+
+# Functions over variables
+```javascript
+.length()              // count letters or loop an array
+.toLowerCase()
+.toUpperCase()
+.indexOf("dr");        // 1 if true, -1 if false (position in string or array)
+.startsWith("Pe");     // true
+.endsWith("ez");       // false
+'string'.slice(0, 3);  // Coupe de l'index 0 à 3 : stri
+
+// Convert values
+String()
+Number(string)
+parseInt(string)
+
+// Maths
+Math.random()           // génère un nombre aléatoire entre 0 et 1
+Math.round()            // arrondi un nombre à l'entier le plus proche
+Math.floor()            // arrondi un nombre à l'entier inférieur
+Math.ceil()             // arrondi un nombre à l'entier supérieur
 ```
 
 # Deal with Errors
