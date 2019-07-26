@@ -29,10 +29,8 @@ var x = document.head
         document.querySelectorAll('p.text-white')// get all <p> with a .text-white
         document.querySelectorAll("#contenu p")  // get all <p> inside a #contenu
         document.querySelectorAll("#antiques > .existe") // get all .existe child with a #antiques parent
-// get value of attribute's element
-        document.querySelector("a").
-        document.querySelector("a")
-        document.querySelector("ul")
+// create element
+        document.createElement('li')
 
 
 console.log(x);                                  // Affiche le html content
