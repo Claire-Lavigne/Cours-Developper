@@ -41,7 +41,7 @@ const claire = {
 };
 
 // "Claire a 150 pts de vie et 25 de force"
-console.log(decrire(claire));
+console.log(claire.decrire());
 ```
 
 
