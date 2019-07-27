@@ -37,18 +37,24 @@ const claire = {
   // description du personnage avec méthode (autre syntaxe)
   describe: function () {
     return `${this.nom} a ${this.sante} pts de vie et ${this.force} de force`;
-  }  
+  },
   
-  ditBonjour() {
+  direBonjour() {
     return 'Hey toi!';
   }
+  
+  soustraire(maladie) {
+    this.sante -= maladie;
+  },
   
 };
 
 // "Claire a 150 pts de vie et 25 de force"
 console.log(claire.decrire());
 // "Claire dit : Hey toi!
-console.log(`{claire.nom} dit : ${claire.ditBonjour()}`);
+console.log(`{claire.nom} dit : ${claire.direBonjour()}`);
+// sante : 100
+claire.soustraire(claire.sante-50);
 ```
 
 
