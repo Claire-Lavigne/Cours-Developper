@@ -13,14 +13,14 @@ const claire = {
   force: 25
 };
 
-claire.nom;              // read value
-claire.force += 5;       // modify value
-claire.argent = 50;      // add a property
-
 // description du personnage avec fonction
 function decrire(personnage) {
   return `${personnage.nom} a ${personnage.sante} pts de vie et ${personnage.force} de force`;
 }
+
+claire.nom;              // read value
+claire.force += 5;       // modify value
+claire.argent = 50;      // add a property
 
 // "Claire a 150 pts de vie et 30 de force"
 console.log(decrire(claire));
@@ -38,10 +38,17 @@ const claire = {
   describe: function () {
     return `${this.nom} a ${this.sante} pts de vie et ${this.force} de force`;
   }  
+  
+  ditBonjour() {
+    return 'Hey toi!';
+  }
+  
 };
 
 // "Claire a 150 pts de vie et 25 de force"
 console.log(claire.decrire());
+// "Claire dit : Hey toi!
+console.log(`{claire.nom} dit : ${claire.ditBonjour()}`);
 ```
 
 
