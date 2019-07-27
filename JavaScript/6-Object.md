@@ -58,42 +58,17 @@ claire.soustraire(claire.sante-50);
 ```
 
 
-**New code (array or object) : for + in**
+
+
+
+----
+
+## forEach (new code - array)
 ```javascript
-for (let i in names) {
-    console.log(names[i]);
-}
+names.forEach(function (name) {
+    console.log(name.describe());
+});
 ```
-
-**New code (object) : for + of**
-```javascript
-const names = [
-    {
-        identity: 'Will Alexander',
-        ticketNumber: 209542
-    },
-    {
-        identity: 'Sarah Kate',
-        ticketNumber: 169336
-    }
-]
-
-for (let name of names) {
-    console.log(name.identity + '' + name.ticketNumber);
-}
-```
-
-Il est possible d'interrompre une boucle avec l'instruction ``` break; ```.
-
-Il est possible d'interrompre l'itération courante et de passer à la suivante avec l'instruction ``` continue; ```.
-
-
-
-
-
-
-
-
 
 
 
