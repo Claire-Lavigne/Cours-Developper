@@ -88,7 +88,7 @@ numberofDogs++;         // add 1
 var firstName = 'Claire';
 var lastName = 'Lavigne';
 console.log(firstName + ' ' + lastName);    // before ES6
-console.log('Voici ${firstName}');          // ES6
+console.log(`Voici ${firstName});          // ES6
 ```
 **Simples (Comparaisons)**
 ```javascript
