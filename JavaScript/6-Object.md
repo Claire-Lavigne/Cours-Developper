@@ -1,7 +1,7 @@
 # JSON - OOP
 - OOP: Object-oriented programming
 - JSON: JavaScript Object Notation
-- object: array with multiple keys <--> values
+- object: array with multiple keys(properties) <--> values
 - méthode: property with a function as a value
 
 **Object with properties (keyName : anyValue) and function outside**
