@@ -127,6 +127,7 @@ Math.random()           // génère un nombre aléatoire entre 0 et 1
 Math.round()            // arrondi un nombre à l'entier le plus proche
 Math.floor()            // arrondi un nombre à l'entier inférieur
 Math.ceil()             // arrondi un nombre à l'entier supérieur
+Math.min()              // renvoie le plus petit nombre
 ```
 
 # Deal with Errors
