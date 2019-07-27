@@ -1,104 +1,48 @@
-# Object-oriented programming (OOP)
-# JSON (JavaScript Object Notation)
-- array with multiple values
-- value <--> key
+# JSON - OOP
+- OOP: Object-oriented programming
+- JSON: JavaScript Object Notation
+- object: array with multiple keys <--> values
+- méthode: property with a function as a value
 
-**Objects**
-```javascript
-let fruits = {                              // declare object
-    rouge : "cerise",                         // declare property (keyName: anyValue)
-    sucre : "raisin",
-    acide : "kiwi",
-    love  : true
-};
-
-let legumes = {
-    bon : "patate",
-    top : "artichaut"
-};
-
-fruits["rouge"];                            // Read value of rouge, syntax to use variables inside []
-fruits.rouge;                               // Different syntax, prefered one
-fruits.rouge = "fraise";                    // Modify a value
-
-let fruitsRouges = fruits.rouge;
-let food = [fruits, legumes];
-
-console.log(food);                          // shows 2 objects
-console.log(fruits.rouge)                   // shows the key of object
-```
-
+**Object with properties (keyName : anyValue) and function outside**
 ```js
-var period = "month";
-date[period];
-```
-
-
-
-
-
-
-Example :
-```javascript
-
-let userOne = {
-    name: 'Will Alexander',
-    age: 33,
-    accountLevel: 'normal'
+// création du personnage de jeu 'Claire'
+const claire = {
+  nom: 'Claire',
+  sante: 150,
+  force: 25
 };
 
-function describe(userOne) {
-    var description = 'The user ${userOne.name} has ${userOne.age} years-old and a ${userOne.accountLevel} account';
-    return description;
+claire.nom;              // read value
+claire.force += 5;       // modify value
+claire.argent = 50;      // add a property
+
+// description du personnage avec fonction
+function decrire(personnage) {
+  return `${personnage.nom} a ${personnage.sante} pts de vie et ${personnage.force} de force`;
 }
-console.log(describe(userOne));
+
+// "Claire a 150 pts de vie et 30 de force"
+console.log(decrire(claire));
 ```
 
+**Object with properties (keyName : anyValue) and method inside**
+```js
+// création du personnage de jeu 'Claire'
+const claire = {
+  nom: 'Claire',
+  sante: 150,
+  force: 25,
 
-**With Objects**
-```javascript
-let firstUser = {
-    name: 'Will Alexander',
-    age: 33,
-    accountLevel: 'normal'
+  // description du personnage avec méthode (autre syntaxe)
+  describe: function () {
+    return `${this.nom} a ${this.sante} pts de vie et ${this.force} de force`;
+  }  
 };
 
-let secondUser = {
-    name: 'Sarah Kate',
-    age: 21,
-    accountLevel: 'premium'
-};
-
-let thirdUser = {
-    name: 'Audrey Simon',
-    age: 27,
-    accountLevel: 'mega-premium',
-    // Describe the user 
-    // METHOD = property with a function value
-    describe: function () {
-        var description = 'The user ${this.name} has ${this.age} years-old and a ${this.accountLevel} account';
-        return description;
-    }
-};
-
-console.log(cake.describe());
-
-switch (firstUser.accountLevel) {
-    case 'normal':
-        console.log('You have a normal account!');
-        break;
-    case 'premium':
-        console.log('You have a premium account!');
-        break;
-    case 'mega-premium':
-        console.log('You have a mega premium account!');
-        break;
-    default:
-        console.log('Unknown account type!');
-}
+// "Claire a 150 pts de vie et 25 de force"
+console.log(decrire(claire));
 ```
-
-
 
 
 **New code (array or object) : for + in**
@@ -107,8 +51,6 @@ for (let i in names) {
     console.log(names[i]);
 }
 ```
-
-
 
 **New code (object) : for + of**
 ```javascript
