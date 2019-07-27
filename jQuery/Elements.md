@@ -60,12 +60,13 @@ $("li:not('.vegetable')")     // select all li that don't have the class vegetab
 :submit
 ```
 ### More infos about ...
-[Basic selectors](https://api.jquery.com/category/selectors/hierarchy-selectors/)
-[Filter selectors](https://api.jquery.com/category/selectors/basic-filter-selectors/)
-[Form selectors](https://api.jquery.com/category/selectors/form-selectors/)
+- [Basic selectors](https://api.jquery.com/category/selectors/hierarchy-selectors/)
+- [Filter selectors](https://api.jquery.com/category/selectors/basic-filter-selectors/)
+- [Form selectors](https://api.jquery.com/category/selectors/form-selectors/)
 
 
 ## DOM modification methods
+- [others](https://openclassrooms.com/en/courses/3504441-introduction-a-jquery/3639666-utilisez-des-methodes-jquery#/id/r-3654651)
 
 ### Insert content (strings) to elements
 - ```append()``` inserts the contents at the end of the selection; (same line)
