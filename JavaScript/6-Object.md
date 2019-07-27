@@ -55,6 +55,12 @@ console.log(claire.decrire());
 console.log(`{claire.nom} dit : ${claire.direBonjour()}`);
 // sante : 100
 claire.soustraire(claire.sante-50);
+
+// create object
+var son = Object.create(claire);
+son.nom = "Abraham";
+son.sante = 50;
+son.force = 5;
 ```
 
 
@@ -62,17 +68,6 @@ claire.soustraire(claire.sante-50);
 
 
 ----
-
-## forEach (new code - array)
-```javascript
-names.forEach(function (name) {
-    console.log(name.describe());
-});
-```
-
-
-
-
 **CLASS** = Multiple objects
 ```javascript
 class MaClasse {
@@ -95,52 +90,7 @@ const monObjet = new MaClasse(arg1, arg2, ...);
 // Crée un objet ayant monObjetPrototype pour prototype
 const monObjet = Object.create(monObjetPrototype);
 ```
-
-
-
-
-
-
-
-
-
-
-
-
 _______
-```javascript
-var Pastry = {
-    type: "",
-    flavor: "",
-    levels: 0,
-    price: "",
-    occasion: "",
-
-    // Describe the pastry
-    describe: function () {
-        var description = "The " + this.type + " is a " + this.occasion + " pastry, has a " + this.flavor + " flavor, " + this.levels + " layer(s), and costs " + this.price + ".";
-        return description;
-    }
-};
-
-var muffin = Object.create(Pastry);
-muffin.type = "muffin";
-muffin.flavor = "blueberry";
-muffin.levels = 1;
-muffin.price = "$2";
-muffin.occasion = "breakfast";
-
-var cake = Object.create(Pastry);
-cake.type = "cake";
-cake.flavor = "vanilla";
-cake.levels = 3;
-cake.price = "$10";
-cake.occasion = "birthday";
-
-console.log(muffin.describe());
-console.log(cake.describe());
-```
-
 - Faster way :
 ```javascript
 var Pastry = {
