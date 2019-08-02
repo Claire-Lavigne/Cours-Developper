@@ -6,6 +6,7 @@
 - [Facebook - HEAD](https://developers.facebook.com/tools/debug/)
 - [Test data - HEAD](https://search.google.com/structured-data/testing-tool/u/0/)
 - [Schema structured data - HEAD](https://raventools.com/site-auditor/seo-guide/schema-structured-data)
+- [List all tags](https://openclassrooms.com/en/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1608357-memento-des-balises-html)
 
 # Basic structure
 - ```head``` : 
