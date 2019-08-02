@@ -36,6 +36,7 @@ ditto -V Name .     # Copy directory in current location
 
 touch FileName.txt  # Create that file if doesn't exist
 open FileName.txt   # Open to edit
+code .              # Open actual folder in vscode
 cat FileName.txt    # Show me the content of that file in terminal
 echo "add some text" > File.extension   # Create that file with this content
 grep word File.ext  # Search the word in file
