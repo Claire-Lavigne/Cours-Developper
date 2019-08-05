@@ -64,5 +64,6 @@ chown -R af path/to/directory/     # The owner of files is now "af"
 | <kbd>ctrl + u</kbd>          | Erase all the line                                      |
 | <kbd>ctrl + a</kbd>          | Cursor moves to the beggining of the line               |
 | <kbd>ctrl + e</kbd>          | Cursor moves to the end of the line                     |
-| <kbd>alt</kbd> + Right click | Cursor moves to indicated location in the line |
+| <kbd>alt</kbd> + Right click | Cursor moves to indicated location in the line          |
+| <kbd>q</kbd> or 'esc+maj+ZZ' | Quit VIM                                                |
 
