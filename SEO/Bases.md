@@ -24,9 +24,10 @@ Know what are good keywords, how to find and organize them [follow chapters 1-2-
 
 # Analyse website
 ## A good website --> Good Google ranking
+- mobile first
 - efficient and optimized
 - easy and intuitive design
-- faster responsive version
+- fast responsive version
 - light pages
 
 ## Detect site issues
