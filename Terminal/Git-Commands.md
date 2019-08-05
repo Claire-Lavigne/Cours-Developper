@@ -53,11 +53,15 @@ $ cat < ~/.ssh/id_rsa.pub
 
 ### Git branch
 ```bash
-$ git branch    # see which branch I'm in
-$ git checkout <branchname>     # go to that branch
-$ git checkout -b   # create and go to that branch
-$ git log --graph --decorate --oneline --all    # graph of all branches and commit
-```
+$ git branch                    # list all branches created + actual branch
+$ git branch -a                 # list all branches of repo + actual branch
+$ git checkout <branch>         # switch to indicated branch
+$ git checkout -b <branch>      # create and switch to indicated branch
+$ git branch -d <branch>        # Remove branch unwanted
+$ git merge <branch>            # branch I want to merge (from branch that all will be merged in)
+$ git remote prune origin --dry-run   # List all orphaned branches (local ones that doesn't exist remote)
+$ git remote prune origin             # Delete the branches
+````
 
 ### Git status
 ```bash
@@ -73,24 +77,10 @@ $ git status
 $ git add .                     # add all files
 $ git add <file>                # add that specific file
 $ git add -p (+ y or n)         # see new changes and accept/refuse to add
-$ git rm --cached <file>        # undo added file
 $ git stash                     # save changes but not for commit
 $ git stash list                # see all files saves
 $ git stash pop                 # recup files saved to work on them again (et vide le stash)
 $ git stash apply               # recup files saved to work on them again (sans vider le stash)
-```
-
-### Git commit
-```bash
-$ git commit -m "message"       # message for commit
-$ git commit -a -m "message"    # add and commit all files already staged
-$ git commit --amend            # change commit message
-$ git log                       # list all commits on branch (SHA, who, when, what ; most recent < oldest)
-                                # Press Q to quit "log"
-$ git log --graph               # git branch timeline view
-$ git checkout SHA              # come back to good commit to fix bug
-$ git checkout master           # revenir au commit le + récent
-$ git revert HEAD --no-edit     # undo commit (saves corrective mistake as a new commit)
 ```
 
 #### Move changes on wrong branch to good branch
@@ -101,14 +91,43 @@ $ git checkout -b <goodbranch>
 $ git stash pop
 ```
 
+### Git commit
+```bash
+$ git commit -m "message"       # message for commit
+$ git commit -a -m "message"    # add and commit all files already staged
+$ git commit --amend            # change commit message
+$ git log                       # see all commits on branch (SHA, who, when, what ; most recent < oldest)
+$ git log --graph --decorate --oneline --all    # see all branches and commit
+$ git revert                    # undo last commit (saving correction as a new commit) - PUBLIC BRANCH
+$ git revert SHA                # undo this commit (saving correction into new commit) - PUBLIC BRANCH
+$ git reset HEAD                # undo uncommitted changes
+$ git reset --soft              # undo last commit to stage more files - PRIVATE BRANCH
+$ git reset --soft HEAD~3       # same (go back to the fourth last commit) - PRIVATE BRANCH
+$ git checkout <SHA>            # come back to good commit to fix bug
+$ git checkout master           # revenir au commit le + récent
+```
+
+### Git graph
+```bash
+$ git reflog                    # list all actions & commits on local repo
+$ git show <SHA>                # See modifications made in lines of code
+$ git blame <file.ext>          # See lines of code in file + author + SHA
+```
+
+### Git push (send to remote) / pull (take from remote)
+```bash
+$ git push <remote> <branch>    # remote = origin ; branch can be master or the branch I worked on
+$ git pull <remote> <branch>    # remote = origin ; branch can be master
+# --------- Cancel last push ----------
+$ git reset <good commit SHA> 
+$ git stash
+$ git push -f origin <branch concerned>
+$ git checkout -b <new branch>
+$ git stash pop
+```
+
 #### Other commands for commits
 ```bash
-git reset --soft                # Undo last commit to stage more files
-git reset --soft HEAD~3 ?????   # Go back to the last three commits without lose the files stored
-$ git reflog                    # list all actions & commits on local repo
-$ git blame master -- file      # list all actions & commits of team members (lines added in source code)
-$ git rev-list                  # list historic and actions made on a specific file
-# -------------------
 $ git revert SHA                # undo this commit (and save correction into new commit)
 # Option 1
 $ git push origin +master                             # forces push to remote repo
@@ -117,16 +136,11 @@ $ git push <repo name> +<badcommitSHA>^ : <branch>    # Delete a specific commit
 # Exemple : git push myrepo +12345^:master
 $ git push <repo name> :<branch name>                 # Delete entire branch
 
-$ git cherry-pick e5be498bd5e3d2a58cdc6d21e150e00ed6b06b3f      # add that commit to actual branch
-
-https://openclassrooms.com/en/courses/5671626-manage-your-code-project-with-git-github/exercises/3406
+$ git cherry-pick <SHA>      # add that commit to actual branch
 ```
 
-### Git push (send to remote) / pull (take from remote)
+### Contribute on Open Source
 ```bash
-$ git push <remote> <branch>    # remote = origin ; branch can be master or the branch I worked on
-$ git pull <remote> <branch>    # remote = origin ; branch can be master
-
 # Open source project on Github :
   # fork
   # create branch
@@ -140,18 +154,6 @@ $ git pull <remote> <branch>    # remote = origin ; branch can be master
   # Mac : Access credential store on the osxkeychain
   # Linux : git config --global --unset credential.helper
 ```
-
-### Git branch
-```bash
-$ git branch                    # list all branches created + actual branch
-$ git branch -a                 # list all branches of repo + actual branch
-$ git checkout <branch>         # switch to indicated branch
-$ git checkout -b <branch>      # create and switch to indicated branch
-$ git branch -d <branch>        # Remove branch unwanted
-$ git merge <branch>            # branch I want to merge (from branch that all will be merged in)
-$ git remote prune origin --dry-run   # List all orphaned branches (local ones that doesn't exist remote)
-$ git remote prune origin             # Delete the branches
-````
 
 #### Clean branch (Organize commits & branches, renamme commits, keep commits I want)
 ```bash
@@ -171,23 +173,4 @@ squash 8a9fbd7 commit 4
 $ interactive git rebase    # => git rebase -i HEAD~3
 # Manually delete outdated pointers (commits, branches and objects) :
 # Open .git file in local repo, look at folders "objects", "index" and "ref"
-```
-
-### See modifications
-```bash
-git blame <file.ext>        # Voir toutes les modifications de chaque auteur sur le fichier
-git log                     # Comprendre (option1) Regarder le SHA voulu pour voir le message du commit
-git show SHA                # Comprendre (option2) Voir en détail les modifications de l'auteur sélectionné
-
-```
-
-### Debug repo
-```bash
-$ git blame
-$ git blame -C filename     # To find the bug in some line of the file
-# Can't find the bug :
-$ git bisect start
-$ git bisect bad            # Track the bugs
-$ git bisect good           # When the clean commit shows
-# Find the bug : Test & annotate commits
 ```
