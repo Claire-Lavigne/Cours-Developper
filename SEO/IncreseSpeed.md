@@ -127,6 +127,7 @@ BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
   - Is this a high-quality plugin (good reviews, updated frequently by developers)?
   - Is the plugin compatible with your CMS?
   - Is the plugin essential?
+- Effective translation plugins if CMS in various languages
 - Optimize images (after resizing) :
   - [reSmush.it](https://resmush.it/)
   - [EWWW Image Optimizer](https://ewww.io/)
