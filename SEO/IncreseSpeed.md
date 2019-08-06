@@ -41,6 +41,16 @@ BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
   - <script async src = ""> </ script> : if the script execution order is not important
   - <defer script src = ""> </ script> : if the scripts must be executed after the HTML is fully loaded
 - JS Frameworks
+  - Indexable URLs : 
+    - Pages real, with unique, distinct, and indexable URLs.
+    - Pages with a server response of 200 OK for each individual page to index.
+    - The SPA must provide server-side URLs for each category, article, or product.
+  - Do not use # in URLs to indicate separate pages.
+    - Pages always need titles, meta descriptions, meta robots, their own URLs (that contains the keyword), textual content, images, alt attributes, etc.
+  - JavaScript site content must be audited just like a website in HTML/CSS.
+  - Don't forget href for attributes, src for images
+  - Duplicate content
+    - JavaScript rendering can create multiple versions of the same page (pre-DOM and post-DOM). Be sure to minimize differences and don’t forget the canonical tag.
 
 ### Browser caching
 - Don't cache files that change often or force them to periodically update
