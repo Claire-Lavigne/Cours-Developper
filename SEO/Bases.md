@@ -147,3 +147,26 @@ Know what are good keywords, how to find and organize them [follow chapters 1-2-
     - hreflang = 'en' or 'en-uk'
   - ```<link rel="alternate" hreflang="de" href="https://www.sncf.com/de/home"><link rel="alternate" hreflang="en" href="https://www.sncf.com/en/home">```
   - ```<html lang="en-us">...</html>```
+
+# SEO - Improve the indexing of a website
+
+It may be necessary to redirect your visitors from one page to another if the URL has changed or the page no longer exists :
+- put in a 301 redirect (permanent redirect)
+  
+## Robots meta tags
+```<code><meta name="robots" content="index, follow"></code>``` for each page indexed
+```<link rel="canonical" href="https://monsite.com/page" />``` to index to main page
+
+Be careful :
+- Check that the URL is written correctly (no typos, with or without final slash).
+- Check that there are no successive canonical tags (page A points to B points to C).
+- Check that you don’t have a loop: A to B and B to A.
+- Check that the URL in the tag is accessible (no 404 error).
+- Do not use a canonical tag if you can eliminate duplicate content or use redirect.
+
+## Display [sitelinks](https://user.oc-static.com/upload/2019/06/17/15607740164582_Example%20of%20sitelinks%20for%20Netflix.jpg)
+- Prioritize Your Content and Create the Corresponding URLs
+- Organize information in a hierarchy : [structure simple and logical](https://user.oc-static.com/upload/2019/07/17/15633786828122_Capture%20d%E2%80%99e%CC%81cran%202019-07-17%20a%CC%80%2017.49.54.png)
+  - Try to limit the number of categories to 3-7 + the number of subcategories
+  - Your URLs should reflect the path users take to access the information.
+  - All pages should be accessible in less than three clicks.
