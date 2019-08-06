@@ -1,5 +1,16 @@
+# ROI :
+- the goal is to balance the time and resources needed to grow your site with your users' experience and bottom line.
+
 # Keywords / Key phrases
 Know what are good keywords, how to find and organize them [follow chapters 1-2-3](https://openclassrooms.com/en/courses/3594061-boost-traffic-to-your-website-with-search-engine-optimization/5837564-recognize-the-various-types-of-keywords)
+- Determine the subject of the page (ex : the main keyword and secondary keywords)
+- Translate them.
+- Using a keyword search tool (Google's Keyword Planner or KWFinder)
+- Determine if these topics have good SEO potential, and if there are other variations.
+- If the keywords exist in the new language, you can translate the text using them.
+- If not, look for an appropriate alternative (ex : studying your competitors)
+- Spread the word ! (social media, advertising, and email campaigns)
+- Acquire backlinks for the new languages on your site.
 
 # Tools needed
 
@@ -73,3 +84,66 @@ Know what are good keywords, how to find and organize them [follow chapters 1-2-
 ## Good practices
 [head + body](https://openclassrooms.com/en/courses/3594061-boost-traffic-to-your-website-with-search-engine-optimization/5838156-optimize-the-content-of-your-web-pages)
 [type of content](https://openclassrooms.com/en/courses/3594061-boost-traffic-to-your-website-with-search-engine-optimization/5838228-build-your-content-machine)
+
+# Choose the Right Technology for Your Site
+- Your Site has Few Business Functions and Is Mainly Used for Marketing (Customer Acquisition):
+  - Standard site, not based on a JavaScript framework + few simple functionalities (ex : reservation or payment form)
+- Your Site Is a Web App With Important Business Functions. You also need a Place to Showcase Products and Acquire New Customers
+  - This is the case for most SaaS platforms, such as OnCrawl.
+  - If you already have a web-app, but not a marketing-oriented site, you are better off coding it in HTML/CSS and then linking to your web app = a more user-friendly web app in JavaScript, and a classic site for acquiring new customers, which is easier to maintain.
+- You Want an SPA (Single-Page Application)
+  - better performance and user experience
+  - more difficult to index
+  
+# Choose between Client-Side Rendering & Server-Side Rendering
+- Client-side rendering (CRS) : not ideal for the best SEO :
+  - Set-up Pre-rendering : :warning: Users and bots must receive similar content
+    - [Prerender.io](https://prerender.io/) (latest version only)
+    - [Prerender spa plugin](https://github.com/chrisvfritz/prerender-spa-plugin)
+    - [React-snap](https://github.com/stereobooster/react-snap)
+- Server-Side Rendering (SRR) : most used
+  - Possible when coding in React, Angular, or Vue :
+    - With Vue.js : [Nuxt](https://fr.nuxtjs.org/) + [guide](https://vuejs.org/v2/guide/ssr.html)
+  - Advantages :
+    - Gain in performance: the content is ready to be displayed, so the page displays more quickly.
+    - Improved SEO indexing.
+  - Disadvantages :
+    - The user won’t be able to interact until the JavaScript resources have all properly loaded.
+    - Development is longer and more complex
+  - With SPA sites : code in Universal JS (also called Isomorphic JS) = the JS will work on bost sides (client + server)
+
+# Multilingual website
+- Three site architectures :
+  - One domain name per language (ex : .fr, .com, .cn):
+    - When ? The content of your site depends on language and culture
+    - Advantages:
+      - Google geographically target your website
+      - You can use location targeting in the Search Console
+      - The content is properly divided at the server level
+      - You can adapt your site to the legal requirements in GDPR countries
+    - Disadvantages:
+      - Maintaining multiple sites is very expensive in terms of time, resources, and budget (one modification must be done in all languages)
+      - Domain names have strict legal requirements (where you are really based)
+      - SEO must be done in all languages !
+  - One sub-domain per language (ex : .fr.wikipedia.or, .com.wikipedia.or)
+    - Benefits:
+      - Easier to set up
+      - Can use location targeting in the Search Console
+      - Can have different server locations
+      - Language separation easy to do at the server level
+    - Disadvantage: 
+      - Subdomains won’t benefit from the full link strength of your main domain
+  - A directory (or subfolder) per language (ex : ibm.com/fr-fr/, ibm.com/uk-en)
+    - When ? BEST OPTION IN GENERAL
+    - Advantages:
+      - Easy to set up
+      - Geo-targeting tools available to webmasters
+      - Little maintenance
+    - Disadvantages:
+      - Weak geo-targeting signal for Google = complicate local SEO efforts
+      - Difficult to separate languages across the site.
+- Follow-on pages (choose 1 of 3 methods):
+  - ```<link rel = "alternate" hreflang = "en" href = "https://your-site.com/en/" />```
+    - hreflang = 'en' or 'en-uk'
+  - ```<link rel="alternate" hreflang="de" href="https://www.sncf.com/de/home"><link rel="alternate" hreflang="en" href="https://www.sncf.com/en/home">```
+  - ```<html lang="en-us">...</html>```
