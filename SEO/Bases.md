@@ -23,12 +23,6 @@ Know what are good keywords, how to find and organize them [follow chapters 1-2-
     - => Use the newer version of Google Search Console => menu “Sitemaps” => Enter the URL to your sitemap => "Send"
 
 # Analyse website
-## A good website --> Good Google ranking
-- mobile first
-- efficient and optimized
-- easy and intuitive design
-- fast responsive version
-- light pages
 
 ## Detect site issues
 - Check that searches of the brand name return the website
