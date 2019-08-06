@@ -1,38 +1,6 @@
 # ROI :
 - the goal is to balance the time and resources needed to grow your site with your users' experience and bottom line.
 
-# Keywords / Key phrases
-Know what are good keywords, how to find and organize them [follow chapters 1-2-3](https://openclassrooms.com/en/courses/3594061-boost-traffic-to-your-website-with-search-engine-optimization/5837564-recognize-the-various-types-of-keywords)
-- Determine the subject of the page (ex : the main keyword and secondary keywords)
-- Translate them.
-- Using a keyword search tool (Google's Keyword Planner or KWFinder)
-- Determine if these topics have good SEO potential, and if there are other variations.
-- If the keywords exist in the new language, you can translate the text using them.
-- If not, look for an appropriate alternative (ex : studying your competitors)
-- Spread the word ! (social media, advertising, and email campaigns)
-- Acquire backlinks for the new languages on your site.
-
-# Tools needed
-
-## Google Analytics
-**Gather information on visitors (how many, devices, pages browsed...)**
-- [Set up Analytics Tags](https://support.google.com/analytics/answer/1008080?hl=en)
-- Disable your own visits to yr website :
-  - get your [IP addresses](https://www.whatismyip.com/)
-  - excluse it => Administration => Filters => Add Filter => Enter a name 
-    => "Exclude" => "Traffic" from IP addresses that are equal to => enter your IP addresses
-
-## Google Search Console
-**Gather information about what the visitors searched for in Google to find you**
-** Track changes in your positions and keywords in Google search results**
-- [Installation](https://search.google.com/search-console/about?hl=en&utm_source=wmx&utm_medium=wmx-welcome)
-  - => Select "Add Property" => Enter the URL for your website.
-  - [Help steps](https://support.google.com/webmasters/answer/34592?hl=en)
-- Add a site map = a map of all the pages on your website you want indexed (added to appear in search engine results) :
-  - if site made by developer : create a sitemap that updates automatically
-  - if site made via CMS : use plug-ins to create and automatically update your sitemap (ex : "Yoast" WordPress)
-    - => Use the newer version of Google Search Console => menu “Sitemaps” => Enter the URL to your sitemap => "Send"
-
 # Analyse website
 
 ## Detect site issues
@@ -82,20 +50,25 @@ Know what are good keywords, how to find and organize them [follow chapters 1-2-
 # Analyse content of pages
 
 ## Good practices
-[head + body](https://openclassrooms.com/en/courses/3594061-boost-traffic-to-your-website-with-search-engine-optimization/5838156-optimize-the-content-of-your-web-pages)
-[type of content](https://openclassrooms.com/en/courses/3594061-boost-traffic-to-your-website-with-search-engine-optimization/5838228-build-your-content-machine)
+- [head + body](https://openclassrooms.com/en/courses/3594061-boost-traffic-to-your-website-with-search-engine-optimization/5838156-optimize-the-content-of-your-web-pages)
+- [type of content](https://openclassrooms.com/en/courses/3594061-boost-traffic-to-your-website-with-search-engine-optimization/5838228-build-your-content-machine)
 
-# Choose the Right Technology for Your Site
-- Your Site has Few Business Functions and Is Mainly Used for Marketing (Customer Acquisition):
-  - Standard site, not based on a JavaScript framework + few simple functionalities (ex : reservation or payment form)
-- Your Site Is a Web App With Important Business Functions. You also need a Place to Showcase Products and Acquire New Customers
-  - This is the case for most SaaS platforms, such as OnCrawl.
-  - If you already have a web-app, but not a marketing-oriented site, you are better off coding it in HTML/CSS and then linking to your web app = a more user-friendly web app in JavaScript, and a classic site for acquiring new customers, which is easier to maintain.
-- You Want an SPA (Single-Page Application)
+# Optimize a Website
+
+## Choose the Right Technology for Your Site
+- Few Business Functions : Marketing + Customer Acquisition :
+  - Standard site HTML/CSS
+  - Not based on JS framework
+  - Few simple functionalities (ex : reservation or payment form)
+- Business Web App + a Place to Showcase Products + Acquire New Customers
+  - SaaS platforms, such as OnCrawl.
+- Already have a Web-app but not a marketing-oriented yet :
+  - Classic site HTML/CSS to get new customers + Link to a user-friendly webapp in JavaScript
+- SPA (Single-Page Application)
   - better performance and user experience
   - more difficult to index
   
-# Choose between Client-Side Rendering & Server-Side Rendering
+## Choose between Client-Side Rendering & Server-Side Rendering
 - Client-side rendering (CRS) : not ideal for the best SEO :
   - Set-up Pre-rendering : :warning: Users and bots must receive similar content
     - [Prerender.io](https://prerender.io/) (latest version only)
@@ -112,46 +85,48 @@ Know what are good keywords, how to find and organize them [follow chapters 1-2-
     - Development is longer and more complex
   - With SPA sites : code in Universal JS (also called Isomorphic JS) = the JS will work on bost sides (client + server)
 
-# Multilingual website
-- Three site architectures :
-  - One domain name per language (ex : .fr, .com, .cn):
-    - When ? The content of your site depends on language and culture
-    - Advantages:
-      - Google geographically target your website
-      - You can use location targeting in the Search Console
-      - The content is properly divided at the server level
-      - You can adapt your site to the legal requirements in GDPR countries
-    - Disadvantages:
-      - Maintaining multiple sites is very expensive in terms of time, resources, and budget (one modification must be done in all languages)
-      - Domain names have strict legal requirements (where you are really based)
-      - SEO must be done in all languages !
-  - One sub-domain per language (ex : .fr.wikipedia.or, .com.wikipedia.or)
-    - Benefits:
-      - Easier to set up
-      - Can use location targeting in the Search Console
-      - Can have different server locations
-      - Language separation easy to do at the server level
-    - Disadvantage: 
-      - Subdomains won’t benefit from the full link strength of your main domain
-  - A directory (or subfolder) per language (ex : ibm.com/fr-fr/, ibm.com/uk-en)
-    - When ? BEST OPTION IN GENERAL
-    - Advantages:
-      - Easy to set up
-      - Geo-targeting tools available to webmasters
-      - Little maintenance
-    - Disadvantages:
-      - Weak geo-targeting signal for Google = complicate local SEO efforts
-      - Difficult to separate languages across the site.
+## Multilingual website
+Three site architectures :
+- One domain name per language (ex : .fr, .com, .cn):
+  - When ? The content of your site depends on language and culture
+  - Advantages:
+    - Google geographically target your website
+    - You can use location targeting in the Search Console
+    - The content is properly divided at the server level
+    - You can adapt your site to the legal requirements in GDPR countries
+  - Disadvantages:
+    - Maintaining multiple sites is very expensive in terms of time, resources, and budget (one modification must be done in all languages)
+    - Domain names have strict legal requirements (where you are really based)
+    - SEO must be done in all languages !
+    
+- One sub-domain per language (ex : .fr.wikipedia.or, .com.wikipedia.or)
+  - Benefits:
+    - Easier to set up
+    - Can use location targeting in the Search Console
+    - Can have different server locations
+    - Language separation easy to do at the server level
+  - Disadvantage: 
+    - Subdomains won’t benefit from the full link strength of your main domain
+    
+- A directory (or subfolder) per language (ex : ibm.com/fr-fr/, ibm.com/uk-en)
+  - When ? BEST OPTION IN GENERAL
+  - Advantages:
+    - Easy to set up
+    - Geo-targeting tools available to webmasters
+    - Little maintenance
+  - Disadvantages:
+    - Weak geo-targeting signal for Google = complicate local SEO efforts
+    - Difficult to separate languages across the site.
+    
 - Follow-on pages (choose 1 of 3 methods):
   - ```<link rel = "alternate" hreflang = "en" href = "https://your-site.com/en/" />```
     - hreflang = 'en' or 'en-uk'
   - ```<link rel="alternate" hreflang="de" href="https://www.sncf.com/de/home"><link rel="alternate" hreflang="en" href="https://www.sncf.com/en/home">```
   - ```<html lang="en-us">...</html>```
 
-# SEO - Improve the indexing of a website
+# Improve the indexing of a website
 
-It may be necessary to redirect your visitors from one page to another if the URL has changed or the page no longer exists :
-- put in a 301 redirect (permanent redirect)
+It may be necessary to redirect your visitors from one page to another if the URL has changed or the page no longer exists : put in a 301 redirect (permanent redirect)
   
 ## Robots meta tags
 ```<code><meta name="robots" content="index, follow"></code>``` for each page indexed
