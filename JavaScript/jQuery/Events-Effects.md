@@ -26,8 +26,8 @@ Used for select, scroll, click...
 - ```mouseup``` : Releasing the left or right click while the cursor is over the element
 - ```scroll``` : User scrolls while within the element (often used on an entire ```window```)
 
-[One example of click event on image](https://codepen.io/eclairereese/pen/rLxMjb)
-[One example of scroll event on image](https://codepen.io/eclairereese/pen/QEyKpx)
+- [One example of click event on image](https://codepen.io/eclairereese/pen/rLxMjb)
+- [One example of scroll event on image](https://codepen.io/eclairereese/pen/QEyKpx)
 
 ### List of keyboard events
 Used when taping text
@@ -35,7 +35,7 @@ Used when taping text
 - ```keyup``` : Releasing a key
 - ```keypress``` : Keeping a key pressed down
 
-[One example of keyboard event in textarea](https://codepen.io/eclairereese/pen/GqoZze)
+- [One example of keyboard event in textarea](https://codepen.io/eclairereese/pen/GqoZze)
 
 ### List of form elements/window events
 Used in a form at : focus, select, change size and content
@@ -46,9 +46,9 @@ Used in a form at : focus, select, change size and content
 - ```resize``` : Element is resized
 - ```change``` : Element is modified (used on input, textarea and select tags)
 
-[One example of form event in textarea](https://codepen.io/eclairereese/pen/jrWreG)
-[One example of resize window event](https://codepen.io/eclairereese/pen/xOZExo)
-[One example of dropdown menu event](https://codepen.io/eclairereese/pen/qNbaYZ)
+- [One example of form event in textarea](https://codepen.io/eclairereese/pen/jrWreG)
+- [One example of resize window event](https://codepen.io/eclairereese/pen/xOZExo)
+- [One example of dropdown menu event](https://codepen.io/eclairereese/pen/qNbaYZ)
 
 ## Animations & effects
 - ```$($this).next('element').show()``` // enchaîner les éléments pour créer une suite d'actions      
@@ -79,5 +79,3 @@ $('#hide').click(function() {           // when click button "hide"
 
 $('#message').fadeIn('slow').delay(2000).fadeOut('slow');
 ```
-
-
