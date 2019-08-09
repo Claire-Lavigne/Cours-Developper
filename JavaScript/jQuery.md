@@ -1,12 +1,12 @@
-[jQuery Lastest Version](https://code.jquery.com/)
-
+# jQuery
 ## Link html to jQuery
+- [jQuery Lastest Version](https://code.jquery.com/)
 ```html
 <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="jquery.js"></script>
 ````
 
-### Load DOM
+## Load DOM
 ```javascript
 $(function() {
   // write code here
@@ -18,32 +18,34 @@ $(document).ready(function(){})
 jQuery(document).ready(function(){})
 ```
 
-### General syntax of jQuery statement
+## General Syntax
 ```javascript
 $('selector').method(parameter1, parameter2);
 ```
-Exemple : 
+Example
 ```javascript
 // change all the paragraphs' background colors to yellow
 $('p').css('background-color', 'yellow');
 ```
 
-## Select elements with selectors
+## Selectors
 ```javascript
 $('p')          // select all p elements
 $('.round')     // select all classes round
 $('#contact')   // select all id contact
 $("li#first")   // select all li with id first
-$("ol li")      // select all li that are part of ol
-$("ol > li")    // select all li that are child (only) of ol (direct descendant)
+$("ol li")      // select all descendants li that have an ol anscestor
+$("ol > li")    // select all direct children li of ol parent
+$("ol + li")    // select all li that are just next to ol (only li index(0))
+$("ol ~ li")    // select all descendants li just after an ol anscestor
 $("p:first")    // select the first p
 $("p:last")     // select the last p
-$("li:eq(1)")   // select the li that comes as index(1) = the 2nd li
+$("li:eq(0)")   // select the first li (index(0)) = nth-child(1)
 $("li:gt(0)")   // select all li that come after the index specified (here 0) = starting from the 2nd one
 $("li:lt(2)")   // select all li that come before the index specified (here 2) = only the 1st and 2nd one
 $("li:not('.vegetable')")     // select all li that don't have the class vegetable
 ```
-### A list of most used selectors
+### Most used special selectors
 ```javascript
 :hidden
 :visible
@@ -59,22 +61,48 @@ $("li:not('.vegetable')")     // select all li that don't have the class vegetab
 :radio
 :submit
 ```
-### More infos about ...
-- [Basic selectors](https://api.jquery.com/category/selectors/hierarchy-selectors/)
-- [Filter selectors](https://api.jquery.com/category/selectors/basic-filter-selectors/)
-- [Form selectors](https://api.jquery.com/category/selectors/form-selectors/)
 
+## Methods
+- ```.html()``` : remplace le contenu HTML de la page
+- ```.text()``` : remplace le texte de la page
+- ```.replaceWith()``` : remplace l'élément lui-même
+- ```.remove()``` : supprime les éléments de la page
+- ```.before()``` : insère du contenu avant le(s) élément(s) sélectionné(s)
+- ```.after()``` : insère du contenu après le(s) élément(s) sélectionné(s)
+- ```.prepend()``` : insère du contenu à l'intérieur du/des élément(s) sélectionné(s) (après la balise HTML ouvrante)
+- ```.append()``` : insère du contenu à l'intérieur du/des élément(s) sélectionné(s) (avant la balise HTML fermante)
+- ```.attr()``` : définit un attribut et sa valeur ou simplement récupère sa valeur
+- ```.removeAttr()``` : supprime un attribut, RIP
+- ```.addClass()``` : ajoute une nouvelle classe à/aux élément(s) sélectionné(s) (sans remplacer sa classe actuelle)
+- ```.removeClass()``` : supprime une classe du/des élément(s) sélectionné(s)
+- ```.css()``` : récupère ou définit les propriétés CSS d'un élément, même plusieurs propriétés à la fois.
 
-## DOM modification methods
-- [others](https://openclassrooms.com/en/courses/3504441-introduction-a-jquery/3639666-utilisez-des-methodes-jquery#/id/r-3654651)
+- ```.find()``` : trouve un/des élément(s) correspondant au paramètre dans la sélection actuelle
+- ```.parent()``` : accède au parent direct d'un/des élément(s) ou à ses parents si on utilise .parents()
+- ```.children()``` : accède aux enfants de(s) élément(s)
 
-### Insert content (strings) to elements
-- ```append()``` inserts the contents at the end of the selection; (same line)
-- ```prepend()``` inserts the contents at the beginning of the selection; (same line)
-- ```before()``` inserts the contents prior to the selection; (line before)
-- ```after()``` inserts the contents after the selection. (line after)
-- ```replaceWith()``` replace element selected by string.
+- ```.height()``` : hauteur d'un cadre sans les marges intérieures, extérieurs ni les bords
+- ```.width ()```: largeur d'un cadre sans les marges intérieures, extérieurs ni les bords
 
+- ```.innerHeight()``` : hauteur en comptant les marges intérieures
+- ```.innerWidth()``` : largeur en comptant les marges intérieures
+- ```.outerHeight()``` : hauteur en comptant les marges intérieures et les bords
+- ```.outerWidth()``` : largeur en comptant les marges intérieures et les bords
+- ```.outerHeight(true)``` : idem + avec les marges extérieures.
+- ```.outerWidth(true)``` : idem + avec les marges extérieures.
+
+- ```.offset()``` : définit les coordonnées d'un élément relativement au coin en haut à gauche de l'objet document
+- ```.position()``` : définit les coordonnées d'un élément relativement à son parent direct
+
+- ```.appendTo(target)``` inserts an item at the end of the target; (same closing tag)
+- ```.prependTo(target)``` inserts an item to the top of the target; (same closing tag)
+- ```.insertBefore(target)``` inserts an item before the target; (tag before)
+- ```.insertAfter(target)``` inserts an element after the target. (tag after)
+- ```.wrap()``` surround an element with another
+- ```.wrapInner()``` wraps the interior of an element;
+- ```.wrapAll()``` wraps the exterior of an element.
+
+### Example : add/remove strings
 ```javascript
 $(function() {
     $('h2').append('***');        // Add three asterisks after each <h2>
@@ -91,22 +119,7 @@ $(function() {
     })
 });
 ```
-
-### Insert/remove elements in the DOM
-element = content to be inserted
-
-target = element target of the insertion
-
-element + target => jQuery selector, element name, html string or jQuery object
-
-- ```element.appendTo(target)``` inserts an item at the end of the target; (same closing tag)
-- ```element.prependTo(target)``` inserts an item to the top of the target; (same closing tag)
-- ```element.insertBefore(target)``` inserts an item before the target; (tag before)
-- ```element.insertAfter(target)``` inserts an element after the target. (tag after)
-- ```wrap()``` surround an element with another
-- ```wrapInner()``` wraps the interior of an element;
-- ```wrapAll()``` wraps the exterior of an element.
-
+### Example : add/remove elements
 ```javascript
 $(function() {
     $('<hr>').appendTo($('h2'));    // Add hr after each h2
@@ -123,7 +136,6 @@ $(function() {
 ```
 
 ## Events 
-### Lesson
 ```javascript
 $('selection').on('event', function() {
     // jQuery here that you want to run when the event happens
