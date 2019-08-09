@@ -76,24 +76,24 @@ $("li:not('.vegetable')")     // select all li that don't have the class vegetab
 - ```.addClass()``` : ajoute une nouvelle classe à/aux élément(s) sélectionné(s) (sans remplacer sa classe actuelle)
 - ```.removeClass()``` : supprime une classe du/des élément(s) sélectionné(s)
 - ```.css()``` : récupère ou définit les propriétés CSS d'un élément, même plusieurs propriétés à la fois.
-
+________________
 - ```.find()``` : trouve un/des élément(s) correspondant au paramètre dans la sélection actuelle
 - ```.parent()``` : accède au parent direct d'un/des élément(s) ou à ses parents si on utilise .parents()
 - ```.children()``` : accède aux enfants de(s) élément(s)
-
+________________
 - ```.height()``` : hauteur d'un cadre sans les marges intérieures, extérieurs ni les bords
 - ```.width ()```: largeur d'un cadre sans les marges intérieures, extérieurs ni les bords
-
+________________
 - ```.innerHeight()``` : hauteur en comptant les marges intérieures
 - ```.innerWidth()``` : largeur en comptant les marges intérieures
 - ```.outerHeight()``` : hauteur en comptant les marges intérieures et les bords
 - ```.outerWidth()``` : largeur en comptant les marges intérieures et les bords
 - ```.outerHeight(true)``` : idem + avec les marges extérieures.
 - ```.outerWidth(true)``` : idem + avec les marges extérieures.
-
+________________
 - ```.offset()``` : définit les coordonnées d'un élément relativement au coin en haut à gauche de l'objet document
 - ```.position()``` : définit les coordonnées d'un élément relativement à son parent direct
-
+________________
 - ```.appendTo(target)``` inserts an item at the end of the target; (same closing tag)
 - ```.prependTo(target)``` inserts an item to the top of the target; (same closing tag)
 - ```.insertBefore(target)``` inserts an item before the target; (tag before)
