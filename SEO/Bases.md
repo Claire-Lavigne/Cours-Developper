@@ -1,3 +1,4 @@
+https://openclassrooms.com/en/courses/3594061-drive-traffic-to-your-website-with-search-engine-optimization-seo/5837564-recognize-the-various-types-of-keywords
 # ROI :
 - the goal is to balance the time and resources needed to grow your site with your users' experience and bottom line.
 
