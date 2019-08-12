@@ -1,6 +1,22 @@
 # ROI :
 - the goal is to balance the time and resources needed to grow your site with your users' experience and bottom line.
 
+# Ressources :
+- Searching for keywords - one-half to two days.
+- Website optimization
+  - Full audit - one to four days.
+  - Optimizing content on existing pages - two hours per page.
+  - Technical fixes - (with a web developer) generally at least one day. The time needed depends on the website’s technology.
+  - Creating content, such as articles - one-half to one day per article.
+- Finding links and partnerships - two to five days (to be repeated regularly).
+- Implementing the reporting - one to two days.
+
+# KPI (Key Performance Indicators)
+- Unique visitors (UV)
+- Page views per session
+- Conversion rate for sign-up/payment forms
+- Returning visitor rate
+
 # Analyse website
 
 ## Detect site issues
