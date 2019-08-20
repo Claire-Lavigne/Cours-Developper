@@ -164,7 +164,7 @@ if ($authorisation_enter == "oui") {        // if true
 ?>
 ```
 
-**Switch (**
+**Switch**
 ```php
 <?php
 $note = 10;
