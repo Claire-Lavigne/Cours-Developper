@@ -1,22 +1,23 @@
-# BDD (behavior-driven development - phrases, no code)
-- Map out the behaviors you expect from a certain functionality, using BDD keywords : Given, When, Then, And
-
-# TDD (test-driven development - code that translate the phrases)
-- Tests the expected behaviors defined :
-  - Red: Write a simple test that fails before it actually has any code accompanying it.
-  - Green: Write the simplest code possible to make the test pass, even if it's a little ridiculous.
-  - Refactor: the code you wrote to make the test pass is perhaps illogical and messy. Clean it up now. 
-
-# Standard test plan :
+# Standard test plan
 
 ## Introduction
 - Introduce the project and the product that is being tested.
 ## Features to Test
 - List which features are critical or feasible to test and how to test them.
+
+### BDD (behavior-driven development - phrases, no code)
+- Map out the behaviors you expect from a certain functionality, using BDD keywords : Given, When, Then, And
+
+### TDD (test-driven development - code that translate the phrases)
+- Tests the expected behaviors defined :
+  - Red: Write a simple test that fails before it actually has any code accompanying it.
+  - Green: Write the simplest code possible to make the test pass, even if it's a little ridiculous.
+  - Refactor: the code you wrote to make the test pass is perhaps illogical and messy. Clean it up now. 
+
 ## Features to Not Test
 - List which features are not valuable or realistic to test (limited time or resources/other restrictions)
 
-# Using Jasmine Framework
+# Using Jasmine Framework to implement tests
 
 ## Visualize result
 - Download ```jasmine-standalone``` zip [last version](https://github.com/jasmine/jasmine/releases))
