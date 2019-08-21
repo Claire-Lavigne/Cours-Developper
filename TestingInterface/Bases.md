@@ -6,7 +6,8 @@
 - List which features are critical or feasible to test and how to test them.
 
 ### BDD (behavior-driven development - phrases, no code)
-- Map out the behaviors you expect from a certain functionality, using BDD keywords : Given, When, Then, And
+- Map out the behaviors you expect from a certain functionality, using BDD keywords : 
+  - Given, When, Then, And
 
 ### TDD (test-driven development - code that translate the phrases)
 - Tests the expected behaviors defined :
