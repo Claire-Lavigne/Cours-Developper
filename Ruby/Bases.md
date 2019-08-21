@@ -1,12 +1,12 @@
 - [Installer Ruby (et Rails)](https://openclassrooms.com/en/courses/2913686-lancez-vous-dans-la-programmation-avec-ruby/2915056-installez-vos-outils#/id/r-2992491)
-- Écrire code : éditeur code "nom_du_fichier.rb"
-  - ```ruby Puts "hello"```
-- Exécuter code : console ```ruby nom_du_fichier.rb```
-  - resultat : ```hello```
+- Écrire code --> éditeur code : create ```nom_du_fichier.rb```, write ```puts "hello"```
+- Exécuter code --> console : write ```ruby nom_du_fichier.rb```, shows ```hello```
 
 ## Bases
 ```ruby
 # commentaire
+# afficher dans la console
+puts "hello"
 # nommage variables
 nom_variable = 20
 # concaténation
@@ -16,44 +16,45 @@ bravo = "Bravo #{nom_variable} !"
 
 ## Tableaux
 ```ruby
-tableau = [ "Paris", "Toronto", "NYC", "Rio", "Sydney", "Hong-Kong", "Berlin" ]
+villes = [ "Paris", "Toronto", "NYC", "Rio", "Sydney", "Hong-Kong", "Berlin" ]
 # appliquer une méthode à une variable de type tableau
 nom_du_tableau.nom_de_la_methode
 # connaitre nombre d'éléments du tableau
-tableau.size
+villes.size
 # accéder à l'élément n°1
-tableau[0]
+villes[0]
 # modifier élément
-tableau[0] = "Albi"
+villes[0] = "Albi"
 # ajouter un élément
-tableau << "Londres"
-```
+villes << "Londres"
 
 ## Hash table
-```ruby
 table_de_hashage = { clé_1: valeur_1, clé_2: valeur_2, ... }
-jours_voyage = { paris: 0, toronto: 7, nyc: 3 }
+voyages = { paris: 0, toronto: 7, nyc: 3 }
 # accéder à une valeur par la clé
-jours_voyage[:toronto]
+voyages[:toronto]
 # ajouter une clé+valeur
-jours_voyage[:rio] = 5
-```
+voyages[:rio] = 5
 
-## Boucles : parcourir un tableau
-```ruby
+# boucle : parcourir tableau (normal + de hashage) pour afficher toutes les valeurs
+villes.each do |ville|
+  puts ville
+end
+
+# Autre exemple
 jours_ouvres = ["lundi","mardi","mercredi","jeudi","vendredi"]
 
-i=5
+i=jours_ouvres.size
 
 jours_ouvres.each do |jour|
-  if jour == "vendredi" 
-    puts jour + " : Bon weekend !"
-  elsif jour == "lundi"
+  if jour == "lundi"
     puts jour + " : Bon courage !"
+  elsif jour == "vendredi" 
+    puts jour + " : Bon weekend !"
   else
     puts jour + " : Weekend dans #{i} jours !"
+    i-=1
   end
-  i-=1
 end
 
 # resultat
@@ -62,6 +63,20 @@ mardi : Weekend dans 4 jours !
 mercredi : Wekeend dans 3 jours !
 jeudi : Weekend dans 2 jours !
 vendredi : Bon weekend !
+```
+
+## Hash table
+```ruby
+voyages = [
+    { ville: "Paris", duree: 10 },
+    { ville: "New York", duree: 5 },
+    { ville: "Berlin", duree: 2 },
+    { ville: "Montreal", duree: 15 }
+]
+
+voyages.each do |voyage|
+    puts "Voyage à #{voyage[:ville]} de #{voyage[:duree]} jours"
+end
 ```
 
 ## Boucles : répétition
