@@ -3,7 +3,7 @@
 - Exécuter code : console
 - Écrire code : éditeur code (vim...)
 
-# Code
+# Code à écrire dans l'éditeur
 ## Bases
 ```ruby
 # commentaire
