@@ -1,7 +1,7 @@
 # [Installer Ruby (et Rails)](https://openclassrooms.com/en/courses/2913686-lancez-vous-dans-la-programmation-avec-ruby/2915056-installez-vos-outils#/id/r-2992491)
 
 - Exécuter code : console
-- Écrire code : éditeur code
+- Écrire code : éditeur code (vim...)
 
 # Code
 ## Bases
