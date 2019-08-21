@@ -40,7 +40,15 @@ voyages[:rio] = 5
 villes.each do |ville|
   puts ville
 end
+```
+```bash
+Paris
+New York
+Berlin
+Montreal
+```
 
+```ruby
 # Autre exemple
 jours_ouvres = ["lundi","mardi","mercredi","jeudi","vendredi"]
 
@@ -56,8 +64,8 @@ jours_ouvres.each do |jour|
     i-=1
   end
 end
-
-# resultat
+```
+```bash
 lundi : Bon courage ! 
 mardi : Weekend dans 4 jours ! 
 mercredi : Wekeend dans 3 jours !
@@ -74,9 +82,28 @@ voyages = [
     { ville: "Montreal", duree: 15 }
 ]
 
+# Show all voyages
 voyages.each do |voyage|
     puts "Voyage à #{voyage[:ville]} de #{voyage[:duree]} jours"
 end
+
+# Show short voyages
+voyages.each do |voyage|
+    if voyage[:duree] <= 5
+        puts "Voyage à #{voyage[:ville]} de #{voyage[:duree]} jours"
+    end
+end
+```
+```bash
+# Show all voyages
+Voyage à Paris de 10 jours
+Voyage à New York de 5 jours
+Voyage à Berlin de 2 jours
+Voyage à Montreal de 15 jours
+
+# Show short voyages
+Voyage à New York de 5 jours
+Voyage à Berlin de 2 jours
 ```
 
 ## Boucles : répétition
