@@ -1,14 +1,12 @@
-# [Installer Ruby (et Rails)](https://openclassrooms.com/en/courses/2913686-lancez-vous-dans-la-programmation-avec-ruby/2915056-installez-vos-outils#/id/r-2992491)
+- [Installer Ruby (et Rails)](https://openclassrooms.com/en/courses/2913686-lancez-vous-dans-la-programmation-avec-ruby/2915056-installez-vos-outils#/id/r-2992491)
+- Écrire code : éditeur code "nom_du_fichier.rb"
+  - ```ruby Puts "hello"```
+- Exécuter code : console ```ruby nom_du_fichier.rb```
+  - resultat : ```hello```
 
-- Exécuter code : console
-- Écrire code : éditeur code (vim...)
-
-# Code à écrire dans l'éditeur
 ## Bases
 ```ruby
 # commentaire
-# ouvrir un fichier rb depuis terminal
-ruby nom_du_fichier.rb
 # nommage variables
 nom_variable = 20
 # concaténation
