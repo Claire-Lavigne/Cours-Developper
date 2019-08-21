@@ -16,7 +16,15 @@
 ## Features to Not Test
 - List which features are not valuable or realistic to test (limited time or resources/other restrictions)
 
-# Describe block
+# Using Jasmine Framework
+
+## Visualize result
+- Download ```jasmine-standalone``` zip [last version](https://github.com/jasmine/jasmine/releases))
+- write test in new file ```spec/NameSpec.js```
+- write code in new file ```src/Name.js```
+- run tests opening ```SpecRunner.html``` in web browser
+
+## Describe block
 - Suites : ```describe```
 - Specs : ``ìt```
 - Expectations : ```expect``` ("expect" what was defined with "it")
