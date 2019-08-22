@@ -1,4 +1,6 @@
-# Une classe
+L'héritage permet de lier des classes (si contenu identique et si logique) à une classe-mère
+
+# 1 classe avec 2 objets identiques
 ```ruby
 class Animal
     attr_accessor :nom
@@ -19,7 +21,7 @@ chien.parler # Je m'appelle Marco le chien
 chat.parler  # Je m'appelle Polo le chat
 ```
 
-# 2 classes quasi identiques
+# 2 classes similaires avec 1 objet (identique aux 2 classes)
 ```ruby
 class Chat
     attr_accessor :nom
