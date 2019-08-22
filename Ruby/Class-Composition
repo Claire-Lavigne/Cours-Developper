@@ -72,3 +72,4 @@ end
 
 # voir la moyenne de l'élève
 puts eleve.moyenne              # 12.5
+```
