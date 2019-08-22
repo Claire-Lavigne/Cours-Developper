@@ -10,3 +10,6 @@
 # Some usefull links :
 - [get clients](https://www.freecodecamp.org/news/selling-services/)
 - [Contribute on GitHub as a newbie](https://www.firsttimersonly.com/)
+- Listen to podcasts in English about code [on apple](https://podcasts.apple.com/us/podcast/codenewbie/id919219256?mt=2) or on [website](https://www.codenewbie.org/podcast)
+- [Listen to Ruby podcasts in English](https://devchat.tv/ruby-rogues/)
+- [Ruby for beginners in English](http://rubylearning.com/blog/2010/09/22/14-ways-to-have-fun-coding-ruby/)
