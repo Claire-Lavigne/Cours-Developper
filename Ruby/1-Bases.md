@@ -1,8 +1,27 @@
-- [Installer Ruby (et Rails)](https://openclassrooms.com/en/courses/2913686-lancez-vous-dans-la-programmation-avec-ruby/2915056-installez-vos-outils#/id/r-2992491)
+## [Installer Ruby](https://openclassrooms.com/en/courses/2913686-lancez-vous-dans-la-programmation-avec-ruby/2915056-installez-vos-outils#/id/r-2992491) [et Rails](https://openclassrooms.com/en/courses/3149156-initiez-vous-a-ruby-on-rails/3149171-installez-ruby-on-rails#/id/r-3324757)
+- Dans Terminal :
+```bash
+# Mettre à jour outils de développement (installer homebrew si besoin)
+brew update
+# Installer rbenv (gestionnaire versions Ruby)
+brew install rbenv ruby-build
+# Installer Node.js / Vérifier version
+brew install node
+node -v
+# Installer Ruby [voir dernière version stable](https://www.ruby-lang.org/en/downloads/) / Vérifier version
+rbenv install 2.6.3
+rbenv global 2.6.3
+ruby -v
+# Installer Rails [voir dernière version stable](https://rubygems.org/gems/rails/versions) / Mettre à jour / Vérifier version
+sudo gem install rails
+sudo gem update
+rails -v
+```
+
+## Bases
 - Écrire code --> éditeur code : create ```nom_du_fichier.rb```, write ```puts "hello"```
 - Exécuter code --> console : write ```ruby nom_du_fichier.rb```, shows ```hello```
 
-## Bases
 ```ruby
 # commentaire
 
