@@ -1,4 +1,4 @@
-# Une classe avec 2 objets identiques
+# Une classe
 ```ruby
 class Animal
     attr_accessor :nom
@@ -19,7 +19,7 @@ chien.parler # Je m'appelle Marco le chien
 chat.parler  # Je m'appelle Polo le chat
 ```
 
-# 2 classes quasi identiques avec 1 objet identique
+# 2 classes quasi identiques
 ```ruby
 class Chat
     attr_accessor :nom
