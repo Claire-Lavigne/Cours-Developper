@@ -1,4 +1,5 @@
 # Une classe avec 2 objets identiques
+```ruby
 class Animal
     attr_accessor :nom
 
@@ -87,3 +88,4 @@ oiseau = Oiseau.new("Pif l'oiseau")
 chien.parler  # Marco le chien: Wuaf !
 chat.parler   # Polo le chat: Miaou!
 oiseau.parler # Pif l'oiseau: Cui !
+```
