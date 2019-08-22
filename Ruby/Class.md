@@ -60,17 +60,14 @@ class Utilisateur
     end
 end
 
-# Objets
 bob = Utilisateur.new
 jane = Utilisateur.new
 pierre = Utilisateur.new
 
-# Attributs
 bob.prenom = "Bob"
 jane.prenom = "Jane"
 pierre.prenom = "Pierre"
 
-# Attributs avec array
 bob.amis = [jane, pierre]
 jane.amis = [bob]
 pierre.amis = [jane, bob]
