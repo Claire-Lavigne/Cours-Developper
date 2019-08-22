@@ -1,4 +1,4 @@
-L'héritage permet de lier des classes (si contenu identique et si logique) à une classe-mère
+L'héritage permet de lier des classes (ayant de forts points communs) à une classe-mère
 
 # 1 classe avec 2 objets identiques
 ```ruby
