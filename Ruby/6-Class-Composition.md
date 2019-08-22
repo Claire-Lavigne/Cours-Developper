@@ -27,11 +27,12 @@ philo = Examen.new("philo", 15)
 # 2 classes différentes liées
 ```ruby
 class Eleve
-    # j'ajoute un attribut qui va servir de liaison
+    # j'ajoute un attribut qui va servir de lien et je l'initialise
     attr_accessor :nom, :examens
 
-    def initialize(nom)
+    def initialize(nom, examens)
         @nom = nom
+        @examens = examens
     end
 
     # j'ajoute une méthode de calcul de la moyenne
@@ -54,12 +55,16 @@ class Examen
     end
   end
 
-eleve = Eleve.new("Billy")
+
+# je lie la classe Eleve aux objets de l'autre classe (cf : array)
+eleve = Eleve.new("Billy", [maths, philo])
+# means :
+# eleve = Eleve.new("Billy")
+# eleve.examens = [maths, philo]
+
 # utiliser floats pour afficher la juste moyenne
 maths = Examen.new("maths", 10.0)
 philo = Examen.new("philo", 15.0)
-# je lie la classe élève aux objets de l'autre classe dans un array
-eleve.examens = [maths, philo]
 
 puts "Examens de #{eleve.nom}"  # Examens de Billy
 
