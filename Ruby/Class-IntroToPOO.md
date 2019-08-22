@@ -1,7 +1,5 @@
 
-# POO
-
-## Classe avec des objets
+## 1 Classe avec des objets simples
 ```ruby
 class Utilisateur
     # Attributs de la classe
@@ -47,7 +45,7 @@ else
 end
 ```
 
-# Class avec 2 objets qui intéragissent entre eux
+# 1 Classe avec des objets qui intéragissent entre eux
 ```ruby
 class Utilisateur
     attr_accessor :prenom, :amis
@@ -80,7 +78,8 @@ puts "Jane est amie avec Pierre? #{jane.est_ami_avec?("Pierre")}"
 # Jane est amie avec Pierre? false
 ```
 
-# Class avec code réduit grâce à la méthode initialize
+# 1 Classe avec code réduit grâce à la méthode initialize
+La méthode initialize permet d'initialiser les attributs de classe dès la création de l'objet
 ```ruby
 class Utilisateur
     attr_accessor :prenom
@@ -95,7 +94,7 @@ class Utilisateur
     end
 end
 
-# On peut déjà initialiser les attributs à la création de l'objet
+# J'initialise les attributs en créant l'objet
 bob = Utilisateur.new("Bob", "h")
 jane = Utilisateur.new("Jane", "f")
 
