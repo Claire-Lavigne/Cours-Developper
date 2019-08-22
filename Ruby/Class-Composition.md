@@ -1,6 +1,6 @@
 Les compositions de classes permettent de lier 2 classes différentes
 
-# J'ai deux classes différentes, je veux les lier
+# 2 classes différentes à lier
 ```ruby
 class Eleve
     attr_accessor :nom
@@ -18,14 +18,13 @@ class Examen
       @note = note
     end
   end
-  
 
 eleve = Eleve.new("Billy")
 maths = Examen.new("maths", 10)
 philo = Examen.new("philo", 15)
 ```
 
-# je lie les deux classes
+# 2 classes différentes liées
 ```ruby
 class Eleve
     # j'ajoute un attribut qui va servir de liaison
@@ -54,7 +53,6 @@ class Examen
       @note = note
     end
   end
-  
 
 eleve = Eleve.new("Billy")
 # utiliser floats pour afficher la juste moyenne
