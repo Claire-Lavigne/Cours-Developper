@@ -1,4 +1,6 @@
 ## [Installer Ruby](https://openclassrooms.com/en/courses/2913686-lancez-vous-dans-la-programmation-avec-ruby/2915056-installez-vos-outils#/id/r-2992491) - [Installer Rails](https://openclassrooms.com/en/courses/3149156-initiez-vous-a-ruby-on-rails/3149171-installez-ruby-on-rails#/id/r-3324757)
+- [Ruby dernière version stable](https://www.ruby-lang.org/en/downloads/)
+- [Rails dernière version stable](https://rubygems.org/gems/rails/versions)
 
 ```bash
 # Installer homebrew (si besoin)
@@ -20,11 +22,11 @@ source ~/.bash_profile
 # Installer (si nécessaire) rbenv - gestionnaire versions Ruby - Node.js - Yarn
 brew install rbenv ruby-build node yarn
 
-# Installer Ruby [voir dernière version stable](https://www.ruby-lang.org/en/downloads/)
+# Installer Ruby
 rbenv install 2.6.3
 rbenv global 2.6.3
 
-# Installer Rails [voir dernière version stable](https://rubygems.org/gems/rails/versions) / Mettre à jour
+# Installer Rails / Mettre à jour
 gem install rails   # sudo gem install rails if not working (not recommended)
 gem update          # sudo gem update (idem)
 
