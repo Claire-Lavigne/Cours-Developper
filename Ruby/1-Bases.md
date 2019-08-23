@@ -2,10 +2,9 @@
 ```bash
 # Mettre à jour outils de développement (installer homebrew si besoin)
 brew update
-# Installer rbenv (gestionnaire versions Ruby)
-brew install rbenv ruby-build
-# Installer Node.js / Vérifier version
-brew install node
+# Installer rbenv - gestionnaire versions Ruby - Node.js - Yarn + Vérifier versions
+brew install rbenv ruby-build node yarn
+rbenv -v
 node -v
 # Installer Ruby [voir dernière version stable](https://www.ruby-lang.org/en/downloads/) / Vérifier version
 rbenv install 2.6.3
