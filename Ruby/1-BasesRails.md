@@ -12,7 +12,7 @@ rails server
 # => Ctrl-C to shutdown server
 # Site accessible à l’adresse http://localhost:3000
 ```
-Ouvrir castor dans vscode, avec terminal
+Ouvrir nouveau dossier dans vscode. Ouvrir terminal :
 ```bash
 # créer automatiquement une homepage 
 rails g controller pages home
@@ -74,3 +74,13 @@ end
 ```
 :warning: Éviter code Ruby dans fichiers HTML ! Comment ? Mettre le code Ruby dans les fichiers Ruby.
 Créer des fonctions, mettre le résultat à afficher dans une @variable. Importer uniquement la variable en html
+
+## Changer url d'une page : config/routes.rb
+```ruby
+Rails.application.routes.draw do
+  get 'pages/home' # Chemin d'accès d'origine --> Accès par localhost:3000/pages/home
+  # Possibilité de modifier par :
+      # get 'castor' => 'pages#home'    # --> Accès par localhost:3000/castor
+      # root 'pages#home'               # --> Accès par localhost:3000/
+  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+end
