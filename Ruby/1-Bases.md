@@ -17,7 +17,7 @@ sudo gem update
 rails -v
 ```
 
-## Bases
+## Bases Ruby
 - Écrire code --> éditeur code : create ```nom_du_fichier.rb```, write ```puts "hello"```
 - Exécuter code --> console : write ```ruby nom_du_fichier.rb```, shows ```hello```
 
@@ -61,4 +61,14 @@ end
 3.times do 
   puts "tourner sa langue"
 end
+```
+
+## Bases Rails
+```bash
+# Initialiser un nouveau site dans le terminal, dans un dossier appelé "castor"
+rails new castor
+cd castor
+# Visualiser le site
+rails server
+# If older version needed : https://stackoverflow.com/questions/12092928/how-to-bundle-install-when-your-gemfile-requires-an-older-version-of-bundler
 ```
