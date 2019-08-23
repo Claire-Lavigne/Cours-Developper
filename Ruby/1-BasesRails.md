@@ -87,9 +87,33 @@ end
 ```
 
 ## Ajouter une nouvelle page
-- nouvelle fonction dans app/controllers/pages_controller.rb ;
-- fichier HTML rangé dans app/views/nom_du_contrôleur/nom_de_la_fonction.html.erb ;
-- nouvelle une route dans config/routes.rb.
+- nouvelle fonction dans app/controllers/pages_controller.rb
+    ```ruby
+    class PagesController < ApplicationController
+      def home
+        # Créer une variable utilisable dans page home.html
+        @claire = 23
+      end
+
+      def contact
+      end
+    end
+    ```
+- créerfichier HTML rangé dans app/views/nom_du_contrôleur/nom_de_la_fonction.html.erb
+    ```html
+    <h1>Contact</h1>
+    <p>Voici mon premier site réalisé avec Ruby on Rails</p>
+    <p><%= @claire%></p>
+    <p><a href="/">Lien vers la 1ère page</a></p>
+    <p><a href="/contact">Lien vers la 2e page</a></p>
+    ```
+- ajouter nouvelle une route dans config/routes.rb
+```ruby
+Rails.application.routes.draw do
+  root 'pages#home'  # Adresse  localhost:3000/
+  get 'contact' => 'pages#contact'
+end
+```
 
 ## Trouver
 - app/views/layouts/application.html.erb : meta tags, css, js (head) + <%= yield %> (toutes les pages créées dans view)
