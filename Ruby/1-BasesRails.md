@@ -82,6 +82,8 @@ Rails.application.routes.draw do
   # Possibilité de modifier par :
       # get 'castor' => 'pages#home'    # --> Accès par localhost:3000/castor
       # root 'pages#home'               # --> Accès par localhost:3000/
+        # la route est le home à gauche et le contrôleur est pages.
+        # le contrôleur est pages et la fonction est le home de droite.
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
 ```
