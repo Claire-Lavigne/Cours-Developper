@@ -84,3 +84,14 @@ Rails.application.routes.draw do
       # root 'pages#home'               # --> Accès par localhost:3000/
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
+```
+
+## Ajouter une nouvelle page
+- nouvelle fonction dans app/controllers/pages_controller.rb ;
+- fichier HTML rangé dans app/views/nom_du_contrôleur/nom_de_la_fonction.html.erb ;
+- nouvelle une route dans config/routes.rb.
+
+## Trouver
+- app/views/layouts/application.html.erb : meta tags, css, js (head) + <%= yield %> (toutes les pages créées dans view)
+- app/assets/stylesheets/ : fichiers css, scss
+- app/assets/javascripts : fichiers js
