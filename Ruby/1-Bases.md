@@ -92,3 +92,25 @@ rails server
 # => Ctrl-C to shutdown server
 # Site accessible à l’adresse http://localhost:3000
 ```
+Ouvrir castor dans vscode, avec terminal
+```bash
+# créer automatiquement une homepage 
+rails g controller pages home
+# page disponible sur http://localhost:3000/pages/home
+# chemin ds dossier indiqué : Find me in app/views/pages/home.html.erb
+```
+ouvrir fichier app/views/pages/home.html.erb et modifier contenu
+```html
+<h1>Bienvenue !</h1>
+<p>Ceci est ma première variable : <%= @variable %>.</p>
+/* ajout d'une variable créée dans la page home controllers) */
+```
+ouvrir fichier app/controllers/pages_controller.rb et ajouter une variable
+```rb
+class PagesController < ApplicationController
+  def home
+    # Créer une variable utilisable dans page home.html
+    @variable = 23
+  end
+end
+```
