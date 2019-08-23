@@ -1,19 +1,34 @@
 ## [Installer Ruby](https://openclassrooms.com/en/courses/2913686-lancez-vous-dans-la-programmation-avec-ruby/2915056-installez-vos-outils#/id/r-2992491) [et Rails](https://openclassrooms.com/en/courses/3149156-initiez-vous-a-ruby-on-rails/3149171-installez-ruby-on-rails#/id/r-3324757) dans Terminal
 ```bash
-# Voir la liste des outils de développement installés - Mettre à jour (installer homebrew si besoin)
+# Installer homebrew (si besoin)
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# Voir la liste des outils de développement installés - Mettre à jour
 brew list
 brew update
-# Installer (si nécessaires) rbenv - gestionnaire versions Ruby - Node.js - Yarn + Vérifier versions
+# Installer rbenv
+git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bashprofile
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
+echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
+git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+source ~/.bash_profile
+# Installer (si nécessaire) rbenv - gestionnaire versions Ruby - Node.js - Yarn + Vérifier versions
 brew install rbenv ruby-build node yarn
 rbenv -v
+ruby-build -v
 node -v
+yarn -v
+
 # Installer Ruby [voir dernière version stable](https://www.ruby-lang.org/en/downloads/) / Vérifier version
 rbenv install 2.6.3
 rbenv global 2.6.3
 ruby -v
 # Installer Rails [voir dernière version stable](https://rubygems.org/gems/rails/versions) / Mettre à jour / Vérifier version
-sudo gem install rails
-sudo gem update
+gem install rails
+# sudo gem install rails if not working (not recommended)
+gem update
+# sudo gem update (idem)
 rails -v
 ```
 
@@ -70,5 +85,10 @@ rails new castor
 cd castor
 # Visualiser le site
 rails server
-# If older version needed : https://stackoverflow.com/questions/12092928/how-to-bundle-install-when-your-gemfile-requires-an-older-version-of-bundler
+# Résultat affiché similaire :
+# => Booting WEBrick
+# => Rails 4.2.10 application starting in development on http://localhost:3000
+# => Run `rails server -h` for more startup options
+# => Ctrl-C to shutdown server
+# Site accessible à l’adresse http://localhost:3000
 ```
