@@ -1,37 +1,3 @@
-## [Installer Ruby](https://openclassrooms.com/en/courses/2913686-lancez-vous-dans-la-programmation-avec-ruby/2915056-installez-vos-outils#/id/r-2992491) [et Rails](https://openclassrooms.com/en/courses/3149156-initiez-vous-a-ruby-on-rails/3149171-installez-ruby-on-rails#/id/r-3324757) dans Terminal
-```bash
-# Installer homebrew (si besoin)
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-# Voir la liste des outils de développement installés - Mettre à jour
-brew list
-brew update
-# Installer rbenv
-git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
-echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bashprofile
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
-echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
-git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
-git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-source ~/.bash_profile
-# Installer (si nécessaire) rbenv - gestionnaire versions Ruby - Node.js - Yarn + Vérifier versions
-brew install rbenv ruby-build node yarn
-rbenv -v
-ruby-build -v
-node -v
-yarn -v
-
-# Installer Ruby [voir dernière version stable](https://www.ruby-lang.org/en/downloads/) / Vérifier version
-rbenv install 2.6.3
-rbenv global 2.6.3
-ruby -v
-# Installer Rails [voir dernière version stable](https://rubygems.org/gems/rails/versions) / Mettre à jour / Vérifier version
-gem install rails
-# sudo gem install rails if not working (not recommended)
-gem update
-# sudo gem update (idem)
-rails -v
-```
-
 ## Bases Ruby
 - Écrire code --> éditeur code : create ```nom_du_fichier.rb```, write ```puts "hello"```
 - Exécuter code --> console : write ```ruby nom_du_fichier.rb```, shows ```hello```
@@ -103,14 +69,52 @@ ouvrir fichier app/views/pages/home.html.erb et modifier contenu
 ```html
 <h1>Bienvenue !</h1>
 <p>Ceci est ma première variable : <%= @variable %>.</p>
-/* ajout d'une variable créée dans la page home controllers) */
+<!-- ajout d'une variable créée dans la page home controllers) -->
+<!-- <%  %> permet d'insérer du code ruby -->
+<!-- = remplace puts -->
+    
 ```
 ouvrir fichier app/controllers/pages_controller.rb et ajouter une variable
 ```rb
 class PagesController < ApplicationController
   def home
     # Créer une variable utilisable dans page home.html
-    @variable = 23
+    @variable = 5
+    # Seules les variables commençant par @ sont accessibles depuis "views"
   end
 end
+```
+
+## Condition
+```
+<h1>Bienvenue !</h1>
+<p>Ceci est ma première variable : <%= @variable %>.</p>
+
+<% if @variable == 42 %>
+  Super, la variable vaut 42 !
+<% else %>
+  Mince, la variable ne vaut pas 42 !
+<% end %>
+
+# Means :
+# if varibale == 42
+#  puts Super, la variable vaut 42 !
+# else
+#  puts Mince, la variable ne vaut pas 42 !
+# end
+```
+
+## Boucle
+```
+<h1>Bienvenue !</h1>
+<p>Ceci est ma première variable : <%= @variable %>.</p>
+
+<% @variable.times do |i| %>
+  <%= i %>
+<% end %>
+
+# Means :
+# 5.times do |i|
+#  puts i
+# end
 ```
