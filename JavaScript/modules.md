@@ -15,7 +15,7 @@ var module = {
 ```js
 // Exemple d'application :
 var app = {
-  // `init = entrée dans le module (lancement de l'application JS)
+  // init = entrée dans le module (lancement de l'application JS)
   init: function() {
     console.info('Initialisation');
     app.name = 'Big Brother';
@@ -32,9 +32,11 @@ var app = {
 };
 
 // On lance l'application :
-app.init(); // dans l'objet `app`, on exécute la fonction (méthode) stockée dans la clé `init`
+app.init(); 
+// dans l'objet app, on exécute la fonction (méthode) stockée dans la clé init
 
-// `init` est souvent associée à l'écouteur d'évènement sur le chargement du DOM
-// Une fois le DOM chargé, la méthode `init` de l'objet app est exécutée :
+// init est souvent associée à l'écouteur d'évènement sur le chargement du DOM
+// Une fois le DOM chargé, la méthode init de l'objet app est exécutée :
 document.addEventListener('DOMContentLoaded', app.init);
-// pas nécessaire si on charge le `<script>` en bas du `<body>`
+// pas nécessaire si on charge le <script> en bas du <body>
+```
