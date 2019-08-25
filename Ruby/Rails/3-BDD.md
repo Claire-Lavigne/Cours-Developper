@@ -37,6 +37,7 @@ class Book < ActiveRecord::Base
 end
 ```
 ## Vérifier fonctionnement BDD
+- Terminal :
 ```bash
 rails console     # Accéder à la console rails irb pour accéder à toutes les classes de l'application
 Book.new          # Créer nouvelle instance de la classe
@@ -48,4 +49,57 @@ exit
 ```
 
 ## Ajouter/Modifier/Supprimer des lignes d'une BDD (données)
-- Terminal : `rails console` (ou `rails c`)
+- Terminal : 
+```bash
+rails c   # = rails console
+# AJOUTER UNE ENTRÉE
+book = Book.new                 # Créer une instance de classe, rangée dans une variable
+book.title = "Title du livre"   # Ajouter un titre à la variable
+book.save                       # Sauvegarder l'entrée
+Book.create title: "Bonjour"    # Idem (autre écriture) : crée l'entrée, le titre + sauvegarde
+book                            # Visualiser l'entrée créée (id + title)
+# VOIR LES ENTRÉES EXISTANTES POUR LES MODIFIER
+Book.all                        # Lister toutes les entrées --> id = 1, title = "Title of the book"
+Book.find(1)                    # Retourne-moi l'entrée avec l'id n°1
+book = Book.find(1)             # Mettre l'entrée dans une variable pour la modifier
+book.title = "Truc"             # Changement du titre
+book.save                       # Enregistrer changements
+# SUPPRIMER UNE ENTRÉE
+book.destroy                    # Supprime l'entrée associée à la variable book
+Book.find(1).destroy            # Autre écriture (pas besoin de variable)
+Book.all                        # Liste les entrées : aucune entrée
+```
+
+##
+```bash
+Book.create title: "Bonjour"
+Book.create title: "Bonne aprem"
+Book.create title: "Bonne soirée"
+rails generate controller books index
+rails s
+```
+in app/controllers/books_controller.rb
+```rb
+class BooksController < ApplicationController
+  def index
+    @les_livres = Book.all
+  end
+end
+```
+
+in app/views/books/index.html.erb
+```rb
+<h1>Books#index</h1>
+<p>Find me in app/views/books/index.html.erb</p>
+<p>Liste des livres</p>
+<% @les_livres.each do |un_livre| %>
+    <p><%= un_livre.title %></p>
+<% end %>
+<p><a href="/">Lien vers la 1ère page</a></p>
+<p><a href="/contact">Lien vers la 2e page</a></p>
+<p><a href="/books">Lien vers les livres</a></p>
+```
+
+in config/routes.rb modify root :
+```rb
+get 'books' => 'books#index'
