@@ -15,7 +15,7 @@ var module = {
 ```js
 // Exemple d'application :
 var app = {
-  // init = entrée dans le module (lancement de l'application JS)
+  // init = entrée dans le module
   init: function() {
     console.info('Initialisation');
     app.name = 'Big Brother';
