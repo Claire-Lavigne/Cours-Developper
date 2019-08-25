@@ -6,7 +6,7 @@ rails new nomDuDossier
 cd nomDuDossier
 
 # Visualiser le site
-rails server
+rails server    # ou rails s
 
 # Résultat (+/-) affiché :
 # => Booting WEBrick
