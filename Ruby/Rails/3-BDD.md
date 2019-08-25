@@ -112,3 +112,31 @@ rails s
   ```rb
   get 'books' => 'books#index'    # Accès http://localhost:3000/books
   ```
+  
+## Ajouter des données depuis un formulaire (sur le site)
+### Créer un formulaire
+- Formulaire en html pur :
+```html
+<form action="/books" method="post">
+    <input type="text" name="title">
+    <input type="submit" value="Ajouter à la liste">
+</form> 
+```
+- Dans le fichier app/views/books/index.html.erb :
+```rb
+<%= form_tag "/books", method: "post" do %>
+    <input type="text" name="title">
+    <input type="submit" value="Ajouter à la liste">
+<% end %>
+```
+- Add a root for submit post in config/routes.rb :
+```rb
+post 'books' => 'books#create'
+```
+- Create a function that redirect to books in app/controllers/books_controller.rb :
+```rb
+def create
+  Book.create title: params[:title]
+  redirect_to "/books"
+end
+```
