@@ -41,11 +41,11 @@ const claire = {
 
     direBonjour() {
         return 'Hey toi!';
-    }
+    },
 
     soustraire(maladie) {
         this.sante -= maladie;
-    },
+    }
 };
 
 // "Claire a 150 pts de vie et 25 de force"
