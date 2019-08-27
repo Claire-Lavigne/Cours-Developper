@@ -8,14 +8,14 @@
 ```js
 // création du personnage de jeu 'Claire'
 const claire = {
-  nom: 'Claire',
-  sante: 150,
-  force: 25
+    nom: 'Claire',
+    sante: 150,
+    force: 25
 };
 
 // description du personnage avec fonction
 function decrire(personnage) {
-  return `${personnage.nom} a ${personnage.sante} pts de vie et ${personnage.force} de force`;
+    return `${personnage.nom} a ${personnage.sante} pts de vie et ${personnage.force} de force`;
 }
 
 claire.nom;              // read value
@@ -30,23 +30,22 @@ console.log(decrire(claire));
 ```js
 // création du personnage de jeu 'Claire'
 const claire = {
-  nom: 'Claire',
-  sante: 150,
-  force: 25,
+    nom: 'Claire',
+    sante: 150,
+    force: 25,
 
-  // description du personnage avec méthode (autre syntaxe)
-  describe: function () {
-    return `${this.nom} a ${this.sante} pts de vie et ${this.force} de force`;
-  },
-  
-  direBonjour() {
-    return 'Hey toi!';
-  }
-  
-  soustraire(maladie) {
-    this.sante -= maladie;
-  },
-  
+    // description du personnage avec méthode (autre syntaxe)
+    describe: function () {
+        return `${this.nom} a ${this.sante} pts de vie et ${this.force} de force`;
+    },
+
+    direBonjour() {
+        return 'Hey toi!';
+    }
+
+    soustraire(maladie) {
+        this.sante -= maladie;
+    },
 };
 
 // "Claire a 150 pts de vie et 25 de force"
@@ -63,7 +62,7 @@ son.sante = 50;
 son.force = 5;
 ```
 
-**Another Example**
+**Object with methods inside and init**
 ```javascript
 var Pastry = {
     // initialize the pastry
