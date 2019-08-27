@@ -63,35 +63,7 @@ son.sante = 50;
 son.force = 5;
 ```
 
-
-
-
-
-----
-**CLASS** = Multiple objects
-```javascript
-class MaClasse {
-  constructor(param1, param2 /* ... */) {
-    this.propriete1 = param1;
-    this.propriete2 = param2;
-    // ...
-  }
-  methode1(/* ... */) {
-    // ...
-  }
-  methode2(/* ... */) {
-    // ...
-  }
-  // ...
-}
-
-const monObjet = new MaClasse(arg1, arg2, ...);
-
-// Crée un objet ayant monObjetPrototype pour prototype
-const monObjet = Object.create(monObjetPrototype);
-```
-_______
-- Faster way :
+**Another Example**
 ```javascript
 var Pastry = {
     // initialize the pastry
