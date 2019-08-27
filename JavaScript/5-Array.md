@@ -1,5 +1,4 @@
-# What's an array ?
-* values <--> index
+# Array : values <--> index
 
 **Array**
 ```javascript
