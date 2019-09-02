@@ -18,3 +18,23 @@ fruits.unshift('orange');               // add this element at the beginning of 
 fruits.pop();                           // remove the last value of array
 fruits.splice(0, 1);                    // Remove 1 element starting from number 0
 ```
+
+# Push another object in Array with objects
+**Array**
+```javascript
+arrObj = [
+  {
+    name: 'Krunal',
+    age: 26
+  },
+  {
+    name: 'Ankit',
+    age: 24
+  }
+];
+arrObj.push({
+  name: 'Rushabh',
+  age: 27
+});
+console.log(arrObj);
+```
