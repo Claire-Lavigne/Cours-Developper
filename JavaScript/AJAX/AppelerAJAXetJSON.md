@@ -1,3 +1,6 @@
+- `XMLHttpRequest` : requêtes HTTP asynchrones (AJAX) pour modifier une page sans actualiser
+
+
 # APPELER AJAX - METHODE GET FROM FILE
 - ajouter `<script src="../js/ajax.js"></script>` fin body avant tout script
 - copier dans `function.js`
