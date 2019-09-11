@@ -39,7 +39,7 @@ $ git clone <url>
 $ git init
 ```
 
-### Generate SSH Key
+### Generate SSH Key and share it
 ```bash
 # Generate SSH Key
 $ ssh-keygen -t rsa -b 4096 -C "user@email.com"
@@ -49,6 +49,11 @@ $ pbcopy < ~/.ssh/id_rsa.pub
 $ cat < ~/.ssh/id_rsa.pub
 # Go to GitHub/Profile Photo/Settings/SSH and GPG keys/New SSH key
 # Paste key and add
+
+# Share my public SSH Key
+$ cd ~/.ssh/
+$ cat id_rsa.pub
+# Copy and share the code listed
 ```
 
 ### Git branch
