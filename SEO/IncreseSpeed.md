@@ -47,6 +47,7 @@ BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
 ```
 
 ### Scripts execution
+- Respect the normal order (css in head, js at body bottom)
 JS + jQuery :
 - ```<script async src = ""> </ script>``` : if the script execution order is not important
 - ```<defer script src = ""> </ script>``` : if the scripts must be executed after the HTML is fully loaded
