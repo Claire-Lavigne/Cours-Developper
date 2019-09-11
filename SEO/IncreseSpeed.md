@@ -18,7 +18,7 @@ A good website = Good Google ranking
   - for not important pics : no need to keep the best quality
   - some sites : [ImageOptim](https://imageoptim.com/fr), [PNGgauntlet](https://pnggauntlet.com/), [Compressor](https://compressor.io/)
 
-### Minify js and css files
+### Minify html, css, js files
 - tools online
 - webpack
 
