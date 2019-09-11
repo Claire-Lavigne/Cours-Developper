@@ -1,3 +1,9 @@
+# Definitions
+- Logo = Significado (grafico)
+- Logotipo = Typografia (texto)
+- Marca = Significado (simbolo) --> Grafico + Texto
+
+# Trouver sa marque
 - Search concurrency names
 - Mission, Vision, Values
 - Public visé
