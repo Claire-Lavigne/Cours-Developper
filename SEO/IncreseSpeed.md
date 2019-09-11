@@ -10,6 +10,9 @@ A good website = Good Google ranking
 
 ## Speed-up pages
 
+### Verify what must be optimized
+Developper Tools (inpector website) => Network => Refresh page => See files, time, etc ...
+
 ### IMG optimization
 - extension adapted : jpg (photographs), svg (forms), png (transparence), gif(animation)
 - resize img to displayed size
