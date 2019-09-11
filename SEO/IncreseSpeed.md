@@ -10,15 +10,21 @@ A good website = Good Google ranking
 
 ## Speed-up pages
 
-### IMG
-- resize img
-- best resolution
-- compressed size : 
-  - for quality pics : keeps the quality intact
+### IMG optimization
+- extension adapted : jpg (photographs), svg (forms), png (transparence), gif(animation)
+- resize img to displayed size
+- choose simple illustrations over highly detailed photographs
+- keep best resolution with compressed size : 
+  - for quality pics : keeps the quality intact (possible to lower jpg quality from 30% to 60 %)
   - for not important pics : no need to keep the best quality
-  - some sites : [ImageOptim](https://imageoptim.com/fr), [PNGgauntlet](https://pnggauntlet.com/), [Compressor](https://compressor.io/)
+  - some sites : 
+    - [ImageOptim](https://imageoptim.com/fr) or JPEG-optimizer
+    - [PNGgauntlet](https://pnggauntlet.com/) or TinyPNG
+    - [Compressor](https://compressor.io/)
+  - use CDN like imgIX.com (library optimizing our images)
+  - remove all metadata of images (ex : camera and private informations...) : [verexif](https://www.verexif.com/en/)
 
-### Minify html, css, js files
+### Minify files (html, css, js, ...)
 - tools online
 - webpack
 
