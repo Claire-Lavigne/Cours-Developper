@@ -29,6 +29,7 @@ A good website = Good Google ranking
 - webpack
 
 ### Eliminate unnecessary resources
+- Libraries unused / poorly used (ex : bootstrap, foundation...)
 
 ### Compress all files into zip 
 - [Gzip](https://www.gzip.org/) => site faster
