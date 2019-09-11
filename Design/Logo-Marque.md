@@ -1,0 +1,7 @@
+- Search concurrency names
+- Mission, Vision, Values
+- Public visé
+- Noms court et prononciable (ex : Nom de famille)
+- Slogans : Phrases courtes et impactantes (valeur marque)
+- Jargons/Expressions à la mode
+- Jeux de mots
