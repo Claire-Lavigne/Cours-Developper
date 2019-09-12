@@ -54,6 +54,7 @@ BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
 ### Scripts execution
 **HTML**
 - Respect the normal order (css in head, js at body bottom)
+
 **JS + jQuery**
 - ```<script async src = ""> </ script>``` (only in head): 
   - if the script execution order is not important
@@ -63,7 +64,7 @@ BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
 - ```<script defer src="script.js"></script>``` (only in head, better than async) :
   - if the scripts must be executed after the HTML is fully loaded
 
-### JS Frameworks
+### JS Frameworks
 - Indexable URLs : 
   - Pages real, with unique, distinct, and indexable URLs.
   - Pages with a server response of 200 OK for each individual page to index.
