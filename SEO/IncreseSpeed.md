@@ -33,9 +33,11 @@ Developper Tools (inpector website) => Network => Refresh page => See files, tim
 
 ### Eliminate unnecessary resources
 - Libraries unused / poorly used (ex : bootstrap, foundation...)
+
 **CSS**
 - Reduce specificity
 - Use Media Queries
+
 **JS**
 - Minimize DOM manipulation
 
