@@ -1,5 +1,12 @@
 # SEO - Increase the Speed of Your Website
 
+## Verify what must be optimized
+- Developper Tools (inpector website) => Network => Refresh page => See files, time, etc ...
+
+## Test website speed
+- WebPageTest
+- [Pages Speed Insights](https://developers.google.com/speed/pagespeed/insights/)
+
 ## Analyse Website
 A good website = Good Google ranking
 - mobile first
@@ -9,9 +16,6 @@ A good website = Good Google ranking
 - light pages
 
 ## Speed-up pages
-
-### Verify what must be optimized
-Developper Tools (inpector website) => Network => Refresh page => See files, time, etc ...
 
 ### IMG optimization
 - extension adapted : jpg (photographs), svg (forms), png (transparence), gif(animation)
@@ -26,13 +30,15 @@ Developper Tools (inpector website) => Network => Refresh page => See files, tim
     - [Compressor](https://compressor.io/)
   - use CDN like imgIX.com (library optimizing our images)
   - remove all metadata of images (ex : camera and private informations...) : [verexif](https://www.verexif.com/en/)
+  - [convert images to WebP](https://www.xnview.com/en/xnconvert/)
 
 ### Minify files (html, css, js, ...)
 - tools online
 - webpack
 
 ### Eliminate unnecessary resources
-- Libraries unused / poorly used (ex : bootstrap, foundation...)
+- Libraries unused / poorly used (ex : bootstrap, foundation, [jQuery](youmightnotneedjquery.com)...)
+- Number of css and scripts files
 
 **CSS**
 - Reduce specificity
@@ -56,6 +62,7 @@ BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
 ### Scripts execution
 **HTML**
 - Respect the normal order (css in head, js at body bottom)
+- [Resource prefetching](https://css-tricks.com/prefetching-preloading-prebrowsing/)
 
 **JS + jQuery**
 - ```<script async src = ""> </ script>``` (only in head): 
