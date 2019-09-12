@@ -33,6 +33,11 @@ Developper Tools (inpector website) => Network => Refresh page => See files, tim
 
 ### Eliminate unnecessary resources
 - Libraries unused / poorly used (ex : bootstrap, foundation...)
+**CSS**
+- Reduce specificity
+- Use Media Queries
+**JS**
+- Minimize DOM manipulation
 
 ### Compress all files into zip 
 - [Gzip](https://www.gzip.org/) => site faster
@@ -47,12 +52,18 @@ BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
 ```
 
 ### Scripts execution
+**HTML**
 - Respect the normal order (css in head, js at body bottom)
-JS + jQuery :
-- ```<script async src = ""> </ script>``` : if the script execution order is not important
-- ```<defer script src = ""> </ script>``` : if the scripts must be executed after the HTML is fully loaded
+**JS + jQuery**
+- ```<script async src = ""> </ script>``` (only in head): 
+  - if the script execution order is not important
+  - if it doesn't affect css or dom elements
+  - if isn't necessary for user experience
+  - ex : Google Analytics Scripts or Tracking Scripts
+- ```<script defer src="script.js"></script>``` (only in head, better than async) :
+  - if the scripts must be executed after the HTML is fully loaded
 
-JS Frameworks
+### JS Frameworks
 - Indexable URLs : 
   - Pages real, with unique, distinct, and indexable URLs.
   - Pages with a server response of 200 OK for each individual page to index.
