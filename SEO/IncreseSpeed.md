@@ -17,6 +17,20 @@ A good website = Good Google ranking
 
 ## Speed-up pages
 
+### Scripts execution
+**HTML**
+- Respect the normal order (css in head, js at body bottom)
+- [Resource prefetching](https://css-tricks.com/prefetching-preloading-prebrowsing/)
+
+**JS + jQuery**
+- ```<script async src = ""> </ script>``` (only in head): 
+  - if the script execution order is not important
+  - if it doesn't affect css or dom elements
+  - if isn't necessary for user experience
+  - ex : Google Analytics Scripts or Tracking Scripts
+- ```<script defer src="script.js"></script>``` (only in head, better than async) :
+  - if the scripts must be executed after the HTML is fully loaded
+  
 ### IMG optimization
 - extension adapted : jpg (photographs), svg (forms), png (transparence), gif(animation)
 - resize img to displayed size
@@ -36,17 +50,6 @@ A good website = Good Google ranking
 - tools online
 - webpack
 
-### Eliminate unnecessary resources
-- Libraries unused / poorly used (ex : bootstrap, foundation, [jQuery](youmightnotneedjquery.com)...)
-- Number of css and scripts files
-
-**CSS**
-- Reduce specificity
-- Use Media Queries
-
-**JS**
-- Minimize DOM manipulation
-
 ### Compress all files into zip 
 - [Gzip](https://www.gzip.org/) => site faster
 - GZIP configuration : Apache 2 Server - .htaccess file
@@ -59,19 +62,21 @@ BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
 ```
 
-### Scripts execution
-**HTML**
-- Respect the normal order (css in head, js at body bottom)
-- [Resource prefetching](https://css-tricks.com/prefetching-preloading-prebrowsing/)
+### Eliminate unnecessary resources
+- Libraries unused / poorly used (ex : bootstrap, foundation, [jQuery](youmightnotneedjquery.com)...)
+- Number of css and scripts files
 
-**JS + jQuery**
-- ```<script async src = ""> </ script>``` (only in head): 
-  - if the script execution order is not important
-  - if it doesn't affect css or dom elements
-  - if isn't necessary for user experience
-  - ex : Google Analytics Scripts or Tracking Scripts
-- ```<script defer src="script.js"></script>``` (only in head, better than async) :
-  - if the scripts must be executed after the HTML is fully loaded
+**CSS**
+- Reduce specificity
+- Use Media Queries
+
+**JS**
+- Minimize DOM manipulation
+
+### Choose Frameworks/Libraries for their speciality
+- Angular (Framework) : large company, massive code
+- React (most used) : strong developer team that needs to be flexible and evolve with different libraries and tools
+- ViewJS : simple and friendly for junior developers
 
 ### JS Frameworks
 - Indexable URLs : 
