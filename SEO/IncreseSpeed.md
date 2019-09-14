@@ -61,6 +61,7 @@ BrowserMatch ^Mozilla/4\.0[678] no-gzip
 BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
 ```
+- Or Brotli (more efficient)
 
 ### Eliminate unnecessary resources
 - Libraries unused / poorly used (ex : bootstrap, foundation, [jQuery](youmightnotneedjquery.com)...)
@@ -77,6 +78,17 @@ BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
 - Angular (Framework) : large company, massive code
 - React (most used) : strong developer team that needs to be flexible and evolve with different libraries and tools
 - ViewJS : simple and friendly for junior developers
+
+### Database Scaling
+- Identify inefficient queries
+   - Am I using SQL efficiently ?
+   - Use indexes
+   - Make only necessary requests
+- Increase memory
+- Vertical scaling (Redis, Memchached)
+- Sharding
+- More databases
+- Database type
 
 ### JS Frameworks
 - Indexable URLs : 
@@ -139,7 +151,7 @@ BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
   ```
 - Test cache : Cache Checker allows you to check that everything is being cached correctly and for the right duration
 
-### Installing a CDN (network of servers) : 
+### Installing a CDN server (network of servers) : 
 - Advantages :
   - Improved page load speed and improved website crawlability.
   - More traffic without crashing your server.
