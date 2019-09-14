@@ -5,7 +5,7 @@
 
 # Familles
 - Normal, Gras, Italique
-- Sans-Serif, Serif, Cursive, Fantasy
+- Sans-Serif (mots courts, expressions > 2 mots), Serif (mots longs), Cursive, Fantasy
 
 # Most Commun (Formes très variées et lisibles)
 - Helvetica Neue
