@@ -1,4 +1,6 @@
 - CorelDraw Graphics Suite 2017
 - Adobe Illustrator
 - **Inkscape** (gratuit)
-- Autodesk Graphic
+- Autodesk Graphic (vecteurs)
+- [Gravit Designer](https://www.designer.io/fr/) (vecteurs)
+- [Sketchbook](https://sketchbook.com/) (crayon)
