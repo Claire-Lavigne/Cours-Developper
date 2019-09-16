@@ -1,0 +1,3 @@
+- carré : force, précision, ordre, masculin
+- rond : sécurité, modernité, infini, unité féminin
+- triangle : dualité, force++, féminin/masculin
