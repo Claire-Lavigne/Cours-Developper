@@ -11,3 +11,11 @@
 - Slogans : Phrases courtes et impactantes (valeur marque)
 - Jargons/Expressions à la mode
 - Jeux de mots
+
+# Trouver des références
+- Livres
+- Nature 
+- Personnes
+- Objets
+- Concurrents
+- Web
