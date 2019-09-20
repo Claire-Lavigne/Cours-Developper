@@ -1,6 +1,4 @@
-# Public visé
-
-## Classe sociale
+## Classe sociale
 - **Aisée** : luxe, richesse, couleurs brillantes/or/argent, textures métalliques
 - **Moyenne/Populaire** : simple, qualité/prix, couleurs normales
 - **Pauvre** : fun, décontracté, couleurs vives
