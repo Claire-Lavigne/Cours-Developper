@@ -9,7 +9,8 @@
 - Mission, Vision, Values
 - Public visé
 - Noms court et prononciable (ex : Nom de famille)
-- Slogans : Phrases courtes et impactantes (valeur marque)
+- Slogans : Phrases courtes et impactantes (valeur marque) :
+  - À partir d'une liste de mots-clés liés à la marque / société
 - Jargons/Expressions à la mode
 - Jeux de mots
 
