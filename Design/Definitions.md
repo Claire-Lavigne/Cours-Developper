@@ -2,6 +2,7 @@
 - Logo = Significado (grafico)
 - Logotipo = Typografia (texto)
 - Marca = Significado (simbolo) --> Grafico + Texto
+- Mascote = dessin personnage représentant marque
 
 # Trouver sa marque
 - Search concurrency names
