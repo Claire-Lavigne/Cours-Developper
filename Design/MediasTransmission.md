@@ -1,4 +1,4 @@
-- Imprimé
+- Impression papier
 - Web
 - Tv
 - Adhésif
