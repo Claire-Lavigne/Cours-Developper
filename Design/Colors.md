@@ -13,3 +13,6 @@
 * Brown: **Nature, Wholesomeness, Dependability**
 * Tan or Beige: **Conservative, Piety, Dull**
 * Cream or Ivory: **Calm, Elegant, Purity**
+
+# Test lumières/ombres
+# Utiliser cercle chromatique
