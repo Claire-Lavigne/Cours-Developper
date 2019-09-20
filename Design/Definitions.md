@@ -19,6 +19,6 @@
 - Personnes
 - Objets
 - Concurrents
-- Web
+- Web (google images, yahoo, pinterest)
 
 # Suivre : Design/Icones/Logo Tendance 2019
