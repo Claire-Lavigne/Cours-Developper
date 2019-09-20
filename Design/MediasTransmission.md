@@ -9,6 +9,7 @@ Le logo doit rester bon en :
 - grand
 - noir/blanc/gris/rouge..
 - fond blanc/noir/gris...
+- format horizontal et vertical
 
 Demander à l'entourage leur avis :
 - pour quel public selon toi ?
