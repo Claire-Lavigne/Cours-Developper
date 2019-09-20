@@ -10,6 +10,7 @@ Le logo doit rester bon en :
 - noir/blanc/gris/rouge..
 - fond blanc/noir/gris...
 - format horizontal et vertical
+  - à l'horizontale (logo + typographie), le texte du logo doit avoir le même espacement en haut/bas/gauche/droite pour être harmonieux
 
 Demander à l'entourage leur avis :
 - pour quel public selon toi ?
