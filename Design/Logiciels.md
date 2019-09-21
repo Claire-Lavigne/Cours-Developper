@@ -4,4 +4,5 @@
 - Autodesk Graphic (vecteurs)
 - [Gravit Designer](https://www.designer.io/fr/) (vecteurs)
   - 2000px x 1500px for logo
+  - Exportation : pdf 300dpi cor CMYK texto como curvas, svg, png taille 2x (4000px)
 - [Sketchbook](https://sketchbook.com/) (crayon)
