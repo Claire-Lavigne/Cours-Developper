@@ -3,4 +3,5 @@
 - **Inkscape** (gratuit)
 - Autodesk Graphic (vecteurs)
 - [Gravit Designer](https://www.designer.io/fr/) (vecteurs)
+  - 2000px x 1500px for logo
 - [Sketchbook](https://sketchbook.com/) (crayon)
