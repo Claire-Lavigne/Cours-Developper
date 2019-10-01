@@ -62,7 +62,9 @@ cityForm.addEventListener('submit', ($event) => {
 });
 ```
 
-# Post Request
+# Post request
+- [intro à js async](https://openclassrooms.com/en/courses/5493201-write-javascript-for-the-web/5496671-understand-asynchronous-programming) : callbacks, promises, async, await
+
 ```html
 <html>
   <head>
