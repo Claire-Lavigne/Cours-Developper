@@ -61,3 +61,101 @@ cityForm.addEventListener('submit', ($event) => {
   apiRequest.send();
 });
 ```
+
+# Post Request
+```html
+<html>
+  <head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <title>Sending a POST request</title>
+  </head>
+  <body>
+    <div class="container">
+      <header id="page-header" class="bg-dark text-white col-sm-12">
+        <h1 id="main-heading" class="text-center">Sending a POST request</h1>
+      </header>
+      <div class="row">
+        <main class="col-sm-10 offset-sm-1">
+          <form>
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input type="text" id="title" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="content">Content</label>
+              <textarea id="content" class="form-control" rows="4" required></textarea>
+            </div>
+            <button id="submit-button" type="submit" class="btn btn-primary">
+              Submit
+            </button>
+          </form>
+        </main>
+      </div>
+      <div class="row">
+        <section class="col-sm-10 offset-sm-1">
+          <p id="response-message"></p>
+          <h2 id="response-title"></h2>
+          <small id="response-id"></small>
+          <p id="response-content"></p>
+        </section>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
+```
+
+```js
+// Get form elements
+const titleInput = document.getElementById('title');
+const contentInput = document.getElementById('content');
+const submitButton = document.getElementById('submit-button');
+
+const url = 'https://us-central1-open-classrooms-js-for-the-web.cloudfunctions.net/widgets';
+
+// Get DOM elements for showing response
+const responseMessage = document.getElementById('response-message');
+const responseTitle = document.getElementById('response-title');
+const responseId = document.getElementById('response-id');
+const responseContent = document.getElementById('response-content');
+
+submitButton.addEventListener('click', ($event) => {
+  $event.preventDefault();
+  const post = {
+    title: titleInput.value,
+    content: contentInput.value
+  };
+  submitFormData(post);
+});
+
+function makeRequest(data) {
+  return new Promise((resolve, reject) => {
+    let request = new XMLHttpRequest();
+    request.open('POST', url + '/create-post');
+    request.onreadystatechange = () => {
+      if (request.readyState === 4) {
+        if (request.status === 201) {
+          resolve(JSON.parse(request.response));
+        } else {
+          reject(JSON.parse(request.response));
+        }
+      }
+    };
+    request.setRequestHeader('Content-Type', 'application/json');
+    request.send(JSON.stringify(data));
+  });
+}
+
+async function submitFormData(post) {
+  try {
+    const requestPromise = makeRequest(post);
+    const response = await requestPromise;
+    responseMessage.textContent = response.message;
+    responseTitle.textContent = response.post.title;
+    responseId.textContent = response.post.id;
+    responseContent.textContent = response.post.content;
+  } catch (errorResponse) {
+    responseMessage.textContent = errorResponse.error;
+  }
+}
+```
