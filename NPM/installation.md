@@ -51,6 +51,9 @@ npm install --save-dev gulp
 const gulp = require('gulp');
 const jshint = require('gulp-jshint');
 const babel = require('gulp-babel');
+const uglify = require('gulp-uglify');
+const runSequence = require('run-sequence');
+const browserSync = require('browser-sync').create();
 
 gulp.task('processHTML', () => {
     gulp.src('*.html')
@@ -66,18 +69,47 @@ gulp.task('processJS', () => {
     .pipe(babel({
       presets: ['env']
     }))
+    .pipe(uglify())
     .pipe(gulp.dest('dist'));
+});
+
+gulp.task('babelPolyfill', () => {
+  gulp.src('node_modules/babel-polyfill/browser.js')
+    .pipe(gulp.dest('dist/node_modules/babel-polyfill'));
+});
+
+gulp.task('browserSync', () => {
+  browserSync.init({
+    server: './dist',
+    port: 8080,
+    ui: {
+      port: 8081
+    }
+  });
+});
+
+gulp.task('watch', ['browserSync'], () => {
+  gulp.watch('*.js', ['processJS']);
+  gulp.watch('*.html', ['processHTML']);
+  
+  gulp.watch('dist/*.js', browserSync.reload);
+  gulp.watch('dist/*.html', browserSync.reload);
+});
+
+gulp.task('default', (callback) => {
+  runSequence(['processHTML', 'processJS', 'babelPolyfill'], 'watch', callback);
 });
 ```
 ```bash
 gulp processHTML
-# if not working
-sudo gem update
 gulp processJS
 gulp babelPolyfill
-npm install --save-dev jshint gulp-jshint
-npm install --save-dev gulp-babel
-npm install --save-dev babel-core babel-preset-env
-npm install --save-dev @babel/core @babel/preset-env
+
+npm install --save-dev jshint gulp-jshint gulp-uglify babel-core babel-preset-env gulp-babel @babel/core @babel/preset-env run-sequence browser-sync
+
+# if not working, see version of gulp. If version 4.0 :
+npm install --save-dev gulp@3.9.1
+
+gulp
 ```
-- ```dist``` folder created with a copy of all html files
+- ```dist``` folder created with a copy of all files
