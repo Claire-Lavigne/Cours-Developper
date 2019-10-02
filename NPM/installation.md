@@ -18,8 +18,8 @@ npm install <package> --save-dev
 
 # BABEL PACKAGE : transform JS ES6/ES7/ES8 into older ES
 ```bash
-npm install --save-dev babel-cli babel-preset-env
-# babel-core @babel/core @babel/preset-env
+npm install --save-dev babel-cli babel-preset-env @babel/core
+# babel-core @babel/preset-env
 ```
 - create the file ```.babelrc``` in project to configure babel, with this content :
 ```js
