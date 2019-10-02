@@ -15,7 +15,6 @@ npm install <package> --save-dev
 ```
 - when packages installed locally, ```node_modules``` is created
 - add ```node_modules``` to ignored files in ```.gitignore```
-- run ```npm install``` when cloning git repo
 
 # BABEL PACKAGE : transform JS ES6/ES7/ES8 into older ES
 ```bash
@@ -113,3 +112,6 @@ npm install --save-dev gulp@3.9.1
 gulp
 ```
 - ```dist``` folder created with a copy of all files
+
+# CLONING DEPO
+- run ```npm install``` and ```gulp```
