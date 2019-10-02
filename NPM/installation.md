@@ -22,7 +22,7 @@ npm install <package> --save-dev
 npm install babel-cli babel-preset-env --save-dev
 ```
 - create the file ```.babelrc``` in project to configure babel, with this content :
-```
+```js
 {
   "presets": ["env"]
 }
@@ -47,7 +47,7 @@ sudo -k
 npm install --save-dev gulp
 ```
 - create the file ```gulpfile.js``` in project and add :
-```
+```js
 const gulp = require('gulp');
 const jshint = require('gulp-jshint');
 const babel = require('gulp-babel');
