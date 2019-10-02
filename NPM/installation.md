@@ -18,7 +18,8 @@ npm install <package> --save-dev
 
 # BABEL PACKAGE : transform JS ES6/ES7/ES8 into older ES
 ```bash
-npm install babel-cli babel-preset-env --save-dev
+npm install --save-dev babel-cli babel-preset-env
+# babel-core @babel/core @babel/preset-env
 ```
 - create the file ```.babelrc``` in project to configure babel, with this content :
 ```js
@@ -104,7 +105,7 @@ gulp processHTML
 gulp processJS
 gulp babelPolyfill
 
-npm install --save-dev jshint gulp-jshint gulp-uglify babel-core babel-preset-env gulp-babel @babel/core @babel/preset-env run-sequence browser-sync
+npm install --save-dev jshint gulp-jshint gulp-uglify gulp-babel run-sequence browser-sync
 
 # if not working, see version of gulp. If version 4.0 :
 npm install --save-dev gulp@3.9.1
