@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="582px" height="647px" viewBox="0 0 582 647" enable-background="new 0 0 582 647" xml:space="preserve">
+<g id="Layer_1_1_">
+	<text transform="matrix(1 0 0 1 466.3108 58.75)" fill="#010101" font-family="'Arial-BoldMT'" font-size="14">Employee</text>
+	<text transform="matrix(1 0 0 1 45.9998 398)" fill="#010101" font-family="'Arial-BoldMT'" font-size="14">Car</text>
+	<g>
+		<text transform="matrix(1 0 0 1 127.1492 247.4082)" fill="#010101" font-family="'Arial-BoldMT'" font-size="14">OwerInfo</text>
+		<rect x="121.15" y="222.409" fill="none" stroke="#010101" stroke-miterlimit="10" width="71.271" height="74.274"/>
+		<line fill="none" stroke="#010101" stroke-miterlimit="10" x1="126.372" y1="256.325" x2="185.705" y2="256.325"/>
+		<rect x="131.372" y="265.241" fill="none" width="96.145" height="44.835"/>
+		<text transform="matrix(1 0 0 1 131.3704 273.1152)" fill="#54B948" font-family="'ArialMT'" font-size="11">aptNumber</text>
+		<text transform="matrix(1 0 0 1 131.3704 286.3164)" fill="#54B948" font-family="'ArialMT'" font-size="11">mobile</text>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 127.1492 331.2441)" fill="#010101" font-family="'Arial-BoldMT'" font-size="14">CarOwner</text>
+		<rect x="121.15" y="306.245" fill="none" stroke="#010101" stroke-miterlimit="10" width="77.339" height="74.274"/>
+		<line fill="none" stroke="#010101" stroke-miterlimit="10" x1="126.372" y1="340.16" x2="185.705" y2="340.16"/>
+		<rect x="131.372" y="349.076" fill="none" width="96.145" height="44.836"/>
+		<text transform="matrix(1 0 0 1 131.3704 356.9512)" fill="#54B948" font-family="'ArialMT'" font-size="11">aptOwnerID</text>
+		<text transform="matrix(1 0 0 1 131.3704 370.1523)" fill="#54B948" font-family="'ArialMT'" font-size="11">carID</text>
+	</g>
+	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="161.15" y1="213" x2="161.15" y2="222.409"/>
+	<g>
+		<text transform="matrix(1 0 0 1 391.8245 438.415)" fill="#010101" font-family="'Arial-BoldMT'" font-size="14">FedAt</text>
+		<rect x="369.466" y="412.415" fill="none" stroke="#010101" stroke-miterlimit="10" width="80" height="86.957"/>
+		<text transform="matrix(1 0 0 1 386.3342 460.998)" fill="#54B948" font-family="'ArialMT'" font-size="11">catID</text>
+		<text transform="matrix(1 0 0 1 386.3342 474.1982)" fill="#54B948" font-family="'ArialMT'" font-size="11">aptID</text>
+		<text transform="matrix(1 0 0 1 386.3342 487.3984)" font-family="'ArialMT'" font-size="11">food</text>
+		<line fill="none" stroke="#010101" stroke-miterlimit="10" x1="381" y1="442.665" x2="442.531" y2="442.665"/>
+	</g>
+	<g>
+		<text transform="matrix(1.2101 0 0 1 275.0735 499.3721)" fill="#010101" font-family="'Arial-BoldMT'" font-size="14">Cleaner</text>
+		<rect x="258.074" y="474.457" fill="none" stroke="#010101" stroke-miterlimit="10" width="92.997" height="101.085"/>
+		<line fill="none" stroke="#010101" stroke-miterlimit="10" x1="266.667" y1="505.54" x2="342" y2="505.54"/>
+		<rect x="270.667" y="515.54" fill="none" width="80.404" height="66.002"/>
+		<text transform="matrix(1 0 0 1 270.6663 523.416)" fill="#EF3A24" font-family="'ArialMT'" font-size="11">cleanerID   PK</text>
+		<text transform="matrix(1 0 0 1 270.6663 536.6162)" font-family="'ArialMT'" font-size="11">firstName</text>
+		<text transform="matrix(1 0 0 1 270.6663 549.8154)" font-family="'ArialMT'" font-size="11">lastName</text>
+		<text transform="matrix(1 0 0 1 270.6663 563.0156)" font-family="'ArialMT'" font-size="11">ratePerDay</text>
+	</g>
+	<g>
+		<text transform="matrix(1.2101 0 0 1 130.3596 411.3301)" fill="#010101" font-family="'Arial-BoldMT'" font-size="14">CleanSched</text>
+		<rect x="121" y="389.415" fill="none" stroke="#010101" stroke-miterlimit="10" width="117.819" height="85.042"/>
+		<line fill="none" stroke="#010101" stroke-miterlimit="10" x1="130.359" y1="420.665" x2="225.667" y2="420.665"/>
+		<text transform="matrix(1 0 0 1 130.3582 438.665)" fill="#54B948" font-family="'ArialMT'" font-size="11">aptID</text>
+		<text transform="matrix(1 0 0 1 130.3582 451.8652)" fill="#54B948" font-family="'ArialMT'" font-size="11">cleanerID</text>
+		<text transform="matrix(1 0 0 1 130.3582 465.0654)" font-family="'ArialMT'" font-size="11">date</text>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 483.635 226.166)" fill="#010101" font-family="'Arial-BoldMT'" font-size="14">Dog</text>
+		<rect x="452.378" y="201.166" fill="none" stroke="#010101" stroke-miterlimit="10" width="104.438" height="113.94"/>
+		<line fill="none" stroke="#010101" stroke-miterlimit="10" x1="473.351" y1="235.166" x2="528.152" y2="235.166"/>
+		<rect x="473.352" y="245.166" fill="none" width="68.666" height="53.499"/>
+		<text transform="matrix(1 0 0 1 473.3518 253.042)" fill="#EF3A24" font-family="'ArialMT'" font-size="11">dogID  PK</text>
+		<text transform="matrix(1 0 0 1 473.3518 266.2422)" fill="#008BCE" font-family="'ArialMT'" font-size="11">aptNumber  FK</text>
+		<text transform="matrix(1 0 0 1 473.3518 279.4424)" fill="#010101" font-family="'ArialMT'" font-size="11">name</text>
+		<text transform="matrix(1 0 0 1 473.3518 292.6426)" fill="#010101" font-family="'ArialMT'" font-size="11">breed</text>
+		<text transform="matrix(1 0 0 1 473.3518 305.8418)" fill="#010101" font-family="'ArialMT'" font-size="11">bites</text>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 506.8186 389.415)" fill="#010101" font-family="'Arial-BoldMT'" font-size="14">Cat</text>
+		<rect x="476.818" y="365.415" fill="none" stroke="#010101" stroke-miterlimit="10" width="80" height="99.142"/>
+		<rect x="489.532" y="406.665" fill="none" width="68.666" height="53.499"/>
+		<text transform="matrix(1 0 0 1 489.5354 414.541)" fill="#EF3A24" font-family="'ArialMT'" font-size="11">catID  PK</text>
+		<text transform="matrix(1 0 0 1 489.5354 427.7402)" fill="#010101" font-family="'ArialMT'" font-size="11">name</text>
+		<text transform="matrix(1 0 0 1 489.5354 440.9414)" fill="#010101" font-family="'ArialMT'" font-size="11">breed</text>
+		<text transform="matrix(1 0 0 1 489.5354 454.1406)" fill="#010101" font-family="'ArialMT'" font-size="11">hasClaws</text>
+	</g>
+	<rect x="452.378" y="33.75" fill="none" stroke="#010101" stroke-miterlimit="10" width="104.282" height="106.5"/>
+	<g>
+		<text transform="matrix(1 0 0 1 220.6399 58.5)" fill="#010101" font-family="'Arial-BoldMT'" font-size="14">Building</text>
+		<rect x="205.64" y="33.5" fill="none" stroke="#010101" stroke-miterlimit="10" width="94" height="107"/>
+		<line fill="none" stroke="#010101" stroke-miterlimit="10" x1="213" y1="64.332" x2="291" y2="64.332"/>
+		<rect x="218.333" y="70.5" fill="none" width="77.576" height="70"/>
+		<text transform="matrix(1 0 0 1 218.3333 78.376)" fill="#EF3A24" font-family="'ArialMT'" font-size="11">buildingID   PK</text>
+		<text transform="matrix(1 0 0 1 218.3333 91.5762)" fill="#010101" font-family="'ArialMT'" font-size="11">address</text>
+		<text transform="matrix(1 0 0 1 218.3333 104.7764)" fill="#010101" font-family="'ArialMT'" font-size="11">cityTaxID</text>
+		<text transform="matrix(1 0 0 1 218.3333 117.9756)" fill="#010101" font-family="'ArialMT'" font-size="11">fireDeptID</text>
+		<text transform="matrix(1 0 0 1 218.3333 131.1758)" fill="#010101" font-family="'ArialMT'" font-size="11">zoningGroup</text>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 220.9998 220)" fill="#010101" font-family="'Arial-BoldMT'" font-size="14">Apartment</text>
+		<rect x="205.64" y="195" fill="none" stroke="#010101" stroke-miterlimit="10" width="100" height="110.842"/>
+		<rect x="218.333" y="236.166" fill="none" width="81.307" height="53.499"/>
+		<text transform="matrix(1 0 0 1 218.3333 271.1152)" font-family="'ArialMT'" font-size="11">aptNumber</text>
+		<text transform="matrix(1 0 0 1 218.3333 244.043)" fill="#EF3A24" font-family="'ArialMT'" font-size="11">aptID   PK</text>
+		<text transform="matrix(1 0 0 1 218.3333 258.1357)" fill="#008BCE" font-family="'ArialMT'" font-size="11">buildingID   FK</text>
+		<text transform="matrix(1 0 0 1 218.3333 284.4424)" font-family="'ArialMT'" font-size="11">size</text>
+		<text transform="matrix(1 0 0 1 218.3333 296.6416)" font-family="'ArialMT'" font-size="11">bedrooms</text>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="213" y1="229" x2="294.333" y2="229"/>
+	</g>
+	<g>
+		<text transform="matrix(1 0 0 1 30.3586 220)" fill="#010101" font-family="'Arial-BoldMT'" font-size="14">AptOwner</text>
+		<rect x="14" y="195" fill="none" stroke="#010101" stroke-miterlimit="10" width="94" height="120.5"/>
+		<rect x="30.36" y="236.167" fill="none" width="68.667" height="53.499"/>
+		<text transform="matrix(1 0 0 1 22.3586 248.043)" enable-background="new    "><tspan x="0" y="0" fill="#EF3A24" font-family="'ArialMT'" font-size="11">aptOwnerID  PK</tspan><tspan x="0" y="13.2" fill="#010101" font-family="'ArialMT'" font-size="11">mobile    </tspan></text>
+		<text transform="matrix(1 0 0 1 22.3586 275.2422)" fill="#010101" font-family="'ArialMT'" font-size="11">firstName</text>
+		<text transform="matrix(1 0 0 1 22.3586 288.4424)" fill="#010101" font-family="'ArialMT'" font-size="11">lastName</text>
+		<text transform="matrix(1 0 0 1 22.3586 301.6426)" fill="#010101" font-family="'ArialMT'" font-size="11">email</text>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="21" y1="229" x2="99.026" y2="229"/>
+	</g>
+	<rect x="26" y="379" fill="none" stroke="#010101" stroke-miterlimit="10" width="62" height="95.874"/>
+	<g>
+		<text transform="matrix(1 0 0 1 32.9998 544.125)" fill="#010101" font-family="'Arial-BoldMT'" font-size="14">ParkSpace</text>
+		<rect x="15" y="521.125" fill="none" stroke="#010101" stroke-miterlimit="10" width="130.345" height="73.333"/>
+		<line fill="none" stroke="#010101" stroke-miterlimit="10" x1="22.333" y1="549.792" x2="131.667" y2="549.792"/>
+		<rect x="34" y="556.126" fill="none" width="105" height="38.332"/>
+		<text transform="matrix(1 0 0 1 33.9998 564.002)" fill="#EF3A24" font-family="'ArialMT'" font-size="11">parkingSpaceID   PK</text>
+		<text transform="matrix(1 0 0 1 33.9998 577.2021)" fill="#008BCE" font-family="'ArialMT'" font-size="11">carID  FK</text>
+	</g>
+	<line fill="none" stroke="#010101" stroke-miterlimit="10" x1="252.64" y1="141" x2="252.64" y2="195"/>
+	<line fill="none" stroke="#010101" stroke-miterlimit="10" x1="270.822" y1="305.842" x2="270.822" y2="474.457"/>
+	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="60" y1="474.874" x2="60" y2="522.125"/>
+	<line fill="none" stroke="#010101" stroke-miterlimit="10" x1="299.64" y1="51.5" x2="452.378" y2="51.5"/>
+	<line fill="none" stroke="#010101" stroke-miterlimit="10" x1="305.641" y1="213" x2="452.378" y2="213"/>
+	<polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="476.818,383.415 326.282,383.415 326.282,369.415 
+		326.282,331.415 326.334,282.332 307,282.332 	"/>
+	<line fill="none" stroke="#010101" stroke-miterlimit="10" x1="108" y1="213" x2="205.64" y2="213"/>
+	<line fill="none" stroke="#010101" stroke-miterlimit="10" x1="62" y1="315.5" x2="62" y2="380"/>
+	<line fill="none" stroke="#010101" stroke-miterlimit="10" x1="409.466" y1="383.415" x2="409.466" y2="412.415"/>
+	<line fill="none" stroke="#010101" stroke-miterlimit="10" x1="238.821" y1="420.665" x2="269.667" y2="420.665"/>
+	<rect x="468.65" y="72.915" fill="none" width="88.014" height="54.667"/>
+	<text transform="matrix(1 0 0 1 468.6487 80.791)" fill="#EF3A24" font-family="'ArialMT'" font-size="11">employeeID   PK</text>
+	<text transform="matrix(1 0 0 1 468.6487 93.9902)" fill="#008BCE" font-family="'ArialMT'" font-size="11">buildingID    FK</text>
+	<text transform="matrix(1 0 0 1 468.6487 107.1904)" fill="#010101" font-family="'ArialMT'" font-size="11">firstName</text>
+	<text transform="matrix(1 0 0 1 468.6487 120.3906)" fill="#010101" font-family="'ArialMT'" font-size="11">lastName</text>
+	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="459.287" y1="63.582" x2="537.317" y2="63.582"/>
+	<rect x="33.667" y="409.415" fill="none" width="68.667" height="53.498"/>
+	<text transform="matrix(1 0 0 1 33.6663 438.291)" fill="#010101" font-family="'ArialMT'" font-size="11">licence</text>
+	<text transform="matrix(1 0 0 1 33.6663 423.6914)" fill="#EF3A24" font-family="'ArialMT'" font-size="11">carID  PK</text>
+	<text transform="matrix(1 0 0 1 33.6663 451.4902)" fill="#010101" font-family="'ArialMT'" font-size="11">make</text>
+	<text transform="matrix(1 0 0 1 33.6663 464.6914)" fill="#010101" font-family="'ArialMT'" font-size="11">model</text>
+	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="489.531" y1="397.915" x2="544.334" y2="397.915"/>
+	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="33.667" y1="403.415" x2="81" y2="403.415"/>
+</g>
+<text transform="matrix(1 0 0 1 371.6663 204)" font-family="'ArialMT'" font-size="11">Stays</text>
+<text transform="matrix(1 0 0 1 357.3342 43.4131)" font-family="'ArialMT'" font-size="11">Works in</text>
+<text transform="matrix(1 0 0 1 145.345 202.3086)" font-family="'ArialMT'" font-size="11">Owns</text>
+<text transform="matrix(1 0 0 1 25.6785 347.75)" font-family="'ArialMT'" font-size="11">Owns</text>
+<text transform="matrix(1 0 0 1 25.6785 500.917)" font-family="'ArialMT'" font-size="11">Parks</text>
+<text transform="matrix(1 0 0 1 391.8245 374.415)" font-family="'ArialMT'" font-size="11">Feeds</text>
+<text transform="matrix(1 0 0 1 277.8235 423.6914)" font-family="'ArialMT'" font-size="11">Cleans</text>
+<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="62" y1="343.383" x2="120.5" y2="343.383"/>
+<polyline fill="none" stroke="#010101" stroke-miterlimit="10" points="452.551,46.087 441.321,51.5 452.551,56.913 "/>
+<polyline fill="none" stroke="#010101" stroke-miterlimit="10" points="452.551,207.587 441.321,213 452.551,218.413 "/>
+<polyline fill="none" stroke="#010101" stroke-miterlimit="10" points="318.231,207.587 307,213 318.231,218.413 "/>
+<polyline fill="none" stroke="#010101" stroke-miterlimit="10" points="312.231,46.087 301,51.5 312.231,56.913 "/>
+<polyline fill="none" stroke="#010101" stroke-miterlimit="10" points="205.104,207.587 193.873,213 205.104,218.413 "/>
+<polyline fill="none" stroke="#010101" stroke-miterlimit="10" points="477.541,378.002 466.311,383.415 477.541,388.828 "/>
+<polyline fill="none" stroke="#010101" stroke-miterlimit="10" points="307,287.745 318.231,282.332 307,276.919 "/>
+<polyline fill="none" stroke="#010101" stroke-miterlimit="10" points="108.089,218.413 119.32,213 108.089,207.587 "/>
+<polyline fill="none" stroke="#010101" stroke-miterlimit="10" points="257.413,195 252,183.77 246.587,195 "/>
+<polyline fill="none" stroke="#010101" stroke-miterlimit="10" points="276.235,473.627 270.822,462.396 265.408,473.627 "/>
+<polyline fill="none" stroke="#010101" stroke-miterlimit="10" points="67.413,379.03 62,367.8 56.587,379.03 "/>
+<polyline fill="none" stroke="#010101" stroke-miterlimit="10" points="265.253,305.461 270.666,316.691 276.079,305.461 "/>
+<polyline fill="none" stroke="#010101" stroke-miterlimit="10" points="56.587,315.106 62,326.336 67.413,315.106 "/>
+</svg>
