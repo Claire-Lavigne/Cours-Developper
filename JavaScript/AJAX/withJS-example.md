@@ -162,8 +162,7 @@ async function submitFormData(post) {
 }
 ```
 
-___
-# Async request
+# Multiple requests (promises, async/await)
 ```html
 <html>
   <head>
@@ -261,5 +260,4 @@ async function createPost() {
 generateButton.addEventListener('click', () => {
   createPost();
 });
-
 ```
