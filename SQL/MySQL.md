@@ -26,11 +26,12 @@ SELECT id, auteur, message, datemsg FROM livreor ORDER BY datemsg DESC LIMIT 0, 
 # [Gérer phpMyAdmin to set up a database](https://openclassrooms.com/en/courses/918836-concevez-votre-site-web-avec-php-et-mysql/913893-phpmyadmin)
 
 # Use a database
-1- Create : add a record to the cat table
+- Create : add a record to the cat table
 ```sql
-INSERT INTO `cat` (`cat_id`, `name`, `breed`, `has_claws` ) VALUES (NULL, 'Haldeman', 'Japanese Bobtail', '0'); 
+INSERT INTO `cat` (`cat_id`, `name`, `breed`, `has_claws` ) 
+VALUES (NULL, 'Haldeman', 'Japanese Bobtail', '0'); 
 ```
-2- Read : 
+- Read : 
 ```sql
 # read a complete row in the cat table
 SELECT * FROM `cat` WHERE `cat_id` = 2;
@@ -41,11 +42,11 @@ SELECT `name` FROM `cat` WHERE `cat_id` = 2;
 # read the cat id with harold or something similar
 SELECT * FROM `cat` WHERE `name` LIKE 'Harold';
 ```
-3- Update : change the name of a cat
+- Update : change the name of a cat
 ```sql
 UPDATE `cat` SET `name` = 'Lester Pickles' WHERE `cat_id` = '2';
 ```
-4- Destroy : delete a record from the cat table
+- Destroy : delete a record from the cat table
 ```sql
 DELETE FROM `cat` WHERE `cat_id` = 3;
 ```
