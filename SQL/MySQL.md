@@ -17,9 +17,7 @@ SELECT id, auteur, message, datemsg FROM livreor ORDER BY datemsg DESC LIMIT 0, 
 ```
 
 # Structure BDD
-https://user.oc-static.com/files/59001_60000/59541.png
-https://openclassrooms.com/en/courses/918836-concevez-votre-site-web-avec-php-et-mysql/913655-quest-ce-quune-base-de-donnees#/id/r-2174731
-Exemple de tables :
+[Exemple de tables](https://openclassrooms.com/en/courses/918836-concevez-votre-site-web-avec-php-et-mysql/913655-quest-ce-quune-base-de-donnees#/id/r-2174731) :
 - news : stocke toutes les news qui sont affichées à l'accueil ;
 - livre_or : stocke tous les messages postés sur le livre d'or ;
 - forum : stocke tous les messages postés sur le forum ;
