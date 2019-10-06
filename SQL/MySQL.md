@@ -50,3 +50,9 @@ UPDATE `cat` SET `name` = 'Lester Pickles' WHERE `cat_id` = '2';
 ```sql
 DELETE FROM `cat` WHERE `cat_id` = 3;
 ```
+
+# [Create the database with PHPMyAdmin](https://openclassrooms.com/en/courses/4191736-design-a-database-with-uml/4222791-create-records)
+# [Read it with PHPMyAdmin](https://openclassrooms.com/en/courses/4191736-design-a-database-with-uml/4222816-read-records)
+# [Update..](https://openclassrooms.com/en/courses/4191736-design-a-database-with-uml/4222841-update-records)
+# [Destroy..](https://openclassrooms.com/en/courses/4191736-design-a-database-with-uml/4222951-destroy-records)
+# [Perform SELECTS with multiple tables](https://openclassrooms.com/en/courses/4191736-design-a-database-with-uml/4222961-perform-selects-with-multiple-tables)
