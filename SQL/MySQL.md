@@ -56,7 +56,6 @@ DELETE FROM `cat` WHERE `cat_id` = 3;
 ```
 
 # [Create the database with PHPMyAdmin](https://openclassrooms.com/en/courses/4191736-design-a-database-with-uml/4222791-create-records)
-# [Read it with PHPMyAdmin](https://openclassrooms.com/en/courses/4191736-design-a-database-with-uml/4222816-read-records)
-# [Update..](https://openclassrooms.com/en/courses/4191736-design-a-database-with-uml/4222841-update-records)
-# [Destroy..](https://openclassrooms.com/en/courses/4191736-design-a-database-with-uml/4222951-destroy-records)
+# [Read it with PHPMyAdmin](https://openclassrooms.com/en/courses/4191736-design-a-database-with-uml/4222816-read-records) - [Tuto en fr](https://openclassrooms.com/en/courses/918836-concevez-votre-site-web-avec-php-et-mysql/914293-lisez-des-donnees)
+# [Update..](https://openclassrooms.com/en/courses/4191736-design-a-database-with-uml/4222841-update-records) and [Destroy..](https://openclassrooms.com/en/courses/4191736-design-a-database-with-uml/4222951-destroy-records) - [Tuto en fr](https://openclassrooms.com/en/courses/918836-concevez-votre-site-web-avec-php-et-mysql/914508-ecrivez-des-donnees)
 # [Perform SELECTS with multiple tables](https://openclassrooms.com/en/courses/4191736-design-a-database-with-uml/4222961-perform-selects-with-multiple-tables)
