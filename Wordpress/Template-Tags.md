@@ -14,6 +14,7 @@
 <?php the_post_thumbnail('post-thumbnail', ['class' => 'post__image']); ?> // avec classe
 <?php the_permalink(); ?>           // lien d'un post
 <?php the_title(); ?>               // titer d'un post
+<?php wp_footer(); ?>
 
 <?php get_header(); ?>              // charger header.php
 
