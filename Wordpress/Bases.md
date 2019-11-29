@@ -1,3 +1,11 @@
+# Documentation
+- [Codex](https://codex.wordpress.org/)
+- [WP](https://developer.wordpress.org/reference/)
+- [Dashicons](https://developer.wordpress.org/resource/dashicons/#media-video)
+- [Hierarchy WP Interactive](https://wphierarchy.com/)
+- [Installer packs pour Composer](https://packagist.org/)
+- [Wordpress Packagist](https://wpackagist.org/)
+
 # Template-Tags
 ```php
 <?php language_attributes(); ?>     // langage head html
