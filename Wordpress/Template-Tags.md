@@ -13,7 +13,7 @@
 <?php the_post_thumbnail_url(); ?>  // thumbnail d'un post
 <?php the_post_thumbnail('post-thumbnail', ['class' => 'post__image']); ?> // avec classe
 <?php the_permalink(); ?>           // lien d'un post
-<?php the_title(); ?>               // titer d'un post
+<?php the_title(); ?>               // titre d'un post
 <?php wp_footer(); ?>
 
 <?php get_header(); ?>              // charger header.php
@@ -25,6 +25,12 @@ if (have_posts()): while(have_posts()): the_post();
 endwhile; endif;
 
 <?php get_footer(); ?>              // charger footer.php
+
+
+// DIFFERENCE ENTRE TAGS AVEC ET SANS GET
+<?php the_title(); ?>               // affiche le titre d'un post
+<?php get_the_title(); ?>           // récupère le titre
+
 ```
 
 ## Navigation
