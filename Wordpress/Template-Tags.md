@@ -7,7 +7,8 @@
 <?php wp_head(); ?>                 // meta data
 <?php body_class(); ?>              // ajout de classes wordpress pour css/js
 <?= home_url(); ?>                  // url page d'accueil/index
-  
+```
+
 ## Navigation
 ```html
 <nav class="main-nav">
