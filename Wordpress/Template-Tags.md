@@ -7,13 +7,16 @@
 <?php wp_head(); ?>                 // meta data
 <?php body_class(); ?>              // ajout de classes wordpress pour css/js
 <?= home_url(); ?>                  // url page d'accueil/index
-      
-<!-- <nav class="main-nav">
+  
+## Navigation
+```html
+<nav class="main-nav">
   <a href="#">Catégories</a>
   <a href="#">A propos</a>
   <a href="#">Contact</a>
-</nav> -->
-// en php
+</nav>
+```
+```php
 <?php
   $menu = wp_nav_menu([
     'theme_location' => 'top',
@@ -24,3 +27,4 @@
   $menu = strip_tags($menu, '<nav><a>');
   echo $menu;
 ?>
+```
