@@ -1,8 +1,5 @@
-# Usefull links
-- [Prefixes CSS avec JS](https://leaverou.github.io/prefixfree/)
-- [All properties css](https://openclassrooms.com/en/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1608902-memento-des-proprietes-css)
-
-compiler Sass en css => sass --watch scss:css
+# [Ajouter les prefixes CSS avec JS](https://leaverou.github.io/prefixfree/)
+# [Propriétés CSS](https://openclassrooms.com/en/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1608902-memento-des-proprietes-css)
 
 ```css
 // titles
