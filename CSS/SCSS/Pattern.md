@@ -24,4 +24,21 @@ main-nav
 search search__form search__label
 button-action
 main
+post post__title post__image post__info post__content
+sidebar sidebar__title
+archive archive__title archive__content
+footer
+social-nav sign
+copyright copyright__title copyright__text
 ```
+
+# Variables
+
+```scss
+$main-color
+$alt-color
+$bg-color
+$text-color
+
+$font-family: 'Montserrat';
+$font-family-fallback: 'Helvetica', Arial, sans-serif;
