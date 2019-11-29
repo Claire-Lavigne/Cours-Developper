@@ -7,9 +7,18 @@
 <?php wp_head(); ?>                 // meta data
 <?php body_class(); ?>              // ajout de classes wordpress pour css/js
 <?= home_url(); ?>                  // url page d'accueil/index
+<?php the_time('d/m/Y'); ?>         // date d'un post
+<?php the_author_posts_link(); ?>   // auteur d'un post
+<?php the_excerpt(); ?>             // extrait d'un post
+<?php the_permalink(); ?>           // lien d'un post
+<?php the_title(); ?>               // titer d'un post
 
 <?php get_header(); ?>              // charger header.php
-<?php get_template_part('template-parts/dossier/fichier');  // charger template custom
+
+if (have_posts()): while(have_posts()): the_post();
+  <?php get_template_part('template-parts/dossier/fichier');  // charger template custom
+endwhile; endif;
+
 <?php get_footer(); ?>              // charger footer.php
 ```
 
