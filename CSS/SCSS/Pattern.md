@@ -1,5 +1,5 @@
 # Compiler Sass en css
-- `sass --watch scss:css
+- `sass --watch scss:css`
 
 # [LESS](https://openclassrooms.com/en/courses/1281906-simplifiez-vous-la-vie-avec-less)
 
