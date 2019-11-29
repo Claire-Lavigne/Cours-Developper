@@ -3,7 +3,7 @@
 <?php bloginfo('charset'); ?>       // meta charset
 <?php bloginfo('name'); ?>          // titre du blog
 <?php bloginfo('description'); ?>   // description du blog	
-<?= get_theme_file_uri('public/css/style.css'); ?>    // access file
+<?= get_theme_file_uri('/style.css'); ?>    // access file
 <?php wp_head(); ?>                 // meta data
 <?php body_class(); ?>              // ajout de classes wordpress pour css/js
 <?= home_url(); ?>                  // url page d'accueil/index
