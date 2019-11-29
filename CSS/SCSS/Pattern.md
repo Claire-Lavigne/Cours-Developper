@@ -46,8 +46,10 @@ __tools
 ```scss
 $main-color
 $alt-color
+$title-color
 $bg-color
 $text-color
 
+$font-size: 14px;
 $font-family: 'Montserrat';
 $font-family-fallback: 'Helvetica', Arial, sans-serif;
