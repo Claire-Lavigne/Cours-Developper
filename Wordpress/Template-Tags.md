@@ -29,7 +29,9 @@ endwhile; endif;
 
 // DIFFERENCE ENTRE TAGS AVEC ET SANS GET
 <?php the_title(); ?>               // affiche le titre d'un post
+// mostly used inside loop, without parameters
 <?php get_the_title(); ?>           // récupère le titre
+// used outside loop with parameters (ids)
 
 ```
 
