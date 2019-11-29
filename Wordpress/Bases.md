@@ -13,7 +13,8 @@
 <?= home_url(); ?>                  // echo l'url page d'accueil/index
 
 <?php the_time('d/m/Y'); ?>         // date d'un post
-<?php the_author_posts_link(); ?>   // auteur d'un post
+<?php the_author(); ?>              // auteur d'un post
+<?php the_author_posts_link(); ?>   // auteur d'un post avec lien renvoyant vers tous les posts de l'auteur
 <?php the_excerpt(); ?>             // extrait d'un post (si défini)
 <?php get_the_excerpt(); ?>         // extrait d'un post généré automatiquement si aucun défini et si dans wp loop
 <?php the_post_thumbnail_url(); ?>  // thumbnail d'un post
