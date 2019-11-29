@@ -24,18 +24,21 @@ mkdir base utils layout components pages themes vendors
 
 ```scss
 wrapper
-header header__content header__tools
-logo logo__text logo__baseline
-main-nav
-search search__form search__label
-button-action
-main
-post post__title post__image post__info post__content
-sidebar sidebar__title
-archive archive__title archive__content
-footer
-social-nav sign
-copyright copyright__title copyright__text
+header logo main footer copyright
+nav main-nav social-nav sign
+search button button-action
+intro article post sidebar archive
+
+__title
+__content
+__image
+__item
+__info
+__text
+__baseline
+__form
+__label
+__tools
 ```
 
 # Variables
