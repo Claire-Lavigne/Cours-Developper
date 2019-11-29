@@ -13,3 +13,15 @@ mkdir base utils layout components pages themes vendors
 # themes      = thematic code (christmas, ...)
 # vendors     = libraries
 ```
+
+# BEM classes
+
+```scss
+wrapper
+header header__content header__tools
+logo logo__text logo__baseline
+main-nav
+search search__form search__label
+button-action
+main
+```
