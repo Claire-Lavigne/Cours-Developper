@@ -7,6 +7,10 @@
 <?php wp_head(); ?>                 // meta data
 <?php body_class(); ?>              // ajout de classes wordpress pour css/js
 <?= home_url(); ?>                  // url page d'accueil/index
+
+<?php get_header(); ?>              // charger header.php
+<?php get_template_part('template-parts/dossier/fichier');  // charger template custom
+<?php get_footer(); ?>              // charger footer.php
 ```
 
 ## Navigation
