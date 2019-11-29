@@ -54,8 +54,18 @@
   <li>Third item</li>
 </ul>
 ```
-# Attributes
-- key="value"
+# Attributes (key="value")
 ```
 <p class="a-class" id="an-id">A paragraph of text</p>
 ```
+
+# Exemple de formulaire pour barre de recherche
+```html
+<div class="search">
+  <form action="" class="search__form">
+    <label for="search" class="search__label">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </label>
+    <input type="search" id="search" name="search" class="search__field" placeholder="Rechercher">
+  </form>
+</div>
