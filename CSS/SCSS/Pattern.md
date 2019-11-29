@@ -4,6 +4,9 @@
 # [LESS](https://openclassrooms.com/en/courses/1281906-simplifiez-vous-la-vie-avec-less)
 
 # 7-1 Pattern - Code Base
+- Voir `decoupe-site.png` :
+  - rouge = layout
+  - bleu = components
 
 ```shell
 mkdir base utils layout components pages themes vendors
@@ -12,7 +15,7 @@ mkdir base utils layout components pages themes vendors
 # utils       = variables, functions, mixins, % placegholders
 # layouts     = BEM blocks reusable (header, form, ...) for large layout
 # components  = BEM block self-container (buttons, ...)
-# pages       = code for single page only
+# pages       = code for single page only (home, contact..)
 # themes      = thematic code (christmas, ...)
 # vendors     = libraries
 ```
