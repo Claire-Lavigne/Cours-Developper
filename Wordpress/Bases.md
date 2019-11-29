@@ -24,7 +24,9 @@
 <?php the_content(); ?>             // contenu entier d'un post
 
 <?= get_theme_file_uri('/style.css'); ?>    // echo to access file
+// file from navigator
 <?php get_template_part('template-parts/dossier/fichier');  // charger template custom
+// file from paste
 <?php echo "Je suis index.php"; ?>  // retrouver page
 ```
 
