@@ -17,7 +17,9 @@
 <?php wp_footer(); ?>
 <?php get_header(); ?>              // charger header.php
 <?php get_footer(); ?>              // charger footer.php
-<?php body_class(); ?>              // ajout de classes wordpress pour css/js
+<?php body_class(); ?>              // ajout de classes wordpress au body pour css/js
+<?php post_class(); ?>              // ajout de classes wordpress dans un post
+<?php the_ID(); ?>                  // ajout de l'id wordpress dans un post
 
 <?= home_url(); ?>                  // echo l'url page d'accueil/index
 
