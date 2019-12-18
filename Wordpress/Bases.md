@@ -28,11 +28,13 @@
 <?php the_author_posts_link(); ?>   // auteur d'un post avec lien renvoyant vers tous les posts de l'auteur
 <?php the_excerpt(); ?>             // extrait d'un post (si défini)
 <?php get_the_excerpt(); ?>         // extrait d'un post généré automatiquement si aucun défini et si dans wp loop
+<?php get_sidebar(); ?>             // intégration fichier sidebar.php
 <?php the_post_thumbnail_url(); ?>  // thumbnail d'un post
 <?php the_post_thumbnail('post-thumbnail', ['class' => 'post__image']); ?> // avec classe
 <?php the_permalink(); ?>           // lien d'un post
 <?php the_title(); ?>               // titre d'un post
 <?php the_content(); ?>             // contenu entier d'un post
+<?php get_template-part('template-parts/dossier/nomdufichieravanttiret', 'nomdufichieraprestiret'); ?>       // contenu d'un fichier dans dossier indiqué dans dossier template-parts
 
 <?= get_theme_file_uri('/style.css'); ?>    // echo to access file
 // file from navigator
@@ -42,10 +44,30 @@
 ```
 
 ## Boucle de wordpress
+### Par défaut
 ```php
+<?php
 if (have_posts()): while(have_posts()): the_post();
   // content
 endwhile; endif;
+?>
+```
+###
+```php
+<?php
+$args = [
+  'post_type' => 'name',
+  'posts_per_page' => number
+];
+
+$wp_query = new WP_Query($args);
+
+if ($wp_query->have_posts()): while($wp_query->have_posts()): $wp_query->the_post();
+  // content
+endwhile; endif;
+
+wp_reset_postdata();
+?>
 ```
 
 ## DIFFERENCE ENTRE TAGS AVEC ET SANS GET
