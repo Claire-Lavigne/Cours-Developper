@@ -7,6 +7,11 @@
 - [Wordpress Packagist](https://wpackagist.org/)
 - [Unsplash Random](https://source.unsplash.com/daily/1600x900/?nature,water) (url indique : new img daily big size and 2 tags)
 
+# PHP OPEN/CLOSE TAGS
+```php
+<?php //content ?>
+```
+
 # Template-Tags
 ```php
 <?php language_attributes(); ?>     // langage head html
@@ -46,15 +51,12 @@
 ## Boucle de wordpress
 ### Par défaut
 ```php
-<?php
 if (have_posts()): while(have_posts()): the_post();
   // content
 endwhile; endif;
-?>
 ```
 ###
 ```php
-<?php
 $args = [
   'post_type' => 'name',
   'posts_per_page' => number
@@ -67,15 +69,16 @@ if ($wp_query->have_posts()): while($wp_query->have_posts()): $wp_query->the_pos
 endwhile; endif;
 
 wp_reset_postdata();
-?>
 ```
 
 ## DIFFERENCE ENTRE TAGS AVEC ET SANS GET
 ```php
-<?php the_title(); ?>               // affiche le titre d'un post
+// affiche le titre d'un post
 // mostly used inside loop, without parameters
-<?php get_the_title(); ?>           // récupère le titre
+the_title();
+// récupère le titre d'un post
 // used outside or inside loop with parameters (ids)
+get_the_title();
 ```
 
 ## Navigation
@@ -87,37 +90,33 @@ wp_reset_postdata();
 </nav>
 ```
 ```php
-<?php
-  $menu = wp_nav_menu([
-    'theme_location' => 'top',
-    'container' => 'nav',
-    'container_class' => 'main-nav',
-    'echo' => false
-  ]);
-  $menu = strip_tags($menu, '<nav><a>');
-  echo $menu;
-?>
+$menu = wp_nav_menu([
+  'theme_location' => 'top',
+  'container' => 'nav',
+  'container_class' => 'main-nav',
+  'echo' => false
+]);
+$menu = strip_tags($menu, '<nav><a>');
+echo $menu;
 ```
 
 ## Fonctions
 ```php
 // je crée dans 'inc/theme-template-tags.php' mes propres métadonnées pour un post
-<?php 
 function get_meta($post_id, $meta_name)
 {
   return get_post_meta($post_id, $meta_name, true);
 }
-
 function get_prix($post_id)
 {
   return get_meta($post_id, 'prix'). ' € / pers.';
 }
-?>
-
+```
+```php
 // et je les réutilise dans le fichier voulu
 <?= get_prix(get_the_ID()); ?>
-
+```
+```php
 // j'indique dans 'functions.php' que j'ai créé des fonctions
-<?php
-requite('inc/theme-template-tags.php');
+require('inc/theme-template-tags.php');
 ```
