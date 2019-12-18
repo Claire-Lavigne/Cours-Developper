@@ -130,6 +130,10 @@ require('inc/theme-template-tags.php');
 ```
 
 - fonction pour récupérer taxonomies :
+- je peux retrouver mes taxonomies dans phpmyadmin : 
+  - les valeurs des taxonomies (nom/slug) : wp_terms
+  - relations entre post et taxonomies (id) : wp_terms_relationships
+  - nom des taxonomies : wp_terms_taxonomy
 ```php
 function get_ingredients($post_id)
 {
@@ -145,7 +149,8 @@ function get_ingredients($post_id)
   
     // lien vers la page d'archives de la taxonomie
     $html .= '<a href="'.get_term_link($wp_term).'" class="nom">';
-    $html .= $wp_term->name;
+    // ucfirst ajoute une majuscule
+    $html .= ucfirst($wp_term->name);
     $html .= '</a> ';
   }
   
