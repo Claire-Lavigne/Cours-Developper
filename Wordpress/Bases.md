@@ -83,6 +83,7 @@ get_the_title();
 
 ## Navigation
 ```html
+<!-- en html -->
 <nav class="main-nav">
   <a href="#">Catégories</a>
   <a href="#">A propos</a>
@@ -90,6 +91,7 @@ get_the_title();
 </nav>
 ```
 ```php
+// en php
 $menu = wp_nav_menu([
   'theme_location' => 'top',
   'container' => 'nav',
