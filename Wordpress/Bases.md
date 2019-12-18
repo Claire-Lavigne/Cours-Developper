@@ -71,15 +71,20 @@ endwhile; endif;
 wp_reset_postdata();
 ```
 
-## DIFFERENCE ENTRE TAGS AVEC ET SANS GET
+## DIFFERENCE ENTRE TAGS
+- SANS GET
 ```php
 // affiche le titre d'un post
 // mostly used inside loop, without parameters
 the_title();
+```
+- AVEC GET
+```php
 // récupère le titre d'un post
 // used outside or inside loop with parameters (ids)
 get_the_title();
 ```
+
 
 ## Navigation
 ```html
@@ -103,8 +108,9 @@ echo $menu;
 ```
 
 ## Fonctions
+### Faire ses propres métadonnées pour un post
 ```php
-// je crée dans 'inc/theme-template-tags.php' mes propres métadonnées pour un post
+// dans 'inc/theme-template-tags.php'
 function get_meta($post_id, $meta_name)
 {
   return get_post_meta($post_id, $meta_name, true);
@@ -121,4 +127,28 @@ function get_prix($post_id)
 ```php
 // j'indique dans 'functions.php' que j'ai créé des fonctions
 require('inc/theme-template-tags.php');
+```
+
+- fonction pour récupérer taxonomies :
+```php
+function get_ingredients($post_id)
+{
+  $html = '';
+  
+  $array_ingredients = wp_get_post_terms($post_id, 'nomTaxonomieCfRegisterTaxonomy');
+  
+  foreach ($array_ingredients as $wp_term) {
+    // Afficher les erreurs/infos
+    echo '<pre>';
+    var_dump($wp_term);
+    die();
+  
+    // lien vers la page d'archives de la taxonomie
+    $html .= '<a href="'.get_term_link($wp_term).'" class="nom">';
+    $html .= $wp_term->name;
+    $html .= '</a> ';
+  }
+  
+  return $html;
+}
 ```
