@@ -28,13 +28,13 @@
 <?php the_author_posts_link(); ?>   // auteur d'un post avec lien renvoyant vers tous les posts de l'auteur
 <?php the_excerpt(); ?>             // extrait d'un post (si défini)
 <?php get_the_excerpt(); ?>         // extrait d'un post généré automatiquement si aucun défini et si dans wp loop
-<?php get_sidebar(); ?>             // intégration fichier sidebar.php
+<?php get_sidebar(); ?>             // récupère contenu du fichier sidebar.php
 <?php the_post_thumbnail_url(); ?>  // thumbnail d'un post
 <?php the_post_thumbnail('post-thumbnail', ['class' => 'post__image']); ?> // avec classe
 <?php the_permalink(); ?>           // lien d'un post
 <?php the_title(); ?>               // titre d'un post
 <?php the_content(); ?>             // contenu entier d'un post
-<?php get_template-part('template-parts/dossier/nomdufichieravanttiret', 'nomdufichieraprestiret'); ?>       // contenu d'un fichier dans dossier indiqué dans dossier template-parts
+<?php get_template_part('template-parts/dossier/nomdufichieravanttiret', 'nomdufichieraprestiret'); ?>       // contenu d'un fichier dans dossier indiqué dans dossier template-parts
 
 <?= get_theme_file_uri('/style.css'); ?>    // echo to access file
 // file from navigator
@@ -97,4 +97,27 @@ wp_reset_postdata();
   $menu = strip_tags($menu, '<nav><a>');
   echo $menu;
 ?>
+```
+
+## Fonctions
+```php
+// je crée dans 'inc/theme-template-tags.php' mes propres métadonnées pour un post
+<?php 
+function get_meta($post_id, $meta_name)
+{
+  return get_post_meta($post_id, $meta_name, true);
+}
+
+function get_prix($post_id)
+{
+  return get_meta($post_id, 'prix'). ' € / pers.';
+}
+?>
+
+// et je les réutilise dans le fichier voulu
+<?= get_prix(get_the_ID()); ?>
+
+// j'indique dans 'functions.php' que j'ai créé des fonctions
+<?php
+requite('inc/theme-template-tags.php');
 ```
