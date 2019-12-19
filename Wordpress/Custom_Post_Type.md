@@ -1,3 +1,23 @@
+# Fichier `front-page.php` par exemple
+```php
+<?php
+
+$args = [
+  'post_type' => 'nomdupost',
+  'posts_per_page' => 1
+];
+
+$wp_query = new WP_Query($args);
+
+if ($wp_query->have_posts()): while($wp_query->have_posts()): $wp_query->the_post();
+  // content
+endwhile; endif;
+
+wp_reset_postdata();
+
+?>
+```
+
 # Fichier `inc/nomdupost_cpt.php`
 ```php
 <?php
