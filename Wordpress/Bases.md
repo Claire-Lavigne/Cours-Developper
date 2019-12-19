@@ -131,9 +131,9 @@ require('inc/theme-template-tags.php');
 
 - fonction pour récupérer taxonomies :
 - je peux retrouver mes taxonomies dans phpmyadmin : 
-  - les valeurs des taxonomies (nom/slug) : wp_terms
-  - relations entre post et taxonomies (id) : wp_terms_relationships
-  - nom des taxonomies : wp_terms_taxonomy
+  - wp_terms_taxonomy : nom des taxonomies
+  - wp_terms : valeurs des taxonomies (sous-taxonomies)
+  - wp_terms_relationships : relations entre posts et taxonomies
 ```php
 function get_ingredients($post_id)
 {
