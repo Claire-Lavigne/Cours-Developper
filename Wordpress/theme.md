@@ -1,3 +1,9 @@
+# Fichier `index.php`
+```php
+<?php
+// Silence is golden
+```
+
 # Fichier `functions.php`
 ```php
 <?php
