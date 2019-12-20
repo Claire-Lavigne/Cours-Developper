@@ -194,7 +194,21 @@ function get_ingredients($post_id)
   
   $array_ingredients = wp_get_post_terms($post_id, 'nomTaxonomieCfRegisterTaxonomy');
   
+  // Je retiens le nombre de termes que j'affiche
+  // pour le moment 0
+  // $nbr_terms = 0;
+  
   foreach ($array_ingredients as $wp_term) {
+  
+    // A chaque iteration dans ma boucle,
+    // j'augmente le nombre de terme ajouté
+    // $nbr_terms++;
+    // Si j'en ai déjà 10...
+    // if ($nbr_terms > 10) {
+        // Je force une sortie de ma boucle
+        // break;
+    // }
+  
     // Afficher les erreurs/infos
     echo '<pre>';
     var_dump($wp_term);
@@ -208,6 +222,24 @@ function get_ingredients($post_id)
   }
   
   return $html;
+}
+
+// ????
+function get_types_list()
+{
+    $html = '<ul>';
+    $list = get_terms([
+        'taxonomy' => 'type',
+        'parent' => 0,
+        'hide_empty' => false,
+    ]);
+    foreach ($list as $wp_term) {
+        $html .= '<li><a href="'.get_term_link($wp_term).'"">';
+        $html .= ucfirst($wp_term->name);
+        $html .= '</a></li>';
+    }
+    $html .= '</ul>';
+    return $html;
 }
 ```
 
