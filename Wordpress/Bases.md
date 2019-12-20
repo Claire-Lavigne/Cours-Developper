@@ -87,16 +87,18 @@ get_the_title();
 
 
 ## Navigation
-```html
-<!-- en html -->
+```php
+// code de départ en html
 <nav class="main-nav">
   <a href="#">Catégories</a>
   <a href="#">A propos</a>
   <a href="#">Contact</a>
 </nav>
+<!-- remplacé par -->
+<?php get_template_part('template-parts/nav/nav', 'top'); ?>
 ```
 ```php
-// en php
+// dans fichier `template-parts/nav/nav-top` par exemple
 $menu = wp_nav_menu([
   'theme_location' => 'top',
   'container' => 'nav',
