@@ -174,10 +174,10 @@ register_activation_hook(__FILE__, [$nomdupost_cpt, 'activation']);
 register_deactivation_hook(__FILE__, [$nomdupost_cpt, 'deactivation']); 
 ```
 
-## Fonctions
-### Faire ses propres métadonnées pour un post
+## Fonctions pour faire ses propres métadonnées pour un post
+### Fichier 'inc/theme-template-tags.php'
 ```php
-// dans 'inc/theme-template-tags.php'
+// Création des taxonomies
 function get_meta($post_id, $meta_name)
 {
   return get_post_meta($post_id, $meta_name, true);
@@ -186,22 +186,8 @@ function get_prix($post_id)
 {
   return get_meta($post_id, 'prix'). ' € / pers.';
 }
-```
-```php
-// et je les réutilise dans le fichier voulu
-<?= get_prix(get_the_ID()); ?>
-```
-```php
-// j'indique dans 'functions.php' que j'ai créé des fonctions
-require('inc/theme-template-tags.php');
-```
 
-- fonction pour récupérer taxonomies :
-- je peux retrouver mes taxonomies dans phpmyadmin : 
-  - wp_terms_taxonomy : nom des taxonomies
-  - wp_terms : valeurs des taxonomies (sous-taxonomies)
-  - wp_terms_relationships : relations entre posts et taxonomies
-```php
+// Je crée une fonction pour récupérer mes taxonomies
 function get_ingredients($post_id)
 {
   $html = '';
@@ -224,3 +210,18 @@ function get_ingredients($post_id)
   return $html;
 }
 ```
+
+### Je les réutilise dans le fichier voulu
+```php
+<?= get_prix(get_the_ID()); ?>
+```
+
+### Fichier 'functions.php', j'indique que j'ai créé des fonctions
+```php
+require('inc/theme-template-tags.php');
+```
+
+### Si besoin, je peux retrouver mes taxonomies dans phpmyadmin : 
+- `wp_terms_taxonomy` : nom des taxonomies
+- `wp_terms` : valeurs des taxonomies (sous-taxonomies)
+- `wp_terms_relationships` : relations entre posts et taxonomies
