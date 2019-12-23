@@ -83,8 +83,8 @@
 
 # Diference Post/Page
 |**Posts**|**Pages**|
-|(blog)|(contact, ...)|
 |--|--|
+|blog|contact, ...|
 |timely|timeless|
 |social|not social|
 |organized with tags/categories|hierarchical, organized as parent/child pages|
