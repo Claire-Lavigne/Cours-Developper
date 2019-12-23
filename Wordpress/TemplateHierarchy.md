@@ -83,6 +83,7 @@
 
 # Diference Post/Page
 |**Posts**|**Pages**|
+|(blog)|(contact, ...)|
 |--|--|
 |timely|timeless|
 |social|not social|
