@@ -105,6 +105,12 @@ $menu = wp_nav_menu([
   'container_class' => 'main-nav',
   'echo' => false
 ]);
+
+// Je ne veux que des éléments de type nav et a (pas de ul, li)str
 $menu = strip_tags($menu, '<nav><a>');
+
+// Je veux une classe sur mes a (wp les ajoute sur li)
+$menu = str_replace('a href', 'a class="maclasse" href', $menu);
+
 echo $menu;
 ```
