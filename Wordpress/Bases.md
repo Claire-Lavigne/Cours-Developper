@@ -2,7 +2,7 @@
 - [Codex](https://codex.wordpress.org/)
 - [WP](https://developer.wordpress.org/reference/)
 - [Dashicons](https://developer.wordpress.org/resource/dashicons/#media-video)
-- [Hierarchy WP Interactive](https://wphierarchy.com/)
+- [SEO](https://www.wpbeginner.com/wordpress-seo/)
 - [Installer packs pour Composer](https://packagist.org/)
 - [Wordpress Packagist](https://wpackagist.org/)
 - [Unsplash Random](https://source.unsplash.com/daily/1600x900/?nature,water) (url indique : new img daily big size and 2 tags)
