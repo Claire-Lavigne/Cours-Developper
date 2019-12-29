@@ -224,13 +224,13 @@ function get_ingredients($post_id)
   return $html;
 }
 
-// ????
+// Récupérer et lister toutes mes taxonomies nommées "type"
 function get_types_list()
 {
     $html = '<ul>';
     $list = get_terms([
         'taxonomy' => 'type',
-        'parent' => 0,
+        'parent' => 0,         // pas les enfants
         'hide_empty' => false,
     ]);
     foreach ($list as $wp_term) {
@@ -246,6 +246,7 @@ function get_types_list()
 ### Je les réutilise dans le fichier voulu
 ```php
 <?= get_prix(get_the_ID()); ?>
+...
 ```
 
 ### Fichier 'functions.php', j'indique que j'ai créé des fonctions
