@@ -112,6 +112,12 @@ $ git checkout <SHA>            # come back to good commit to fix bug
 $ git checkout master           # revenir au commit le + récent
 ```
 
+### UNDO COMMITS PUSHED
+```bash
+$ git reset --hard SHA          # undo all commits pushed before SHA indicated (local changes)
+$ git push origin +master       # actualize the distant repo (/!\ for every collaborators also)
+```
+
 ### Git graph
 ```bash
 $ git reflog                    # list all actions & commits on local repo
