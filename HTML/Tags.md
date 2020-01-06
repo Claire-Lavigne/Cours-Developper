@@ -80,3 +80,11 @@
     <input type="search" id="search" name="search" class="search__field" placeholder="Rechercher">
   </form>
 </div>
+```
+
+## Intégration vidéo
+```html
+<video>
+  <source src="chemin/nom.mp4" type="video/mp4">
+</video>
+```
