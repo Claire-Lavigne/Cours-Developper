@@ -1,6 +1,7 @@
 # Bases
-- créer fichier `index.html` (homepage)
-- content organized with tags
+- créer fichiers : ex `index.html` (homepage)
+- écrire le texte de mon site
+- organiser/hiearchiser contenu avec tags
 - `head` : informations on website => doesn't appear on the page but helps the browser (bots) to display properly
 - `body`: visible content of the page
 
