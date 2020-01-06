@@ -1,54 +1,29 @@
-Tape "!" + click "enter" in VSCode to get this :
+# Bases
+- créer fichier `index.html` (homepage)
+- content organized with tags
+- `head` : informations on website => doesn't appear on the page but helps the browser (bots) to display properly
+- `body`: visible content of the page
+
+# Some usefull links :
+- [Facebook - HEAD](https://developers.facebook.com/tools/debug/)
+- [Test data - HEAD](https://search.google.com/structured-data/testing-tool/u/0/)
+- [Schema structured data - HEAD](https://raventools.com/site-auditor/seo-guide/schema-structured-data)
+- [List all tags](https://openclassrooms.com/en/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1608357-memento-des-balises-html)
+
+# VS Code basic HTML
+- <kbd>!</kbd> + <kbd>enter</kbd>
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
 </head>
 <body>
 	
 </body>
 </html>
 ```
-
-More complete :
-
-```html
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Titre de mon onglet (company name) | Sous titre (page home)</title>
-	<meta name="description" content="Description du site">
-	<meta name="author" content="Site créé par...">
-	<meta name="keywords" content="mots-clés pour Google">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="style.js"></script>
-</head>
-<body>
-
-  <header></header>         /* LOGO in h1, h2, img */
-  <nav></nav>               /* MENU in <ul>, <li>, <a> */
-                            /* NAV can be inside HEADER */
-  <main></main>
-    <section></section>
-    <aside></aside>
-    <div><div>              /* DIV and SECTION = Blocks with "class" for simplifier script, styliser page */
-    
-  <footer></footer>         /* Copyright "Symbol" + Date + Company name */
-  
-</body>
-</html>
-```
-
-# Logiciels
-- DreamWeaver
-- ExpressionWeb
-- BlueFish
-...
