@@ -178,10 +178,12 @@ register_deactivation_hook(__FILE__, [$nomdupost_cpt, 'deactivation']);
 ### Fichier 'inc/theme-template-tags.php'
 ```php
 // Création des taxonomies
+// Fonction globale
 function get_meta($post_id, $meta_name)
 {
   return get_post_meta($post_id, $meta_name, true);
 }
+// Fonction spécifique à chaque taxonomie (return la fonction globale)
 function get_prix($post_id)
 {
   return get_meta($post_id, 'prix'). ' € / pers.';
