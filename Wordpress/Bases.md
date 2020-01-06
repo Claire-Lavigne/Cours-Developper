@@ -17,7 +17,8 @@
 <?php language_attributes(); ?>     // langage head html
 <?php bloginfo('charset'); ?>       // meta charset
 <?php bloginfo('name'); ?>          // titre du blog
-<?php bloginfo('description'); ?>   // description du blog	
+<?php bloginfo('description'); ?>   // description du blog
+<?= date('Y'); ?>                   // indication année automatique
 <?php wp_head(); ?>                 // meta data
 <?php wp_footer(); ?>
 <?php get_header(); ?>              // charger header.php
