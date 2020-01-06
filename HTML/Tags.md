@@ -30,7 +30,28 @@
 ## Blocs et leurs sous-éléments
 `<header></header>`
   - `<h1>`, `<h2>`, `<img>`(logo)
+`<main></main>`
+`<section></section>`
+`<aside></aside>`
+`<div><div>`
+`<footer></footer>`      
+  - Copyright "Symbol" + Date + Company name
+  
+## Autres Tags
+```html
+<p>A paragraph of text</p>
+<!-- Table des matière -->
+<h1>titre de niveau 1</h1>...<h6>titre de niveau 6</h6>
+<!-- sauts de ligne / retours à la ligne -->
+<br> <br/>
+```
 
+## Attributes (key="value")
+```
+<p class="a-class" id="an-id">A paragraph of text</p>
+```
+
+## Navigation
 ```html
 <nav>
   <ul>
@@ -47,22 +68,6 @@
   <a>Second item</a>
   <a>Third item</a>
 </nav>
-```
-
-`<main></main>`
-`<section></section>`
-`<aside></aside>`
-`<div><div>`
-`<footer></footer>`      
-  - Copyright "Symbol" + Date + Company name
-
-# Tags
-```html
-<p>A paragraph of text</p>
-```
-# Attributes (key="value")
-```
-<p class="a-class" id="an-id">A paragraph of text</p>
 ```
 
 ## Barre de recherche
