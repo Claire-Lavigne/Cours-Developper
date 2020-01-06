@@ -32,7 +32,7 @@ A good website = Good Google ranking
   - if the scripts must be executed after the HTML is fully loaded
   
 ### IMG optimization
-- extension adapted : jpg (photographs), svg (forms), png (transparence), gif(animation)
+- extension adapted : jpg (photographs), jpeg (photos compressed), svg (forms), png (transparence) in 8bits (few colors) or 24 bits (many colors), gif(animation)
 - resize img to displayed size
 - choose simple illustrations over highly detailed photographs
 - keep best resolution with compressed size : 
