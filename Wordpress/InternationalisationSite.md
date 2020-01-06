@@ -16,7 +16,7 @@ Text Domain: nomdutheme
 ## création dossier `languages`
 à la racine du thème pour y ajouter les fichiers de traduction
 
-## dans `theme-setup.php`
+## dans `inc/theme-setup.php`
 indiquer à WP où trouver les fichiers de langue :
 ```php
 function theme_setup() {
@@ -39,7 +39,8 @@ function theme_setup() {
 ```
 ```php
 // si besoin de concaténer + traduire
-// %s représente ma $variable
+// %s représente ma $variable (string), %u (variable nombre entier positif)
+// Liste des formats ici : https://www.w3schools.com/php/func_string_printf.asp
 printf(__('contenu à traduire %s contenu à traduire', 'nomdutheme'), $variable);
 // si j'ai plusieurs $variables, je créé un tableau
 printf(__('contenu %s à %s traduire', 'nomdutheme'), [$variable1, $variable2]);
@@ -53,6 +54,28 @@ printf(_n('Un post', '%s posts'), $variable, 'nomdutheme'), $variable);
 ```php
 // pour traduire un contenu dans une balise
 <a title="<?php esc_html_e('Visiter le site de l\'auteur du thème', 'nomdutheme'); ?>"
+```
+
+## Dans mon `inc/theme-setup.php`
+```php
+function theme_setup() {
+  register_nav_menus([
+    'menu_header' => __('Menu de navigation en haut de la page', 'nomdutheme'),
+    'menu_lateral' => __('Menu de navigation qui apparait au clic à droite de la page', 'nomdutheme'),
+  ]);
+}
+```
+
+## Si j'ai des CPT, dans mon `inc/theme-template-tags.php`
+```php
+// Fonction spécifique à chaque taxonomie
+function get_prix($post_id)
+{
+  return sprintf(
+    __('%s € / pers.', 
+    get_meta($post_id, 'prix')
+  );
+}
 ```
 
 # Etapes l10n
