@@ -4,6 +4,7 @@
 - organiser/hiearchiser contenu avec tags
 - `head` : informations on website => doesn't appear on the page but helps the browser (bots) to display properly
 - `body`: visible content of the page
+- `html` contenu textuel et media, `css` mise en forme
 
 # Some usefull links :
 - [Facebook - HEAD](https://developers.facebook.com/tools/debug/)
