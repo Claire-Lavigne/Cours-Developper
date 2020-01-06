@@ -79,3 +79,6 @@ function get_prix($post_id)
 ```
 
 # Etapes l10n
+## POEdit
+- voir [fiche recap](https://github.com/Helio-Cruz/fiches-recap/blob/master/wordpress/themes/i18n-l10n.md)
+- voir [visioconference : 2e video](https://drive.google.com/drive/u/0/folders/15Wv6DRJ2HO0Ex8ttgV-KYQEq-KLoyDIR)
