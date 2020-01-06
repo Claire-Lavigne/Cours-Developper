@@ -28,3 +28,7 @@ printf(__('contenu à traduire %s contenu à traduire', 'nomdutheme'), $variable
 // si j'ai plusieurs $variables, je créé un tableau
 printf(__('contenu %s à %s traduire', 'nomdutheme'), [$variable1, $variable2]);
 ```
+```php
+// pour traduire un attribut
+<a title="<?php esc_attr_e('Visiter le site de l\'auteur du thème', 'nomdutheme'); ?>"
+```
