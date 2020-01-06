@@ -2,7 +2,7 @@
 ```html
 <!-- langue du site -->
 <html lang="en-US">
-<!-- Le titre apparait dans l'onglet et en favori et sert au SEO -->
+<!-- Le titre apparait dans l'onglet, en favori et sur Google (SEO) -->
 <title>Titre (company name) | Sous titre (page Home)</title>
 <!-- meta datas -->
 <meta name="description" content="Description du site">
