@@ -102,6 +102,7 @@ $ git commit -m "message"       # message for commit
 $ git commit -a -m "message"    # add and commit all files already staged
 $ git commit --amend            # change commit message
 $ git log                       # see all commits on branch (SHA, who, when, what ; most recent < oldest)
+$ git log --pretty=oneline      # show all commits in one line PRETTY
 $ git log --graph --decorate --oneline --all    # see all branches and commit
 $ git revert                    # undo last commit (saving correction as a new commit) - PUBLIC BRANCH
 $ git revert SHA                # undo this commit (saving correction into new commit) - PUBLIC BRANCH
