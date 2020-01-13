@@ -135,7 +135,8 @@ $ git blame <file.ext>          # See lines of code in file + author + SHA
 #### Undo commits pushed
 ```bash
 $ git reset --hard SHA          # undo all commits pushed before SHA indicated (local changes)
-$ git push origin +master       # actualize the distant repo (/!\ for every collaborators also)
+$ git push origin +master       # actualize the distant repo on master (/!\ for every collaborators also)
+$ git push origin +branchname   # actualize the distant repo on branch (/!\ for every collaborators also)
 ```
 #### Organize commits (rename, fusionner)
 ```bash
@@ -150,6 +151,7 @@ pick fda59df commit 1 this is my descriptive message
 squash x536897 commit 2
 squash c01a668 commit 3
 squash 8a9fbd7 commit 4
+$ git push origin +masterorbranchname
 ```
 
 ### PUSH (send from local to remote) / PULL (take from remote to local)
