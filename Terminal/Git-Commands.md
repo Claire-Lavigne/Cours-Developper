@@ -158,6 +158,7 @@ $ git push origin +masterorbranchname
 ```bash
 $ git push
 $ git push origin <branch>      # branch = master or my branch
+$ git fetch                     # check if their are new changes on distant repo
 $ git pull origin <branch>      # branch = master or another branch
 $ git push origin +master       # force push /!\ pas sure
 ```
