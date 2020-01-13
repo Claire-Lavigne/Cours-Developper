@@ -29,13 +29,15 @@ $ git --help
 ```bash
 # Start local repo in wanted folder
 $ git init
-
-# Copy remote repo to local repo
+```
+#### Copy remote repo to local repo
+```bash
 # Someone else repo : GitHub --> Issues --> Fork --> Clone --> Copy https key
 # Personnal repo    : GitHub --> Create repo --> Clone --> Copy https/ssh key
 # HTTPS => in order to connect on Terminal (indicate user + mail)
 # SSH   => if already connected on Terminal
 $ git clone <url>
+$ cd <nom du repo>
 $ git init
 ```
 
@@ -56,7 +58,16 @@ $ cat id_rsa.pub
 # Copy and share the code listed
 ```
 
-### Git branch
+### GIT STATUS
+```bash
+$ git status
+  # not a git repo                = must init git
+  # untracked files               = must add files
+  # changes to be commited        = must commit
+  # nothing to commit             = ok
+```
+
+### BRANCH
 ```bash
 $ git branch                    # list all branches created + actual branch
 $ git branch -a                 # list all branches of repo + actual branch
@@ -66,44 +77,40 @@ $ git branch -d <branch>        # Remove branch unwanted
 $ git merge <branch>            # branch I want to merge (from branch that all will be merged in)
 $ git remote prune origin --dry-run   # List all orphaned branches (local ones that doesn't exist remote)
 $ git remote prune origin             # Delete the branches
-````
-
-### Git status
-```bash
-$ git status
-# not a git repo                = must init git
-# untracked files               = must add files
-# changes to be commited        = must commit
-# nothing to commit             = ok
 ```
-
-### Git add (Stage - Add changed files to local repo)
+#### Remove untracked branches
 ```bash
-$ git add .                     # add all files
-$ git add <file>                # add that specific file
-$ git add -p (+ y or n)         # see new changes and accept/refuse to add
-$ git stash                     # save changes but not for commit
-$ git stash list                # see all files saves
-$ git stash pop                 # recup files saved to work on them again (et vide le stash)
-$ git stash apply               # recup files saved to work on them again (sans vider le stash)
+$ interactive git rebase    # => git rebase -i HEAD~3
+# Manually delete outdated pointers (commits, branches and objects) :
+# Open .git file in local repo, look at folders "objects", "index" and "ref"
 ```
-
 #### Move changes on wrong branch to good branch
 ```bash
-# changes made on wrong branch
-$ git stash save
+# from wrong branch
+$ git stash save "message especific"
 $ git checkout -b <goodbranch>
 $ git stash pop
 ```
 
-### Git commit
+### STAGE (Add files in local repo)
+```bash
+$ git add .                     # add all files
+$ git add <file>                # add that specific file
+$ git add -p (+ y or n)         # see new changes and accept/refuse to add
+```
+#### Stash
+```bash
+$ git stash                     # save changes but not for commit
+$ git stash list                # see all files saved
+$ git stash pop                 # recup files saved to work on them again (et vide le stash)
+$ git stash apply               # recup files saved to work on them again (sans vider le stash)
+```
+
+### COMMIT
 ```bash
 $ git commit -m "message"       # message for commit
-$ git commit -a -m "message"    # add and commit all files already staged
+$ git commit -am "message"      # add and commit all files already staged
 $ git commit --amend            # change commit message
-$ git log                       # see all commits on branch (SHA, who, when, what ; most recent < oldest)
-$ git log --pretty=oneline      # show all commits in one line PRETTY
-$ git log --graph --decorate --oneline --all    # see all branches and commit
 $ git revert                    # undo last commit (saving correction as a new commit) - PUBLIC BRANCH
 $ git revert SHA                # undo this commit (saving correction into new commit) - PUBLIC BRANCH
 $ git reset HEAD                # undo uncommitted changes
@@ -111,44 +118,64 @@ $ git reset --soft              # undo last commit to stage more files - PRIVATE
 $ git reset --soft HEAD~3       # same (go back to the fourth last commit) - PRIVATE BRANCH
 $ git checkout <SHA>            # come back to good commit to fix bug
 $ git checkout master           # revenir au commit le + récent
+$ git cherry-pick <SHA>         # add that commit to actual branch
 ```
-
-### UNDO COMMITS PUSHED
+#### Log (list/show all commits)
 ```bash
-$ git reset --hard SHA          # undo all commits pushed before SHA indicated (local changes)
-$ git push origin +master       # actualize the distant repo (/!\ for every collaborators also)
+$ git log                       # see all commits on branch (SHA, who, when, what ; most recent < oldest)
+$ git log --pretty=oneline      # show all commits in one line PRETTY
+$ git log --graph --decorate --oneline --all    # see all branches and commit
 ```
-
-### Git graph
+#### Graph
 ```bash
 $ git reflog                    # list all actions & commits on local repo
 $ git show <SHA>                # See modifications made in lines of code
 $ git blame <file.ext>          # See lines of code in file + author + SHA
 ```
-
-### Git push (send to remote) / pull (take from remote)
+#### Undo commits pushed
 ```bash
-$ git push <remote> <branch>    # remote = origin ; branch can be master or the branch I worked on
-$ git pull <remote> <branch>    # remote = origin ; branch can be master
-# --------- Cancel last push ----------
+$ git reset --hard SHA          # undo all commits pushed before SHA indicated (local changes)
+$ git push origin +master       # actualize the distant repo (/!\ for every collaborators also)
+```
+#### Organize commits (rename, fusionner)
+```bash
+$ git rebase -i master        # List all commits and open text editor
+# in text editor, tape all commits you want to combine in one
+# keep word "pick" for the commit that will stay
+# change the word "pick" for "squash" for all commits that will move into the "pick commit"
+# add a descriptive message in "pick commit"
+# save : maj+O and enter
+# quit : maj+X
+pick fda59df commit 1 this is my descriptive message
+squash x536897 commit 2
+squash c01a668 commit 3
+squash 8a9fbd7 commit 4
+```
+
+### PUSH (send from local to remote) / PULL (take from remote to local)
+```bash
+$ git push
+$ git push origin <branch>      # branch = master or my branch
+$ git pull origin <branch>      # branch = master or another branch
+$ git push origin +master       # force push /!\ pas sure
+```
+#### Cancel last push
+```bash
 $ git reset <good commit SHA> 
 $ git stash
 $ git push -f origin <branch concerned>
 $ git checkout -b <new branch>
 $ git stash pop
 ```
-
-#### Other commands for commits
+#### Undo commits pushed
 ```bash
 $ git revert SHA                # undo this commit (and save correction into new commit)
-# Option 1
-$ git push origin +master                             # forces push to remote repo
-# Option 2
-$ git push <repo name> +<badcommitSHA>^ : <branch>    # Delete a specific commit using git push
+$ git push origin +master       # forces push to remote repo
+# Delete a specific commit using git push directly
 # Exemple : git push myrepo +12345^:master
-$ git push <repo name> :<branch name>                 # Delete entire branch
-
-$ git cherry-pick <SHA>      # add that commit to actual branch
+$ git push <repo name> +<badcommitSHA>^ : <branch>   
+# Delete entire branch using git push directly
+$ git push <repo name> :<branch name>                 
 ```
 
 ### Contribute on Open Source
@@ -165,24 +192,4 @@ $ git cherry-pick <SHA>      # add that commit to actual branch
   # Windows : Control Panel -> User Accounts -> Manage your credentials -> Windows Credentials -> Remove
   # Mac : Access credential store on the osxkeychain
   # Linux : git config --global --unset credential.helper
-```
-
-#### Clean branch (Organize commits & branches, renamme commits, keep commits I want)
-```bash
-$ git rebase -i master        # List all commits and open text editor
-# in text editor, tape all commits you want to combine in one
-# keep word "pick" for the commit that will stay
-# change the word "pick" for "squash" for all commits that will move into the "pick commit"
-# add a descriptive message in "pick commit"
-pick fda59df commit 1 this is my descriptive message
-squash x536897 commit 2
-squash c01a668 commit 3
-squash 8a9fbd7 commit 4
-```
-
-#### Remove untracked branches
-```bash
-$ interactive git rebase    # => git rebase -i HEAD~3
-# Manually delete outdated pointers (commits, branches and objects) :
-# Open .git file in local repo, look at folders "objects", "index" and "ref"
 ```
