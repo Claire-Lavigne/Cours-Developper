@@ -73,6 +73,7 @@ $ git branch                    # list all branches created + actual branch
 $ git branch -a                 # list all branches of repo + actual branch
 $ git checkout <branch>         # switch to indicated branch
 $ git checkout -b <branch>      # create and switch to indicated branch
+$ git checkout --track origin/name  # download and switch to the remote branch indicated
 $ git branch -d <branch>        # Remove branch unwanted
 $ git merge <branch>            # branch I want to merge (from branch that all will be merged in)
 $ git remote prune origin --dry-run   # List all orphaned branches (local ones that doesn't exist remote)
