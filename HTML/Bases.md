@@ -1,7 +1,8 @@
 # Bases
 - créer fichiers : ex `index.html` (homepage)
 - écrire le texte de mon site
-- organiser/hiearchiser contenu avec tags
+- HTML5 : organiser/hiearchiser contenu (texte + médias) avec tags
+- CCS3 : Mise en forme des éléments (ex : couleurs)
 - `head` : informations on website => doesn't appear on the page but helps the browser (bots) to display properly
 - `body`: visible content of the page
 - `html` contenu textuel et media, `css` mise en forme
