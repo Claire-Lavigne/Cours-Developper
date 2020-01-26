@@ -39,11 +39,12 @@
   
 ## Autres Tags
 ```html
-<p>A paragraph of text</p>
 <!-- Table des matière -->
-<h1>titre de niveau 1</h1>...<h6>titre de niveau 6</h6>
+From <h1>Title Nivel 1</h1> to... <h6>Title Niveau 6</h6>
+<!-- Text -->
+<p>A paragraph of text</p>
 <!-- sauts de ligne / retours à la ligne -->
-<br> <br/>
+<br> or <br/>
 ```
 
 ## Attributes (key="value")
