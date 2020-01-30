@@ -12,6 +12,10 @@ p {
   align: center;
 }
 
+// toutes les div sauf celles avec .class
+div:not(.class) {
+}
+
 // 3:4 ratio (font sizes line-height...)
 // 5, 7, 9, 12, 16, 21, 28, 37, 50, 67, and 83 px
 
