@@ -27,6 +27,7 @@
   - liens dans le contenu éditorial sur des mots-clés
   - sites et pages à la thématique complémentaire, similaire ou adjacente
   - https://www.webconversion.fr/seo-un-bon-backlink/
+  - https://www.journalducm.com/liens-dofollow-et-nofollow
   
 ### Balise Keywords en <head> à fuir, utile pour trouver mots-clés chez concurrents
 
