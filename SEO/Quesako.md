@@ -1,5 +1,7 @@
 ## Les clés du référencement :
 
+- Google Search Console
+
 ### Le contenu de votre site (la quantité, qualité et organisation de chacun de vos textes).
 - alt sur images : vraie description avec mots-clés
 - expressions-clés dans texte :
