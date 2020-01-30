@@ -58,6 +58,7 @@ From <h1>Title Nivel 1</h1> to... <h6>Title Niveau 6</h6>
 ## Attributes (key="value")
 ```
 <p class="a-class" id="an-id">A paragraph of text</p>
+<p contenteditable="true">Edit this content</p>
 ```
 
 ## Navigation
