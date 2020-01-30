@@ -1,4 +1,5 @@
 ## Les clés du référencement :
+Moz keyword explorer tool
 
 ### Le contenu de votre site (la quantité, qualité et organisation de chacun de vos textes).
 - alt sur images : vraie description avec mots-clés
