@@ -1,7 +1,7 @@
 # Some links
 
 * [Download Git](https://git-scm.com/downloads)
-* [Gist : share code](https://gist.github.com)
+* [Gist : share code](https://gist.github.com)re
 * [Learn about Git & commands](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud)
 * [Learn with OpenClassrooms](https://openclassrooms.com/en/courses/5671626-manage-your-code-project-with-git-github)
 * [Commands help](https://gist.github.com/jedmao/5053440)
@@ -196,4 +196,12 @@ $ git push <repo name> :<branch name>
   # Windows : Control Panel -> User Accounts -> Manage your credentials -> Windows Credentials -> Remove
   # Mac : Access credential store on the osxkeychain
   # Linux : git config --global --unset credential.helper
+```
+
+### GIT CRASH / ERROR: object file is empty
+- Save directory (copy)
+```bash
+# find .git/objects/ -type f -empty | xargs rm
+# git fetch -p
+# git fsck --full
 ```
