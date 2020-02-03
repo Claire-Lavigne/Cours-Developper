@@ -1,6 +1,3 @@
-## Les clés du référencement :
-Moz keyword explorer tool
-
 ### Le contenu de votre site (la quantité, qualité et organisation de chacun de vos textes).
 - alt sur images : vraie description avec mots-clés
 - expressions-clés dans texte :
@@ -8,9 +5,9 @@ Moz keyword explorer tool
   - expressions de 2 mots et + 
   - 1 page par thématique
   - synonymes + mots sémantiquement similaires
-  - à placer sur <title> : balise unique sur chacune des pages de votre site avec expression-clé de la page
-  - <h1> et sous titres puis 1er <p> qui suit chaque titre
-  - <strong> mots importants
+  - à placer sur `<title>` : balise unique sur chacune des pages de votre site avec expression-clé de la page
+  - `<h1>` et sous titres puis 1er `<p>` qui suit chaque titre
+  - `<strong>` mots importants
   - /!\ à ne pas être répétitif
   - textes des liens
   - robots détestent déteste ce qui est visible pour eux, mais pas pour l'internaute
