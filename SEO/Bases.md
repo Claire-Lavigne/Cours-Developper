@@ -3,13 +3,21 @@ https://openclassrooms.com/en/courses/3594061-drive-traffic-to-your-website-with
 The goal is to balance the time and resources needed to grow your site with your users' experience and bottom line.
 
 ## Analyse Ressources / Time :
-- Searching for keywords (0,5 to 2 days)
+- Keywords (0,5 to 2 days)
+  - Searching for good keywords
+  - Determine if these topics have good SEO potential, and if there are other variations.
+  - Using a keyword search tool (Google's Keyword Planner or KWFinder)
+  - Studying your competitors
+  - Organize them / Translate them
+  - Determine the subject of the page (ex : the main keyword and secondary keywords)
 - Website optimization
   - Full audit - (1 to 4 days)
   - Optimizing content on existing pages - (2 hours / page)
   - Technical fixes - With a web developer - (min 1 day - The time needed depends on the website’s technology)
   - Creating content, such as articles - (0,5 to 1 day / article)
 - Finding links and partnerships - (2 to 5 days - to be repeated regularly)
+  - Spread your content with Social media, advertising and email campaigns
+  - Acquire backlinks for the new languages on your site.
 - Implementing the reporting - (1 to 2 days)
 
 # KPI (Key Performance Indicators)
