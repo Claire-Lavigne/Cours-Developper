@@ -7,7 +7,6 @@
 - [Pinterest Rich Pins Validator](http://developers.pinterest.com/rich_pins/validator/)
 
 ## OG Cards (Facebook, LinkedIn, Google, Twitter, Pinterest)
-- PS : * = required
 ### [More infos](ogp.me/#types)
 ```html
 <!-- Obligatoire -->
