@@ -1,16 +1,16 @@
 https://openclassrooms.com/en/courses/3594061-drive-traffic-to-your-website-with-search-engine-optimization-seo/5837564-recognize-the-various-types-of-keywords
-# ROI :
-- the goal is to balance the time and resources needed to grow your site with your users' experience and bottom line.
+# ROI "Return on Investment" (mesure de l'efficacité d'un investissement)
+The goal is to balance the time and resources needed to grow your site with your users' experience and bottom line.
 
-# Ressources :
-- Searching for keywords - one-half to two days.
+## Analyse Ressources / Time :
+- Searching for keywords (0,5 to 2 days)
 - Website optimization
-  - Full audit - one to four days.
-  - Optimizing content on existing pages - two hours per page.
-  - Technical fixes - (with a web developer) generally at least one day. The time needed depends on the website’s technology.
-  - Creating content, such as articles - one-half to one day per article.
-- Finding links and partnerships - two to five days (to be repeated regularly).
-- Implementing the reporting - one to two days.
+  - Full audit - (1 to 4 days)
+  - Optimizing content on existing pages - (2 hours / page)
+  - Technical fixes - With a web developer - (min 1 day - The time needed depends on the website’s technology)
+  - Creating content, such as articles - (0,5 to 1 day / article)
+- Finding links and partnerships - (2 to 5 days - to be repeated regularly)
+- Implementing the reporting - (1 to 2 days)
 
 # KPI (Key Performance Indicators)
 - Unique visitors (UV)
