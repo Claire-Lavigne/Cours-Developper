@@ -198,6 +198,13 @@ BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
   - User reviews and ratings ?
 
 # optimizing a page of content for speed
+- Page speed : compression css, js and html (gzip and minimify)
+- images compression on photoshop; right format, css sprites
+- load dom before scripts
+- browser caching for a year if content doesn't change : Yslow check expiration date set by cache
+- server response time (quantity of traffic, ressources used, software used, hosting), CDNs
+- 404 page not found
+- Redirections (.htaccess)
 - Right size and compressed images
 - JS and CSS files are minified.
 - JS files are called with a defer or async method.
