@@ -52,6 +52,12 @@ $ cat < ~/.ssh/id_rsa.pub
 # Go to GitHub/Profile Photo/Settings/SSH and GPG keys/New SSH key
 # Paste key and add
 
+# Check if I have a public SSH Key on my pc
+$ ls ~/.ssh/*.pub
+# rsa.pub or dsa.pub will be listed
+$ cat ~/.ssh/id_rsa.pub
+# will list my key
+
 # Share my public SSH Key
 $ cd ~/.ssh/
 $ cat id_rsa.pub
