@@ -1,0 +1,82 @@
+# Types de maintenance
+
+- Mises à jour (de sécurité)
+  - Mises à jour du CMS, extensions et plugins
+  - Test de compatibilité.
+- Sauvegardes
+  - Sauvegardes de l'intégralité de votre site sur un serveur externe.
+  - Sauvegarde des données
+  - Sauvegarde périodique automatisée
+  - Sauvegarde régulière du site internet et bases de données (suivant les besoins)
+- Sécurité
+  - Optimisation de la sécurité de votre site afin de limiter les risques de piratage.
+  - Mise en p d'un firewall pour bloquer les attaques sur votre site.
+  - adication de virus ou fichiers malveillants et sécurisation du site
+- Performances
+  - Optimisation des images et du temps de chargement du site.
+- Nettoyage
+  - Suppression des spams, des révisions d'articles, des plugins inutilisés...
+- Surveillance
+  - Si votre site est indisponible nous recevons une alerte immédiatement.
+- Rapport détaillé
+  - Tous les mois vous recevez par email un rapport détaillant la liste des modifications réalisées sur votre site.
+  - Récapitulatif par intervention sur un carnet d’entretien en ligne et par mail avec le temps passé
+- Restauration
+  - En cas de piratage ou de problème technique la restauration de votre site est comprise dans votre forfait de maintenance.
+- Référencement naturel SEO / sponsorisé SEA
+  - Installation d'outils statistiques
+  - Analyse des statistiques
+  - Optimisation des balises et du contenu
+  - Recherche de mots clés
+  - Analyse, création et suivi campagnes
+  - Optimisation de la structure HTML
+  - Mise en place et optimisation de l'URL rewritting
+- Gestion des comptes emails
+  - Ajout, modification, suppression des adresses emails, redirections et répondeurs ...
+  
+- Mise à jour de la structure
+  - Ajout / modification de page
+  - Modification du menu
+  - Mise à jour de la charte graphique
+  - Installation de nouveaux modules
+
+- Audit du site (Fonctionnalité, ergonomie, sécurité, SEO, mentions légales…)
+- Split testing
+  - Mise en place d'un test Split Testing et analyse des résultats
+- Installation sur le site d’un logiciel qui prévient notre webmaster de toutes tentatives d’intrusions, d’installations de fichiers malwares, des mises à jour WP et autres (veille sécuritaire site internet) – à partir du Pack 3
+- Mises à jour des liens hypertexte et détection des liens cassés
+- Blog
+  - Installation, mise à jour et alimentation du blog (structure Wordpress)			
+  - Création & mise à jour de la charte graphique personnalisée
+  - Installation de pages Web nouvelles ou modifiées, nouvelles rubriques
+  - Mises à jour des contenus, textes, images, photos, vidéos et graphiques
+  - Ajout de bannières, de logos, de photos, de vidéos, de musique
+- Montage de Newsletters
+  - Création de charte graphique pour newsletter			
+  - Gestion des contacts : export / import			
+  - Envoi périodique
+- Assistance technique et aide a la prise en main par courriel ou téléphone
+- Gestion serveur
+  - Configuration de serveur VPS & dédié			
+  - Optimisation des performances
+- Réseaux sociaux
+  - Création et personnalisation d'une page Facebook pour entreprise			
+  - Création & personnalisation d'un compte Twitter			
+  - Alimentation des réseaux sociaux : articles, statuts, ...
+
+# Autres services :
+- Création sites internet
+  - Wordpress (entreprise et institutionnel)
+  - E-commerce (boutique en ligne)
+- Refonte site internet
+- Amélioration conséquente d’un site internet
+- Référencement SEO Google
+  - Optimisation Moteur de Recherche
+- Gestion Stratégie AdWords
+  - Affichez vos offres commerciales
+- Formation Wordpress
+  - Individuelle / Petit groupe
+- Emailing / Newsletter
+- Vidéo d'entreprise
+- Maintenance Sites Web
+  - WordPress, PrestaShop, Contao
