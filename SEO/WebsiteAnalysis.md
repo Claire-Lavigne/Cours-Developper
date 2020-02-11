@@ -9,7 +9,7 @@ A good website = Good Google ranking
 
 ## Detect site issues
 - [Check Errors & Optimization](https://en.ryte.com/lp/yoast/)
-- Check the conversion rate optimization (CRO)
+- Check the [conversion rate optimization (CRO)](https://backlinko.com/conversion-rate-optimization)
 - Check that researches of the brand name return the website
 - Check if the website has a primary address :
   - with or without "www" ?
