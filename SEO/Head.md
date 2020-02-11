@@ -23,6 +23,9 @@
     <script type="text/javascript" src="style.js"></script>
     <!-- Specify a default URL and a default target for all links on a page -->
     <base href="https://monsite.com/">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>...</script>
 </head>
 ```
 
