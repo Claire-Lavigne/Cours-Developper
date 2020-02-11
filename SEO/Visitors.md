@@ -24,3 +24,5 @@ After having Google Analytics for 1 month
 - Analyse source of traffic : Menu → Acquisition → All traffic → Channels
 - Check that the organic traffic on your website is increasing, or at least stable : Menu → Acquisition → All traffic → Channels → Organic Search
 - Analyse searched keywords : Menu → Behavior → Site Search report
+- Analyse [taux de rebond](https://support.google.com/analytics/answer/1009409?hl=fr) : doit être faible
+  - taux de rebond = visiteurs qui cliquent et partent de suite
