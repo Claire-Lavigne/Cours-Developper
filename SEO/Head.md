@@ -24,7 +24,7 @@
     <base href="https://monsite.com/">
 </head>
 ```
-
+___
 ### 1 PAGE = 1 THEMATIC (1 MAIN KEYWORD)
 #### `<title>`
 - Expressions keywords (4 words at least) : inside a sentence
