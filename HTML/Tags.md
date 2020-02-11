@@ -1,40 +1,39 @@
-## Head infos
+# [More Tags](https://www.freecodecamp.org/news/the-html-handbook/#tags-that-interact-with-text)
+
+# Some usefull links :
+- [Facebook - HEAD](https://developers.facebook.com/tools/debug/)
+- [Test data - HEAD](https://search.google.com/structured-data/testing-tool/u/0/)
+- [Schema structured data - HEAD](https://raventools.com/site-auditor/seo-guide/schema-structured-data)
+- [List all tags](https://openclassrooms.com/en/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1608357-memento-des-balises-html)
+- [Fonctionnalités HTML/CSS/JS... et usage par navigateurs](https://caniuse.com/)
+
+# Bases
+- créer fichiers : ex `index.html` (homepage)
+- écrire le texte de mon site
+- HTML5 : organiser/hiearchiser contenu (texte + médias) avec tags
+- CCS3 : Mise en forme des éléments (ex : couleurs)
+- `head` : informations on website => doesn't appear on the page but helps the browser (bots) to display properly
+- `body`: visible content of the page
+- `html` contenu textuel et media, `css` mise en forme
+
+## VS Code basic HTML
+- <kbd>!</kbd> + <kbd>enter</kbd>
+
 ```html
-<!-- langue du site -->
-<html lang="en-US">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <!-- Le titre apparait dans l'onglet, en favori et sur Google (SEO) -->
-    <title>Titre (company name) | Sous titre (page Home)</title>
-    
-    <!-- meta datas -->
-    <meta name="description" content="Description du site">
-    <meta name="author" content="Site créé par...">
-    <meta name="keywords" content="mots-clés pour Google">
-    
-    <!-- External CSS / JS / Ressources -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="style.js"></script>
-    <noscript>contenu à afficher si le script ne marche pas</noscript>
-    <script defer src="file.js"></script> (attribut defer ou async)
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-    
-    <!-- internal CSS -->
-    <style>.some-css {}</style>
-    
-    <!-- set a base URL for all relative URLs contained in the page -->
-    <base href="https://flaviocopes.com/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
 </head>
+<body>
+	
+</body>
+</html>
 ```
-  https://www.freecodecamp.org/news/the-html-handbook/#tags-that-interact-with-text
-  - script (internal JS)
-    - ```<script>..some JS</script>```
-    
-    
-    
+
 ## Blocs et leurs sous-éléments
 `<header></header>`
   - `<h1>`, `<h2>`, `<img>`(logo)
