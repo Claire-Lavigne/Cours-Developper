@@ -8,19 +8,44 @@ A good website = Good Google ranking
 - light pages
 
 ## Detect site issues
-- Check that searches of the brand name return the website
-- Check if the website has a primary address (with or without "www" => with "www" redirect to without “www”)
+- [Check Errors & Optimization](https://en.ryte.com/lp/yoast/)
+- Check the conversion rate optimization (CRO)
+- Check that researches of the brand name return the website
+- Check if the website has a primary address :
+  - with or without "www" ?
+  - with "www" redirect to without “www” ?
+  - pages are in HTTPS ?
+  - HTTP redirects to HTTPS ?
 - [Check for duplicate content / plagia](http://www.siteliner.com/)
-- Check for indexing or crawling issues :
+- Check for indexing issues by robots :
   - tap “site: mysite.com,” in Google search bar, and look through the results
     - the website should appears. If not, search issues in : 
       - robots.txt file (allow access to search engines)
       - meta robots
       - website’s architecture
+- Check for crawling issues by robots :
+  - Get the server log file from hosting provider
+  - Use tools to read it : 
+    - [Oncrawl](https://www.oncrawl.com/): a free and open source log analyzer.
+    - [Seolyzer](https://seolyzer.io/): free and easy to install.
+    - Search Console gives the analyse without log file (menu : crawl) but not 100% accurate
 - Check if the website loads relatively quickly
   - if loads in more than 4s = slow (visitors leave + possible indexing problems)
   - mesure load speed : [GTmetrics](https://gtmetrix.com/) or [Pingdom](https://tools.pingdom.com/)
 - Check if the website is responsive
+- Check the HTTP Codes returned by pages
+- Check (In)Active Pages : pages that received or not a visitor from search results
+
+## Check Accessibility & Legibility
+- Use [Screen Reader](https://chrome.google.com/webstore/detail/chromevox-classic-extensi/kgejglhpjiefppelpmljglcjbhoiplfn) (Chrome extension)
+- Check if it is easy to select elements :
+  - only links and forms are selectable by default
+  - `<div tabindex="0">` forces an element to be selectable
+- Check if it is easy to navigate through the pages
+  - Most important pages are accessible from homepage ?
+- Textual content easily readable ?
+  - Sentences size / words complexity
+  - CSS colors, contrast and fonts
 
 ## Analyse SEO
 - From Homepage : 
