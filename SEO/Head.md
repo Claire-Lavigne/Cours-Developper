@@ -61,7 +61,9 @@
     - Better than ASYNC
     - If the scripts must be executed after the HTML is fully loaded
 
-### SPECIFY LANGUAGES INFORMATION (in head OR sitemap)
+### SPECIFY REL TAGS
+- LANGUAGES INFORMATION (in head OR sitemap)
+- [more infos](https://www.singlegrain.com/seo/beginners-guide-properly-using-rel-tags-improve-sites-rankings/)
 
 # Schema structured data - HEAD
 - [What it is and How to use it ?](https://raventools.com/site-auditor/seo-guide/schema-structured-data)
