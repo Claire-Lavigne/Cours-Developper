@@ -12,6 +12,7 @@
   - `<a> texte du lien </a>`
   - url avec mots-clés et tirets : http://monsite.com/category-keyword/subcategory-keyword/primary-keyword.html
   - l'url doit indiquer le nom de la page
+  - toutes les pages doivent être liées ! Don't let orphaned pages
 - `<img alt="man wearing backpack walking down escalator">`
   - at least one image per page
   - pour les images qui ont du sens pour le site (products, processes, logo, infographics, diagrams...)
