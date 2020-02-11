@@ -33,5 +33,7 @@
     - Possible roles to add : alert, application, **article**, **banner**, button, cell, checkbox, **complementary**, **contentinfo**, dialog, document, feed, figure, form, grid, gridcell, heading, img, list, listbox, listitem, **main**, **navigation**, region, row, rowgroup, **search**, switch, tab, table, tabpanel, textbox, timer
   - `<footer></footer>`
   
-  
-  
+## Où intégrer des expressions-clés dans un CMS ?
+- Taxonomies
+- Categories
+- Tags
