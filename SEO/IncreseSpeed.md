@@ -24,7 +24,7 @@
   - svg (forms), 
   - png (transparence) in 8bits (few colors) or 24 bits (many colors), 
   - gif (animation)
-- resize img to displayed size
+- resize img to displayed size, in css put size to auto
 - choose simple illustrations over highly detailed photographs
 - keep best resolution with compressed size : 
   - for quality pics : keeps the quality intact (possible to lower jpg quality from 30% to 60 %)
