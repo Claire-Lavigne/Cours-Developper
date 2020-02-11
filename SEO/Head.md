@@ -57,4 +57,8 @@ ___
     - Better than ASYNC
     - If the scripts must be executed after the HTML is fully loaded
 
-# [Schema structured data - HEAD](https://raventools.com/site-auditor/seo-guide/schema-structured-data)
+# [Schema structured data - HEAD]
+## [What it is and How to use it ?](https://raventools.com/site-auditor/seo-guide/schema-structured-data)
+## [Rich Snippets](https://backlinko.com/hub/seo/snippets)
+## [Ferramenta de teste de dados estruturados](https://search.google.com/structured-data/testing-tool/u/0/)
+- Para testar a renderização, disponibilidade e indexação de dados estruturados
