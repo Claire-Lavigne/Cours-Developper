@@ -46,7 +46,7 @@
 - NOSNIPPET - Prevents a description of the page to appear in search results as well as prevents caching of the page
 - NONE - noindex, nofollow
 
-### Scripts execution (JS + jQuery)
+### SCRIPTS EXECUTION (JS + jQuery)
 - ONLY IF POSSITIONNED IN HEAD
 - ASYNC : `<script asyn type="text/javascript" src="style.js"></ script>`
     - The script execution order is not important
@@ -57,7 +57,7 @@
     - If the scripts must be executed after the HTML is fully loaded
 
 # Schema structured data - HEAD
-## [What it is and How to use it ?](https://raventools.com/site-auditor/seo-guide/schema-structured-data)
-## [Rich Snippets](https://backlinko.com/hub/seo/snippets)
-## [Ferramenta de teste de dados estruturados](https://search.google.com/structured-data/testing-tool/u/0/)
-- Para testar a renderização, disponibilidade e indexação de dados estruturados
+- [What it is and How to use it ?](https://raventools.com/site-auditor/seo-guide/schema-structured-data)
+- [Rich Snippets](https://backlinko.com/hub/seo/snippets)
+- [Ferramenta de teste de dados estruturados](https://search.google.com/structured-data/testing-tool/u/0/)
+    - Para testar a renderização, disponibilidade e indexação de dados estruturados
