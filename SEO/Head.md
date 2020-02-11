@@ -15,7 +15,9 @@
     <meta name="robots" content="index, follow">
     <!-- Identify the indexed page (main page url) -->
     <link rel="canonical" href="https://monsite.com" >
-    <!-- External Ressources -->
+    <!-- Specify languages information -->
+    <link rel="alternate" hreflang="en-UK" href="https://your-site.com/en/">
+    <link rel="alternate" hreflang="x-default" href="http://www.example.com/">
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- For JS : Possibility to add 'defer' or 'async' -->
     <script type="text/javascript" src="style.js"></script>
@@ -61,3 +63,5 @@
 - [Rich Snippets](https://backlinko.com/hub/seo/snippets)
 - [Ferramenta de teste de dados estruturados](https://search.google.com/structured-data/testing-tool/u/0/)
     - Para testar a renderização, disponibilidade e indexação de dados estruturados
+
+### SPECIFY LANGUAGES INFORMATION (in head OR sitemap)
