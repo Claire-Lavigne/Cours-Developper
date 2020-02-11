@@ -153,8 +153,6 @@ Three site architectures :
 It may be necessary to redirect your visitors from one page to another if the URL has changed or the page no longer exists : put in a 301 redirect (permanent redirect)
   
 ## Robots meta tags
-```<code><meta name="robots" content="index, follow"></code>``` for each page indexed
-```<link rel="canonical" href="https://monsite.com/page" />``` to index to main page
 
 Be careful :
 - Check that the URL is written correctly (no typos, with or without final slash).
