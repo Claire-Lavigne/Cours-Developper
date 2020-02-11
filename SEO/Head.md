@@ -65,6 +65,14 @@
 - LANGUAGES INFORMATION (in head OR sitemap)
 - [more infos](https://www.singlegrain.com/seo/beginners-guide-properly-using-rel-tags-improve-sites-rankings/)
 
+
+# Display [sitelinks](https://user.oc-static.com/upload/2019/06/17/15607740164582_Example%20of%20sitelinks%20for%20Netflix.jpg)
+- Prioritize Your Content and Create the Corresponding URLs
+- Organize information in a hierarchy : [structure simple and logical](https://user.oc-static.com/upload/2019/07/17/15633786828122_Capture%20d%E2%80%99e%CC%81cran%202019-07-17%20a%CC%80%2017.49.54.png)
+  - Try to limit the number of categories to 3-7 + the number of subcategories
+  - Your URLs should reflect the path users take to access the information.
+  - All pages should be accessible in less than three clicks.
+
 # Schema structured data - HEAD
 - [What it is and How to use it ?](https://raventools.com/site-auditor/seo-guide/schema-structured-data)
 - [Rich Snippets](https://backlinko.com/hub/seo/snippets)
