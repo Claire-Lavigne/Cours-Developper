@@ -1,5 +1,4 @@
 # Analyse website
-
 A good website = Good Google ranking
 - [mobile first](https://search.google.com/test/mobile-friendly)
 - efficient and optimized
@@ -7,8 +6,13 @@ A good website = Good Google ranking
 - fast responsive version
 - light pages
 
-## Detect site issues
+## Outils en ligne
 - [Check Errors & Optimization](https://en.ryte.com/lp/yoast/)
+- [Audit SEO](https://www.outiref.fr/)
+- [Audit référencement](https://blog.axe-net.fr/seorapido/)
+- [Analysis & Optimization](https://moz.com/free-seo-tools)
+
+## Detect site issues
 - Check the [conversion rate optimization (CRO)](https://backlinko.com/conversion-rate-optimization)
 - Check that researches of the brand name return the website
 - Check if the website has a primary address :
