@@ -25,20 +25,20 @@
 </head>
 ```
 
-## 1 PAGE = 1 THEMATIC (1 MAIN KEYWORD)
-### `<title>`
+### 1 PAGE = 1 THEMATIC (1 MAIN KEYWORD)
+#### `<title>`
 - Expressions keywords (4 words at least) : inside a sentence
 - Example of keywords : how to, review, best, tips, top, find, buy, numbers (9 ways to...)
-### `<meta name="description" content="Description du site">`
+#### `<meta name="description" content="Description du site">`
 - Use [Call to Action verbs](https://www.beacontechnologies.com/blog/2009/12/100-call-to-action-keywords-for-ad-campaigns/) (ex : "comparer, apply today, check out") to make the user wants to clic
 - Give a winning situation to the user (discounts, offers) : "gagnez, profitez de, télécharger gratuitement"
 - 150 chars maximum : fast and effective reading (like a slogan)
 - Expression keywords used by users
-### `<meta name="keywords">`
+#### `<meta name="keywords">`
 - NEVER USE
 - Some concurrent use it, so it can be usefull to find their keywords
 
-## ROBOTS META TAG (choose to index or not a webpage)
+### ROBOTS META TAG (choose to index or not a webpage)
 - FOLLOW –The search engine crawler will follow all the links in that webpage
 - NOFOLLOW – The search engine crawler will NOT follow the page and any links in that webpage
 - INDEX –The search engine crawler will index the whole webpage
@@ -47,7 +47,7 @@
 - NOSNIPPET - Prevents a description of the page to appear in search results as well as prevents caching of the page
 - NONE - noindex, nofollow
 
-## Scripts execution (JS + jQuery)
+### Scripts execution (JS + jQuery)
 - ONLY IF POSSITIONNED IN HEAD
 - ASYNC : `<script asyn type="text/javascript" src="style.js"></ script>`
     - The script execution order is not important
