@@ -8,8 +8,13 @@
 - [Pages Speed Insights](https://developers.google.com/speed/pagespeed/insights/)
 
 ## Speed-up pages
+- Check server response time (quantity of traffic, ressources used, software used, hosting)
+- Check CDNs
+- 404 page not found exists ?
 
 ### Scripts execution
+- load dom before scripts
+
 **HTML**
 - Respect the normal order (css in head, js at body bottom)
 - [Resource prefetching](https://css-tricks.com/prefetching-preloading-prebrowsing/)
@@ -57,35 +62,8 @@
 **JS**
 - Minimize DOM manipulation
 
-### Choose Frameworks/Libraries for their speciality
-- Angular (Framework) : large company, massive code
-- React (most used) : strong developer team that needs to be flexible and evolve with different libraries and tools
-- ViewJS : simple and friendly for junior developers
-
-### Database Scaling
-- Identify inefficient queries
-   - Am I using SQL efficiently ?
-   - Use indexes
-   - Make only necessary requests
-- Increase memory
-- Vertical scaling (Redis, Memchached)
-- Sharding
-- More databases
-- Database type
-
-### JS Frameworks
-- Indexable URLs : 
-  - Pages real, with unique, distinct, and indexable URLs.
-  - Pages with a server response of 200 OK for each individual page to index.
-  - The SPA must provide server-side URLs for each category, article, or product.
-- Do not use # in URLs to indicate separate pages.
-  - Pages always need titles, meta descriptions, meta robots, their own URLs (that contains the keyword), textual content, images, alt attributes, etc.
-- JavaScript site content must be audited just like a website in HTML/CSS.
-- Duplicate content :
-  - JavaScript rendering can create multiple versions of the same page (pre-DOM and post-DOM). 
-  - Be sure to minimize differences and don’t forget the canonical tag.
-
 ### Browser caching
+- browser caching for a year if content doesn't change : Yslow check expiration date set by cache
 - Don't cache files that change often or force them to periodically update
 - Database caches :
   - If your application or website is making a lot of queries to a database
@@ -97,24 +75,6 @@
   - Cache-Control header (max seconds time a ressource is valid)
   - Expires header (specific date a ressource is no more valid)
 - Test cache : Cache Checker allows you to check that everything is being cached correctly and for the right duration
-
-### Installing a CDN server (network of servers) : 
-- Advantages :
-  - Improved page load speed and improved website crawlability.
-  - More traffic without crashing your server.
-  - Block spam.
-  - Improved server coverage, and thus website speed.
-- If answer "yes" to those questions :
-  - Do you have traffic from around the world and need better coverage?
-  - Do you see a lot of traffic on your site (over 50,000 visitors per month)?
-  - Do you often have spikes in traffic (media campaigns, for example)?
-  - Is your site the target of spam or frequent attacks?
-  - Do you have many static resources: images/videos/PDF?
-- CDN Providers possible :
-  - [Cloudflare](https://www.cloudflare.com/) : the most popular providers and free!
-  - [MaxCDN / Stackpath](https://www.stackpath.com/maxcdn/)
-  - [Amazon Cloudfront](https://aws.amazon.com/pt/cloudfront/)
-- [Installation](https://openclassrooms.com/en/courses/1306056-ensure-your-website-meets-technical-seo-requirements/6200916-use-a-content-delivery-network#/id/r-6200906)
  
 ### With CMS - Pick a Fast Theme (and Builder)
 - Content Management System = create, edit, and publish content
@@ -144,25 +104,11 @@
   - Is it compatible with the plugins you require?
   - User reviews and ratings ?
 
-# optimizing a page of content for speed
-- Page speed : compression css, js and html (gzip and minimify)
-- images compression on photoshop; right format, css sprites
-- load dom before scripts
-- browser caching for a year if content doesn't change : Yslow check expiration date set by cache
-- server response time (quantity of traffic, ressources used, software used, hosting), CDNs
-- 404 page not found
-- Redirections (.htaccess)
-- Right size and compressed images
-- JS and CSS files are minified.
-- JS files are called with a defer or async method.
-- The .htaccess file contains the activation of gzip compression.
-- The .htaccess file contains the settings of the Cache-Control and Expires headers.
-- The .htaccess file is valid ([to check it](http://www.htaccesscheck.com/)).
-
 ## .htaccess file
+- [Check if the .htaccess file is valid](http://www.htaccesscheck.com/)
 ```
 # GZIP Apache 2.0
-# BEGIN GZIP
+# BEGIN GZIP COMPRESSION
 SetOutputFilter DEFLATE
 AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/x-javascript
 
@@ -206,4 +152,6 @@ ExpiresByType image/x-icon "access plus 1 year"
 ExpiresDefault "access plus 2 days"
 </IfModule>
 # END Expires Headers
+
+# ADD REDIRECTIONS RULES
 ```
