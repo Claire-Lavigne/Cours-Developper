@@ -43,15 +43,7 @@
 
 ### Compress all files into zip 
 - [Gzip](https://www.gzip.org/) => site faster
-- GZIP configuration : Apache 2 Server - .htaccess file
-```
-SetOutputFilter DEFLATE
-AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/x-javascript
-BrowserMatch ^Mozilla/4 gzip-only-text/html
-BrowserMatch ^Mozilla/4\.0[678] no-gzip
-BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
-BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
-```
+- GZIP configuration : Apache 2 Server - see .htaccess file below
 - Or Brotli (more efficient)
 
 ### Eliminate unnecessary resources
@@ -101,45 +93,9 @@ BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
     --> involves storing the results to some common queries to decrease database use and increase performance
 - Web application caches : 
   - Install a cache on the server ([nginx](https://www.nginx.com/) or [varnish](https://varnish-cache.org/))
-- Inform the browser what files to cache and for how long : Apache HTTP Server - .htaccess file
-  - Cache-Control header (max seconds time a ressource is valid) : 
-  ```
-  # BEGIN Cache-Control Headers
-  <IfModule mod_headers.c>
-  <FilesMatch "\.(ico|jpe?g|png|gif|swf|css|gz)$">
-  Header set Cache-Control "max-age=2592000, public"
-  </FilesMatch>
-  <FilesMatch "\.(js)$">
-  Header set Cache-Control "max-age=2592000, private"
-  </FilesMatch>
-  <filesMatch "\.(html|htm)$">
-  Header set Cache-Control "max-age=7200, public"
-  </filesMatch>
-  # Enleve le cache pour les ressources dynamiques
-  <FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
-  Header unset Cache-Control
-  </FilesMatch>
-  </IfModule>
-  # END Cache-Control Headers
-  ```
-  - Expires header (specific date a ressource is no more valid) :
-  ```
-  # BEGIN Expires Headers
-  <IfModule mod_expires.c>
-  ExpiresActive On
-  ExpiresByType image/jpg "access plus 1 year"
-  ExpiresByType image/jpeg "access plus 1 year"
-  ExpiresByType image/gif "access plus 1 year"
-  ExpiresByType image/png "access plus 1 year"
-  ExpiresByType text/css "access plus 1 month"
-  ExpiresByType application/pdf "access plus 1 month"
-  ExpiresByType text/x-javascript "access plus 1 month"
-  ExpiresByType application/x-shockwave-flash "access plus 1 month"
-  ExpiresByType image/x-icon "access plus 1 year"
-  ExpiresDefault "access plus 2 days"
-  </IfModule>
-  # END Expires Headers
-  ```
+- Inform the browser what files to cache and for how long : Apache HTTP Server - see .htaccess file below
+  - Cache-Control header (max seconds time a ressource is valid)
+  - Expires header (specific date a ressource is no more valid)
 - Test cache : Cache Checker allows you to check that everything is being cached correctly and for the right duration
 
 ### Installing a CDN server (network of servers) : 
