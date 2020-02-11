@@ -4,16 +4,8 @@
 - Developper Tools (inpector website) => Network => Refresh page => See files, time, etc ...
 
 ## Test website speed
-- WebPageTest
+- [WebPageTest](https://www.webpagetest.org/)
 - [Pages Speed Insights](https://developers.google.com/speed/pagespeed/insights/)
-
-## Analyse Website
-A good website = Good Google ranking
-- mobile first
-- efficient and optimized
-- easy and intuitive design
-- fast responsive version
-- light pages
 
 ## Speed-up pages
 
@@ -23,10 +15,15 @@ A good website = Good Google ranking
 - [Resource prefetching](https://css-tricks.com/prefetching-preloading-prebrowsing/)
 
 **JS + jQuery**
-- ASYNC / DEFER
+- ASYNC / DEFER if used in head
   
 ### IMG optimization
-- extension adapted : jpg (photographs), jpeg (photos compressed), svg (forms), png (transparence) in 8bits (few colors) or 24 bits (many colors), gif(animation)
+- extension adapted : 
+  - jpg (photographs), 
+  - jpeg (photos compressed), 
+  - svg (forms), 
+  - png (transparence) in 8bits (few colors) or 24 bits (many colors), 
+  - gif (animation)
 - resize img to displayed size
 - choose simple illustrations over highly detailed photographs
 - keep best resolution with compressed size : 
@@ -92,9 +89,9 @@ BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
 - Do not use # in URLs to indicate separate pages.
   - Pages always need titles, meta descriptions, meta robots, their own URLs (that contains the keyword), textual content, images, alt attributes, etc.
 - JavaScript site content must be audited just like a website in HTML/CSS.
-- Don't forget href for attributes, src for images
-- Duplicate content
-  - JavaScript rendering can create multiple versions of the same page (pre-DOM and post-DOM). Be sure to minimize differences and don’t forget the canonical tag.
+- Duplicate content :
+  - JavaScript rendering can create multiple versions of the same page (pre-DOM and post-DOM). 
+  - Be sure to minimize differences and don’t forget the canonical tag.
 
 ### Browser caching
 - Don't cache files that change often or force them to periodically update
@@ -206,7 +203,7 @@ BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
 - The .htaccess file contains the settings of the Cache-Control and Expires headers.
 - The .htaccess file is valid ([to check it](http://www.htaccesscheck.com/)).
 
-##htaccess file
+## .htaccess file
 ```
 # GZIP Apache 2.0
 # BEGIN GZIP
