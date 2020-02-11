@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Onglet, Favoris et Google (SEO) : 50-60 chars -->
+    <!-- Onglet, Favoris et Google (SEO) : 50-70 chars -->
     <title>Brand Name | First Keyword - Second Keyword</title>
-    <!-- Description for clients in search results, use different keywords : 50-130 characters -->
+    <!-- Description for clients in search results, use different keywords : 130-150 characters -->
     <meta name="description" content="Description du site">
     <meta name="author" content="Site créé par...">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
@@ -36,7 +36,7 @@
 #### `<meta name="description" content="Description du site">`
 - Use [Call to Action verbs](https://www.beacontechnologies.com/blog/2009/12/100-call-to-action-keywords-for-ad-campaigns/) (ex : "comparer, apply today, check out") to make the user wants to clic
 - Give a winning situation to the user (discounts, offers) : "gagnez, profitez de, télécharger gratuitement"
-- 150 chars maximum : fast and effective reading (like a slogan)
+- Fast and effective reading (like a slogan)
 - Expression keywords used by users
 #### `<meta name="keywords">`
 - NEVER USE
