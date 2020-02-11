@@ -1,6 +1,10 @@
 # Recapitulatif d'un bon contenu textuel (quantité, qualité et organisation des textes)
 ![Mots-clés bien placés](https://github.com/Claire-Lavigne/Cours-Developper/blob/master/SEO/Images/bon-contenu.jpg)
 
+## Content length in each page :
+- min 400 words for pages on your website (when it makes sense)
+- 600 words for blog posts, news or expert content
+
 ## Où intégrer des expressions-clés dans le texte ?
 - One `<h1>`, at least 3 `<h2>` et more `<h3>` + 1er `<p>` qui suit chaque titre
 - `<strong>` mots importants (instead of `<b>`)
