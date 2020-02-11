@@ -23,13 +23,7 @@ A good website = Good Google ranking
 - [Resource prefetching](https://css-tricks.com/prefetching-preloading-prebrowsing/)
 
 **JS + jQuery**
-- ```<script async src = ""> </ script>``` (only in head): 
-  - if the script execution order is not important
-  - if it doesn't affect css or dom elements
-  - if isn't necessary for user experience
-  - ex : Google Analytics Scripts or Tracking Scripts
-- ```<script defer src="script.js"></script>``` (only in head, better than async) :
-  - if the scripts must be executed after the HTML is fully loaded
+- ASYNC / DEFER
   
 ### IMG optimization
 - extension adapted : jpg (photographs), jpeg (photos compressed), svg (forms), png (transparence) in 8bits (few colors) or 24 bits (many colors), gif(animation)
