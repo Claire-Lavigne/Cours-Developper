@@ -17,8 +17,7 @@
     
     <!-- External CSS / JS / Ressources -->
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="style.js"></script>
-    <script defer src="file.js"></script> <!-- attribut defer ou async -->
+    <script defer type="text/javascript" src="style.js"></script> <!-- Possibilité d'ajouter l'attribut 'defer' ou 'async' -->
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
     
     <!-- set a base URL for all relative URLs contained in the page -->
