@@ -19,11 +19,12 @@
 - uniquement sur des pages à la thématique (“champs lexical”) complémentaire, similaire ou adjacente
 
 ## Dofollow or Nofollow ?
-### DOFOLLOW = INCIDENCE SUR SEO :
+DOFOLLOW = INCIDENCE SUR SEO :
 - En dofollow, le niveau d’autorité est attribué selon le site de départ, par le robot Google
   - `<a href=”https://www.journalducm.com/”>Journal du CM</a>`
   - `<a href=”https://www.journalducm.com/” rel=”dofollow”>Journal du CM</a>`
-### NOFOLLOW = SANS INCIDENCE SUR SEO :
+
+NOFOLLOW = SANS INCIDENCE SUR SEO :
 - En nofollow, le robot Google ignore le site indiqué
   - `<a href=”https://www.journalducm.com/” rel=”nofollow”>Journal du CM</a>`
 
