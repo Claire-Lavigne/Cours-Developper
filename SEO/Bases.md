@@ -19,12 +19,6 @@ Analyse Ressources / Time :
   - Acquire backlinks for the new languages on your site.
 - Implementing the reporting - (1 to 2 days)
 
-# KPI (Key Performance Indicators)
-- Unique visitors (UV)
-- Page views per session
-- Conversion rate for sign-up/payment forms
-- Returning visitor rate
-
 # Optimize a Website
 
 ## Choose the Right Technology for Your Site
