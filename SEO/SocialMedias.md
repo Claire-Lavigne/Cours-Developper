@@ -20,7 +20,7 @@
 - [Pinterest Rich Pins Validator](http://developers.pinterest.com/rich_pins/validator/)
 
 ## OG Cards (Facebook, LinkedIn, Google, Twitter, Pinterest)
-### [More infos](ogp.me)
+### [More infos](https://ogp.me/)
 ```html
 <!-- Obligatoire -->
 <meta property="og:type" content="website" /> <!-- Article / Website / Blog -->
