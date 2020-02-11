@@ -19,7 +19,7 @@ Analyse Ressources / Time :
   - Acquire backlinks for the new languages on your site.
 - Implementing the reporting - (1 to 2 days)
 
-# Optimize a Website
+# Optimize a Website Technology
 
 ## Choose the Right Technology for Your Site
 - Few Business Functions : Marketing + Customer Acquisition :
@@ -79,3 +79,49 @@ Analyse Ressources / Time :
 - Disadvantages:
   - Weak geo-targeting signal for Google = complicate local SEO efforts
   - Difficult to separate languages across the site.
+  
+## Choose Frameworks/Libraries for their speciality
+- Angular (Framework) : large company, massive code
+- React (most used) : strong developer team that needs to be flexible and evolve with different libraries and tools
+- ViewJS : simple and friendly for junior developers
+
+## Database Scaling
+- Identify inefficient queries
+   - Am I using SQL efficiently ?
+   - Use indexes
+   - Make only necessary requests
+- Increase memory
+- Vertical scaling (Redis, Memchached)
+- Sharding
+- More databases
+- Database type
+
+## JS Frameworks
+- Indexable URLs : 
+  - Pages real, with unique, distinct, and indexable URLs.
+  - Pages with a server response of 200 OK for each individual page to index.
+  - The SPA must provide server-side URLs for each category, article, or product.
+- Do not use # in URLs to indicate separate pages.
+  - Pages always need titles, meta descriptions, meta robots, their own URLs (that contains the keyword), textual content, images, alt attributes, etc.
+- JavaScript site content must be audited just like a website in HTML/CSS.
+- Duplicate content :
+  - JavaScript rendering can create multiple versions of the same page (pre-DOM and post-DOM). 
+  - Be sure to minimize differences and don’t forget the canonical tag.
+
+## Installing a CDN server (network of servers) : 
+- Advantages :
+  - Improved page load speed and improved website crawlability.
+  - More traffic without crashing your server.
+  - Block spam.
+  - Improved server coverage, and thus website speed.
+- If answer "yes" to those questions :
+  - Do you have traffic from around the world and need better coverage?
+  - Do you see a lot of traffic on your site (over 50,000 visitors per month)?
+  - Do you often have spikes in traffic (media campaigns, for example)?
+  - Is your site the target of spam or frequent attacks?
+  - Do you have many static resources: images/videos/PDF?
+- CDN Providers possible :
+  - [Cloudflare](https://www.cloudflare.com/) : the most popular providers and free!
+  - [MaxCDN / Stackpath](https://www.stackpath.com/maxcdn/)
+  - [Amazon Cloudfront](https://aws.amazon.com/pt/cloudfront/)
+- [Installation](https://openclassrooms.com/en/courses/1306056-ensure-your-website-meets-technical-seo-requirements/6200916-use-a-content-delivery-network#/id/r-6200906)
