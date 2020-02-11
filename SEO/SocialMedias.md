@@ -1,4 +1,17 @@
-# Open Graph Data
+# Be present on Social Medias
+- Have a [Localisation on Google Maps](https://www.google.com/business/)
+  - A complete street address.
+  - A telephone number, if applicable.
+  - Business hours, if applicable.
+  - A map to indicate your location.
+  - Accessibility information.
+  - A description of the place.
+- Get good reviews
+- Be on : Facebook, Twitter, Instagram, LinkedIn, MySpace, Pinterest, Youtube, Google+
+- Feeds RSS
+- Newsletters
+
+# Had Open Graph Data
 
 ## Tools (Domain approved required)
 - [Facebook Debugger](https://developers.facebook.com/tools/debug)
