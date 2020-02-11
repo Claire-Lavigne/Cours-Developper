@@ -5,6 +5,7 @@
 - [Twitter Validation Tool](https://dev.twitter.com/docs/cards/validation/validator)
 - [Google Testing Tool](http://www.google.com/webmasters/tools/richsnippets)
 - [Pinterest Rich Pins Validator](http://developers.pinterest.com/rich_pins/validator/)
+- [Schema structured data - HEAD](https://raventools.com/site-auditor/seo-guide/schema-structured-data)
 
 ## OG Cards (Facebook, LinkedIn, Google, Twitter, Pinterest)
 ### [More infos](ogp.me)
