@@ -1,4 +1,3 @@
-## Head infos
 ```html
 <!DOCTYPE html>
 <html lang="en-US">
@@ -24,8 +23,6 @@
     <base href="https://monsite.com/">
 </head>
 ```
-
-___
 
 ### 1 PAGE = 1 THEMATIC (1 MAIN KEYWORD)
 #### `<title>`
