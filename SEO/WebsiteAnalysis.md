@@ -35,6 +35,12 @@ A good website = Good Google ranking
 - Check if the website is responsive
 - Check the HTTP Codes returned by pages
 - Check (In)Active Pages : pages that received or not a visitor from search results
+- Check the quality of existing links :
+  - the URLs are comprehensible and include the subject of the page (ex : https://mysite.com/primary-keyword) ?
+  - Search Console (or Majestic, SEMRush, Moz Explorer...)
+  - Make sure that a majority of your traffic does not originate from spammy links (low-quality, foreign language websites, content completely different from yours)
+  - Check if social media accounts have been created and linked to the website
+  - Redirect if the URL has changed or the page no longer exists : 301 redirect (permanent redirect)
 
 ## Check Accessibility & Legibility
 - Use [Screen Reader](https://chrome.google.com/webstore/detail/chromevox-classic-extensi/kgejglhpjiefppelpmljglcjbhoiplfn) (Chrome extension)
@@ -50,7 +56,6 @@ A good website = Good Google ranking
 ## Analyse SEO
 - From Homepage : 
   - there are two secondary pages accessible through the menu + a blog article
-  - the URLs are comprehensible and include the subject of the page (https://mysite.com/primary-keyword)
   - open the console in your browser (F12 in Google Chrome) and use CTRL+F to search for the information :
     - Meta tags "title" + "description" indicate the topic of the page to search engines and target keyword
       - They appear in the results and make visitors want to click and read the page
@@ -63,33 +68,13 @@ A good website = Good Google ranking
   - min 400 words for pages on your website (when it makes sense)
   - 600 words for blog posts, news or expert content
 
-## Examine keyword rankings
-- After having Google Analytics for 1 month : 
-  - Check that the organic traffic on your website is increasing, or at least stable
-    - Menu => “Acquisition” => “All Traffic” => “Channel” => “Organic Search”
-- Get results from Google Search Console installed + Check issues again
-  - Figure out which keywords are driving your website traffic before making any SEO changes
-
-## Check the quality of existing links
-- Check if social media accounts have been created and linked to the website = share and distribute the website content
-- Make partnerships
-- Use the Search Console (or Majestic, SEMRush, Moz Explorer...) and study the existing links
-- Make sure that a majority of your traffic does not originate from spammy links (low-quality, foreign language websites, content completely different from yours)
-
 # Analyse content of pages
 
 ## Good practices
 - [head + body](https://openclassrooms.com/en/courses/3594061-boost-traffic-to-your-website-with-search-engine-optimization/5838156-optimize-the-content-of-your-web-pages)
 - [type of content](https://openclassrooms.com/en/courses/3594061-boost-traffic-to-your-website-with-search-engine-optimization/5838228-build-your-content-machine)
-
-# Improve the indexing of a website
-
-It may be necessary to redirect your visitors from one page to another if the URL has changed or the page no longer exists : put in a 301 redirect (permanent redirect)
   
 ## Robots meta tags
-
-Be careful :
-- Check that the URL is written correctly (no typos, with or without final slash).
 - Check that there are no successive canonical tags (page A points to B points to C).
 - Check that you don’t have a loop: A to B and B to A.
 - Check that the URL in the tag is accessible (no 404 error).
