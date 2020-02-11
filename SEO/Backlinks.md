@@ -6,6 +6,9 @@
 - Asking your existing partners.
 - Creating pages on social media.
 
+## Recapitulatif
+![Bon Backlink](https://github.com/Claire-Lavigne/Cours-Developper/blob/master/SEO/Images/bon-backlink.png)
+
 ## Does and don'ts
 - ne pas faire de liens réciproques : page A vers site B et site B vers page A
 - les liens doivent être positionnés dans le contenu éditorial :
