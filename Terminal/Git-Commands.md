@@ -14,7 +14,7 @@
 ```bash
 $ git config --global user.name "User Name"
 $ git config --global user.email user@email.com
-// tell git to always use SSH instead of HTTPS
+# tell git to always use SSH instead of HTTPS
 $ git config --global url.ssh://git@github.com/.insteadOf https://github.com/
 ```
 
