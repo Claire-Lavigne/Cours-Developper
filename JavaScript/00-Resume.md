@@ -19,5 +19,7 @@ console.log(index);
 
 Résultat : Utiliser tjs "let"
 
+for (let index in fruits) = for (var index = 0; index < fruits.length ; index += 1)
+
 
 # Programmation Déclarative
