@@ -1,9 +1,11 @@
 # Programmation Fonctionnelle
 ## Debugger
+‘‘‘js
 debugger;  // voir les étapes du code
+‘‘‘
 
 ## Boucle : "VAR" ou "LET" ? 
-
+‘‘‘js
 var fruits = ['pomme', 'poire', 'cerise', 'abricot']; // valeurs de 0 à 3
 
 for (var index = 0; index < fruits.length ; index += 1) {
@@ -16,10 +18,12 @@ console.log(index);
 // avec "var" il a été défini globalement (càd en dehors de ma boucle, dans window)
 // index is undefined avec "let"
 // avec "let" il est défini localement (càd dans le bloc)
+‘‘‘
 
 Résultat : Utiliser tjs "let"
 
+‘‘‘js
 for (let index in fruits) = for (var index = 0; index < fruits.length ; index += 1)
-
+‘‘‘
 
 # Programmation Déclarative
