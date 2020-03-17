@@ -1,4 +1,0 @@
-# Programmation Fonctionnelle
-
-
-# Programmation Déclarative
