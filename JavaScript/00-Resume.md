@@ -32,9 +32,9 @@ for (let index in fruits)
 
 ## Fonctions
 ### Anonyme
-```javascriptfunction() { // code }```
+```javascript function() { // code }```
 ### Nommée
-```javascriptfunction hello() { // code }```
+```javascript function hello() { // code }```
 ### Affectée à une variable
 ```javascript
 var salut = function() {
