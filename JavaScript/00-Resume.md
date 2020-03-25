@@ -6,24 +6,48 @@ debugger;  // voir les étapes du code
 
 ## Boucle : "VAR" ou "LET" ? 
 ```javascript
-var fruits = ['pomme', 'poire', 'cerise', 'abricot']; // valeurs de 0 à 3
+var fruits = ['pomme', 'poire', 'cerise', 'abricot']; 
+// valeurs de 0 à 3
 
 for (var index = 0; index < fruits.length ; index += 1) {
  console.log('Je mange : ' + fruits[index] + ' !')
  // Je mange : pomme ! Je mange : poire ! Je mange : cerise ! Je mange : abricot !
 }
 
-console.log(index); 
-// index vaut 4 avec "var" mais fruits[4] est undefined (il n'a aucune valeur)
-// avec "var" il a été défini globalement (càd en dehors de ma boucle, dans window)
-// index is undefined avec "let"
-// avec "let" il est défini localement (càd dans le bloc)
+console.log(index);
+// var : index = 4 et fruits[4] = undefined
+// let : index = undefined
+```
+### VAR = variable globale
+- Global = en dehors de ma boucle, dans window
+### LET = variable locale
+- Local = dans la boucle (le bloc)
+### CONCLUSION : Tjs utiliser "let" dans une boucle
+
+### Boucles : Plusieurs écritures = même résultat
+```javascript
+for (let index = 0; index < fruits.length ; index += 1)
+for (let index in fruits)
 ```
 
-Résultat : Utiliser tjs "let"
-
+## Fonctions
+### Anonyme
+`function() { // code }`
+### Nommée
+`function hello() { // code }`
+### Affectée à une variable
 ```javascript
-for (let index in fruits) = for (var index = 0; index < fruits.length ; index += 1)
+var salut = function() {
+   // code 
+};
+salut();
+```
+### Définition et Exécution
+```javascript
+function hello(paramètres) {
+   // code 
+}
+hello(arguments);
 ```
 
 # Programmation Déclarative
