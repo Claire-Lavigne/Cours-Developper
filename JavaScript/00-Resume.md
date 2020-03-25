@@ -53,5 +53,7 @@ function hello(paramètres) {
 }
 hello(arguments);
 ```
+### Vocabulaire
+- Callback = définition de fonction
 
 # Programmation Déclarative
