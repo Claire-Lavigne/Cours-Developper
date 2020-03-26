@@ -64,6 +64,12 @@ $args = [
   'posts_per_page' => number
 ];
 
+// DEBUG : show values of each arg
+// echo '<pre>';
+// print_r($args);
+// echo '</pre>';
+// die;
+
 $wp_query = new WP_Query($args);
 
 if ($wp_query->have_posts()): while($wp_query->have_posts()): $wp_query->the_post();
