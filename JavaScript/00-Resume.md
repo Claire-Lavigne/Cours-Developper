@@ -97,6 +97,18 @@ function aimeFruits(fruit) {
 fruits.forEach(aimeFruits);
 // forEach peut appeler une fonction nommée "X" ou une fonction affectée à une variable "X"
 ```
+### Définir un tableau qui récupère les infos d'un autre tableau
+```javascript
+var phrases = [];
+fruits.forEach(function(fruit) {
+  phrases.push(`J'aime : ${fruit}`);
+});
+```
 
-
+Pareil en + simple == Méthode MAP
+```javascript
+var phrases = fruits.map(function(fruit) {
+  return `J'aime : ${fruit}`;
+});
+```
 # Programmation Déclarative
