@@ -97,7 +97,7 @@ function aimeFruits(fruit) {
 fruits.forEach(aimeFruits);
 // forEach peut appeler une fonction nommée "X" ou une fonction affectée à une variable "X"
 ```
-### Définir un tableau qui récupère les infos d'un autre tableau
+### Définir un tableau qui récupère les infos (nombre de valeurs) d'un autre tableau
 ```javascript
 var phrases = [];
 fruits.forEach(function(fruit) {
