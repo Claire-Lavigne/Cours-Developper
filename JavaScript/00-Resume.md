@@ -1,3 +1,6 @@
+# Vocabulaire
+- Callback = définition de fonction (fonction en sommeil)
+
 # Programmation Fonctionnelle
 ## Debugger
 ```javascript
@@ -31,13 +34,38 @@ for (let index in fruits)
 ```
 
 ## Fonctions
+### Définition et Exécution
+```javascript
+// 1- Définition
+function hello(paramètres) {
+   // code 
+}
+
+// 2- Exécution
+hello(arguments);
+```
+
 ### Anonyme
 ```javascript
-function() { // code }
+function() { 
+  // code 
+}
+
+// Exemple
+function(fruit) {
+  console.log('J\'aime : ' + fruit);
+}
 ```
 ### Nommée
 ```javascript
-function hello() { // code }
+function hello() {
+  // code
+}
+
+// Exemple
+function aimeFruits(fruit) {
+  console.log('J\'aime : ' + fruit);
+}
 ```
 ### Affectée à une variable
 ```javascript
@@ -45,15 +73,30 @@ var salut = function() {
    // code 
 };
 salut();
+
+// Exemple
+var aimeFruits = function(fruit) {
+  console.log('J\'aime : ' + fruit);
+};
 ```
-### Définition et Exécution
+## forEach
 ```javascript
-function hello(paramètres) {
-   // code 
-}
-hello(arguments);
+fruits.forEach(function(fruit, index) {
+  console.log(fruit, index);
+  // fruit = strings de mon tableau
+  // index = nombre d'élements dans mon tableau
+  console.log('J\'aime : ' + fruit);
+});
 ```
-### Vocabulaire
-- Callback = définition de fonction
+Pareil en + propre
+```javascript
+function aimeFruits(fruit) {
+  console.log('J\'aime : ' + fruit);
+  console.log(`J'aime : ${fruit}`);
+}
+fruits.forEach(aimeFruits);
+// forEach peut appeler une fonction nommée "X" ou une fonction affectée à une variable "X"
+```
+
 
 # Programmation Déclarative
