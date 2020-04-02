@@ -201,4 +201,20 @@ var message = (message) => ({ newMessage: message.toUpperCase() });
 // si j'ai qu'un paramètre, je peux enlever les parenthèses de ce paramètre 
 var message = message => ({ newMessage: message.toUpperCase() });
 ```
+
+#### Transformer une sélection qui ressemble à un tableau (mais n'en est pas un) en un tableau effectif
+```javascript
+var divs = document.querySelectorAll('div');
+// renvoie toutes mes div sous forme de HTMLCollection (getElementsByTag) ou NodeList (querySelector)
+// = je peux utiliser "for" mais pas "forEach"
+// conversion en array (renvoi un prototype) = je peux utiliser "forEach"
+var divsArray = Array.from(divs);
+divsArray.forEach((div, index) => {
+ setTimeout(() => {
+  box.style.display = 'block';
+ }, 1000 * index);
+});
+// résultat : j'affiche mes div (display:none à l'origine) à intervale d'1 seconde
+```
+
 # Programmation Déclarative
