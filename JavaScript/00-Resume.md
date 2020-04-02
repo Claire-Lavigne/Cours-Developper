@@ -129,16 +129,28 @@ var datas = [
  }
 ];
 
-var characters = datas.map(function(character) {
- return { 
+var characters = datas.map(function(character) { 
+  return {
+   name: `${character.firstname} ${character.lastname}`,
+   young: character.age < 50,
+  };
+ });
+
+// simplification : voir ternaire et fonction fléchée
+var characters = datas.map((character) => ({ 
   name: `${character.firstname} ${character.lastname}`,
   young: character.age < 50,
- };
-});
+ })
+);
+// pareil en enlevant les parenthèses sur mon paramètre
+var characters = datas.map(character => ({ 
+  name: `${character.firstname} ${character.lastname}`,
+  young: character.age < 50,
+ })
+);
 ```
 
 #### Ternaire
-
 ```javascript
 var isYoung = false;
 if (character.age < 50) {
@@ -162,5 +174,31 @@ même chose que (car booléen) :
 (character.age < 50);
 // ou
 character.age < 50
+```
+#### Fonctions fléchées
+```javascript
+function hello() {
+ return 'Salut';
+}
+
+var hello = function() {
+ return 'Salut';
+}
+
+// ES6+
+var hello = () => {
+ return 'Salut';
+}
+
+// Si je n'ai qu'un return je peux simplifier encore +
+var hello = () => 'Salut';
+
+// je peux aussi mettre la valeurr de retour entre parenthèses
+var addition = (a, b) => (a + b);
+// les parenthèses sont nécessaires pour retourner un objet
+var message = (message) => ({ newMessage: message.toUpperCase() });
+
+// si j'ai qu'un paramètre, je peux enlever les parenthèses de ce paramètre 
+var message = message => ({ newMessage: message.toUpperCase() });
 ```
 # Programmation Déclarative
