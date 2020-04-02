@@ -111,4 +111,56 @@ var phrases = fruits.map(function(fruit) {
   return `J'aime : ${fruit}`;
 });
 ```
+
+Pareil en + simple == Méthode MAP
+```javascript
+var datas = [
+ {
+  firstname: 'Claire',
+  lastname: 'Lavigne',
+  gender: 'Femme',
+  age: 26,
+ },
+ {
+  firstname: 'Helio',
+  lastname: 'Cruz',
+  gender: 'Homme',
+  age: 30
+ }
+];
+
+var characters = datas.map(function(character) {
+ return { 
+  name: `${character.firstname} ${character.lastname}`,
+  young: character.age < 50,
+ };
+});
+```
+
+#### Ternaire
+
+```javascript
+var isYoung = false;
+if (character.age < 50) {
+ isYoung = true;
+}
+```
+même chose que :
+```javascript
+if (character.age < 50) {
+ isYoung = true;
+} else {
+ isYoung = false;
+}
+```
+même chose que :
+```javascript
+(character.age < 50) ? true : false;
+```
+même chose que (car booléen) :
+```javascript
+(character.age < 50);
+// ou
+character.age < 50
+```
 # Programmation Déclarative
