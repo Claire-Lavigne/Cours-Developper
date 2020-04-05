@@ -1,5 +1,4 @@
-# LIST OF EVENTS (Most used*)
-- [Complete List](https://www.w3schools.com/jsref/dom_obj_event.asp)
+# LIST OF EVENTS (Most used*) - [Complete List](https://www.w3schools.com/jsref/dom_obj_event.asp)
 
 ## Mouse events
 - ```click```* : Left (normal) click
