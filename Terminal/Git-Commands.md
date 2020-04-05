@@ -111,7 +111,9 @@ $ git add -p (+ y or n)         # see new changes and accept/refuse to add
 ```bash
 $ git stash                     # save changes but not for commit
 $ git stash list                # see all files saved
+$ git stash show stash@{1}      # see files modifed in shash number without applying changes
 $ git stash pop                 # recup files saved to work on them again (et vide le stash)
+$ git stash pop stash@{1}       # same but on particular stash only
 $ git stash apply               # recup files saved to work on them again (sans vider le stash)
 ```
 
