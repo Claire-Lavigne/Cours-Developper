@@ -190,7 +190,7 @@ var hello = () => {
  return 'Salut';
 }
 
-// Si je n'ai qu'un return je peux simplifier encore +
+// Si je n'ai qu'un return je peux simplifier encore + en enlevant "return" et les accolades
 var hello = () => 'Salut';
 
 // je peux aussi mettre la valeurr de retour entre parenthèses
@@ -215,6 +215,30 @@ divsArray.forEach((div, index) => {
  }, 1000 * index);
 });
 // résultat : j'affiche mes div (display:none à l'origine) à intervale d'1 seconde
+```
+### Closures = function returned inside function
+closure = fonction configurée pour être exécutée plus tard
+
+```javascript
+function createSum(number1) {
+ return function(number2) {
+  return number1 + number2;
+ };
+}
+
+// ES6
+var createSum = number1 => number2 => number1 + number2;
+
+createSum(2);
+// je configure un argument
+var addTwo = createSum(2);
+addTwo(20);
+// je configure l'autre argument
+
+createSum(10)(20);
+// 30 : (number1)(number2)
+createSum(createSum(10)(20))(20)
+// 50
 ```
 
 # Programmation Déclarative
