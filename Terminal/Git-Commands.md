@@ -181,6 +181,13 @@ $ git stash
 $ git push -f origin <branch concerned>
 $ git checkout -b <new branch>
 $ git stash pop
+
+// or
+// remote repo :
+$ git push -f origin <last good commit SHA>:<branch concerned>
+// local repo :
+$ git reset <last good commit SHA>
+$ git stash
 ```
 #### Undo commits pushed
 ```bash
