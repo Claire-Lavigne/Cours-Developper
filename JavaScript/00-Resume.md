@@ -241,4 +241,23 @@ createSum(createSum(10)(20))(20)
 // 50
 ```
 
+### filtrer
+```javascript
+var datas = [
+ {
+  firstname: 'Claire',
+  lastname: 'Lavigne',
+  gender: 'Femme',
+  age: 26,
+ },
+ {
+  firstname: 'Helio',
+  lastname: 'Cruz',
+  gender: 'Homme',
+  age: 30
+ }
+];
+
+
+
 # Programmation Déclarative
