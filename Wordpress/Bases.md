@@ -122,3 +122,58 @@ $menu = str_replace('a href', 'a class="maclasse" href', $menu);
 
 echo $menu;
 ```
+
+## Shortcodes
+Option 1
+```php
+// functions.php
+require('inc/shortcodes.php');
+
+// shortcodes.php
+<?php
+if (!function_exists('lvg_arquivos_adm')) :
+
+  function lvg_arquivos_adm($attributs)
+  {
+    $attributs = shortcode_atts([
+      'name' => 'file name',
+    ], $attributs);
+
+    $arquivoLink = '<a href="https://google.fr" target="blank">';
+    $arquivoLink .= $attributs['name'];
+    $arquivoLink .= '</a>';
+    return $arquivoLink;
+  }
+
+endif;
+
+add_shortcode('arquivo_adm', 'lvg_arquivos_adm');
+
+// file.php
+[arquivo_adm name="nom du fichier"]
+```
+
+Option 2
+```php
+// functions.php
+require('inc/shortcodes.php');
+
+// shortcodes.php
+<?php
+if (!function_exists('lvg_arquivos_adm')) :
+
+  function lvg_arquivos_adm($content = null)
+  {
+    $arquivoLink = '<a href="https://google.fr" target="blank">';
+    $arquivoLink .= $content;
+    $arquivoLink .= '</a>';
+    return $arquivoLink;
+  }
+
+endif;
+
+add_shortcode('arquivo_adm', 'lvg_arquivos_adm');
+
+// file.php
+[arquivo_adm]Mon contenu[/arquivo_adm]
+```
