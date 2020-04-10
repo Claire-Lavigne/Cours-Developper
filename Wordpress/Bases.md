@@ -150,7 +150,7 @@ endif;
 add_shortcode('arquivo_adm', 'lvg_arquivos_adm');
 
 // file.php
-[arquivo_adm name="nom du fichier"]
+<?php echo do_shortcode( '[arquivo_adm name="nom du fichier"]' ) ?>
 ```
 
 Option 2
@@ -175,5 +175,5 @@ endif;
 add_shortcode('arquivo_adm', 'lvg_arquivos_adm');
 
 // file.php
-[arquivo_adm]Mon contenu[/arquivo_adm]
+<?php echo do_shortcode( '[arquivo_adm]Mon contenu[/arquivo_adm]' ) ?>
 ```
