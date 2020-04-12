@@ -44,7 +44,6 @@ function hello(paramètres) {
 // 2- Exécution
 hello(arguments);
 ```
-
 ### Anonyme
 ```javascript
 function() { 
@@ -97,7 +96,7 @@ function aimeFruits(fruit) {
 fruits.forEach(aimeFruits);
 // forEach peut appeler une fonction nommée "X" ou une fonction affectée à une variable "X"
 ```
-### Définir un tableau qui récupère les infos (nombre de valeurs) d'un autre tableau
+## Définir un tableau qui récupère les infos (nombre de valeurs) d'un autre tableau
 ```javascript
 var phrases = [];
 fruits.forEach(function(fruit) {
@@ -150,7 +149,7 @@ var characters = datas.map(character => ({
 );
 ```
 
-#### Ternaire
+## Ternaire
 ```javascript
 var isYoung = false;
 if (character.age < 50) {
@@ -175,7 +174,7 @@ même chose que (car booléen) :
 // ou
 character.age < 50
 ```
-#### Fonctions fléchées
+## Fonctions fléchées
 ```javascript
 function hello() {
  return 'Salut';
@@ -202,7 +201,7 @@ var message = (message) => ({ newMessage: message.toUpperCase() });
 var message = message => ({ newMessage: message.toUpperCase() });
 ```
 
-#### Transformer une sélection qui ressemble à un tableau (mais n'en est pas un) en un tableau effectif
+## Transformer une sélection qui ressemble à un tableau (mais n'en est pas un) en un tableau effectif
 ```javascript
 var divs = document.querySelectorAll('div');
 // renvoie toutes mes div sous forme de HTMLCollection (getElementsByTag) ou NodeList (querySelector)
@@ -216,8 +215,8 @@ divsArray.forEach((div, index) => {
 });
 // résultat : j'affiche mes div (display:none à l'origine) à intervale d'1 seconde
 ```
-### Closures = function returned inside function
-closure = fonction configurée pour être exécutée plus tard
+## Closures = function returned inside function
+fonction interne (accès aux variables de la fonction externe) même si fonction externe exécutée
 
 ```javascript
 function createSum(number1) {
@@ -241,9 +240,9 @@ createSum(createSum(10)(20))(20)
 // 50
 ```
 
-### filtrer
+## filtrer
 ```javascript
-var datas = [
+var users = [
  {
   firstname: 'Claire',
   lastname: 'Lavigne',
@@ -258,6 +257,14 @@ var datas = [
  }
 ];
 
-
+var admittedUsers = users.filter(function(data) {
+ // avoir au moins 18 ans et être un homme, ou une femme qui a moins de 30 ans
+ var isValid = user.age >= 18 && user.gender = 'Homme' || user.gender = 'Femme' && user.age >=18 && ser.age <= 30;
+ return true;  // true = je garde ; false = je supprime
+ // + simple
+ return user.age >= 18 && user.gender = 'Homme' || user.gender = 'Femme' && user.age >=18 && ser.age <= 30;
+});
+```
 
 # Programmation Déclarative
+
