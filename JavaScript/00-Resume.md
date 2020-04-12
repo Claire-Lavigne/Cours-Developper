@@ -96,7 +96,8 @@ function aimeFruits(fruit) {
 fruits.forEach(aimeFruits);
 // forEach peut appeler une fonction nommée "X" ou une fonction affectée à une variable "X"
 ```
-## Définir un tableau qui récupère les infos (nombre de valeurs) d'un autre tableau
+## Transposer des données : map
+= Définir un tableau qui récupère les infos (nombre de valeurs) d'un autre tableau
 ```javascript
 var phrases = [];
 fruits.forEach(function(fruit) {
@@ -240,7 +241,7 @@ createSum(createSum(10)(20))(20)
 // 50
 ```
 
-## filtrer
+## filtrer = filtrer des données
 ```javascript
 var users = [
  {
@@ -257,13 +258,60 @@ var users = [
  }
 ];
 
-var admittedUsers = users.filter(function(data) {
+var admittedUsers = users.filter(function(user) {
  // avoir au moins 18 ans et être un homme, ou une femme qui a moins de 30 ans
- var isValid = user.age >= 18 && user.gender = 'Homme' || user.gender = 'Femme' && user.age >=18 && ser.age <= 30;
+ var isValid = user.age >= 18 && user.gender = 'Homme' || user.gender = 'Femme' && user.age >= 18 && user.age <= 30;
  return true;  // true = je garde ; false = je supprime
  // + simple
- return user.age >= 18 && user.gender = 'Homme' || user.gender = 'Femme' && user.age >=18 && ser.age <= 30;
+ return user.age >= 18 && user.gender = 'Homme' || user.gender = 'Femme' && user.age >= 18 && user.age <= 30;
 });
+
+//ES6
+var admittedUsers = users.filter((data) => user.age >= 18 && user.gender = 'Homme' || user.gender = 'Femme' && user.age >= 18 && user.age <= 30;);
+```
+## reduce
+```javascript
+[1, 2, 3].reduce(callback, initialValue);
+// la valeur initiale doit être du meme type que les éléments du tableau
+
+[1, 2, 3].reduce(function(cumul, itemCourant) {
+ return cumul + itemCourant;
+ // à chaque boucle, additionner valeur cumulée avec l'item courant de l'index
+}, 0);
+// 6
+
+[1, 2, 3].reduce(function(cumul, itemCourant) {
+ return cumul + itemCourant;
+}, 10);
+// 16 
+
+["b", "c", "d"].reduce(function(cumul, itemCourant) {
+ return cumul + itemCourant;
+}, "a");
+// "abcd"
+
+var users = [
+ {
+  firstname: 'Claire',
+  lastname: 'Lavigne',
+  gender: 'Femme',
+  age: 26,
+ },
+ {
+  firstname: 'Helio',
+  lastname: 'Cruz',
+  gender: 'Homme',
+  age: 30
+ }
+];
+
+var totalAge = users.reduce(function(cumul, user) {
+ return cumul + user.age;
+}, 0);
+// 0 + 26 + 30 = 56
+
+//ES6
+var totalAge = users.reduce((cumul, user) => cumul + user.age, 0);
 ```
 
 # Programmation Déclarative
