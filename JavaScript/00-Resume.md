@@ -314,5 +314,19 @@ var totalAge = users.reduce(function(cumul, user) {
 var totalAge = users.reduce((cumul, user) => cumul + user.age, 0);
 ```
 
+## Méthode personnalisée
+```javascript
+var demo = [1,2,3]
+Array.prototype.hello = function() {
+ console.log('je suis un tableau');
+};
+["a","b","c"].hello()
+// je suis un tableau
+demo.hello()
+// je suis un tableau
+
+// tous les tableaux, créés avant ou après ma méthode personnalisée, obtiennent ma nouvelle méthode
+```
+
 # Programmation Déclarative
 
