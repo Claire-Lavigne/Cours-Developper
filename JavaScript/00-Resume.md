@@ -358,6 +358,11 @@ Array.prototype.divide = function(divisor) {
 
 [10,20,30].divide(2)
 // [5,10,15]
+
+// VERSION FLECHEE SUR LA FONCTION CLASSIQUE (= SANS "THIS") UNIQUEMENT
+Array.prototype.divide = function(divisor) {
+ return this.map((item) => item / divisor, 1);
+};
 ```
 
 # Programmation Déclarative
