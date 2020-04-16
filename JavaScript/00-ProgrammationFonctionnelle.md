@@ -427,3 +427,30 @@ average(3,4,5,6,7,8,9)
 // ES6
 var average = (...grades) => grades.sum() / grades.length;
 ```
+
+## app.js
+```javascript
+var app = {
+  init: function() {	  init: function() {
+
+    // Création du form
+    app.createForm();
+    // Création du counter
+    app.createCounter();
+    // Création de la liste
+    app.createList();
+  },
+  // Création du form
+  createForm: function() {
+    console.log('app createForm');
+  },
+  // Création du counter
+  createCounter: function() {
+    console.log('app createCounter');
+  },
+  // Création de la liste
+  createList: function() {
+    console.log('app createList');
+  },	  },
+};	};
+```
