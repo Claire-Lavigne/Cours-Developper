@@ -48,6 +48,11 @@
 <?php get_template_part('template-parts/dossier/fichier'); ?>  // charger template custom
 // file from paste
 <?php echo "Je suis index.php"; ?>  // retrouver page
+
+<?php echo date('Y'); ?>  // current Year
+<?php echo date("Y", strtotime("-1 year")); ?> // last Year
+<?php echo home_url('/predications/'); ?>
+<?php echo get_template_directory_uri() . '/public/images/predications/preach.jpg' ?>
 ```
 
 ## Boucle de wordpress
