@@ -269,7 +269,7 @@ var admittedUsers = users.filter(function(user) {
 //ES6
 var admittedUsers = users.filter((data) => user.age >= 18 && user.gender = 'Homme' || user.gender = 'Femme' && user.age >= 18 && user.age <= 30;);
 ```
-## reduce
+## reduce = réduire tous les éléments à 1 seule valeur
 ```javascript
 [1, 2, 3].reduce(callback, initialValue);
 // la valeur initiale doit être du meme type que les éléments du tableau
@@ -318,14 +318,46 @@ var totalAge = users.reduce((cumul, user) => cumul + user.age, 0);
 ```javascript
 var demo = [1,2,3]
 Array.prototype.hello = function() {
- console.log('je suis un tableau');
+ console.log('je suis un tableau : ' + this.length);
 };
-["a","b","c"].hello()
-// je suis un tableau
+["a","b","c", "d"].hello()
+// je suis un tableau : 4
 demo.hello()
-// je suis un tableau
+// je suis un tableau : 3
 
 // tous les tableaux, créés avant ou après ma méthode personnalisée, obtiennent ma nouvelle méthode
+```
+ENRICHIR ARRAY AVEC DES METHODES EXISTANTES (reduce, reduce, map) 
+```javascript
+Array.prototype.sum = function() {
+ // this = tableau sur lequel j'appelle la méthode
+ return this.reduce(function(cumul, item) {
+  return cumul + item;
+ }, 0);
+};
+
+[10,20,30].sum()
+// 60
+
+Array.prototype.product = function() {
+ // this = tableau sur lequel j'appelle la méthode
+ return this.reduce(function(cumul, item) {
+  return cumul * item;
+ }, 1);
+};
+
+[10,20,30].product()
+// 6000
+
+Array.prototype.divide = function(divisor) {
+ // this = tableau sur lequel j'appelle la méthode
+ return this.map(function(item) {
+  return item / divisor;
+ }, 1);
+};
+
+[10,20,30].divide(2)
+// [5,10,15]
 ```
 
 # Programmation Déclarative
