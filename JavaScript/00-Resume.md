@@ -364,6 +364,68 @@ Array.prototype.divide = function(divisor) {
  return this.map((item) => item / divisor, 1);
 };
 ```
+```javascript
+function createRobot(words) {
+ var index = 0;
 
+ return {
+  say: function() {
+   var word = words[index];
+   index += 1;
+   // je reviens à 0 si je dépasse le nombre de mots
+   if (index >= words.length) {
+    index = 0;
+   }
+   return word;
+  },
+  add: function(word) {
+   words.push(word);
+  },
+  delete: function(word) {
+   words = words.filter(function(currentWord){
+    return currentWord !== word;
+   });
+  },
+ };
+}
+```
+## Paramètres du reste = Nombre infini de paramètres
+```javascript
+function average(...grades) {
+ console.log(grades);
+}
+average(1,2,3,4)
+// [1,2,3,4]
+
+function average(param1, ...grades) {
+ console.log(param1);
+ console.log(grades);
+}
+average(1,2,3,4)
+// 1
+// [2,3,4]
+
+
+// CALCULER UNE MOYENNE
+Array.prototype.sum = function() {
+ return this.reduce(function(cumul, item) {
+  return cumul + item;
+ }, 0);
+};
+
+function average(...grades) {
+ // total des notes
+ var total = grades.sum();
+ // nbe de notes
+ var nbGrades = grades.length;
+ // calcule moyenne
+ return total / nbGrades;
+}
+average(3,4,5,6,7,8,9)
+// 6
+
+// ES6
+var average = (...grades) => grades.sum() / grades.length;
+```
 # Programmation Déclarative
 
