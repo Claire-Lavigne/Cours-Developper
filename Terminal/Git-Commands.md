@@ -223,3 +223,9 @@ $ git push <repo name> :<branch name>
 # git fetch -p
 # git fsck --full
 ```
+
+### remove the tracked and old committed file from git
+```bash
+# git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch <file_path_relative_to_git_repo>' --prune-empty --tag-name-filter cat -- --all
+# git push origin --force --all
+```
