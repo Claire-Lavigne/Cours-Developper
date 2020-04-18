@@ -431,8 +431,7 @@ var average = (...grades) => grades.sum() / grades.length;
 ## app.js
 ```javascript
 var app = {
-  init: function() {	  init: function() {
-
+  init: function() {
     // Création du form
     app.createForm();
     // Création du counter
@@ -451,6 +450,6 @@ var app = {
   // Création de la liste
   createList: function() {
     console.log('app createList');
-  },	  },
-};	};
+  },
+};
 ```
