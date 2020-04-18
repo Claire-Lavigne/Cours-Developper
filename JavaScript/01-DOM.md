@@ -72,6 +72,9 @@ x.innerHTML = '';                // tags included (to modify tags: select the pa
 ```js
 x.setAttribute('id', 'bdg');     // add attribute + its value
  .id = 'bgd';                    // similar syntax (I can do it with a value as well)
+ .placeholder = 'Nom';
+ .type = 'text';
+ .name = 'inputValue';
  .hasAttribute('href');          // search if element has the attribute selected
  .getAttribute('href');          // see the attributes of the element
 ```
