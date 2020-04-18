@@ -71,9 +71,11 @@ x.innerHTML = '';                // tags included (to modify tags: select the pa
 ## MODIFIER LA VALEUR D'UN ATTRIBUT D'UN NOEUD
 ```js
 x.setAttribute('id', 'bdg');     // add attribute + its value
+ .id;                            // get value
  .id = 'bgd';                    // similar syntax (I can do it with a value as well)
  .placeholder = 'Nom';
  .type = 'text';
+ .checked = true;
  .name = 'inputValue';
  .hasAttribute('href');          // search if element has the attribute selected
  .getAttribute('href');          // see the attributes of the element
@@ -86,6 +88,7 @@ x.classList;                     // Show all class of the element selected
  .classList.add('bgd ctr');      // add class
  .classList.contains("big")      // Does my element has a class called "big" ?
  .className;
+ .className = 'bgd';
 ```
 
 ## MODIFIER LE STYLE D'UN NOEUD
