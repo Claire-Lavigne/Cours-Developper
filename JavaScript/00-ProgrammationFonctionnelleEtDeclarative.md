@@ -1,5 +1,12 @@
 # Vocabulaire
+- Boucles
+- Fonctions
 - Callback = définition de fonction (fonction en sommeil)
+- ForEach
+- Map
+- Filter
+- Reduce
+- Closures
 
 # Programmation Fonctionnelle
 ## Debugger
