@@ -1,0 +1,3 @@
+- "Reboot" Bootstrap 4 : meilleure option
+- "Reset" de Meyer : brutal, reset tout
+- "Normalize" : normalise tout, il faut ajouter notre reset
