@@ -1,3 +1,8 @@
+# Pour quels projets ?
+- Besoin d'un back office
+- Blog et Médias
+- Personnalisation simple en back
+
 # Documentation
 - [Codex](https://codex.wordpress.org/)
 - [WP](https://developer.wordpress.org/reference/)
