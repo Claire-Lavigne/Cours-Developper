@@ -104,6 +104,7 @@ the_title();
 get_the_title();
 ```
 
+## Catégories = hiérarchies (sous-catégories) VS Etiquettes (= tags = taxonomies) = tout au meme niveau
 
 ## Navigation
 ```php
