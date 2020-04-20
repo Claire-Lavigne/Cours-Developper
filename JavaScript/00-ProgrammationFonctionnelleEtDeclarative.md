@@ -1,11 +1,17 @@
 # Vocabulaire
+- Variables
+ - Globales = en dehors de la boucle (dans window)
+ - Locales = dans la boucle (dans le bloc)
 - Boucles
 - Fonctions
+- Fonctions fléchées
+- Littéraux de gabarits
+- Prototype
 - Callback = définition de fonction (fonction en sommeil)
-- ForEach
+- ForEach = sur chaque élément du tableau
 - Map
 - Filter
-- Reduce
+- Reduce = additionne les éléments pour les réduire à un seul élément
 - Closures
 
 # Programmation Fonctionnelle
@@ -14,7 +20,8 @@
 debugger;  // voir les étapes du code
 ```
 
-## Boucle : "VAR" ou "LET" ? 
+## Boucles
+### "VAR" ou "LET" ? 
 ```javascript
 var fruits = ['pomme', 'poire', 'cerise', 'abricot']; 
 // valeurs de 0 à 3
@@ -28,13 +35,11 @@ console.log(index);
 // var : index = 4 et fruits[4] = undefined
 // let : index = undefined
 ```
-### VAR = variable globale
-- Global = en dehors de ma boucle, dans window
-### LET = variable locale
-- Local = dans la boucle (le bloc)
-### CONCLUSION : Tjs utiliser "let" dans une boucle
+- **VAR = variable globale**
+- **LET = variable locale**
+- **CONCLUSION : Tjs utiliser "let" dans une boucle**
 
-### Boucles : Plusieurs écritures = même résultat
+### Plusieurs écritures = même résultat
 ```javascript
 for (let index = 0; index < fruits.length ; index += 1)
 for (let index in fruits)
