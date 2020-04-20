@@ -40,6 +40,7 @@
 <?php the_permalink(); ?>           // lien d'un post
 <?php echo get_permalink( get_page_by_path( 'parole' ) ) ?> // lien du post avec chemin https://nomdusite/parole
 <?php the_title(); ?>               // titre d'un post
+<?php the_title( '<h3>', '</h3>' ); ?>   // titre d'un post dans balise <h3>
 <?php the_content(); ?>             // contenu entier d'un post
 <?php get_template_part('template-parts/dossier/nomdufichieravanttiret', 'nomdufichieraprestiret'); ?>       // contenu d'un fichier dans dossier indiqué dans dossier template-parts
 
