@@ -429,4 +429,7 @@ var average = (...grades) => grades.sum() / grades.length;
 ```
 
 # Programmation Déclarative
+- [ToDoList](https://codepen.io/claire-lavigne/pen/MWajjmQ)
+
+# Programmation Impérative
 - [ToDoList](https://codepen.io/claire-lavigne/pen/zYvKBYo)
