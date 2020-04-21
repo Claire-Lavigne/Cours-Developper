@@ -1,21 +1,36 @@
 # jQuery
 ## Link html to jQuery
 - [jQuery Lastest Version](https://code.jquery.com/)
+- [jQuery CDN](https://cdnjs.com/libraries/jquery)
+# jQueryUI : [exemples de fonctionnalités](https://jqueryui.com/sortable/)
+
+## Emplacement
+- En fin de `</body>`, devant les autres scripts
 ```html
-<script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="jquery.js"></script>
-````
+<!--cdn-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!--jQuery-->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<!--jQuery UI-->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+```
+
+## NPM
+`npm install jquery`
+```html
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+```
 
 ## Load DOM
 ```javascript
+$(app.init);
+
 $(function() {
+$(document).ready(function(){
+jQuery(document).ready(function(){
   // write code here
 })
-```
-Autres écritures possibles :
-```javascript
-$(document).ready(function(){})
-jQuery(document).ready(function(){})
 ```
 
 ## General Syntax
@@ -24,8 +39,30 @@ $('selector').method(parameter1, parameter2);
 ```
 Example
 ```javascript
+// define element
+var $element = $('p');
 // change all the paragraphs' background colors to yellow
-$('p').css('background-color', 'yellow');
+$element.css('background-color', 'yellow');
+$element.text('Hello');
+$element.html('<h1>Hello</h1>');
+$('p').attr('href', 'https://google.com');
+```
+
+## Création d'un élément et ajout d'attributs
+```javascript
+$('<img>', {
+  src: 'images/eiffel.jpg',
+  alt: 'Photo de la Tour Eiffel'
+});
+```
+
+## Récupération d'un élément et ajout d'attributs
+```javascript
+var proprietes = {
+  color: '#F3900A',
+  backgroundColor: '#C5C5C5'
+};
+$('.contenu').css(proprietes);
 ```
 
 ## Selectors
@@ -65,6 +102,7 @@ $("li:not('.vegetable')")     // select all li that don't have the class vegetab
 ## Methods
 - ```.html()``` : remplace le contenu HTML de la page
 - ```.text()``` : remplace le texte de la page
+- ```.val()``` : récupérer la valeur d'un élément de formulaire
 - ```.replaceWith()``` : remplace l'élément lui-même
 - ```.remove()``` : supprime les éléments de la page
 - ```.before()``` : insère du contenu avant le(s) élément(s) sélectionné(s)
@@ -76,10 +114,19 @@ $("li:not('.vegetable')")     // select all li that don't have the class vegetab
 - ```.addClass()``` : ajoute une nouvelle classe à/aux élément(s) sélectionné(s) (sans remplacer sa classe actuelle)
 - ```.removeClass()``` : supprime une classe du/des élément(s) sélectionné(s)
 - ```.css()``` : récupère ou définit les propriétés CSS d'un élément, même plusieurs propriétés à la fois.
+- ```.delay()```
 ________________
 - ```.find()``` : trouve un/des élément(s) correspondant au paramètre dans la sélection actuelle
+- ```.closest()``` : trouve l'élément le plus proche
 - ```.parent()``` : accède au parent direct d'un/des élément(s) ou à ses parents si on utilise .parents()
 - ```.children()``` : accède aux enfants de(s) élément(s)
+- ```.siblings()``` : accède aux frères
+- ```.first()``` : premier item
+- ```.last()``` : dernier item
+- ```.next()``` : item suivant
+- ```.prev()``` : item précédant
+- ```.eq()``` : item n°X de l'index
+- ```.index()``` : n° de l'index d'un élément
 ________________
 - ```.height()``` : hauteur d'un cadre sans les marges intérieures, extérieurs ni les bords
 - ```.width ()```: largeur d'un cadre sans les marges intérieures, extérieurs ni les bords
@@ -101,6 +148,20 @@ ________________
 - ```.wrap()``` surround an element with another
 - ```.wrapInner()``` wraps the interior of an element;
 - ```.wrapAll()``` wraps the exterior of an element.
+________________
+- ```.fadeIn()``` :
+- ```.fadeOut()``` :
+- ```.animate()``` :
+- ```.hide()``` :
+
+### DATA
+Il est possible d'utiliser l'attribut data dans une balise HTML pour stocker des informations
+```javascript
+<p id="chapeau" data-width="250">Lorem ipsum dolor sit amet...</p>
+var dataWidth = $('#chapeau').data('width');
+//ou
+var dataWidth = $('#chapeau').attr('data-width');
+```
 
 ### Example : add/remove strings
 ```javascript
@@ -141,13 +202,42 @@ $('selection').on('event', function() {
     // jQuery here that you want to run when the event happens
 });
 ```
-
-### Examples
 ```javascript
 // css change on scroll of windows
 $(window).on('scroll', function() {
   $('html').css('background-color', 'yellow');
 });
+
+// remove all event Listener of 'window'
+$(window).off();
+// remove all 'scroll' events of 'window'
+$(window).off('scroll');
+```
+
+## Animate()
+```javascript
+// la largeur sera modifiée sur 2000ms soit 2 secondes
+$('.contenu').animate({width: '70%'}, 2000);
+```
+```javascript
+// Les proprietes CSS affectées et une liste d'options configurant l'animation
+var proprietes = {
+  color: '#8457D1',
+  width: '70%'
+};
+
+var options = {
+  //durée de l'animation
+  duration: 2000,
+  // mode de transition
+  easing: 'easein',
+  // callback appelé lorsque l'animation sera terminée
+  complete: function(){
+    console.log('Animation terminée');
+  }
+};
+
+$('.contenu').animate(proprietes, options);
 ```
 
 - [One example of click event on image](https://codepen.io/eclairereese/pen/rLxMjb)
