@@ -89,7 +89,7 @@ console.log(index);
 ```
 
 ## Conditions
-### Ternaires
+### Booléens
 ```javascript
 var age = 2;
 var isYoung = false;
@@ -97,7 +97,6 @@ if (age < 50) {
  isYoung = true;
 }
 ```
-=
 ```javascript
 var age = 2;
 if (age < 50) {
@@ -106,14 +105,13 @@ if (age < 50) {
  isYoung = false;
 }
 ```
-=
+Ternaires (Same)
 ```javascript
 var age = 2;
 (age < 50) ? true : false;
 // ou
 age < 50 ? true : false;
 ```
-= (avec booléen uniquement) :
 ```javascript
 var age = 2;
 (age < 50);
@@ -124,17 +122,17 @@ age < 50
 ## Evenements
 
 ## This
-- Function called as property of object (= method of object) :
+- When `this` is called inside a method :
  - **`this` = that object**
  - **`this` = invisible argument for every method**
 ```javascript
 var object = {
-    property1: 1000,
-    property2: function () {
-        return (this.property1++).toString(16);
+    property: 1000,
+    method: function () {
+        return (this.property++).toString(16);
     }
 };
-console.log(object.property2());
+console.log(object.method());
 ```
 
 - Function called with `new` :
@@ -219,7 +217,40 @@ createSum(createSum(10)(20))(20)
 ```
 
 # Modules
+- **Module = object**
+- **Method (of object) / clé = function**
+- **Property (of object) = variable**
 
+```javascript
+var object = {
+    property: 1000,
+    method: function () {}
+};
+```
+Application JS
+```javascript
+var app = {
+  init: function() {
+    console.info('Initialisation');
+    app.name = 'Big Brother';
+    app.ecouterEvenements();
+  },
+  
+  ecouterEvenements: function() {
+    window.addEventListener('click', app.reagir);
+  },
+  
+  reagir: function() {
+    console.log(app.name + ' > ' + 'un clic est survenu');
+  }
+};
+
+// Si script chargé dans body, on lance l'application :
+app.init();
+
+// Si script chargé dans le head, on lance l'application :
+document.addEventListener('DOMContentLoaded', app.init);
+```
 
 ## Transposer des données : map
 = Définir un tableau qui récupère les infos (nombre de valeurs) d'un autre tableau
