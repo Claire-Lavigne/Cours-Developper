@@ -73,6 +73,7 @@ x.innerHTML = '';                // tags included (to modify tags: select the pa
 x.setAttribute('id', 'bdg');     // add attribute + its value
  .id;                            // get value
  .id = 'bgd';                    // similar syntax (I can do it with a value as well)
+ .href = 'https://google.fr';
  .placeholder = 'Nom';
  .type = 'text';
  .checked = true;
