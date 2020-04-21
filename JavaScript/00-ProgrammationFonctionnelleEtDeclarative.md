@@ -46,7 +46,7 @@ function nom() {
 }
 nom();
 ```
-### Avec paramètres
+### Avec paramètres = variables locales
 ```javascript
 function nom(paramètres) {
    // code 
@@ -62,12 +62,16 @@ function aimeFruits(fruits) {
 // ANONYME
 function(fruits) {
 // FONCTION ANONYME AFFECTÉE À UNE VARIABLE
-let aimeFruits = function(fruits) {
+let aimeFruits = function(fruits, fruit) {
   console.log(`J'aime : ${fruits}`);
+  return 'fruit choisi: ' + fruit;
 }
 
 aimeFruits(fruits);
 // J'aime : pomme,poire,cerise,abricot
+aimeFruits(fruits, 'pomme');
+// J'aime : pomme,poire,cerise,abricot
+// "fruit choisi: pomme"
 
 // Fonction anonyme impossible à appeler si non affectée à une variable. Exécutée immédiatement
 // Ne pas oublier `;` à la fin d'une fonction anonyme affectée à une variable
