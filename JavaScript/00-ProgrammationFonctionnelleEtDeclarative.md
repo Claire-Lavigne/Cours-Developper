@@ -61,14 +61,16 @@ let fruits = ['pomme', 'poire', 'cerise', 'abricot'];
 function aimeFruits(fruits) {
 // ANONYME
 function(fruits) {
-// AFFECTÉE À UNE VARIABLE
+// FONCTION ANONYME AFFECTÉE À UNE VARIABLE
 let aimeFruits = function(fruits) {
   console.log(`J'aime : ${fruits}`);
 }
 
 aimeFruits(fruits);
 // J'aime : pomme,poire,cerise,abricot
-// Fonction anonyme impossible à appeler. Exécutée immédiatement
+
+// Fonction anonyme impossible à appeler si non affectée à une variable. Exécutée immédiatement
+// Ne pas oublier `;` à la fin d'une fonction anonyme affectée à une variable
 ```
 
 ## Boucles
@@ -87,10 +89,39 @@ console.log(index);
 ```
 
 ## Conditions
+### Ternaires
+```javascript
+var age = 2;
+var isYoung = false;
+if (age < 50) {
+ isYoung = true;
+}
+```
+=
+```javascript
+var age = 2;
+if (age < 50) {
+ isYoung = true;
+} else {
+ isYoung = false;
+}
+```
+=
+```javascript
+var age = 2;
+(age < 50) ? true : false;
+// ou
+age < 50 ? true : false;
+```
+= (avec booléen uniquement) :
+```javascript
+var age = 2;
+(age < 50);
+// ou
+age < 50
+```
 ## DOM
 ## Evenements
-
-
 
 ## This
 - Function called as property of object (= method of object) :
@@ -133,7 +164,27 @@ var userId = new object();
 # Programmation Fonctionnelle
 ## Méthodes (functions written with `.`)
 ### .forEach()
-**Sur chaque élément du tableau**
+**Boucle Sur chaque élément du tableau**
+```javascript
+let fruits = ['pomme', 'poire', 'cerise', 'abricot'];
+
+fruits.forEach(function(fruit, index) {
+  console.log(fruit, index);
+  // fruit = strings de mon tableau
+  // index = nombre d'élements dans mon tableau
+  console.log(`J'aime : ${fruit} - `);
+  // J'aime : pomme - J'aime : poire - J'aime : cerise - J'aime : abricot
+});
+```
+Idem : Fonction nommée / Fonction anonyme affectée à une variable
+```javascript
+function aimeFruits(fruit) {
+var aimeFruits = function(fruit) {
+  console.log(`J'aime : ${fruit}`);
+}
+fruits.forEach(aimeFruits);
+```
+
 ### .map()
 ### .filter()
 ### .reduce()
@@ -143,27 +194,33 @@ var userId = new object();
 ### .find()
 ## Prototype
 ## Closures
+**function returned inside function**
+=> fonction interne (accès aux variables de la fonction externe) même si fonction externe exécutée
+```javascript
+function createSum(number1) {
+ return function(number2) {
+  return number1 + number2;
+ };
+}
+
+// ES6
+var createSum = number1 => number2 => number1 + number2;
+
+createSum(2);
+// je configure un argument
+var addTwo = createSum(2);
+addTwo(20);
+// je configure l'autre argument
+
+createSum(10)(20);
+// 30 : (number1)(number2)
+createSum(createSum(10)(20))(20)
+// 50
+```
 
 # Modules
 
 
-## forEach
-```javascript
-fruits.forEach(function(fruit, index) {
-  console.log(fruit, index);
-  // fruit = strings de mon tableau
-  // index = nombre d'élements dans mon tableau
-  console.log('J\'aime : ' + fruit);
-});
-```
-Pareil en + propre
-```javascript
-function aimeFruits(fruit) {
-  console.log(`J'aime : ${fruit}`);
-}
-fruits.forEach(aimeFruits);
-// forEach peut appeler une fonction nommée "X" ou une fonction affectée à une variable "X"
-```
 ## Transposer des données : map
 = Définir un tableau qui récupère les infos (nombre de valeurs) d'un autre tableau
 ```javascript
@@ -218,31 +275,6 @@ var characters = datas.map(character => ({
 );
 ```
 
-## Ternaire
-```javascript
-var isYoung = false;
-if (character.age < 50) {
- isYoung = true;
-}
-```
-même chose que :
-```javascript
-if (character.age < 50) {
- isYoung = true;
-} else {
- isYoung = false;
-}
-```
-même chose que :
-```javascript
-(character.age < 50) ? true : false;
-```
-même chose que (car booléen) :
-```javascript
-(character.age < 50);
-// ou
-character.age < 50
-```
 ## Fonctions fléchées
 ```javascript
 function hello() {
@@ -283,30 +315,6 @@ divsArray.forEach((div, index) => {
  }, 1000 * index);
 });
 // résultat : j'affiche mes div (display:none à l'origine) à intervale d'1 seconde
-```
-## Closures = function returned inside function
-fonction interne (accès aux variables de la fonction externe) même si fonction externe exécutée
-
-```javascript
-function createSum(number1) {
- return function(number2) {
-  return number1 + number2;
- };
-}
-
-// ES6
-var createSum = number1 => number2 => number1 + number2;
-
-createSum(2);
-// je configure un argument
-var addTwo = createSum(2);
-addTwo(20);
-// je configure l'autre argument
-
-createSum(10)(20);
-// 30 : (number1)(number2)
-createSum(createSum(10)(20))(20)
-// 50
 ```
 
 ## filtrer = filtrer des données
