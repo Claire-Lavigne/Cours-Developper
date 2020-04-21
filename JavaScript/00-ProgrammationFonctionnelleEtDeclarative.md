@@ -6,24 +6,6 @@
 
 # Bases JS
 
-## Debugger
-```javascript
-// voir les étapes du code
-debugger;  
-
-console.log()
-```
-
-## Commentaires
-```javascript
-// Ligne de commentaire
-
-/*
-  Bloc de
-  commentaires
-*/
-```
-
 ## Concaténation et Littéraux de gabarits
 ```javascript
 console.log('J\'aime : ' + fruit);
