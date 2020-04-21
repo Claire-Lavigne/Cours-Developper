@@ -1,95 +1,152 @@
 # Vocabulaire
-- Variables
- - Globales = en dehors de la boucle (dans window)
- - Locales = dans la boucle (dans le bloc)
 - Boucles
 - Fonctions
 - Fonctions fléchées
-- Littéraux de gabarits
-- Prototype
 - Callback = définition de fonction (fonction en sommeil)
-- ForEach = sur chaque élément du tableau
-- Map
-- Filter
-- Reduce = additionne les éléments pour les réduire à un seul élément
-- Closures
 
-# Programmation Fonctionnelle
+# Bases JS
+
 ## Debugger
 ```javascript
-debugger;  // voir les étapes du code
+// voir les étapes du code
+debugger;  
+
+console.log()
+```
+
+## Commentaires
+```javascript
+// Ligne de commentaire
+
+/*
+  Bloc de
+  commentaires
+*/
+```
+
+## Concaténation et Littéraux de gabarits
+```javascript
+console.log('J\'aime : ' + fruit);
+console.log(`J'aime : ${fruit}`);
+```
+
+## Variables : VAR ou LET ?
+- **VAR = Variable Globale** => en dehors de la boucle (dans window)
+- **LET = Variable Locale** => dans la boucle (dans le bloc)
+
+**LET (surtout dans une boucle)**
+
+## Fonctions
+- **Phase 1 : Définition**
+- **Phase 2 : Exécution**
+### Sans paramètres
+```javascript
+function nom() { 
+  // code 
+}
+nom();
+```
+### Avec paramètres
+```javascript
+function nom(paramètres) {
+   // code 
+}
+nom(arguments);
+```
+
+```javascript
+let fruits = ['pomme', 'poire', 'cerise', 'abricot']; 
+
+// NOMMÉE
+function aimeFruits(fruits) {
+// ANONYME
+function(fruits) {
+// AFFECTÉE À UNE VARIABLE
+let aimeFruits = function(fruits) {
+  console.log(`J'aime : ${fruits}`);
+}
+
+aimeFruits(fruits);
+// J'aime : pomme,poire,cerise,abricot
+// Fonction anonyme impossible à appeler. Exécutée immédiatement
 ```
 
 ## Boucles
-### "VAR" ou "LET" ? 
 ```javascript
-var fruits = ['pomme', 'poire', 'cerise', 'abricot']; 
+let fruits = ['pomme', 'poire', 'cerise', 'abricot']; 
 // valeurs de 0 à 3
 
-for (var index = 0; index < fruits.length ; index += 1) {
+for (let index = 0; index < fruits.length ; index += 1) {
+for (let index in fruits)
  console.log('Je mange : ' + fruits[index] + ' !')
  // Je mange : pomme ! Je mange : poire ! Je mange : cerise ! Je mange : abricot !
 }
 
 console.log(index);
-// var : index = 4 et fruits[4] = undefined
-// let : index = undefined
-```
-- **VAR = variable globale**
-- **LET = variable locale**
-- **CONCLUSION : Tjs utiliser "let" dans une boucle**
-
-### Plusieurs écritures = même résultat
-```javascript
-for (let index = 0; index < fruits.length ; index += 1)
-for (let index in fruits)
+// Je mange : pomme ! Je mange : poire ! Je mange : cerise ! Je mange : abricot !
 ```
 
-## Fonctions
-### Définition et Exécution
-```javascript
-// 1- Définition
-function hello(paramètres) {
-   // code 
-}
+## Conditions
+## DOM
+## Evenements
 
-// 2- Exécution
-hello(arguments);
-```
-### Anonyme
-```javascript
-function() { 
-  // code 
-}
 
-// Exemple
-function(fruit) {
-  console.log('J\'aime : ' + fruit);
-}
-```
-### Nommée
-```javascript
-function hello() {
-  // code
-}
 
-// Exemple
-function aimeFruits(fruit) {
-  console.log('J\'aime : ' + fruit);
-}
-```
-### Affectée à une variable
+## This
+- Function called as property of object (= method of object) :
+ - **`this` = that object**
+ - **`this` = invisible argument for every method**
 ```javascript
-var salut = function() {
-   // code 
+var object = {
+    property1: 1000,
+    property2: function () {
+        return (this.property1++).toString(16);
+    }
 };
-salut();
-
-// Exemple
-var aimeFruits = function(fruit) {
-  console.log('J\'aime : ' + fruit);
-};
+console.log(object.property2());
 ```
+
+- Function called with `new` :
+ - **`this` = new empty object**
+```javascript
+function object() {
+    this.property1 = 1000;
+    this.property2 = object.property2;
+}
+object.property2 = function() {
+    return (this.property1++).toString(16);
+};
+var userId = new object();
+```
+- Method (property) of an object defined on prototype called :
+ - **`this` = that object**
+```javascript
+function object() {
+    this.property1 = 1000;
+}
+object.prototype.property2 = function() {
+    return (this.property1++).toString(16);
+};
+var userId = new object();
+```
+
+# Programmation Fonctionnelle
+## Méthodes (functions written with `.`)
+### .forEach()
+**Sur chaque élément du tableau**
+### .map()
+### .filter()
+### .reduce()
+**Additionne les éléments de l'index pour les réduire à un seul**
+### .slipt()
+### .push()
+### .find()
+## Prototype
+## Closures
+
+# Modules
+
+
 ## forEach
 ```javascript
 fruits.forEach(function(fruit, index) {
@@ -102,7 +159,6 @@ fruits.forEach(function(fruit, index) {
 Pareil en + propre
 ```javascript
 function aimeFruits(fruit) {
-  console.log('J\'aime : ' + fruit);
   console.log(`J'aime : ${fruit}`);
 }
 fruits.forEach(aimeFruits);
@@ -444,4 +500,5 @@ var average = (...grades) => grades.sum() / grades.length;
 - [ToDoList](https://codepen.io/claire-lavigne/pen/MWajjmQ)
 
 # Programmation Déclarative
+- Utiliser JSON plutôt que le dom
 - [ToDoList](https://codepen.io/claire-lavigne/pen/zYvKBYo)
