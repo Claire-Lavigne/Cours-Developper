@@ -59,21 +59,6 @@ aimeFruits(fruits, 'pomme');
 // Ne pas oublier `;` à la fin d'une fonction anonyme affectée à une variable
 ```
 
-## Boucles
-```javascript
-let fruits = ['pomme', 'poire', 'cerise', 'abricot']; 
-// valeurs de 0 à 3
-
-for (let index = 0; index < fruits.length ; index += 1) {
-for (let index in fruits)
- console.log('Je mange : ' + fruits[index] + ' !')
- // Je mange : pomme ! Je mange : poire ! Je mange : cerise ! Je mange : abricot !
-}
-
-console.log(index);
-// Je mange : pomme ! Je mange : poire ! Je mange : cerise ! Je mange : abricot !
-```
-
 ## Conditions
 ### Booléens
 ```javascript
