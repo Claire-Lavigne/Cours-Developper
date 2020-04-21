@@ -1,5 +1,23 @@
-# For
+# For or While ?
 - **For** : Safer (no infinite loop) : execute the turn X times
+- **While** : Risqued (infinite loop) : execute the turn until the condition is verified
+
+## Boucles
+```javascript
+let fruits = ['pomme', 'poire', 'cerise', 'abricot']; 
+// valeurs de 0 à 3
+
+for (let index = 0; index < fruits.length ; index += 1) {
+for (let index in fruits)
+ console.log('Je mange : ' + fruits[index] + ' !')
+ // Je mange : pomme ! Je mange : poire ! Je mange : cerise ! Je mange : abricot !
+}
+
+console.log(index);
+// Je mange : pomme ! Je mange : poire ! Je mange : cerise ! Je mange : abricot !
+```
+
+# For / For.. in / ForEach
 - ``` break; ``` : interrompre une boucle
 - ``` continue; ``` : interrompre l'itération courante et passer à la suivante
 
@@ -22,7 +40,7 @@ const names = [
 // TRADITIONNAL LOOP (ARRAY)
 for (let i = 1; i <= 5; i++) {
     console.log(i);
-    // output : 1 2 3 4 5
+    // 1 2 3 4 5
 }
 
 for (let index = 0; index < names.length; index += 1) {
@@ -45,14 +63,11 @@ for (let name of names) {
 });
 ```
 
-# While
-- Risqued (infinite loop) : execute the turn until the condition is verified
-
+## While
+- first the condition is checked
+ - if false : loop not executed
+ - if true : loop executed
 ```javascript
-// first the condition is checked
-// - if condition false : loop not executed
-// - if condition true : loop executed
-
 let i = 1;
 while (i <= 5) {
     // Si la variable n'est pas modifiée ici, la condition sera toujours vraie => infinite loop
@@ -60,8 +75,11 @@ while (i <= 5) {
     i++;                    // counts 5
 }
 console.log(i);             // counts 6
+```
 
-// first the loop is executed, then condition is checked
+## Do... While
+- first the loop is executed, then condition is checked
+```javascript
 do {
     // instructions
 } while(condition)
