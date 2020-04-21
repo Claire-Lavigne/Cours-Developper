@@ -5,13 +5,14 @@
 - var `document` : html (dom)
 - noeud = element
 
-## PARCOURIR LE DOM
+## ELEMENTS DU DOM
 [Complete List](https://www.w3schools.com/jsref/dom_obj_document.asp)
 - ```getElementsByTagName```
 - ```getElementsByClassName```
 - ```getElementById```
 - ```querySelector```
 - ```querySelectorAll```
+- ```createElement```
 
 ```js
 var x = document.head                            // get its html content
@@ -28,10 +29,11 @@ var x = document.head                            // get its html content
         document.querySelectorAll('p.dark')      // get all <p> with a .dark
         document.querySelectorAll("#contenu p")  // get all <p> inside a #contenu
         document.querySelectorAll("#id > .dark") // get all .dark child of #id parent
+        // ---------------
+        document.createElement('li')             // create tag elements
 ```
 
-## CREER NOUVEAU NOEUD / SUPPRIMER NOEUD
-- ```createElement```
+## NOEUDS
 - ```appendChild```
 - ```prepend```
 - ```removeChild```
@@ -46,8 +48,7 @@ var x = document.head                            // get its html content
 - ```insertBefore```
 
 ```js
-x.createElement('li')           // create tag elements
- .appendChild()                 // add element (as last child) to its parent
+x.appendChild()                 // add element (as last child) to its parent
  .removeChild()                 // remove child to its parent
  .parentElement.removeChild(x)  // cheated syntax
  
@@ -87,6 +88,7 @@ x.setAttribute('id', 'bdg');     // add attribute + its value
 x.classList;                     // Show all class of the element selected
  .classList.remove('bgd');       // remove class
  .classList.add('bgd ctr');      // add class
+ .classList.toggle('bgd');       // if exists remove class, if absent add class
  .classList.contains("big")      // Does my element has a class called "big" ?
  .className;
  .className = 'bgd';
@@ -129,7 +131,18 @@ x.addEventListener('type', maFonction);     // add event
 ## ANIMER ÉLÉMENTS AVEC FONCTIONS
 - ```setInterval```
 - ```setTimeout```
+- ```clearInterval```
+- ```clearTimeout```
 - ```requestAnimationFrame```
+
+```js
+function writeOk() {
+  var counter = document.createElement('div');
+  counter.textContent = 'OK';
+}
+var timer = setTimeout(writeOk, 3000); // fonction exécutée au bout de 3s
+clearTimeout(timer);    // annulation
+```
 
 # Examples
 ## Use DOM
