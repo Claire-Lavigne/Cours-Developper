@@ -1,22 +1,6 @@
 # Vocabulaire
-- Boucles
-- Fonctions
 - Fonctions fléchées
 - Callback = définition de fonction (fonction en sommeil)
-
-# Bases JS
-
-## Concaténation et Littéraux de gabarits
-```javascript
-console.log('J\'aime : ' + fruit);
-console.log(`J'aime : ${fruit}`);
-```
-
-## Variables : VAR ou LET ?
-- **VAR = Variable Globale** => en dehors de la boucle (dans window)
-- **LET = Variable Locale** => dans la boucle (dans le bloc)
-
-**LET (surtout dans une boucle)**
 
 ## Fonctions
 - **Phase 1 : Définition**
