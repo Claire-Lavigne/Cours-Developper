@@ -104,3 +104,34 @@ switch (jourActuel) {
 
 console.log(`Demain, nous serons ${jourSuivant}`);  
 ```
+
+## Conditions
+### Booléens
+```javascript
+var age = 2;
+var isYoung = false;
+if (age < 50) {
+ isYoung = true;
+}
+```
+```javascript
+var age = 2;
+if (age < 50) {
+ isYoung = true;
+} else {
+ isYoung = false;
+}
+```
+Ternaires (Same)
+```javascript
+var age = 2;
+(age < 50) ? true : false;
+// ou
+age < 50 ? true : false;
+```
+```javascript
+var age = 2;
+(age < 50);
+// ou
+age < 50
+```
