@@ -90,9 +90,9 @@ age !== 10    // Not equal to (in value and type)
 'string'.slice(0, 3);  // Coupe de l'index 0 à 3 : stri
 
 // Convert values
-String()
-Number(string)
-parseInt(string)
+String()                // Transform smthg into string
+Number(string)          
+parseInt(string)        // Transform string into Integer
 
 // Maths
 Math.random()           // génère un nombre aléatoire entre 0 et 1
@@ -100,4 +100,7 @@ Math.round()            // arrondi un nombre à l'entier le plus proche
 Math.floor()            // arrondi un nombre à l'entier inférieur
 Math.ceil()             // arrondi un nombre à l'entier supérieur
 Math.min()              // renvoie le plus petit nombre
+
+// Tests
+isNaN()                  // vérifie que la valeur est un nombre
 ```
