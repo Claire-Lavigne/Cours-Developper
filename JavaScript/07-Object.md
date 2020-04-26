@@ -3,6 +3,7 @@
 - JSON: JavaScript Object Notation
 - object: array with multiple keys(properties) <--> values
 - méthode: property with a function as a value
+- propriété = clé
 
 **Object with properties (keyName : anyValue) and function outside**
 ```js
