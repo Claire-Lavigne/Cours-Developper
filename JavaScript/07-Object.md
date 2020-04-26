@@ -5,6 +5,21 @@
 - méthode: property with a function as a value
 - propriété = clé
 
+```js
+var monObjet = {
+    nom: 'claire',
+    age: 30,
+    direUnMot: function(){
+        alert('bonjour');
+    }
+}
+
+monObjet.nom;
+monObjet.age;
+monObjet.direUnMot();
+```
+
+
 **Object with properties (keyName : anyValue) and function outside**
 ```js
 // création du personnage de jeu 'Claire'
