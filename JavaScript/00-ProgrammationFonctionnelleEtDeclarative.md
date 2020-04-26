@@ -1,5 +1,7 @@
 # Vocabulaire
 - Callback = définition de fonction (fonction en sommeil)
+- Programmation fonctionnelle = écrire tout en fonctions
+- Programmation orientée objet (POO)
 
 # Programmation Fonctionnelle
 ## Méthodes (functions written with `.`)
