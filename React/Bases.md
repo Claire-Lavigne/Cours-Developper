@@ -29,3 +29,8 @@ cd nameofmyapp
 npm start
 # dans VScode, sélectionner langage Babel (JavaScript Babel) si besoin du code couleur
 ```
+
+# Installer Redux
+```bash
+npm i redux react-redux
+```
