@@ -21,6 +21,23 @@
 - Paramètre : variable locale créée automatiquement à l'intérieur de ma fonction, quand sa valeur est encore inconnue
 - Argument : param1 receive the value of arg1, param2 the value of arg2, ...
 
+```js
+var a = "one";  
+
+function nameFonction() {
+  // j'ai accès à a
+  var b = "two";
+  function imbriquee() {
+    // j'ai accès à a et b
+    var c = "three";
+    // j'ai accès à a, b et c
+  }
+  // j'ai accès à a et b
+}
+// j'ai accès à a
+nameFonction();
+```
+
 ## Lesson : Declare a variable outside the function 
 - variable globale --> no param, no arg
 ```js
