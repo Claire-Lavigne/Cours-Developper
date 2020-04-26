@@ -1,3 +1,6 @@
+# Documentation
+- [React](https://create-react-app.dev/docs/getting-started/)
+
 # Installer Nodejs
 ```bash
 # version installée
@@ -16,4 +19,13 @@ yarn
 yarn build
 # prévisualiser
 yarn start
+```
+
+# Installer App React
+```bash
+npx create-react-app nameofmyapp
+
+cd nameofmyapp
+npm start
+# dans VScode, sélectionner langage Babel (JavaScript Babel) si besoin du code couleur
 ```
