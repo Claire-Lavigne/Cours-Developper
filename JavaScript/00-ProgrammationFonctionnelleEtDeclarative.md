@@ -1,6 +1,6 @@
 # Vocabulaire
 - Callback = définition de fonction (fonction en sommeil)
-- Programmation fonctionnelle ou impérative = écrire tout en fonctions
+- Programmation fonctionnelle ou impérative = écrire tout en fonctions, donner des ordres (instructions) une par une
 - Programmation orientée objet (POO) ou déclarative
 
 # Programmation Fonctionnelle
