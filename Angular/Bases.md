@@ -12,6 +12,8 @@ cd my-dream-app
 ng serve
 # prod (directory dist)
 ng build
+# deployment
+ng build --prod
 ```
 
 - Optionnel : avec Helio
