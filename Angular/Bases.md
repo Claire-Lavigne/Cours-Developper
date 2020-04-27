@@ -9,7 +9,7 @@ npm install -g @angular/cli
 ng new my-dream-app   # during processus : yes, scss, no
 # go inside and run server + access localhost indicated
 cd my-dream-app
-ng serve
+ng serve --open
 # prod (directory dist)
 ng build
 # deployment
