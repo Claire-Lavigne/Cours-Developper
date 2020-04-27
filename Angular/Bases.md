@@ -10,6 +10,8 @@ ng new my-dream-app   # during processus : yes, scss, no
 # go inside and run server + access localhost indicated
 cd my-dream-app
 ng serve
+# prod (directory dist)
+ng build
 ```
 
 - Optionnel : avec Helio
@@ -18,6 +20,10 @@ ng serve
   - run server in racine and access localhost
 
 ```bash
-ng g c header => generate component header
-ng g c header/top => generate sub component for header
+# generate component header
+ng g c header
+# generate sub component for header
+ng g c header/top
+# autres
+ng generate directive|pipe|service|class|guard|interface|enum|module
 ```
