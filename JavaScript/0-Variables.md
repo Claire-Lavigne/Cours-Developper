@@ -81,13 +81,14 @@ age !== 10    // Not equal to (in value and type)
 
 # Functions over variables
 ```javascript
-.length()              // count letters or loop an array
-.toLowerCase()
-.toUpperCase()
-.indexOf("dr");        // 1 if true, -1 if false (position in string or array)
-.startsWith("Pe");     // true
-.endsWith("ez");       // false
-'string'.slice(0, 3);  // Coupe de l'index 0 à 3 : stri
+.length()               // count letters or loop an array
+.toLowerCase()          // tout mettre en minuscule
+.toUpperCase()          // tout mettre en maj
+.trim()                 // enlever espaces inutiles
+.indexOf("dr");         // 1 if true, -1 if false (position in string or array)
+.startsWith("Pe");      // true
+.endsWith("ez");        // false
+'string'.slice(0, 3);   // Coupe de l'index 0 à 3 : stri
 
 // Convert values
 String()                // Transform smthg into string
