@@ -169,6 +169,7 @@ $ git push origin +masterorbranchname
 # FOR ONLY TWO COMMITS THAT ARE THE MOST RECENTS (FIRST COMMIT + HEAD)
 $ git reset --soft "HEAD^"
 $ git commit --amend
+$ git push origin +masterorbranchname
 ```
 
 ### PUSH (send from local to remote) / PULL (take from remote to local)
