@@ -152,6 +152,7 @@ $ git push origin +branchname   # actualize the distant repo on branch (/!\ for 
 ```
 #### Organize commits (rename, fusionner)
 ```bash
+# FOR MULTIPLE COMMITS
 $ git rebase -i master        # List all commits and open text editor
 # in text editor, tape all commits you want to combine in one
 # keep word "pick" for the commit that will stay
@@ -164,6 +165,10 @@ squash x536897 commit 2
 squash c01a668 commit 3
 squash 8a9fbd7 commit 4
 $ git push origin +masterorbranchname
+
+# FOR ONLY TWO COMMITS THAT ARE THE MOST RECENTS (FIRST COMMIT + HEAD)
+$ git reset --soft "HEAD^"
+$ git commit --amend
 ```
 
 ### PUSH (send from local to remote) / PULL (take from remote to local)
