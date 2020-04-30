@@ -181,11 +181,12 @@ $ git stash
 $ git push -f origin <branch concerned>
 $ git checkout -b <new branch>
 $ git stash pop
-
-// or
-// remote repo :
+```
+#### Cancel last push (test ok)
+```bash
+# For remote repo :
 $ git push -f origin <last good commit SHA>:<branch concerned>
-// local repo :
+# Update local repo :
 $ git reset <last good commit SHA>
 $ git stash
 ```
@@ -219,13 +220,29 @@ $ git push <repo name> :<branch name>
 ### GIT CRASH / ERROR: object file is empty
 - Save directory (copy)
 ```bash
-# find .git/objects/ -type f -empty | xargs rm
-# git fetch -p
-# git fsck --full
+$ find .git/objects/ -type f -empty | xargs rm
+$ git fetch -p
+$ git fsck --full
 ```
 
-### remove the tracked and old committed file from git
+### remove the tracked and old committed file/directory from git
 ```bash
-# git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch <file_path_relative_to_git_repo>' --prune-empty --tag-name-filter cat -- --all
-# git push origin --force --all
+$ git filter-branch --prune-empty -d /dev/shm/scratch \
+ --index-filter "git rm --cached -f --ignore-unmatch <FILE RELATIVE PATH>" \
+ --tag-name-filter cat -- --all
+$ git filter-branch --prune-empty -d /dev/shm/scratch \
+ --index-filter "git rm --cached -rf --ignore-unmatch <DIRECTORY RELATIVE PATH> \
+ --tag-name-filter cat -- --all
+# NOT SURE
+$ git push origin --force --all
+
+# Make git repo smaller after removing files
+# Remove the original refs backed up by git-filter-branch (do this for all branches)
+$ git update-ref -d refs/original/refs/heads/master
+# Expire all reflogs with:
+$ git reflog expire --expire=now --all
+# Garbage collect all unreferenced objects with
+$ git gc --prune=now
+# Push your updated tree on the git repository
+git push -f
 ```
