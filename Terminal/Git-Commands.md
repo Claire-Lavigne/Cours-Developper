@@ -182,19 +182,14 @@ $ git push origin +master       # force push /!\ pas sure
 ```
 #### Cancel last push
 ```bash
-$ git reset <good commit SHA> 
-$ git stash
-$ git push -f origin <branch concerned>
-$ git checkout -b <new branch>
-$ git stash pop
-```
-#### Cancel last push (test ok)
-```bash
 # For remote repo :
 $ git push -f origin <last good commit SHA>:<branch concerned>
 # Update local repo :
 $ git reset <last good commit SHA>
 $ git stash
+# To keep stashed modifs (if needed)
+$ git checkout -b <new branch>
+$ git stash pop
 ```
 #### Undo commits pushed
 ```bash
