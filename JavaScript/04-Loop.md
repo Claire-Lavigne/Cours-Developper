@@ -2,7 +2,7 @@
 - **For** : Safer (no infinite loop) : execute the turn X times
 - **While** : Risqued (infinite loop) : execute the turn until the condition is verified
 
-## For
+# For
 ```javascript
 let fruits = ['pomme', 'poire', 'cerise', 'abricot']; 
 // valeurs de 0 à 3
@@ -60,7 +60,7 @@ for (let name of names) {
 });
 ```
 
-## While
+# While
 - first the condition is checked
  - if false : loop not executed
  - if true : loop executed
@@ -74,7 +74,7 @@ while (i <= 5) {
 console.log(i);             // counts 6
 ```
 
-## Do... While
+# Do... While
 - first the loop is executed, then condition is checked
 ```javascript
 do {
