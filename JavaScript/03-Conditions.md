@@ -64,7 +64,7 @@ var age = 2;
 age < 50
 ```
 
-**Exemple of ternaire**
+**Ternaire (strings boolean)**
 ```js
 var salut = (heure <= 18) ? "Bonjour" : "Bonsoir";
 
