@@ -17,6 +17,49 @@ console.log(index);
 // Je mange : pomme ! Je mange : poire ! Je mange : cerise ! Je mange : abricot !
 ```
 
+# For / For.. in / For .. of
+- ``` break; ``` : interrompre une boucle
+- ``` continue; ``` : interrompre l'itération courante et passer à la suivante
+
+```javascript
+// ARRAY
+const names = ['Will Alexander', 'Sarah Kate'];
+
+// OBJECT
+const names = [
+    {
+        identity: 'Will Alexander',
+        ticketNumber: 209542
+    },
+    {
+        identity: 'Sarah Kate',
+        ticketNumber: 169336
+    }
+]
+
+// TRADITIONNAL LOOP (ARRAY)
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+    // 1 2 3 4 5
+}
+
+for (let index = 0; index < names.length; index += 1) {
+for (let index in names) {
+    console.log(names[index]);
+    // array output : "Will Alexander" "Sarah Kate"
+    // object output : Object{ identity: "Will Alexander", ticketNumber: 209542} Object{identity: "Sarah Kate", ticketNumber: 169336}
+}
+
+for (let name of names) {
+    console.log(name);
+    // array output : "Will Alexander" "Sarah Kate"
+    // object output : Object{ identity: "Will Alexander", ticketNumber: 209542} Object{identity: "Sarah Kate", ticketNumber: 169336}
+    console.log(name.identity + ' ' + name.ticketNumber);
+    // object output : "Will Alexander 209542" "Sarah Kate 169336"
+}
+});
+```
+
 ## While
 - first the condition is checked
  - if false : loop not executed
