@@ -1,11 +1,7 @@
 # If / Else if / Else
-
 - :warning: A variable created inside of the block can't be called outside !
-- ```if (a)``` means ```if (a === true)```
-- ```if (!(a))``` means ```if (a === false)```
-- ```if (numberOfGuests === numberOfSeats)```
 
-## Comparative expressions
+**Comparative expressions**
 - true && true = true
 - true && false = false
 - false && false = false
@@ -15,7 +11,7 @@
 - !true = false
 - !false = true
 
-## Lesson
+**Code**
 ```javascript
 let a = true;
 
@@ -28,17 +24,58 @@ if (condition) {
 }
 ```
 
-## Example with Ternaires (only with booleans)
+**Conditions**
+- ```if (numberOfGuests === numberOfSeats)```
+
+**Conditions short syntax (booleans)**
+- ```if (a)``` means ```if (a === true)```
+- ```if (!(a))``` means ```if (a === false)```
+
+**Ternaires (booleans)**
+```javascript
+var age = 2;
+
+if (age < 50) {
+ isYoung = true;
+} else {
+ isYoung = false;
+}
+
+// Is the same as
+var age = 2, isYoung = false;
+if (age < 50) {
+ isYoung = true;
+}
+
+// Is the same as
+var age = 2;
+(age < 50) ? true : false;
+
+// Is the same as
+var age = 2;
+age < 50 ? true : false;
+
+// Is the same as
+var age = 2;
+(age < 50);
+
+// Is the same as
+var age = 2;
+age < 50
+```
+
+**Exemple of ternaire**
 ```js
+var salut = (heure <= 18) ? "Bonjour" : "Bonsoir";
+
+// Means
 var heure = 19, salut = "";
 
-if (heure <= 18){
+if (heure <= 18) {
     salut = "Bonjour";
 } else {
     salut = "Bonsoir";
 }
-// shorter code
-var salut = (heure <= 18) ? "Bonjour" : "Bonsoir";
 ```
 
 ## Examples OpenClassrooms
@@ -46,14 +83,14 @@ var salut = (heure <= 18) ? "Bonjour" : "Bonsoir";
 - [resultatsBAC](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre3_exercice2.js)
 - [heureActuelle](https://github.com/oc-courses/intro-javascript/blob/gh-pages/chapitre3_exercice3.js)
 
-# Switch
 
+# Switch
 - When ? 
     - Too much ```else if``` conditions
     - ```a === b```
 - Expression = name of variable; boolean...
 
-## Lesson
+**Code**
 ```javascript
 let a = value1
 
@@ -70,7 +107,7 @@ default:
 }
 ```
 
-## Example
+**Example**
 ```javascript
 // Définir jourSuivant en fonction de jourActuel
 const jourActuel = "lundi";
@@ -103,35 +140,4 @@ switch (jourActuel) {
 }
 
 console.log(`Demain, nous serons ${jourSuivant}`);  
-```
-
-## Conditions
-### Booléens
-```javascript
-var age = 2;
-var isYoung = false;
-if (age < 50) {
- isYoung = true;
-}
-```
-```javascript
-var age = 2;
-if (age < 50) {
- isYoung = true;
-} else {
- isYoung = false;
-}
-```
-Ternaires (Same)
-```javascript
-var age = 2;
-(age < 50) ? true : false;
-// ou
-age < 50 ? true : false;
-```
-```javascript
-var age = 2;
-(age < 50);
-// ou
-age < 50
 ```
