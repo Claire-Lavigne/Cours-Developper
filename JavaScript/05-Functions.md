@@ -58,12 +58,13 @@ parseInt(string)        // Transform string into Integer
 - **Callback** : définition de fonction (fonction en sommeil) / handler
 - **Return** : afficher les infos des instructions
 - **Paramètre** : variable locale créée automatiquement à l'intérieur de ma fonction, quand sa valeur est encore inconnue
-- **Argument** : param1 receive the value of arg1, param2 the value of arg2, ...
+- **Argument** : quand mon paramètre reçoit sa valeur (param1 receive the value of arg1, param2 the value of arg2, ...)
+
+## Élaboration
+- **Phase 1 : Définition**
+- **Phase 2 : Exécution**
 
 ## Portée des variables
-- variables globales
-- variables locales
-
 ```js
 var a = "one";  
 
@@ -82,55 +83,43 @@ function nameFonction() {
 nameFonction();
 ```
 
-## Declare a variable inside the function
-- variable locale --> param + arg
+## Fonction nommée
+
+### Sans paramètres
+```javascript
+function nom() { 
+  // code 
+}
+nom();
+```
+
+### Avec paramètres = variables locales
 ```js
 function nomFonction(param1, param2, ...) {
   // Instructions (can use param1, param2, ...)
+  console.log(param1);
   return nameOfAFonction;
 }
 
-nomFonction(arg1, arg2, ...); 
+nomFonction(arg1, arg2, ...);
+// arg1
 ```
 
-## Example
-```js
-function direBonjour(prenom) {
-  alert(prenom);
-}
-
-direBonjour('Timia');
-// Timia
-```
-
-# Fonctions anonymes
+## Fonctions anonymes et Fonctions fléchées (ES6+)
 - Identique aux fonctions nommées
 - Plus difficile à gérer ds les messages d'erreur
+- Si non affectée à une variable : Impossible à appeler. Exécutée immédiatement
+- Si affectée à une variable : Ne pas oublier `;` à la fin
 
-# Affectation d'une fonction anonyme (non nommée) à une variable
-
-## Lesson
+### Fonction anonyme non affectée à une variable
 ```javascript
-var maVariable = function(param1, param2, ...) {    // ou (autre syntaxe)
-var maVariable = (param1,param2,...) => {           // ou (autre syntaxe si un seul paramètre)
-var maVariable = param1 => returnValue;
-    // Instructions
+function(fruits) { 
+  // instructions 
 }
-
-maVariable(arg1, arg2, ...);
 ```
-
-## Example
+### Fonction anonyme affectée à une variable 
 ```javascript
-var add = (firstNumber, secondNumber) => {
-  var result = firstNumber + secondNumber;
-  return result;
-}
-
-console.log(add(4, 3));
-```
-## Example (objects)
-```javascript
+// UN SEUL PARAMÈTRE ET INSTRUCTIONS
 var sendWelcomeMessageToUser = (user) => {
     if (user.online) {
         if (user.accountType === 'normal') {
@@ -144,41 +133,35 @@ var sendWelcomeMessageToUser = (user) => {
 sendWelcomeMessageToUser(firstUser);
 sendWelcomeMessageToUser(secondUser);
 sendWelcomeMessageToUser(thirdUser);
-```
 
-## Example
-```js
-var user = prenom => 'Claire';
-```
+// AVEC 1 OU 0 PARAMÈTRE ET UN SEUL RETURN
+var hello = () => { return 'Salut'; }
+var hello = () => 'Salut';
+var maVariable = (param1) => value;
+var maVariable = param1 => value;
+// /!\ les parenthèses sont nécessaires pour retourner un objet
+var message = message => ({ newMessage: message.toUpperCase() });
 
+// PLUSIEURS PARAMÈTRES ET INSTRUCTIONS
+var maVariable = function(param1, param2, ...) { // Instructions }
+var maVariable = (param1, param2, ...) => { // Instructions }
 
+maVariable(arg1, arg2, ...);
 
-## Fonctions
-- **Phase 1 : Définition**
-- **Phase 2 : Exécution**
-### Sans paramètres
-```javascript
-function nom() { 
-  // code 
+// EXEMPLE PLUSIEURS PARAMÈTRES ET INSTRUCTIONS
+var add = (firstNumber, secondNumber) => {
+  var result = firstNumber + secondNumber;
+  return result;
 }
-nom();
-```
-### Avec paramètres = variables locales
-```javascript
-function nom(paramètres) {
-   // code 
-}
-nom(arguments);
-```
 
-```javascript
+add(4, 3);
+
+// PLUSIEURS PARAMÈTRES ET RETURN
+var addition = (a, b) => (a + b);
+
+// EXEMPLE CONCRET
 let fruits = ['pomme', 'poire', 'cerise', 'abricot']; 
 
-// NOMMÉE
-function aimeFruits(fruits) {
-// ANONYME
-function(fruits) {
-// FONCTION ANONYME AFFECTÉE À UNE VARIABLE
 let aimeFruits = function(fruits, fruit) {
   console.log(`J'aime : ${fruits}`);
   return 'fruit choisi: ' + fruit;
@@ -189,9 +172,6 @@ aimeFruits(fruits);
 aimeFruits(fruits, 'pomme');
 // J'aime : pomme,poire,cerise,abricot
 // "fruit choisi: pomme"
-
-// Fonction anonyme impossible à appeler si non affectée à une variable. Exécutée immédiatement
-// Ne pas oublier `;` à la fin d'une fonction anonyme affectée à une variable
 ```
 
 ### .forEach()
@@ -247,39 +227,6 @@ names.forEach(name => {
 ```
 
 ### .map()
-### .filter()
-### .reduce()
-**Additionne les éléments de l'index pour les réduire à un seul**
-### .slipt()
-### .push()
-### .find()
-## Prototype
-## Closures
-**function returned inside function**
-=> fonction interne (accès aux variables de la fonction externe) même si fonction externe exécutée
-```javascript
-function createSum(number1) {
- return function(number2) {
-  return number1 + number2;
- };
-}
-
-// ES6
-var createSum = number1 => number2 => number1 + number2;
-
-createSum(2);
-// je configure un argument
-var addTwo = createSum(2);
-addTwo(20);
-// je configure l'autre argument
-
-createSum(10)(20);
-// 30 : (number1)(number2)
-createSum(createSum(10)(20))(20)
-// 50
-```
-
-
 ## Transposer des données : map
 = Définir un tableau qui récupère les infos (nombre de valeurs) d'un autre tableau
 ```javascript
@@ -334,48 +281,7 @@ var characters = datas.map(character => ({
 );
 ```
 
-## Fonctions fléchées
-```javascript
-function hello() {
- return 'Salut';
-}
-
-var hello = function() {
- return 'Salut';
-}
-
-// ES6+
-var hello = () => {
- return 'Salut';
-}
-
-// Si je n'ai qu'un return je peux simplifier encore + en enlevant "return" et les accolades
-var hello = () => 'Salut';
-
-// je peux aussi mettre la valeurr de retour entre parenthèses
-var addition = (a, b) => (a + b);
-// les parenthèses sont nécessaires pour retourner un objet
-var message = (message) => ({ newMessage: message.toUpperCase() });
-
-// si j'ai qu'un paramètre, je peux enlever les parenthèses de ce paramètre 
-var message = message => ({ newMessage: message.toUpperCase() });
-```
-
-## Transformer une sélection qui ressemble à un tableau (mais n'en est pas un) en un tableau effectif
-```javascript
-var divs = document.querySelectorAll('div');
-// renvoie toutes mes div sous forme de HTMLCollection (getElementsByTag) ou NodeList (querySelector)
-// = je peux utiliser "for" mais pas "forEach"
-// conversion en array (renvoi un prototype) = je peux utiliser "forEach"
-var divsArray = Array.from(divs);
-divsArray.forEach((div, index) => {
- setTimeout(() => {
-  box.style.display = 'block';
- }, 1000 * index);
-});
-// résultat : j'affiche mes div (display:none à l'origine) à intervale d'1 seconde
-```
-
+### .filter()
 ## filtrer = filtrer des données
 ```javascript
 var users = [
@@ -404,6 +310,9 @@ var admittedUsers = users.filter(function(user) {
 //ES6
 var admittedUsers = users.filter((data) => user.age >= 18 && user.gender = 'Homme' || user.gender = 'Femme' && user.age >= 18 && user.age <= 30;);
 ```
+
+### .reduce()
+**Additionne les éléments de l'index pour les réduire à un seul**
 ## reduce = réduire tous les éléments à 1 seule valeur
 ```javascript
 [1, 2, 3].reduce(callback, initialValue);
@@ -447,6 +356,50 @@ var totalAge = users.reduce(function(cumul, user) {
 
 //ES6
 var totalAge = users.reduce((cumul, user) => cumul + user.age, 0);
+```
+
+### .slipt()
+### .push()
+### .find()
+## Prototype
+## Closures
+**function returned inside function**
+=> fonction interne (accès aux variables de la fonction externe) même si fonction externe exécutée
+```javascript
+function createSum(number1) {
+ return function(number2) {
+  return number1 + number2;
+ };
+}
+
+// ES6
+var createSum = number1 => number2 => number1 + number2;
+
+createSum(2);
+// je configure un argument
+var addTwo = createSum(2);
+addTwo(20);
+// je configure l'autre argument
+
+createSum(10)(20);
+// 30 : (number1)(number2)
+createSum(createSum(10)(20))(20)
+// 50
+```
+
+## Transformer une sélection qui ressemble à un tableau (mais n'en est pas un) en un tableau effectif
+```javascript
+var divs = document.querySelectorAll('div');
+// renvoie toutes mes div sous forme de HTMLCollection (getElementsByTag) ou NodeList (querySelector)
+// = je peux utiliser "for" mais pas "forEach"
+// conversion en array (renvoi un prototype) = je peux utiliser "forEach"
+var divsArray = Array.from(divs);
+divsArray.forEach((div, index) => {
+ setTimeout(() => {
+  box.style.display = 'block';
+ }, 1000 * index);
+});
+// résultat : j'affiche mes div (display:none à l'origine) à intervale d'1 seconde
 ```
 
 ## Méthode personnalisée
