@@ -13,7 +13,7 @@ var object = {
 console.log(object.method());
 ```
 
-# Function called with `new` :
+## Function called with `new` :
  - **`this` = new empty object**
 ```javascript
 function object() {
@@ -26,7 +26,7 @@ object.property2 = function() {
 var userId = new object();
 ```
 
-# Method (property) of an object defined on prototype called :
+## Method (property) of an object defined on prototype called :
  - **`this` = that object**
 ```javascript
 function object() {
