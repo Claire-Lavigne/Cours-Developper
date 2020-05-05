@@ -60,47 +60,29 @@ parseInt(string)        // Transform string into Integer
 - **Paramètre** : variable locale créée automatiquement à l'intérieur de ma fonction, quand sa valeur est encore inconnue
 - **Argument** : param1 receive the value of arg1, param2 the value of arg2, ...
 
+## Portée des variables
+- variables globales
+- variables locales
+
 ```js
 var a = "one";  
 
 function nameFonction() {
-  // j'ai accès à a
+  // Can access and use a
+  // ex : console.log(a);
   var b = "two";
   function imbriquee() {
-    // j'ai accès à a et b
+    // Can access and use a et b
     var c = "three";
-    // j'ai accès à a, b et c
+    // Can access and use a, b et c
   }
-  // j'ai accès à a et b
+  // Can access and use a et b
 }
-// j'ai accès à a
+// Can access and use a
 nameFonction();
 ```
 
-## Lesson : Declare a variable outside the function 
-- variable globale --> no param, no arg
-```js
-var nameVariable = value;  
-
-function nameFonction() {
-  // Instructions (can use the variable made outside)
-  return nameOfAFonction;
-}
-
-nameFonction();
-```
-## Example
-```js
-var prenom = Timia;
-
-function direBonjour() {
-  alert(prenom);
-}
-
-direBonjour();
-```
-
-## Lesson : Declare a variable inside the function
+## Declare a variable inside the function
 - variable locale --> param + arg
 ```js
 function nomFonction(param1, param2, ...) {
