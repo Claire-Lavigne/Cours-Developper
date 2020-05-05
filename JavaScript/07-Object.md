@@ -1,14 +1,26 @@
-# JSON - OOP
-- OOP: Object-oriented programming
-- JSON: JavaScript Object Notation
-- object: array with multiple keys(properties) <--> values
-- méthode: property with a function as a value
-- propriété = clé
+# JSON (JavaScript Object Notation) - OOP (Object-oriented programming)
 
+## Modules ou Objets d'un programme
+- Un "module" ou "objet" = une thématique (ex : gérer un compte utilisateur, afficher des notifications à l'écran, calculer le score d'un jeu...)
+- un "module" possède des clés <-> valeurs
+  - quand les valeurs sont des fonctions, ce sont des "méthodes" de l'objet
+  - quand les valeurs sont des variables, ce sont des "propriétés" de l'objet
+
+## Exemple de module
+``` js
+var module = {
+  propriete: 'valeur',
+  methode: function() {}
+};
+```
+
+## Autres exemple
 ```js
 var monObjet = {
+    // property = variable
     nom: 'claire',
     age: 30,
+    // method = function
     direUnMot: function(){
         alert('bonjour');
     }
@@ -20,7 +32,7 @@ monObjet.direUnMot();
 ```
 
 
-**Object with properties (keyName : anyValue) and function outside**
+**Object with function outside**
 ```js
 // création du personnage de jeu 'Claire'
 const claire = {
@@ -29,7 +41,7 @@ const claire = {
     force: 25
 };
 
-// description du personnage avec fonction
+// description du perso
 function decrire(personnage) {
     return `${personnage.nom} a ${personnage.sante} pts de vie et ${personnage.force} de force`;
 }
@@ -42,7 +54,7 @@ claire.argent = 50;      // add a property
 console.log(decrire(claire));
 ```
 
-**Object with properties (keyName : anyValue) and method inside**
+**Object with method (function) inside**
 ```js
 // création du personnage de jeu 'Claire'
 const claire = {
@@ -114,20 +126,6 @@ console.log(muffin.describe());
 console.log(cake.describe());
 ```
 
-
-# Modules d'un programme
-
-- Un module = une thématique (ex : gérer un compte utilisateur, afficher des notifications à l'écran, calculer le score d'un jeu...) = un objet (clés <-> valeurs)
-  - quand les valeurs sont des fonctions, ce sont des "méthodes" de l'objet
-  - quand les valeurs sont des variables, ce sont des "propriétés" de l'objet
-
-## Exemple de module
-``` js
-var module = {
-  propriete: 'valeur',
-  methode: function() {}
-};
-```
 ## Module souvent rencontré
 ```js
 // Exemple d'application :
