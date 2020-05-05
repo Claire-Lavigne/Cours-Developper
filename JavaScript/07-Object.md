@@ -156,6 +156,6 @@ document.addEventListener('DOMContentLoaded', app.init);
 # app.js
 - [ToDoList](https://codepen.io/claire-lavigne/pen/MWajjmQ)
 
-# Programmation Déclarative
+# Programmation Déclarative ou POO
 - Utiliser JSON plutôt que le dom
 - [ToDoList](https://codepen.io/claire-lavigne/pen/zYvKBYo)
