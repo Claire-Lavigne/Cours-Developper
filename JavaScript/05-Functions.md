@@ -16,7 +16,7 @@
 - ```Return``` has to be used once !
 - There are functions with predefinied names already !!
 
-## Methods (= functions written with `.`) existing
+## Methods existing (= functions written with `.`)
 ## Over arrays
 ```javascript
 .length()                 // loop an array
