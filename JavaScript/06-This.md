@@ -1,4 +1,6 @@
-# When `this` is called inside a method :
+# When `this` is called inside a 
+
+## Method :
 - **`this` = that object**
 - **`this` = invisible argument for every method**
 ```javascript
