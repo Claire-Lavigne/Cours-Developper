@@ -3,8 +3,8 @@
 ## Modules ou Objets d'un programme
 - Un "module" ou "objet" = une thématique (ex : gérer un compte utilisateur, afficher des notifications à l'écran, calculer le score d'un jeu...)
 - un "module" possède des clés <-> valeurs
-  - quand les valeurs sont des fonctions, ce sont des "méthodes" de l'objet
-  - quand les valeurs sont des variables, ce sont des "propriétés" de l'objet
+  - quand les valeurs sont des fonctions, les clés sont des "méthodes" de l'objet
+  - quand les valeurs sont des variables, les clés sont des "propriétés" de l'objet
 
 ## Exemple de module
 ``` js
@@ -146,12 +146,16 @@ var app = {
   }
 };
 
-// On lance l'application :
-app.init(); 
-// dans l'objet app, on exécute la fonction (méthode) stockée dans la clé init
+// Si script chargé dans body, on lance l'application :
+app.init();
 
-// init est souvent associée à l'écouteur d'évènement sur le chargement du DOM
-// Une fois le DOM chargé, la méthode init de l'objet app est exécutée :
+// Si script chargé dans le head, on lance l'application :
 document.addEventListener('DOMContentLoaded', app.init);
-// pas nécessaire si on charge le <script> en bas du <body>
 ```
+
+# app.js
+- [ToDoList](https://codepen.io/claire-lavigne/pen/MWajjmQ)
+
+# Programmation Déclarative
+- Utiliser JSON plutôt que le dom
+- [ToDoList](https://codepen.io/claire-lavigne/pen/zYvKBYo)
