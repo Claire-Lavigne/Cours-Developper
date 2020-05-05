@@ -174,31 +174,8 @@ aimeFruits(fruits, 'pomme');
 // "fruit choisi: pomme"
 ```
 
-### .forEach()
-**Boucle Sur chaque élément du tableau**
-```javascript
-let fruits = ['pomme', 'poire', 'cerise', 'abricot'];
-
-fruits.forEach(function(fruit, index) {
-  console.log(fruit, index);
-  // fruit = strings de mon tableau
-  // index = nombre d'élements dans mon tableau
-  console.log(`J'aime : ${fruit} - `);
-  // J'aime : pomme - J'aime : poire - J'aime : cerise - J'aime : abricot
-});
-```
-Idem : Fonction nommée / Fonction anonyme affectée à une variable
-```javascript
-function aimeFruits(fruit) {
-var aimeFruits = function(fruit) {
-  console.log(`J'aime : ${fruit}`);
-}
-fruits.forEach(aimeFruits);
-```
-
-
-
-# ForEach
+# Méthodes
+## .forEach() - Parcourir chaque élément du tableau
 ```javascript
 // ARRAY
 const names = ['Will Alexander', 'Sarah Kate'];
@@ -215,35 +192,42 @@ const names = [
     }
 ]
 
-names.forEach(function(name) {
+names.forEach(function(name, index) {
 names.forEach(name => {
-    console.log(name);
+    console.log(name, index);
     // array output : "Will Alexander" "Sarah Kate"
     // object output : Object{ identity: "Will Alexander", ticketNumber: 209542} Object{identity: "Sarah Kate", ticketNumber: 169336}
-    console.log(name.identity + ' ' + name.ticketNumber);
+    // index = nombre d'éléments dans mon tableau
+    console.log(`${name.identity} ${name.ticketNumber}`);
     // object output : "Will Alexander 209542" "Sarah Kate 169336"
 }
 });
+
+// ON PEUT AUSSI UTILISER UNE FONCTION NOMMÉE OU ANONYME AFFECTÉE À VARIABLE
+function aimeFruits(fruit) { console.log(fruit); }
+var aimeFruits = function(fruit) { console.log(fruit); };
+
+fruits.forEach(aimeFruits);
 ```
 
-### .map()
-## Transposer des données : map
-= Définir un tableau qui récupère les infos (nombre de valeurs) d'un autre tableau
+### .push() - Ajouter des données à mon index
 ```javascript
+const fruits = ['fraises', 'pommes'];
+
 var phrases = [];
 fruits.forEach(function(fruit) {
   phrases.push(`J'aime : ${fruit}`);
 });
 ```
 
-Pareil en + simple == Méthode MAP
+## .map() - Transposer des données (définir un tableau à partir de l'index d'un autre tableau)
+### Avec ARRAY
 ```javascript
 var phrases = fruits.map(function(fruit) {
   return `J'aime : ${fruit}`;
 });
 ```
-
-Pareil en + simple == Méthode MAP
+### Avec ARRAY-OBJETS
 ```javascript
 var datas = [
  {
@@ -265,24 +249,16 @@ var characters = datas.map(function(character) {
    name: `${character.firstname} ${character.lastname}`,
    young: character.age < 50,
   };
- });
+});
 
-// simplification : voir ternaire et fonction fléchée
-var characters = datas.map((character) => ({ 
-  name: `${character.firstname} ${character.lastname}`,
-  young: character.age < 50,
- })
-);
-// pareil en enlevant les parenthèses sur mon paramètre
+//ES6+ (je peux ajouter des parenthèses sur mon paramètre character)
 var characters = datas.map(character => ({ 
   name: `${character.firstname} ${character.lastname}`,
   young: character.age < 50,
- })
-);
+}));
 ```
 
-### .filter()
-## filtrer = filtrer des données
+## .filter() = filtrer des données
 ```javascript
 var users = [
  {
@@ -307,13 +283,11 @@ var admittedUsers = users.filter(function(user) {
  return user.age >= 18 && user.gender = 'Homme' || user.gender = 'Femme' && user.age >= 18 && user.age <= 30;
 });
 
-//ES6
+//ES6+
 var admittedUsers = users.filter((data) => user.age >= 18 && user.gender = 'Homme' || user.gender = 'Femme' && user.age >= 18 && user.age <= 30;);
 ```
 
-### .reduce()
-**Additionne les éléments de l'index pour les réduire à un seul**
-## reduce = réduire tous les éléments à 1 seule valeur
+## .reduce() = réduire tous les éléments de l'index à 1 seule valeur (ex: par addition)
 ```javascript
 [1, 2, 3].reduce(callback, initialValue);
 // la valeur initiale doit être du meme type que les éléments du tableau
@@ -354,17 +328,14 @@ var totalAge = users.reduce(function(cumul, user) {
 }, 0);
 // 0 + 26 + 30 = 56
 
-//ES6
+//ES6+
 var totalAge = users.reduce((cumul, user) => cumul + user.age, 0);
 ```
 
 ### .slipt()
-### .push()
 ### .find()
 ## Prototype
-## Closures
-**function returned inside function**
-=> fonction interne (accès aux variables de la fonction externe) même si fonction externe exécutée
+## Closures - Function returned inside function
 ```javascript
 function createSum(number1) {
  return function(number2) {
@@ -372,7 +343,7 @@ function createSum(number1) {
  };
 }
 
-// ES6
+// ES6+
 var createSum = number1 => number2 => number1 + number2;
 
 createSum(2);
@@ -387,19 +358,22 @@ createSum(createSum(10)(20))(20)
 // 50
 ```
 
-## Transformer une sélection qui ressemble à un tableau (mais n'en est pas un) en un tableau effectif
+## Array.from() - Transformer une sélection qui ressemble à un tableau (mais n'en est pas un) en un tableau effectif
 ```javascript
-var divs = document.querySelectorAll('div');
-// renvoie toutes mes div sous forme de HTMLCollection (getElementsByTag) ou NodeList (querySelector)
+// obtenir toutes mes div sous forme de HTMLCollection (getElementsByTag) ou NodeList (querySelector)
 // = je peux utiliser "for" mais pas "forEach"
-// conversion en array (renvoi un prototype) = je peux utiliser "forEach"
+var divs = document.querySelectorAll('div');
+
+// conversion en array (renvoi un prototype)
+// = je peux utiliser "forEach"
 var divsArray = Array.from(divs);
+
+// afficher mes div (display:none à l'origine) à intervale d'1 seconde
 divsArray.forEach((div, index) => {
  setTimeout(() => {
   box.style.display = 'block';
  }, 1000 * index);
 });
-// résultat : j'affiche mes div (display:none à l'origine) à intervale d'1 seconde
 ```
 
 ## Méthode personnalisée
@@ -477,7 +451,7 @@ function createRobot(words) {
  };
 }
 ```
-## Paramètres du reste = Nombre infini de paramètres
+## Paramètres du reste - Nombre infini de paramètres
 ```javascript
 function average(...grades) {
  console.log(grades);
