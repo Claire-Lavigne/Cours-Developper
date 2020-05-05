@@ -3,8 +3,7 @@
 - **LET = Variable Locale** => dans la boucle (dans le bloc)
 - **CONST** = same as `let` but its value never changes
 
-- **LET (surtout dans une boucle)**
-- :warning: Use constants as more as possible
+- :warning: Use CONST and LET as more as possible
 
 ```javascript
 let age = 6;    // set variable
@@ -12,7 +11,6 @@ age = 25;       // modify a variable already called
 ```
 
 # Types
-
 **Numbers**
 :warning: Float à éviter !! For e-commerce, always use integer !
 ```javascript
@@ -38,10 +36,10 @@ let message = '';     // valeur (possible mais) non définie
 let vide = null;     // absence totale de valeur
 ```
 **Symbol**
+
 **Object**
 
 # Operators
-
 **Arythmetics**
 ```javascript
 let calcul = 25 * (4 + 10 - 2) / 3;
@@ -60,7 +58,6 @@ var lastName = 'Lavigne';
 console.log(firstName + ' ' + lastName);    // before ES6
 console.log(`Voici ${firstName}`);          // ES6 Littéraux de gabarits
 ```
-
 **Simples (Comparaisons)**
 ```javascript
 var age = 20;
@@ -78,58 +75,23 @@ age !== 10    // Not equal to (in value and type)
 !   // (NOT) To check if a condition is not true (if it's false)
 ```
 
-
-# Functions over variables
+# Arrays
+**Declare array with values**
 ```javascript
-.length()               // count letters or loop an array
-.toLowerCase()          // tout mettre en minuscule
-.toUpperCase()          // tout mettre en maj
-.trim()                 // enlever espaces inutiles
-.indexOf("dr");         // 1 if true, -1 if false (position in string or array)
-.startsWith("Pe");      // true
-.endsWith("ez");        // false
-'string'.slice(0, 3);   // Coupe de l'index 0 à 3 : stri
+var fruits = ["cerise", "pomme", "raisin", [14.5]];
 
-// Convert values
-String()                // Transform smthg into string
-Number(string)          
-parseInt(string)        // Transform string into Integer
-
-// Maths
-Math.random()           // génère un nombre aléatoire entre 0 et 1
-Math.round()            // arrondi un nombre à l'entier le plus proche
-Math.floor()            // arrondi un nombre à l'entier inférieur
-Math.ceil()             // arrondi un nombre à l'entier supérieur
-Math.min()              // renvoie le plus petit nombre
-
-// Tests
-isNaN()                  // vérifie que la valeur est un nombre
-```
-
-
-
-
-# Array : values <--> index
-
-**Array**
-```javascript
-var fruits = ["cerise", "pomme", "raisin", [14.5]];   // declare array of any value
-
-fruits;                                 // access all index
+fruits;                                 // access all index (values)
 fruits[0];                              // access to first index (for new variable or console.log)
 fruits[3][0];                           // access the last index here which is an array and access its first element (14.5)
-fruits[4];                              // undefined
+fruits[4];                              // undefined car l'index 4 correspond à la 5e valeur
 fruits[4] = "ananas";                   // add element
 fruits.lenght;                          // know how many elements are in the array
-```
-**Ajouter / Enlever du contenu**
-```javascript
 fruits.push('banane');                  // add this element at the end of the array
 fruits.unshift('orange');               // add this element at the beginning of the array
 fruits.pop();                           // remove the last value of array
 fruits.splice(0, 1);                    // Remove 1 element starting from number 0
 ```
-**Push another object in Array with objects**
+**Push an object into an Array of objects**
 ```javascript
 arrObj = [
   {
@@ -141,9 +103,11 @@ arrObj = [
     age: 24
   }
 ];
+
 arrObj.push({
   name: 'Rushabh',
   age: 27
 });
+
 console.log(arrObj);
 ```
