@@ -1,4 +1,39 @@
-# Function 
+# Functions already existing
+## Over arrays
+```javascript
+.length()                 // loop an array
+.push();                  // add element at the end of the array
+.unshift();               // add element at the beginning of the array
+.pop();                   // remove the last value of array
+.splice(0, 1);            // remove 1 element starting from number 0
+.indexOf("dr");           // 1 if true, -1 if false (position in array)
+```
+## Over variables
+```javascript
+.length()               // count letters
+.toLowerCase()          // tout mettre en minuscule
+.toUpperCase()          // tout mettre en maj
+.trim()                 // enlever espaces inutiles
+.indexOf("dr");         // 1 if true, -1 if false (position in string)
+.startsWith("Pe");      // true
+.endsWith("ez");        // false
+'string'.slice(0, 3);   // Coupe de l'index 0 à 3 : stri
+```
+## Over numbers
+```javascript
+Math.random()           // génère un nombre aléatoire entre 0 et 1
+Math.round()            // arrondi un nombre à l'entier le plus proche
+Math.floor()            // arrondi un nombre à l'entier inférieur
+Math.ceil()             // arrondi un nombre à l'entier supérieur
+Math.min()              // renvoie le plus petit nombre
+isNaN()                 // vérifie que la valeur est un nombre
+```
+## Convert values
+```javascript
+String()                // Transform smthg into string
+Number(string)          
+parseInt(string)        // Transform string into Integer
+```
 
 **What are functions ?**
 - A block with instructions
