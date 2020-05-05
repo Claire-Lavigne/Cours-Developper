@@ -53,12 +53,14 @@ Number(string)
 parseInt(string)        // Transform string into Integer
 ```
 
+# Programmation Fonctionnelle ou impérative
+- Fait d'écrire tout en fonctions, donner des ordres (instructions) une par une
+- **Callback** : définition de fonction (fonction en sommeil) / handler
+- **Return** : afficher les infos des instructions
+- **Paramètre** : variable locale créée automatiquement à l'intérieur de ma fonction, quand sa valeur est encore inconnue
+- **Argument** : param1 receive the value of arg1, param2 the value of arg2, ...
 
-**Definitions**
-- Return : afficher les infos des instructions
-- Paramètre : variable locale créée automatiquement à l'intérieur de ma fonction, quand sa valeur est encore inconnue
-- Argument : param1 receive the value of arg1, param2 the value of arg2, ...
-
+---------
 
 # For / For.. in / ForEach
 - ``` break; ``` : interrompre une boucle
@@ -259,14 +261,6 @@ aimeFruits(fruits, 'pomme');
 // Ne pas oublier `;` à la fin d'une fonction anonyme affectée à une variable
 ```
 
-
-# Vocabulaire
-- Callback = définition de fonction (fonction en sommeil) / handler
-- Programmation fonctionnelle ou impérative = écrire tout en fonctions, donner des ordres (instructions) une par une
-- Programmation orientée objet (POO) ou déclarative
-
-# Programmation Fonctionnelle
-## Méthodes (functions written with `.`)
 ### .forEach()
 **Boucle Sur chaque élément du tableau**
 ```javascript
