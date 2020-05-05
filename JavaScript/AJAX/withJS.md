@@ -218,8 +218,8 @@ ajaxPost("http://localhost/javascript-web-srv/post_json.php", film,
         console.log("Le film " + JSON.stringify(film) + " a été envoyé au serveur");
     },
     true // Valeur du paramètre isJson
-);```
-
+);
+```
 
 -------
 # Autres
