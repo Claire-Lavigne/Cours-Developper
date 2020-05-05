@@ -210,7 +210,7 @@ var aimeFruits = function(fruit) { console.log(fruit); };
 fruits.forEach(aimeFruits);
 ```
 
-### .push() - Ajouter des données à mon index
+## .push() - Ajouter des données à mon index
 ```javascript
 const fruits = ['fraises', 'pommes'];
 
