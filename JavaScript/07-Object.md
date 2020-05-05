@@ -115,33 +115,6 @@ console.log(cake.describe());
 ```
 
 
-- méthode: property with a function as a value
-
-**CLASS** = Multiple objects
-
-```javascript
-class MaClasse {
-  constructor(param1, param2 /* ... */) {
-    this.propriete1 = param1;
-    this.propriete2 = param2;
-    // ...
-  }
-  methode1(/* ... */) {
-    // ...
-  }
-  methode2(/* ... */) {
-    // ...
-  }
-  // ...
-}
-
-const monObjet = new MaClasse(arg1, arg2, ...);
-
-// Crée un objet ayant monObjetPrototype pour prototype
-const monObjet = Object.create(monObjetPrototype);
-```
-
-
 # Modules d'un programme
 
 - Un module = une thématique (ex : gérer un compte utilisateur, afficher des notifications à l'écran, calculer le score d'un jeu...) = un objet (clés <-> valeurs)
