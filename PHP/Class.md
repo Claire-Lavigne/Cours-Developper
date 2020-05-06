@@ -16,9 +16,9 @@ spl_autoload_register('chargerClasse');
 $perso = new MaClasse;
 ```
 
+# Créer une classe
 ```php
 <?php
-// création d'une classe
 class Personnage {
 
   // création d'attributs (variables)
@@ -32,6 +32,11 @@ class Personnage {
   const FORCE_PETITE = 20;
   const FORCE_MOYENNE = 50;
   const FORCE_GRANDE = 80;
+  
+  // Variable statique PRIVÉE
+  // un attribut statique appartient à la classe et non à un objet
+  // tous les objets auront accès à cet attribut et auront la même valeur
+  private static $_texteADire = 'Je vais tous vous tuer !';
   
   // Création d'un constructeur demandant 2 paramètres
   // Optionnel --> Permet d'initialiser des attributs lors de la création de l'objet
@@ -106,6 +111,14 @@ class Personnage {
   {
     return $this->_experience;
   }
+  
+  // Méthode pour agir sur une classe et non sur un objet.
+  // on peut aussi écrire : static public function parler()
+  public static function parler() {
+    // dans une méthode statique, on ne peut pas utiliser this
+    echo 'Je vais tous vous tuer !';
+    echo self::$_texteADire; // On donne le texte à dire.
+  }
 }
 
 // On crée deux personnages
@@ -117,6 +130,8 @@ $perso3 = new Personnage(60, 0); // 60 de force, 0 dégât, 1 d'expérience
 
 // appel de la méthode pour faire parler le perso
 $perso1->parler();
+// appel de la méthode statique
+Personnage::parler();
 
 // On donne des valeurs de force et d'expérience à chaque perso
 $perso1->setForce(10);
