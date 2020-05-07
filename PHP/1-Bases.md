@@ -306,4 +306,6 @@ echo 'Le volume d\'un cône de rayon 3 et de hauteur 1 est de ' . $volume;
 # Intégrer une page php ds html file
 ```php
 <?php include("menus.php"); ?>
+// Préférer require
+<?php require("menus.php"); ?>
 ```
