@@ -13,7 +13,7 @@ function chargerClasse($classe) {
 // pour qu'elle soit appelée dès qu'on instanciera une classe non déclarée.
 spl_autoload_register('chargerClasse'); 
 
-$perso = new MaClasse;
+$perso = new Personnage;
 ```
 
 # Créer une classe
