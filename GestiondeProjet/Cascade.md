@@ -10,3 +10,10 @@
 ## Chef de projet
 - Coordonne les activités du projet pour garantir l'atteinte de l'objectif et le respect des exigences de qualité, de coûts et de délais.
 - "organisation" et "communication"
+
+## Réunion de cadrage
+- Moment pour impliquer et aligner les collaborateurs
+- Traduire les besoins du client
+- Les experts de chaque domaine identifient des risques et solutions..
+- Estimation de la charge de travail
+- Planification du projet par chacun
