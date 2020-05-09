@@ -10,11 +10,6 @@
 ### User stories
 - “En tant que <utilisateur>, je veux <faire une action> pour <résultat de l’action>”.
   - “Linda veut cliquer sur “se connecter” pour accéder à son compte”
-- Etapes : 
-  - Manuel utilisateur (spécifications fonctionnelles) : ce que fait la story
-  - Doc technique (architecture)
-  - Code
-  - Tests
 
 ### Pair Programming
 Un écran, un code, une fonctionnalité, deux programmateurs
@@ -53,10 +48,31 @@ centré sur les pratiques
 - Chaque mise en production ou "release" est constituée de plusieurs sprints
   - Sprint 0 : organisation du projet, connaissance du produit et des attentes des utilisateurs, recrutement équipe, création backlog
   - 1 sprint = 1 ou 2 semaines pour développer une ou plusieurs fonctionnalités ou Stories (décidées par l’équipe et le Product Owner ou "utilisateur final/client")
+  - un sprint = une ou plusieurs stories = plusieurs tâches
   - réunions quotidiennes pour que le ScrumMaster détermine l’avancement/les ajustements par rapport aux engagements de chacun
   - fin d'un sprint = nouvelle fonctionnalité ajoutée au projet et nouveau sprint
   - inspection = évaluation et feedback du sprint pour ajuster le backlog pour le sprint suivant
 
+#### 3 types de story
+- les user stories
+- les stories techniques (core) : améliorer/modifier l'appli
+- les défauts (bug) à réparer
+
+#### Etapes d'une story
+- Manuel utilisateur (fonctionnalités : ce que fait la story)
+- Doc technique
+- Code
+- Tests
+  
+#### Phases d'une story
+- Proposition : un jour, une personne suggère une nouvelle fonctionnalité.
+- Acceptée : le Product Owner accepte la proposition et l’ajoute dans le backlog.
+- Estimée : l’équipe estime la complexité de la story en points (planning poker)
+  - L’équipe pose des questions sur le contenu de la story puis chaque membre montre, en même temps, son estimation. L’équipe en discute et mise sur un chiffre. Puis elle propose un planning (plus une story est complexe et plus il sera compliqué de prévoir la date de livraison). Un membre se propose alors de réaliser la story et en devient responsable. Le responsable de la story la découpe en tâches. Chaque tâche est un jour de travail. 
+- Prête : la story est écrite et estimée. Elle est en attente de développement.
+- En cours : l’équipe est en train de la développer.
+- Fini : elle est en ligne !
+  
 ## Les responsabilités et les missions des intervenants
 
 ### Le Product Owner
