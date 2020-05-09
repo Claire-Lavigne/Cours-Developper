@@ -1,6 +1,8 @@
 # For or While ?
 - **For** : Safer (no infinite loop) : execute the turn X times
 - **While** : Risqued (infinite loop) : execute the turn until the condition is verified
+- ``` break; ``` : interrompre une boucle
+- ``` continue; ``` : interrompre l'itération courante et passer à la suivante
 
 # For
 ```javascript
@@ -18,9 +20,6 @@ console.log(index);
 ```
 
 # For / For.. in / For .. of
-- ``` break; ``` : interrompre une boucle
-- ``` continue; ``` : interrompre l'itération courante et passer à la suivante
-
 ```javascript
 // ARRAY
 const names = ['Will Alexander', 'Sarah Kate'];
