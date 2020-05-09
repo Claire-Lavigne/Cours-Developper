@@ -49,8 +49,8 @@ isNaN()                 // vérifie que la valeur est un nombre
 ## Convert values
 ```javascript
 String()                // Transform smthg into string
-Number(string)          
-parseInt(string)        // Transform string into Integer
+Number(string)          // transform string into number '42' => 42
+parseInt(string)        // Transform string into Integer '3 pommes' => 3
 ```
 
 # Programmation Fonctionnelle ou impérative
