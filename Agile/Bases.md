@@ -7,7 +7,11 @@
 # Pratiques
 ## User stories
 - En tant que... je veux que... pour que...
-- Etapes : Manuel utilisateur (spécifications fonctionnelles) --> Doc technique (architecture) --> Code --> Tests
+- Etapes : 
+  - Manuel utilisateur (spécifications fonctionnelles) : ce que fait la story
+  - Doc technique (architecture)
+  - Code
+  - Tests
 
 ## Pair Programming
 Un écran, un code, une fonctionnalité, deux programmateurs
