@@ -1,0 +1,2 @@
+- Projet prévisible : méthodologies classiques (ex : cascade)
+- Projet imprévisible : méthodologies agiles
