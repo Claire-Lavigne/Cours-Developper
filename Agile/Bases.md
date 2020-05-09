@@ -8,7 +8,7 @@
 
 ## Pratiques
 ### User stories
-- En tant que... je veux que... pour que...
+- “En tant que <utilisateur>, je veux <faire une action> pour <résultat de l’action>”.
   - “Linda veut cliquer sur “se connecter” pour accéder à son compte”
 - Etapes : 
   - Manuel utilisateur (spécifications fonctionnelles) : ce que fait la story
