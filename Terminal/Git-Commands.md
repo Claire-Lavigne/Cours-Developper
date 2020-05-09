@@ -10,6 +10,18 @@
 
 # Most used commands
 
+### Everytime
+```bash
+$ git branch
+$ git status
+$ git add .
+$ git commit -m "message"
+$ git pull
+$ pit push
+$ git checkout <branchname>
+$ git checkout -b <newbranchname>
+```
+
 ### Connexion
 ```bash
 $ git config --global user.name "User Name"
