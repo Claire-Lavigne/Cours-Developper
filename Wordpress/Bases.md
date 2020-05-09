@@ -12,6 +12,10 @@
 - [Wordpress Packagist](https://wpackagist.org/)
 - [Unsplash Random](https://source.unsplash.com/daily/1600x900/?nature,water) (url indique : new img daily big size and 2 tags)
 
+# Tools
+- [Starter Theme](https://underscores.me/)
+- [Generate Shortcodes / CPT / Taxonomies](https://generatewp.com/)
+
 # PHP OPEN/CLOSE TAGS
 ```php
 <?php //content ?>
