@@ -1,7 +1,15 @@
 # [Ajouter les prefixes CSS avec JS](https://leaverou.github.io/prefixfree/)
 # [Propriétés CSS](https://openclassrooms.com/en/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1608902-memento-des-proprietes-css)
+# Librairies
+- Uikit
+- Bulma
+- SemanticUI
+- Bootstrap
+- MaterializeCSS
 
 ```css
+1em = 16px = 0.42cm = 12pt
+
 // titles
 h1, h2, h3 {
   font-size: 10px;
