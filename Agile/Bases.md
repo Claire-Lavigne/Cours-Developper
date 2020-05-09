@@ -9,6 +9,7 @@
 ## Pratiques
 ### User stories
 - En tant que... je veux que... pour que...
+  - “Linda veut cliquer sur “se connecter” pour accéder à son compte”
 - Etapes : 
   - Manuel utilisateur (spécifications fonctionnelles) : ce que fait la story
   - Doc technique (architecture)
