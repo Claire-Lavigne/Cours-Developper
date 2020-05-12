@@ -259,3 +259,8 @@ $ git gc --prune=now
 # Push your updated tree on the git repository
 git push -f
 ```
+
+### Kill running port
+```bash
+$ npx kill-port 3000
+```
