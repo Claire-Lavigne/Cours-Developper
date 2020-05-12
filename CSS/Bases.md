@@ -27,4 +27,20 @@ div:not(.class) {
 // 3:4 ratio (font sizes line-height...)
 // 5, 7, 9, 12, 16, 21, 28, 37, 50, 67, and 83 px
 
+element {
+    color:
+    opacity:
+    background-color:
+    font-family:
+    text-align:
+    font-size:
+    border:
+    margin:
+    padding:
+    float:
+    height:
+    width:
+}
+
+
 ```
