@@ -240,12 +240,16 @@ $ git fsck --full
 
 ### remove the tracked and old committed file/directory from git
 ```bash
+# FILTER FILE
 $ git filter-branch --prune-empty -d /dev/shm/scratch \
  --index-filter "git rm --cached -f --ignore-unmatch <FILE RELATIVE PATH>" \
  --tag-name-filter cat -- --all
+# FILTER DIRECTORY
 $ git filter-branch --prune-empty -d /dev/shm/scratch \
- --index-filter "git rm --cached -rf --ignore-unmatch <DIRECTORY RELATIVE PATH> \
+ --index-filter "git rm --cached -rf --ignore-unmatch <DIRECTORY RELATIVE PATH>" \
  --tag-name-filter cat -- --all
+# FORCING
+git filter-branch -f .... etc
 # NOT SURE
 $ git push origin --force --all
 
