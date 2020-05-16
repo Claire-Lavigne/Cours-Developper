@@ -263,6 +263,7 @@ $ git gc --prune=now
 # Push your updated tree on the git repository
 git push -f
 ```
+[More commands](https://stackoverflow.com/questions/10067848/remove-folder-and-its-contents-from-git-githubs-history)
 
 ### Kill running port
 ```bash
