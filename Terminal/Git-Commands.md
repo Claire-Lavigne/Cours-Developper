@@ -240,6 +240,9 @@ $ git fsck --full
 
 ### remove the tracked and old committed file/directory from git
 ```bash
+# Add distant branches to local repo
+git fetch
+
 # FILTER FILE
 $ git filter-branch --prune-empty -d /dev/shm/scratch \
  --index-filter "git rm --cached -f --ignore-unmatch <FILE RELATIVE PATH>" \
@@ -249,9 +252,7 @@ $ git filter-branch --prune-empty -d /dev/shm/scratch \
  --index-filter "git rm --cached -rf --ignore-unmatch <DIRECTORY RELATIVE PATH>" \
  --tag-name-filter cat -- --all
 # FORCING
-git filter-branch -f .... etc
-# NOT SURE
-$ git push origin --force --all
+git filter-branch -f ...
 
 # Make git repo smaller after removing files
 # Remove the original refs backed up by git-filter-branch (do this for all branches)
@@ -260,8 +261,11 @@ $ git update-ref -d refs/original/refs/heads/master
 $ git reflog expire --expire=now --all
 # Garbage collect all unreferenced objects with
 $ git gc --prune=now
-# Push your updated tree on the git repository
+# Push your updated tree on the git repository for current branch
 git push -f
+# Push update for all branches on git repo
+$ git push origin --force --all
+
 ```
 [More commands](https://stackoverflow.com/questions/10067848/remove-folder-and-its-contents-from-git-githubs-history)
 
