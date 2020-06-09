@@ -242,30 +242,35 @@ $ git fsck --full
 ```bash
 # Add distant branches to local repo
 git fetch
+# Create tracking branches of all branches
+for remote in `git branch -r | grep -v /HEAD`; do git checkout --track $remote ; done
 
-# FILTER FILE
-$ git filter-branch --prune-empty -d /dev/shm/scratch \
- --index-filter "git rm --cached -f --ignore-unmatch <FILE RELATIVE PATH>" \
- --tag-name-filter cat -- --all
-# FILTER DIRECTORY
-$ git filter-branch --prune-empty -d /dev/shm/scratch \
- --index-filter "git rm --cached -rf --ignore-unmatch <DIRECTORY RELATIVE PATH>" \
- --tag-name-filter cat -- --all
-# FORCING
-git filter-branch -f ...
+# FILTER FILE OR DIRECTORY
+$ git filter-branch -f --prune-empty -d /dev/shm/scratch \ 
+--index-filter "git rm --cached -rf --ignore-unmatch <FILE or DIRECTORY RELATIVE PATH>" \ 
+--tag-name-filter cat -- --all
 
 # Make git repo smaller after removing files
-# Remove the original refs backed up by git-filter-branch (do this for all branches)
-$ git update-ref -d refs/original/refs/heads/master
-# Expire all reflogs with:
+# Remove all references to the removed files
+$ git for-each-ref --format="delete %(refname)" refs/original | git update-ref --stdin
+# Remove all reflogs
 $ git reflog expire --expire=now --all
-# Garbage collect all unreferenced objects with
+# Remove all unreferenced objects
 $ git gc --prune=now
-# Push your updated tree on the git repository for current branch
-git push -f
+# Check out the size before/after
+$ git count-objects -vH
+
 # Push update for all branches on git repo
 $ git push origin --force --all
+$ git push origin --force --tags
 
+# Update each local repo
+$ git fetch origin
+$ git reset --hard origin/master
+$ git for-each-ref --format='delete %(refname)' refs/original | git update-ref --stdin
+$ git reflog expire --expire=now --all
+$ git gc --prune=now
+$ git count-objects -vH
 ```
 [More commands](https://stackoverflow.com/questions/10067848/remove-folder-and-its-contents-from-git-githubs-history)
 
