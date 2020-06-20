@@ -165,7 +165,7 @@ $ git push origin +branchname   # actualize the distant repo on branch (/!\ for 
 #### Organize commits (rename, fusionner)
 ```bash
 # FOR MULTIPLE COMMITS
-$ git rebase -i master        # List all commits and open text editor
+$ git rebase -i --root        # List all commits and open text editor
 # in text editor, tape all commits you want to combine in one
 # keep word "pick" for the commit that will stay
 # change the word "pick" for "squash" for all commits that will move into the "pick commit"
