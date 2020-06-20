@@ -143,6 +143,7 @@ $ git checkout <SHA>            # come back to good commit to fix bug
 $ git checkout master           # revenir au commit le + récent
 $ git cherry-pick <SHA>         # add that commit to actual branch
 $ git show --name-only SHA      # See files modified in commit
+$ git diff-tree --no-commit-id --name-only -r <SHA>   # See files modified in commit
 ```
 #### Log (list/show all commits)
 ```bash
