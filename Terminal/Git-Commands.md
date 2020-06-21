@@ -241,8 +241,6 @@ $ git fsck --full
 
 ### remove the tracked and old committed file/directory from git
 ```bash
-# Add distant branches to local repo
-git fetch
 # Create tracking branches of all branches
 for remote in `git branch -r | grep -v /HEAD`; do git checkout --track $remote ; done
 
