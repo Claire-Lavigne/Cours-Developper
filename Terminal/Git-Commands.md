@@ -142,7 +142,7 @@ $ git reset --soft              # undo last commit to stage more files - PRIVATE
 $ git reset --soft HEAD~3       # same (go back to the fourth last commit) - PRIVATE BRANCH
 $ git checkout <SHA>            # come back to good commit to fix bug
 $ git checkout master           # revenir au commit le + récent
-$ git cherry-pick <SHA>         # add that commit to actual branch
+$ git cherry-pick <SHA>         # add commit from another branch to actual branch
 $ git show --name-only SHA      # See files modified in commit
 $ git diff-tree --no-commit-id --name-only -r <SHA>   # See files modified in commit
 ```
