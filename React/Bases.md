@@ -13,6 +13,8 @@ sudo n stable
 
 # Nodes_Modules
 ```bash
+# installer yarn sur machine
+npm install -g yarn
 # installer dépendances
 yarn
 # construire les fichiers
