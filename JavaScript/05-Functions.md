@@ -111,6 +111,7 @@ nomFonction(arg1, arg2, ...);
 - ``` `Hello ${name}` ``` : littéraux de gabarits
 - `(...args) => {}` : paramètre du reste
 - `{ data }` au lieu de `{ data: data }` : propriété raccourcie
+- destructuring
 
 ## Fonctions anonymes et Fonctions fléchées
 - Identique aux fonctions nommées
