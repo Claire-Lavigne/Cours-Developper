@@ -6,6 +6,8 @@ npm install
 ```
 # NPM PACKAGES INSTALLATION (3 options)
 ```bash
+# install auto to project
+npm i <package>
 # install on machine, useful for command line interface tools
 npm install -g <package>
 # install locally to project, save as production dependency, useful for making code work in production environment
