@@ -104,8 +104,15 @@ function nomFonction(param1, param2, ...) {
 nomFonction(arg1, arg2, ...);
 // arg1
 ```
+# ES6+
+- `let` : limité au bloc, à utiliser quand `const` n'est pas possible
+- `cont`
+- `() => {}` : fonction fléchée
+- ``Hello ${name}`` : littéraux de gabarits
+- `(...args) => {} : paramètre du reste
+- `{ data }` au lieu de `{ data: data }` : propriété raccourcie
 
-## Fonctions anonymes et Fonctions fléchées (ES6+)
+## Fonctions anonymes et Fonctions fléchées
 - Identique aux fonctions nommées
 - Plus difficile à gérer ds les messages d'erreur
 - Si non affectée à une variable : Impossible à appeler. Exécutée immédiatement
