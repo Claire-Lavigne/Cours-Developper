@@ -108,7 +108,7 @@ nomFonction(arg1, arg2, ...);
 - `let` : limité au bloc, à utiliser quand `const` n'est pas possible
 - `cont`
 - `() => {}` : fonction fléchée
-- ` `Hello ${name}` ` : littéraux de gabarits
+- ``` `Hello ${name}` ``` : littéraux de gabarits
 - `(...args) => {}` : paramètre du reste
 - `{ data }` au lieu de `{ data: data }` : propriété raccourcie
 
