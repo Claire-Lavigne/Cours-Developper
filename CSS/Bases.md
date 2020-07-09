@@ -27,6 +27,10 @@ div:not(.class) {
 // 3:4 ratio (font sizes line-height...)
 // 5, 7, 9, 12, 16, 21, 28, 37, 50, 67, and 83 px
 
+h1 { font-size: 3rem }
+h2 { font-size: 2.25rem }
+h3 { font-size: 1.75rem }
+
 element {
     color:
     opacity:
