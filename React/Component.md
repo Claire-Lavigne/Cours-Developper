@@ -59,16 +59,23 @@ render (rootComponent, target);
 import React from 'react';
 import { render } from 'react-dom'; 
 
-const helloWorld = ({ lang, method }) => {
+const helloWorld = (props) => {
   return (
-    `<div id="hello-world">
-      <h1>Ce HTML a été généré par {lang}</h1>
-      <h2>Et affiché avec {method}</h2>
-    </div>`
+    <div id="hello-world">
+      <h1>Ce HTML a été généré par {props.lang}</h1>
+      <h2>Et affiché avec {props.method}</h2>
+      {props.children}
+    </div>
   );
 };
 
-const rootComponent = <HelloWorld lang="React" method="ReactDOM" />;
+const rootComponent = (
+  <HelloWorld lang="React" method="ReactDOM">
+    <p>un paragraphe</p>
+    <p>un paragraphe</p>
+  </HelloWorld>
+);
+
 const target = document.getElementById('root');
 
 render (rootComponent, target);
