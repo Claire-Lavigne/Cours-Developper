@@ -20,13 +20,14 @@ const helloWorld = (props) => {
   );
 };
 
-render(helloWorld()); 
-// ou
-render (<HelloWorld />, document.getElementById('root')); // add composant racine dans la cible du DOM
-// ou
+// composant racine
 const rootComponent = <HelloWorld />; 
-// on peut rajouter les propriétés pour le props donné en paramètre : <HelloWorld lang="React" method="ReactDOM" />
-// retranscries telles qu'un objet dans une fonction : HelloWorld({lang: "React, method:" ReactDOM"})
+  // = helloWorld() 
+  // add pros : <HelloWorld lang="React" method="ReactDOM" />
+  // = HelloWorld({lang: "React, method:" ReactDOM"})
+
+// cible du DOM
 const target = document.getElementById('root');
+
 render (rootComponent, target);
 ```
