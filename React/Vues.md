@@ -16,8 +16,6 @@ export const render = (stringHTML) => {
   const target = document.getElementById('root');
   target.innerHTML = stringHTML;
 };
-
-render(helloWorld());
 ```
 
 # Fichier exo.js
