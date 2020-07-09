@@ -1,6 +1,7 @@
 # Documentation
 - [React](https://create-react-app.dev/docs/getting-started/)
 - [React.js cheatsheet](https://devhints.io/react)
+- [React DevTools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi/related)
 
 # Installer Nodejs
 ```bash
