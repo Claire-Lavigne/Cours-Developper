@@ -1,5 +1,4 @@
 # Composant = fonction qui retourne du JSX
-
 ```js
 import React from 'react';
 // si juste besoin de render
@@ -47,9 +46,29 @@ const helloWorld = ({ lang, method }) => {
   );
 };
 
-const rootComponent =  <HelloWorld lang="React" method="ReactDOM" />;
+const rootComponent = <HelloWorld lang="React" method="ReactDOM" />;
 // add js code : lang="{ // js ici}"
 // lang = lang={true}
+const target = document.getElementById('root');
+
+render (rootComponent, target);
+```
+
+# Composant child
+```js
+import React from 'react';
+import { render } from 'react-dom'; 
+
+const helloWorld = ({ lang, method }) => {
+  return (
+    `<div id="hello-world">
+      <h1>Ce HTML a été généré par {lang}</h1>
+      <h2>Et affiché avec {method}</h2>
+    </div>`
+  );
+};
+
+const rootComponent = <HelloWorld lang="React" method="ReactDOM" />;
 const target = document.getElementById('root');
 
 render (rootComponent, target);
