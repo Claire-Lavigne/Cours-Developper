@@ -102,7 +102,7 @@ const helloWorld = ({ lang, method, children }) => {
 HelloWorld.propTypes = {
   lang: PropTypes.string.isRequired,
   method: PropTypes.string.isRequired,
-  // children: ''
+  // children: 'PropTypes.node.isRequired' // noeud JSX
   // string, number, array, bool, func, object => react typechecking
 };
 
