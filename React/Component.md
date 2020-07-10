@@ -1,3 +1,5 @@
+- [react typechecking](https://fr.reactjs.org/docs/typechecking-with-proptypes.html)
+
 # Composant = fonction qui retourne du JSX
 ```js
 import React from 'react';
@@ -80,3 +82,39 @@ const target = document.getElementById('root');
 
 render (rootComponent, target);
 ```
+
+# + clean
+```js
+import React from 'react';
+import { render } from 'react-dom';
+import PropTypes from  'prop-types';
+
+const helloWorld = ({ lang, method, children }) => {
+  return (
+    <div id="hello-world">
+      <h1>Ce HTML a été généré par {lang}</h1>
+      <h2>Et affiché avec {method}</h2>
+      {children}
+    </div>
+  );
+};
+
+HelloWorld.propTypes = {
+  lang: PropTypes.string.isRequired,
+  method: PropTypes.string.isRequired,
+  // children: ''
+  // string, number, array, bool, func, object => react typechecking
+};
+
+const rootComponent = (
+  <HelloWorld lang="React" method="ReactDOM">
+    <p>un paragraphe</p> // children est ici
+    <p>un paragraphe</p> // children est ici
+  </HelloWorld>
+);
+
+const target = document.getElementById('root');
+
+render (rootComponent, target);
+```
+
