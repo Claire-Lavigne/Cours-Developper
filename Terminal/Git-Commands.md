@@ -137,11 +137,11 @@ $ git stash apply               # recup files saved to work on them again (sans 
 $ git commit -m "message"       # message for commit
 $ git commit -am "message"      # add and commit all files already staged
 $ git commit --amend            # change commit message
-$ git revert                    # undo last commit (saving correction as a new commit) - PUBLIC BRANCH
-$ git revert SHA                # undo this commit (saving correction into new commit) - PUBLIC BRANCH
+$ git revert                    # undo last commit (saving correction as a new commit) - SAFE FOR PUBLIC BRANCH
+$ git revert SHA                # undo this commit (saving correction into new commit) - SAFE FOR PUBLIC BRANCH
 $ git reset HEAD                # undo uncommitted changes
-$ git reset --soft              # undo last commit to stage more files - PRIVATE BRANCH
-$ git reset --soft HEAD~3       # same (go back to the fourth last commit) - PRIVATE BRANCH
+$ git reset --soft              # undo last commit to stage more files - FOR PRIVATE BRANCH ONLY
+$ git reset --soft HEAD~3       # same (go back to the fourth last commit) - FOR PRIVATE BRANCH ONLY
 $ git checkout <SHA>            # come back to good commit to fix bug
 $ git checkout master           # revenir au commit le + récent
 $ git cherry-pick <SHA>         # add commit from another branch to actual branch
