@@ -119,6 +119,8 @@ $ git stash pop
 $ git add .                     # add all files
 $ git add <file>                # add that specific file
 $ git add -p (+ y or n)         # see new changes and accept/refuse to add
+$ git reset <file>              # undo git add <file> before a commit
+$ git reset                     # undo git add before a commit
 ```
 #### Stash
 ```bash
