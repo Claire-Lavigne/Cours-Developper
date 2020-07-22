@@ -1,7 +1,5 @@
 # Fichier index.js
 ```js
-import './hello.css';
-
 const helloWorld = () => {
   console.log('Je suis dans index.js');
   return (
@@ -47,11 +45,4 @@ const helloWorld = ({ lang, method }) => {
 };
 
 render(helloWorld({ lang: 'ES2015', method: 'innerHTML' }));
-```
-
-# Fichier hello.css
-```css
-#root {
-  text-align: center;
-}
 ```
