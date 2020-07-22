@@ -27,4 +27,8 @@ import { render } from '.';
 import React from 'react';
 import { render } from 'react-dom';
 import PropTypes from  'prop-types';
+
+// import local css and js files
+import './app.scss';
+import Header from 'src/components/Header';
 ```
