@@ -19,4 +19,12 @@ export default hello;
 ```js
 // import const par défaut et { nommée } from js file
 import name, { coucou, salut } from './hello';
+
+// import const nommée from index.js
+import { render } from '.';
+
+// import npm
+import React from 'react';
+import { render } from 'react-dom';
+import PropTypes from  'prop-types';
 ```
