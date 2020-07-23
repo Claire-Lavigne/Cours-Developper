@@ -26,7 +26,7 @@ const rootComponent = <HelloWorld lang="React" method="ReactDOM" /> // = HelloWo
 
 // cible du DOM
 const target = document.getElementById('root');
-render (rootComponent, target);
+render(rootComponent, target);
 ```
 # same + clean
 ```js
@@ -45,7 +45,7 @@ const helloWorld = ({ lang, method }) => {
 
 const rootComponent = <HelloWorld lang="React" method="ReactDOM" jscode={true} />;
 const target = document.getElementById('root');
-render (rootComponent, target);
+render(rootComponent, target);
 ```
 
 # Composant child
@@ -71,7 +71,7 @@ const rootComponent = (
 );
 
 const target = document.getElementById('root');
-render (rootComponent, target);
+render(rootComponent, target);
 ```
 
 # same + clean
@@ -105,7 +105,6 @@ const rootComponent = (
 );
 
 const target = document.getElementById('root');
-
-render (rootComponent, target);
+render(rootComponent, target);
 ```
 
