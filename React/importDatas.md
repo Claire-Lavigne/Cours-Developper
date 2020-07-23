@@ -55,7 +55,7 @@ const Main = ({
     <h1 id="main-title">{name}</h1> // as attributes as well
     <p id="main-author">{author}</p>
     <ol id="main-steps">
-      {steps.map(step => <li>{step}</li>)}
+      {steps.map(step => <li key={step}>{step}</li>)}
     </ol>
   </div>
 );
