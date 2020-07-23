@@ -28,7 +28,7 @@ const rootComponent = <HelloWorld lang="React" method="ReactDOM" /> // = HelloWo
 const target = document.getElementById('root');
 render (rootComponent, target);
 ```
-# + clean
+# same + clean
 ```js
 import React from 'react';
 import { render } from 'react-dom'; 
@@ -43,11 +43,8 @@ const helloWorld = ({ lang, method }) => {
   );
 };
 
-const rootComponent = <HelloWorld lang="React" method="ReactDOM" />;
-// add js code : lang="{ // js ici}"
-// lang = lang={true}
+const rootComponent = <HelloWorld lang="React" method="ReactDOM" jscode={true} />;
 const target = document.getElementById('root');
-
 render (rootComponent, target);
 ```
 
@@ -74,11 +71,10 @@ const rootComponent = (
 );
 
 const target = document.getElementById('root');
-
 render (rootComponent, target);
 ```
 
-# + clean
+# same + clean
 ```js
 import React from 'react';
 import { render } from 'react-dom';
