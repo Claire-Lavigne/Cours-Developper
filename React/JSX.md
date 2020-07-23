@@ -1,12 +1,11 @@
 - [react typechecking](https://fr.reactjs.org/docs/typechecking-with-proptypes.html)
 
-# Composant = fonction qui retourne du JSX
+# Function returning JSX = "Component"
 ```js
 import React from 'react';
-// si juste besoin de render
-import { render } from 'react-dom'; 
-// si besoin de + de choses
-// import ReactDOM from 'react-dom'; 
+import { render } from 'react-dom'; // besoin de render
+
+// import ReactDOM from 'react-dom'; // si besoin de + de choses
 // et en fin de fichier : ReactDOM.render(rootComponent, target);
 
 const helloWorld = (props) => {
