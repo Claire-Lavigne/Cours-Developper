@@ -22,13 +22,4 @@ import name, { coucou, salut } from './hello';
 
 // import const nommée from index.js
 import { render } from '.';
-
-// import npm
-import React from 'react';
-import { render } from 'react-dom';
-import PropTypes from  'prop-types';
-
-// import local css and js files
-import './app.scss';
-import Header from 'src/components/Header';
 ```
