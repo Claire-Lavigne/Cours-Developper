@@ -1,4 +1,4 @@
-# recipe.js
+# data/index.js
 ```js
 export default {
   name: 'Angular',
@@ -20,13 +20,13 @@ import Main from 'src/components/Main';
 import Footer from 'src/components/Footer';
 
 // Data
-import recipeData from 'src/data/recipe';
+import recipeData from 'src/data/index';
 
 // == Composant
 const App = () => (
   <div id="app">
     <Header />
-    <Main name="Coucou" />
+    <Main name={recipeData.name} />
     <Footer />
   </div>
 );
@@ -40,9 +40,6 @@ export default App;
 // == Import : npm
 import React from 'react';
 import PropTypes from 'prop-types';
-
-// == Import : local
-import './main.scss';
 
 // == Composant
 const Main = ({ name }) => (
