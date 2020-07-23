@@ -29,6 +29,7 @@ const App = () => (
     <Main 
       name={recipeData.name}
       author={recipeData.author}
+      steps={recipeData.instructions}
     />
     <Footer />
   </div>
@@ -45,16 +46,24 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // == Composant
-const Main = ({ name, author }) => (
+const Main = ({ 
+  name, 
+  author,
+  steps
+}) => (
   <div id="main">
     <h1 id="main-title">{name}</h1> // as attributes as well
     <p id="main-author">{author}</p>
+    <ol id="main-steps">
+      {steps.map(step => <li>{step}</li>)}
+    </ol>
   </div>
 );
 
 Main.propTypes = {
   name: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
+  steps: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 // == Export
