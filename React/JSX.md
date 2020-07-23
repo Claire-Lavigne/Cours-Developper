@@ -8,28 +8,24 @@ import { render } from 'react-dom'; // besoin de render
 // import ReactDOM from 'react-dom'; // si besoin de + de choses
 // et en fin de fichier : ReactDOM.render(rootComponent, target);
 
-const helloWorld = (props) => {
-  // on peut ajouter des props (propriétés) en paramètre
-  // à définir dans le rootComponent
+const helloWorld = (props) => { // add properties en paramètre
   console.log(props);
   return (
-    `<div id="hello-world">
+    <div id="hello-world">
       <h1>Ce HTML a été généré par {props.lang}</h1>
       // objet
       <h2>Et affiché avec {props.method}</h2>
-    </div>`
+    </div>
   );
 };
 
-// composant racine
-const rootComponent = <HelloWorld />; 
-  // = helloWorld() 
-  // add pros : <HelloWorld lang="React" method="ReactDOM" />
-  // = HelloWorld({lang: "React, method:" ReactDOM"})
+// call component
+const rootComponent = <HelloWorld />; // = helloWorld()
+// call component and define properties
+const rootComponent = <HelloWorld lang="React" method="ReactDOM" /> // = HelloWorld({lang: "React, method:" ReactDOM"})
 
 // cible du DOM
 const target = document.getElementById('root');
-
 render (rootComponent, target);
 ```
 # + clean
@@ -39,11 +35,11 @@ import { render } from 'react-dom';
 
 const helloWorld = ({ lang, method }) => {
   return (
-    `<div id="hello-world">
+    <div id="hello-world">
       <h1>Ce HTML a été généré par {lang}</h1>
       // objet
       <h2>Et affiché avec {method}</h2>
-    </div>`
+    </div>
   );
 };
 
