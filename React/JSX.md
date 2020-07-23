@@ -4,7 +4,6 @@
 ```js
 import React from 'react';
 import { render } from 'react-dom'; // besoin de render
-
 // import ReactDOM from 'react-dom'; // si besoin de + de choses
 // et en fin de fichier : ReactDOM.render(rootComponent, target);
 
@@ -12,8 +11,7 @@ const helloWorld = (props) => { // add properties en paramètre
   console.log(props);
   return (
     <div id="hello-world">
-      <h1>Ce HTML a été généré par {props.lang}</h1>
-      // objet
+      <h1>Ce HTML a été généré par {props.lang}</h1> // objet
       <h2>Et affiché avec {props.method}</h2>
     </div>
   );
@@ -37,7 +35,6 @@ const helloWorld = ({ lang, method }) => {
   return (
     <div id="hello-world">
       <h1>Ce HTML a été généré par {lang}</h1>
-      // objet
       <h2>Et affiché avec {method}</h2>
     </div>
   );
