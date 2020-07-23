@@ -1,4 +1,4 @@
-# Return string
+# Function returning string
 ```js
 const helloWorld = (data) => {
   console.log(data);
