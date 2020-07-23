@@ -26,7 +26,10 @@ import recipeData from 'src/data/index';
 const App = () => (
   <div id="app">
     <Header />
-    <Main name={recipeData.name} />
+    <Main 
+      name={recipeData.name}
+      author={recipeData.author}
+    />
     <Footer />
   </div>
 );
@@ -42,14 +45,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // == Composant
-const Main = ({ name }) => (
+const Main = ({ name, author }) => (
   <div id="main">
-    Main : {name}
+    <h1 id="main-title">{name}</h1> // as attributes as well
+    <p id="main-author">{author}</p>
   </div>
 );
 
 Main.propTypes = {
   name: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
 };
 
 // == Export
