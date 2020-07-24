@@ -59,18 +59,12 @@ $ git init
 ```bash
 # Generate SSH Key
 $ ssh-keygen -t rsa -b 4096 -C "user@email.com"
-# copy key
-$ pbcopy < ~/.ssh/id_rsa.pub
-# copy key (if command not found with pbcopy)
-$ cat < ~/.ssh/id_rsa.pub
-# Go to GitHub/Profile Photo/Settings/SSH and GPG keys/New SSH key
-# Paste key and add
-
 # Check if I have a public SSH Key on my pc
 $ ls ~/.ssh/*.pub
-# rsa.pub or dsa.pub will be listed
-$ cat ~/.ssh/id_rsa.pub
-# Copy and share public SSH key listed
+# copy key ("cat" or "pbcopy")
+$ cat < ~/.ssh/id_rsa.pub
+# Go to GitHub --> Profile --> Settings --> SSH and GPG keys --> New SSH key
+# Copy and Paste key
 ```
 
 ### GIT STATUS
