@@ -70,12 +70,7 @@ $ cat < ~/.ssh/id_rsa.pub
 $ ls ~/.ssh/*.pub
 # rsa.pub or dsa.pub will be listed
 $ cat ~/.ssh/id_rsa.pub
-# will list my key
-
-# Share my public SSH Key
-$ cd ~/.ssh/
-$ cat id_rsa.pub
-# Copy and share the code listed
+# Copy and share public SSH key listed
 ```
 
 ### GIT STATUS
