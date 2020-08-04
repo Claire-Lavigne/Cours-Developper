@@ -110,10 +110,10 @@ WHERE order < '2019'
 ```
 
 # VALUES
-id = int(11) PK NOT NULL (NN) AUTO INCREMENT (AI)
-firstname = VARCHAR(50) NN
-birthdate = DATE
-phone = VARCHAR(50)
+- id = int(11) PK NOT NULL (NN) AUTO INCREMENT (AI)
+- firstname = VARCHAR(50) NN
+- birthdate = DATE
+- phone = VARCHAR(50)
 
 # INSERT ROW(S)
 ```sql
@@ -134,6 +134,6 @@ VALUES (
 INSERT INTO customers (name)
 VALUES 
   ('Paul'),
-  ('John'),
+  (LAST_INSERT_ID()),
   ('Clark')
 ```
