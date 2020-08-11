@@ -26,3 +26,5 @@ Fonction : Bloc d'instructions avec un rôle donné et avec des paramètres (don
   - objets créés (instanciés) à partir du modèle (instance = objet de classe)
   - objets ayant pour type le nom de la classe
   
+# This
+- This : variable accessible dans le contexte de l'objet, référence à l'objet lui-même
