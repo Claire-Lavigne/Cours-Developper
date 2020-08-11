@@ -12,10 +12,17 @@ Fonction : Bloc d'instructions avec un rôle donné et avec des paramètres (don
 - Paramètre : variable locale créée automatiquement à l'intérieur de ma fonction, quand sa valeur est encore inconnue
 - Argument : quand mon paramètre reçoit sa valeur (param1 receive the value of arg1, param2 the value of arg2, ...)
 
-## Organisation d'une programmation autour du code
+## Programmation
+- encapsulation : regrouper des données dans des méthodes
+  - propriétés/méthodes publiques = objet
+  - propriétés/méthodes privées = à préférer
+### Scope / Visibilité
+- public : accès aux propriétés et méthodes de l'objet depuis l'extérieur
+- private : accès aux propriétés et méthodes de l'objet dans l'objet uniquement
+### Organisation d'une programmation autour du code
 - programmation structurée : structures while/repeat/for/if..then..else/fonctions
 - programmation procédurale : fonctions dans fonctions, inverse de programmation objet, pas de structure
-## Organisation d'une programmation autour de la donnée
+### Organisation d'une programmation autour de la donnée
 - programmation orientée objet : encapsulation/héritage/polymorphisme
 
 ## POO
@@ -28,3 +35,4 @@ Fonction : Bloc d'instructions avec un rôle donné et avec des paramètres (don
   
 # This
 - This : variable accessible dans le contexte de l'objet, référence à l'objet lui-même
+
