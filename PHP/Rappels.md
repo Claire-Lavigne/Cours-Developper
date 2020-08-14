@@ -148,3 +148,70 @@ echo $objet->getAttribut(); // attribut Parent
 echo $objet->childMethod(); // methode : classe Enfant
 $objet->parentConstant()    // constante du parent
 ```
+
+# Final
+- Les classes, méthodes et propriétés `final` ne peuvent être héritées
+```php
+final class MyClass {
+  //
+}
+
+class ChildClass extends MyClass {
+  // fatal error
+}
+
+class Parent {
+  public final function method() {
+  }
+}
+```
+
+# Polymorphisme
+- Quand la classe fille redéfinie le contenu des méthodes et propriétés héritées
+
+# Abstract
+- Classe abstraite : ne peut être instanciée (ses enfants peuvent l'être)
+- Méthode abstraite : méthode obligatoire pour les classes enfants
+```php
+abstract class Restauration {
+  abstract protected function servir($jour);  // paramètre obligatoire
+}
+
+class Restaurant extends Restauration {
+  public function servir($jour, $menu) {
+  }
+}
+
+new Restauration;  // error
+new Restaurant;    // ok
+```
+
+# Interface
+- `interface Classe` : quand toutes les méthodes d'une classe sont abstraites
+```php
+// Declarer l'interface "iTemplate"
+interface iTemplate
+{
+    public function setVariable($name, $var);
+    public function getHTML($template);
+}
+
+// Implémenter l'interface
+class Template implements iTemplate
+{
+    private $vars = [];
+
+    public function setVariable($name, $var)
+    {
+        $this->vars[$name] = $var;
+    }
+
+    public function getHTML($template)
+    {
+        foreach ($this->vars as $name => $value) {
+            $template = str_replace('{' . $name . '}', $value, $template);
+        }
+        return $template;
+    }
+}
+```
