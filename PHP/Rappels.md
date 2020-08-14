@@ -2,8 +2,8 @@
 - Fichier MyClass.php (1 class = 1 fichier => meme nom)
 - Scope / Visibilité
   - public : accès aux propriétés et méthodes de l'objet (càd la classe) depuis l'extérieur
-  - private : accès aux propriétés et méthodes de l'objet dans l'objet uniquement
   - protected : accès aux propriétés et méthodes de l'objet dans l'objet et ses héritiers
+  - private : accès aux propriétés et méthodes de l'objet dans l'objet uniquement
 ```php
 class MyClass {
   // Propriété / Attribut / Donnée
