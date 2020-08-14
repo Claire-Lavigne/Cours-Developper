@@ -16,9 +16,6 @@ Fonction : Bloc d'instructions avec un rôle donné et avec des paramètres (don
 - encapsulation : regrouper des données dans des méthodes
   - propriétés/méthodes publiques = objet
   - propriétés/méthodes privées = à préférer
-### Scope / Visibilité
-- public : accès aux propriétés et méthodes de l'objet depuis l'extérieur
-- private : accès aux propriétés et méthodes de l'objet dans l'objet uniquement
 ### Organisation d'une programmation autour du code
 - programmation structurée : structures while/repeat/for/if..then..else/fonctions
 - programmation procédurale : fonctions dans fonctions, inverse de programmation objet, pas de structure
