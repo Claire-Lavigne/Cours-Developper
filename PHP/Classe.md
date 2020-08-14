@@ -78,3 +78,32 @@ class MyConstructor {
   
 }
 ```
+
+# Méthodes et propriétés "statiques" (ou "de classe")
+- pas recommandé
+- `::` : précède les propriétés et méthodes statiques
+- `self` : classe en cours
+```php
+class Person {
+  private $age;
+  
+  private static $majority;
+  
+  const DEFAULT_NAME = "Mickael";
+  
+  public static function getMajority() {
+    return self::$majority;
+  }
+  
+  public static function setMajority($nb) {
+    if(is_int($nb))
+      self::$majority = $nb;
+  }
+}
+
+echo "le nom est " . Person::DEFAULT_NAME;
+
+Person::setMajority(18);
+
+echo "La majorité est à " . Person::getMajority();
+```
