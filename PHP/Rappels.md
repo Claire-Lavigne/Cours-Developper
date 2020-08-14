@@ -190,28 +190,24 @@ new Restaurant;    // ok
 - `interface Classe` : quand toutes les méthodes d'une classe sont abstraites
 ```php
 // Declarer l'interface "iTemplate"
-interface iTemplate
-{
-    public function setVariable($name, $var);
-    public function getHTML($template);
+interface iTemplate {
+  public function setVariable($name, $var);
+  public function getHTML($template);
 }
 
 // Implémenter l'interface
-class Template implements iTemplate
-{
-    private $vars = [];
+class Template implements iTemplate {
+  private $vars = [];
 
-    public function setVariable($name, $var)
-    {
-        $this->vars[$name] = $var;
-    }
+  public function setVariable($name, $var) {
+    $this->vars[$name] = $var;
+  }
 
-    public function getHTML($template)
-    {
-        foreach ($this->vars as $name => $value) {
-            $template = str_replace('{' . $name . '}', $value, $template);
-        }
-        return $template;
-    }
+  public function getHTML($template) {
+    foreach ($this->vars as $name => $value) {
+      $template = str_replace('{' . $name . '}', $value, $template);
+  }
+    return $template;
+  }
 }
 ```
