@@ -211,3 +211,27 @@ class Template implements iTemplate {
   }
 }
 ```
+
+# Namespaces
+```php
+namespace A\B;
+
+class MaClasse
+{
+  public function hello()
+  {
+    echo 'Hello world !';
+  }
+}
+
+// importation
+require 'fichier.php';
+use A\B\C\D\E\F as F;
+
+  // or
+
+use A\B\C\D\E\F\MaClasse as Hello;
+$a = new Hello; // => $a = new A\B\C\D\E\F\MaClasse.
+$a->hello();
+    
+```
