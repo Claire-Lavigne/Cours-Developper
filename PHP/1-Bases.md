@@ -21,7 +21,7 @@ phpinfo();
 - search "display_errors" => "display_errors = On"
 - save + restart (Apache) server
 
-## Errors
+# Errors Meaning
 - **Parse error** : instruction PHP mal formée
 - **Undefined function** : fonction inconnue (inexistante ou non reconnue)
 - **Wrong parameter count** : fonction mal utilisée (trop ou pas assez de paramètres)
@@ -51,10 +51,12 @@ echo WELCOME;
 echo "L'individu a $age_visitor ans <br>";        // easier
 echo 'L\'indiv a ' .$age_visitor. 'ans <br>';     // more used
 ```
-## Show variable type + value
+
+# Show variable type + value
 ```php
 var_dump($names);
 
+// debogage (loop arrays)
 echo '<pre>';
 print_r($names);
 echo '</pre>';
@@ -67,6 +69,8 @@ echo '</pre>';
 ```php
 $names = ['François', 'Michel', 'Nicole', 'Véronique', 'Benoît'];
 $names[0];
+
+$names[] = 'Blue'; // push at the end
 ```
 ## Associative : key (string/int) --> value
 ```php
@@ -80,15 +84,15 @@ $date["year"];
 ```
 ## Multidimensional : array(s) inside array
 
-## Loop (great for arrays)
-### FOR
+# Loop (great for arrays)
+## FOR
 ```php
 for ($x = 0; $x < 5; $x++) {
    echo $names[$x];
 }
 // $names[0], ...
 ```
-### FOREACH
+## FOREACH
 ```php
 foreach($names as $name) {
     echo $name; 
@@ -100,7 +104,7 @@ foreach($names as $key => $name) {
 }
 // [names] = François, ...
 ```
-### WHILE
+## WHILE
 ```php
 $age = 1;
 while ($age <= 100) {
@@ -109,8 +113,8 @@ while ($age <= 100) {
 }
 ```
 
-## Conditions
-### Switch
+# Conditions
+## Switch
 ```php
 $note = 10;
 switch ($note) {
@@ -128,7 +132,7 @@ switch ($note) {
 }
 ```
 
-### If / Elseif / Else
+## If / Elseif / Else
 - **Comparisons** : `== != < <= > >= && ||`
 ```php
 <?php
@@ -142,7 +146,7 @@ if (!$variable) {
 }
 ?>
 ```
-- Ternaire
+- **Ternaire**
 ```php
 $age = 24;
 $majeur = ($age >= 18) ? true : false;
