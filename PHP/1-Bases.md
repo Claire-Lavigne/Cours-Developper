@@ -196,3 +196,11 @@ function calculCost($num1, $num2, $num3)
 $value = calculCost(2, 3, 5); 
 echo "The product cost $value"; // The product cost 30
 ```
+
+# Include / Require
+```php
+// Intégrer une page php dans une autre
+<?php include("menus.php"); ?>
+// Intégrer fonction/classe...
+<?php require("menus.php"); ?>
+```
