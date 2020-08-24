@@ -192,29 +192,3 @@ function calculCost($num1, $num2, $num3)
 $value = calculCost(2, 3, 5); 
 echo "The product cost $value"; // The product cost 30
 ```
-
-# 
-```php
-// Intégrer une page php dans une autre
-<?php include("menus.php"); ?>
-// Intégrer fonction/classe...
-<?php require("menus.php"); ?>
-```
-
-Object Initialization ¶
-To create a new object, use the new statement to instantiate a class:
-
-<?php
-class foo
-{
-    function do_foo()
-    {
-        echo "Doing foo."; 
-    }
-}
-
-$bar = new foo;
-$bar->do_foo();
-?>
-
-
