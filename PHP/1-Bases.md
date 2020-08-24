@@ -3,7 +3,7 @@
   - generate dynamic content
   - encrypt data
 
-# To use PHP what do I need ? (xampp / mamp)
+# To use PHP what do I need ? (xampp / mamp / wamp)
 - install a web server (Apache)
 - install PHP
 - install a database (MySQL)
@@ -23,9 +23,11 @@ Fichier `info.php` dans htdocs
 phpinfo();
 ```
 - open file in browser
-- find line "Loaded Configuration File" => open file
+- find line "Loaded Configuration File" => open file php.ini
 - search "error_reporting" => "error_reporting = E_ALL"
 - search "display_errors" => "display_errors = On"
+- search "pdo_mysql" => "extension=php_pdo_mysql.dll" without `;` at the beginning
+- with XAMPP only search "pdo_mysql.default_socket" => "pdo_mysql.default_socket = /opt/lampp/var/mysql/mysql.sock"
 - save + restart (Apache) server
 
 # Errors Meaning
