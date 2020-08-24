@@ -197,10 +197,9 @@ $value = calculCost(2, 3, 5);
 echo "The product cost $value"; // The product cost 30
 ```
 
-# Include / Require
+# Include page php into another
 ```php
-// Intégrer une page php dans une autre
 <?php include("menus.php"); ?>
-// Intégrer fonction/classe...
+// Best option
 <?php require("menus.php"); ?>
 ```
