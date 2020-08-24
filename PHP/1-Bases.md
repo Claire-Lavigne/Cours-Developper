@@ -3,11 +3,10 @@
   - generate dynamic content
   - encrypt data
 
-# To use PHP what do I need ?
+# To use PHP what do I need ? (xampp / mamp)
 - install a web server (Apache)
 - install PHP
 - install a database (MySQL)
-- => xampp / mamp
 
 # Concurrents
 - ASP .NET (C#)
