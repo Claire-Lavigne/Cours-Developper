@@ -21,7 +21,7 @@ $bdd = new PDO('mysql:host=localhost;dbname=test;charset=utf8', 'root', 'root');
 // connect
 try
 {
-	$bdd = new PDO('mysql:host=localhost;dbname=test;charset=utf8', 'root', '');
+	$bdd = new PDO('mysql:host=localhost;dbname=test;charset=utf8', 'root', '', [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
 }
 catch (Exception $e)
 {
@@ -48,3 +48,12 @@ while ($donnees = $reponse->fetch())
 // Close request
 $reponse->closeCursor(); 
 ?>
+```
+
+## + Secure
+```php
+<?php
+$req = $bdd->prepare('SELECT nom, prix FROM jeux_video WHERE possesseur = :possesseur AND prix <= :prixmax');
+$req->execute(array('possesseur' => $_GET['possesseur'], 'prixmax' => $_GET['prix_max']));
+?>
+```
