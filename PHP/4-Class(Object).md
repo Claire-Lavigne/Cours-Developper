@@ -1,8 +1,28 @@
-# Classes
-- 1 fichier par classe : MaClasse.php
-- `<?php require 'MaClasse.php';`
+# Include / Require
+```php
+// Intégrer une page php dans une autre
+<?php include("menus.php"); ?>
+// Intégrer fonction/classe...
+<?php require("menus.php"); ?>
+```
 
-Si j'ai plusieurs fichiers `MaClasse.php`, créer fichier `class.php` :
+# Object Initialization
+```php
+<?php
+class foo
+{
+    function do_foo()
+    {
+        echo "Doing foo."; 
+    }
+}
+
+$bar = new foo;
+$bar->do_foo();
+?>
+```
+
+
 ```php
 <?php
 function chargerClasse($classe) {
