@@ -9,111 +9,71 @@
 
 # [Manuel PHP](https://www.php.net/manual/fr/index.php)
 
-# Afficher erreurs : info.php
+# Show errors
+- fichier `info.php`
 ```php
 <?php
-
 phpinfo();
 ```
+- open file in browser
 - line "Loaded Configuration File" => chemin d'accès d'un fichier => open this file
 - search "error_reporting" => il faut qu'il soit écrit "error_reporting = E_ALL"
 - search "display_errors" => il faut qu'il soit écrit "display_errors = On"
 - enregistrer fichier
 - relancer serveur Apache (ou autre)
 
-## Comprendre les erreurs
-- Parse error : instruction PHP mal formée
-- Undefined function : fonction inconnue (inexistante ou non reconnue)
-- Wrong parameter count : fonction mal utilisée (trop ou pas assez de paramètres)
-- Maximum execution time exceeded : boucle infinie
+## Errors
+- **Parse error** : instruction PHP mal formée
+- **Undefined function** : fonction inconnue (inexistante ou non reconnue)
+- **Wrong parameter count** : fonction mal utilisée (trop ou pas assez de paramètres)
+- **Maximum execution time exceeded** : boucle infinie
 
 # Syntaxe
-**Init (in html or php file)**
 ```php
 <?php
-// instructions (closing tag optional)
+// comment
+/* comments */
 ?>
 ```
 
-**Variable**
+## Variables
+- **Types** : string, int, float, bool, NULL (no datas)
+- **Operators** : `+ - * / % ( )`
 ```php
-$age_visitor = 25;        // set a variable
-$age_visitor = 26;        // modify the variable
-echo $age_visitor;        // show the value of variable
+$age_visitor = 25;        // set
+$age_visitor = 26.5;      // modify
+echo $age_visitor;        // show value
 
-echo "Le visiteur a $age_visitor ans";          // + simple
-echo 'Le visiteur a ' .$age_visitor. 'ans';     // + utilisé
-```
-:warning: Les variables ne s'affichent pas à l'origine ! On affiche leurs données avec ```echo``` ou ```print```
+echo "L'individu a $age_visitor ans <br>";        // easier
+echo 'L\'indiv a ' .$age_visitor. 'ans <br>';     // more used
 
-# Types de variables
-**String**
-```php
-$firstName = 'Pedro Sanchez';
+// great for arrays : show variable type + content
+echo '<pre>';
+print_r($age);
+echo '</pre>';
 
-// "..." posible but not recommended
-// \     to escape " or '
-```
-
-**Int(egers)**
-```php
-$age = 3;
-
-// Calcul
-$nombre = 3 - (1 + 2) * 2 / 2 % 5;        // % division dont la valeur est le reste
-$resultat = ($nombre + 5);
+var_dump()
 ```
 
-**Float**
+## If / Elseif / Else
+- **Comparisons** : `== != < <= > >= && ||`
+
+
+## Arrays
+### Simple
 ```php
-$age = 15.5;
+$names = ['François', 'Michel', 'Nicole', 'Véronique', 'Benoît'];
+$names[0];
 ```
-
-**Bool(ean)**
+### Associative : key (string/int) --> value
 ```php
-$married = true;
-$divorced = false;
-```
-
-**NULL**
-```php
-$age = NULL;            // no datas
-```
-
-**Comparaisons**
-```php
-$age = 20;    // Declare a variable
-$age == 10    // Equal to
-$age != 10    // Not equal to
-$age < 10;
-$age <= 10;
-$age > 10;
-$age >= 10
-&&
-||
-```
-
-# Tableau numéroté
-Pour stocker une série d'éléments du même type (ex : que des prénoms)
-```php
-// La fonction array permet de créer un array
-$prenoms = array ('François', 'Michel', 'Nicole', 'Véronique', 'Benoît');
-
-$prenoms[0]; // affiche François
-```
-
-# Tableau associatif
-Pour découper une donnée en plusieurs sous-éléments
-```php
-// On crée notre array $coordonnees
-$date = array ('...');
-// ou
 $date = [
-  "year" => 2017,
-  "month" => 'January'
+  "year" 	=> 2017,
+  "month" 	=> 'January',
+  1 		=> 'start'
 ];
 
-$date["year"];      // afficher 2017
+$date["year"];
 ```
 
 ## Parcourir un tableau associatif
