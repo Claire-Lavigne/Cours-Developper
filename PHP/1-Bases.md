@@ -35,7 +35,7 @@ phpinfo();
 ?>
 ```
 
-## Variables
+# Variables
 - **Types** : string, int, float, bool, NULL (no datas)
 - **Operators** : `+ - * / % ( )`
 ```php
@@ -43,16 +43,23 @@ $age_visitor = 25;        // set
 $age_visitor = 26.5;      // modify
 echo $age_visitor;        // show value
 
-echo "L'individu a $age_visitor ans <br>";        // easier
-echo 'L\'indiv a ' .$age_visitor. 'ans <br>';     // more used
-
-// show variable type + value
-<pre><?php print_r ($a); ?></pre>
-var_dump($a);
-
 // Constant 
 define("WELCOME","Hello Geeks!"); 
 echo WELCOME; 
+
+// Concatenate
+echo "L'individu a $age_visitor ans <br>";        // easier
+echo 'L\'indiv a ' .$age_visitor. 'ans <br>';     // more used
+```
+## Show variable type + value
+```php
+var_dump($names);
+
+echo '<pre>';
+print_r($names);
+echo '</pre>';
+
+// <pre><?php print_r ($names); ?></pre>
 ```
 
 # Arrays
@@ -93,12 +100,6 @@ foreach($names as $key => $name) {
 }
 // [names] = François, ...
 ```
-### PRINT_R
-```php
-echo '<pre>';
-print_r($prenoms);
-echo '</pre>';
-```
 ### WHILE
 ```php
 $age = 1;
@@ -129,79 +130,38 @@ switch ($note) {
 
 ### If / Elseif / Else
 - **Comparisons** : `== != < <= > >= && ||`
-
-# Statements
-**if**
 ```php
 <?php
 $variable = 23;
-if ($variable == 23) {
-  echo '<strong>Bravo !</strong> Trouvé !';
+if ($variable) {
+  // if true
 }
-?>
-```
-ou
-```php
-<?php
-$variable = 23;
-if ($variable == 23) {
-?>
-  <strong>Bravo !</strong> Trouvé !
-<?php
-}
-?>
-```
 
-**IF ELSE**
-```php
-$age = 8;
-if ($age <=12) {
-  echo "Salut gamin !";
-  $authorisation_entrer = "oui";
-} else {
-  echo "Trop vieux"
-  $authorisation_entrer = "non";
+if (!$variable) {
+  // if false
 }
-echo "Pouvez-vous entrer ? $authorisation_entrer";
+?>
 ```
-Cas spécial booleans
+- Ternaire
 ```php
 $age = 24;
-if ($age >= 18) {
-	$majeur = true;
-} else {
-	$majeur = false;
-}
-
-// short syntaxe
 $majeur = ($age >= 18) ? true : false;
-```
 
-**IF ELSEIF ELSE**
-```php
-$authorisation_enter = "oui";               // is true
-if ($authorisation_enter == "oui") {        // if true
-// short syntaxe to verify if true
-// if ($authorisation_enter)
-  echo "Salut gamin !";
-} elseif ($authorisation_enter == "non" {  // is false
-// short syntaxe to verity if false
-// elseif (!$authorisation_enter)
-  echo "Trop vieux"
+// means
+if ($age >= 18) {
+   $majeur = true;
 } else {
-  echo "C'est quoi ton âge ?"
+   $majeur = false;
 }
 ```
 
 # Fonctions
-
 **Existantes**
 -[Liste des fonctions PHP par catégorie](https://www.php.net/manual/fr/funcref.php)
 - `$jour = date('d/m/Y h:i:s')`;
 - `empty()``
 - `exit()`
 - `isset()`
-
 **Personnalisées**
 ```php
 // function with default parameter 
