@@ -1,5 +1,13 @@
 # PHP, pour quoi ?
-- Envoyer données au serveur (refresh + code caché)
+- Communiquer avec serveur :
+  - generate dynamic content
+  - encrypt data
+
+# To use PHP what do I need ?
+- install a web server (Apache)
+- install PHP
+- install a database (MySQL)
+- => xampp / mamp
 
 # Concurrents
 - ASP .NET (C#)
