@@ -1,4 +1,9 @@
 # Vocabulaire
+## MVC
+- index.php : le contrôleur (chef d'orchestre)
+- indexView.php : la vue (page HTML...)
+- model.php : le modèle (requêtes SQL...)
+
 ## Objet
 - Ensemble de variables et de fonctions regroupées dans une classe
 
