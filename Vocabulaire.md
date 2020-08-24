@@ -1,4 +1,7 @@
 # Vocabulaire
+## Objet
+- Ensemble de variables et de fonctions regroupées dans une classe
+
 ## Variables
 - Variable Globale => en dehors de la boucle (dans window)
 - Variable Locale => dans la boucle (dans le bloc)
