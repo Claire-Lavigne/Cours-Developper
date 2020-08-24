@@ -55,17 +55,13 @@ echo '</pre>';
 var_dump()
 ```
 
-## If / Elseif / Else
-- **Comparisons** : `== != < <= > >= && ||`
-
-
-## Arrays
-### Simple
+# Arrays
+## Numeric
 ```php
 $names = ['François', 'Michel', 'Nicole', 'Véronique', 'Benoît'];
 $names[0];
 ```
-### Associative : key (string/int) --> value
+## Associative : key (string/int) --> value
 ```php
 $date = [
   "year" 	=> 2017,
@@ -75,38 +71,35 @@ $date = [
 
 $date["year"];
 ```
+## Multidimensional : array(s) inside array
 
-## Parcourir un tableau associatif
+## Loop array
 ```php
-// Boucle "for" :
-for ($numero = 0; $numero < 5; $numero++) {
-    echo $prenoms[$numero] . '<br />'; // affichera $prenoms[0], $prenoms[1] etc.
+// FOR
+for ($x = 0; $x < 5; $x++) {
+   echo $names[$x];
 }
+// $names[0], ...
 
-// Boucle "foreach" (pour récupérer uniquement la valeur de l'élément) :
-foreach($prenoms as $element) {
-    echo $element . '<br />'; // affichera $prenoms[0], $prenoms[1] etc.
+// FOREACH
+foreach($names as $name) {
+    echo $name; 
 }
+// $names[0], ...
 
-// Boucle "foreach" (pour récupérer la valeur ET la clé de l'élément) :
-foreach($prenoms as $cle => $element) {
-    echo '[' . $cle . '] vaut ' . $element . '<br />'; // affiche [prenoms] vaut François, [prenoms] vaut Michel, etc...
+foreach($names as $key => $name) {
+    echo "$key = $name";
 }
+// [names] = François, ...
 
-// Savoir ce que contient un array sans utiliser de boucle
+// PRINT_R
 echo '<pre>';
 print_r($prenoms);
 echo '</pre>';
-
-// array_key_exists : pour vérifier si une clé existe dans l'array ;
-if (array_key_exists('nom', $prenoms))
-// in_array : pour vérifier si une valeur existe dans l'array ;
-if (in_array('Paul', $prenoms))
-// array_search : pour récupérer la clé d'une valeur dans l'array.
-$position = array_search('Jack', $prenoms);
-echo $position; // 3
 ```
 
+## If / Elseif / Else
+- **Comparisons** : `== != < <= > >= && ||`
 
 # Statements
 **if**
@@ -208,64 +201,32 @@ for ($age = 1; $age <= 100; $age++; {
 # Fonctions
 **Existante**
 -[Liste des fonctions PHP par catégorie](https://www.php.net/manual/fr/funcref.php)
-```php
-calculCube(4); // fonction qui ne retourne pas de valeur
-$volume = calculCube(4); // fonction qui retourne une valeur (= placée dans une variable)
-```
-**Inexistante**
-```php
-fonctionImaginaire(17, 'Vert', true, 41.7);
-```
-**Exemple : fonction pour afficher la date et l'heure**
-```php
-<?php
-// Enregistrer les fonctions dans des variables
-$jour = date('d');
-$mois = date('m');
-$annee = date('Y');
-$heure = date('H');
-$minute = date('i');
-
-// Afficher l'ensemble
-echo 'Bonjour ! Nous sommes le ' . $jour . '/' . $mois . '/' . $annee . 'et il est ' . $heure. ' h ' . $minute;
-?>
-```
+- `$jour = date('d/m/Y')`;
 
 **Exemple : fonction pour dire bonjour aux visiteurs**
 ```php
-<?php
-function DireBonjour($nom) {
-   echo 'Bonjour ' . $nom . ' !<br />';
-}
+// function with default parameter 
+function person($name, $age=12)  
+{ 
+    echo "$name is $age years old \n"; 
+} 
+person("Ram", 15); // Ram is 15 y-o
+person("Adam");    // Adam is 12 y-o
 
-DireBonjour('Marie');
-DireBonjour('Patrice');
-DireBonjour('Edouard');
-DireBonjour('Pascale');
-DireBonjour('François');
-DireBonjour('Benoît');
-DireBonjour('Père Noël');
-?>
+// function with return
+function calculCost($num1, $num2, $num3)  
+{ 
+    $product = $num1 * $num2 * $num3; 
+    return $product;
+} 
+$value = calculCost(2, 3, 5); 
+echo "The product cost $value"; // The product cost 30
 ```
 
-**Exemple : calculer le volume d'un cône**
+# 
 ```php
-<?php
-// Fonction qui calcule le volume du cône
-function VolumeCone($rayon, $hauteur)
-{
-   $volume = $rayon * $rayon * 3.14 * $hauteur * (1/3); // calcul du volume
-   return $volume; // indique la valeur à renvoyer
-}
-
-$volume = VolumeCone(3, 1);
-echo 'Le volume d\'un cône de rayon 3 et de hauteur 1 est de ' . $volume;
-?>
-```
-
-# Intégrer une page php ds html file
-```php
+// Intégrer une page php dans une autre
 <?php include("menus.php"); ?>
-// Préférer require
+// Intégrer fonction/classe...
 <?php require("menus.php"); ?>
 ```
