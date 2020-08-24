@@ -29,7 +29,7 @@ catch (Exception $e)
 }
 
 // make request
-$reponse = $bdd->query('SELECT * FROM jeux_video');
+$reponse = $bdd->query('SELECT * FROM jeux_video') or die(print_r($bdd->errorInfo()));
 
 // show results
 $donnees = $reponse->fetch();
@@ -53,7 +53,8 @@ $reponse->closeCursor();
 ## + Secure
 ```php
 <?php
+// SELECT / INSERT INTO / UPDATE / DELETE
 $req = $bdd->prepare('SELECT nom, prix FROM jeux_video WHERE possesseur = :possesseur AND prix <= :prixmax');
-$req->execute(array('possesseur' => $_GET['possesseur'], 'prixmax' => $_GET['prix_max']));
+$req->execute(['possesseur' => $_GET['possesseur'], 'prixmax' => $_GET['prix_max']]);
 ?>
 ```
