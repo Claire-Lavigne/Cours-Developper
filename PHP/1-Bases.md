@@ -10,17 +10,16 @@
 # [Manuel PHP](https://www.php.net/manual/fr/index.php)
 
 # Show errors
-Fichier `info.php`
+Fichier `info.php` dans htdocs
 ```php
 <?php
 phpinfo();
 ```
 - open file in browser
-- line "Loaded Configuration File" => chemin d'accès d'un fichier => open this file
-- search "error_reporting" => il faut qu'il soit écrit "error_reporting = E_ALL"
-- search "display_errors" => il faut qu'il soit écrit "display_errors = On"
-- enregistrer fichier
-- relancer serveur Apache (ou autre)
+- find line "Loaded Configuration File" => open file
+- search "error_reporting" => "error_reporting = E_ALL"
+- search "display_errors" => "display_errors = On"
+- save + restart (Apache) server
 
 ## Errors
 - **Parse error** : instruction PHP mal formée
@@ -47,12 +46,9 @@ echo $age_visitor;        // show value
 echo "L'individu a $age_visitor ans <br>";        // easier
 echo 'L\'indiv a ' .$age_visitor. 'ans <br>';     // more used
 
-// great for arrays : show variable type + content
-echo '<pre>';
-print_r($age);
-echo '</pre>';
-
-var_dump()
+// show variable type + value
+<pre><?php print_r ($a); ?></pre>
+var_dump($a);
 
 // Constant 
 define("WELCOME","Hello Geeks!"); 
@@ -198,10 +194,15 @@ if ($authorisation_enter == "oui") {        // if true
 ```
 
 # Fonctions
-**Existante**
--[Liste des fonctions PHP par catégorie](https://www.php.net/manual/fr/funcref.php)
-- `$jour = date('d/m/Y')`;
 
+**Existantes**
+-[Liste des fonctions PHP par catégorie](https://www.php.net/manual/fr/funcref.php)
+- `$jour = date('d/m/Y h:i:s')`;
+- `empty()``
+- `exit()`
+- `isset()`
+
+**Personnalisées**
 ```php
 // function with default parameter 
 function person($name, $age=12)  
@@ -244,3 +245,5 @@ class foo
 $bar = new foo;
 $bar->do_foo();
 ?>
+
+
