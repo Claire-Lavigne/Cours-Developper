@@ -167,14 +167,14 @@ if ($age >= 18) {
 ```
 
 # Fonctions
-- **Existantes**
+## Existantes
 - [Liste des fonctions PHP par catégorie](https://www.php.net/manual/fr/funcref.php)
 - `$jour = date('d/m/Y h:i:s');`
 - `empty()`
 - `exit()`
 - `isset()`
 
-- **Personnalisées**
+## Personnalisées
 ```php
 // function with default parameter 
 function person($name, $age=12)  
