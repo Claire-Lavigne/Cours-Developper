@@ -10,7 +10,7 @@
 # [Manuel PHP](https://www.php.net/manual/fr/index.php)
 
 # Show errors
-- fichier `info.php`
+Fichier `info.php`
 ```php
 <?php
 phpinfo();
@@ -53,6 +53,10 @@ print_r($age);
 echo '</pre>';
 
 var_dump()
+
+// Constant 
+define("WELCOME","Hello Geeks!"); 
+echo WELCOME; 
 ```
 
 # Arrays
@@ -73,15 +77,16 @@ $date["year"];
 ```
 ## Multidimensional : array(s) inside array
 
-## Loop array
+## Loop (great for arrays)
+### FOR
 ```php
-// FOR
 for ($x = 0; $x < 5; $x++) {
    echo $names[$x];
 }
 // $names[0], ...
-
-// FOREACH
+```
+### FOREACH
+```php
 foreach($names as $name) {
     echo $name; 
 }
@@ -91,14 +96,42 @@ foreach($names as $key => $name) {
     echo "$key = $name";
 }
 // [names] = François, ...
-
-// PRINT_R
+```
+### PRINT_R
+```php
 echo '<pre>';
 print_r($prenoms);
 echo '</pre>';
 ```
+### WHILE
+```php
+$age = 1;
+while ($age <= 100) {
+  echo $age;
+  $age++;
+}
+```
 
-## If / Elseif / Else
+## Conditions
+### Switch
+```php
+$note = 10;
+switch ($note) {
+  case 9:
+      echo "Mauvais";
+  break;
+  case 16:
+      echo "Tu te débrouilles très bien !";
+  break;
+  case 20:
+      echo "Excellent travail, c'est parfait !";
+  break;
+  default:
+      echo "Erreur";
+}
+```
+
+### If / Elseif / Else
 - **Comparisons** : `== != < <= > >= && ||`
 
 # Statements
@@ -164,46 +197,11 @@ if ($authorisation_enter == "oui") {        // if true
 }
 ```
 
-**Switch**
-```php
-$note = 10;
-switch ($note) { // valeur à modifier (uniquement avec ==)
-  case 9: // dans le cas où $note vaut 9
-      echo "Tu es mauvais";
-  break;
-  case 16:
-      echo "Tu te débrouilles très bien !";
-  break;
-  case 20:
-      echo "Excellent travail, c'est parfait !";
-  break;
-  default:
-      echo "Erreur";
-}
-```
-
-# Boucle
-**While**
-```php
-$age = 1;
-while ($age <= 100) {
-  echo 'Liste des âges : ' .$age. '<br/>';
-  $age++;
-}
-```
-**for**
-```php
-for ($age = 1; $age <= 100; $age++; {
-  echo 'Liste des âges : ' .$age. '<br/>';
-}
-```
-
 # Fonctions
 **Existante**
 -[Liste des fonctions PHP par catégorie](https://www.php.net/manual/fr/funcref.php)
 - `$jour = date('d/m/Y')`;
 
-**Exemple : fonction pour dire bonjour aux visiteurs**
 ```php
 // function with default parameter 
 function person($name, $age=12)  
@@ -230,3 +228,19 @@ echo "The product cost $value"; // The product cost 30
 // Intégrer fonction/classe...
 <?php require("menus.php"); ?>
 ```
+
+Object Initialization ¶
+To create a new object, use the new statement to instantiate a class:
+
+<?php
+class foo
+{
+    function do_foo()
+    {
+        echo "Doing foo."; 
+    }
+}
+
+$bar = new foo;
+$bar->do_foo();
+?>
