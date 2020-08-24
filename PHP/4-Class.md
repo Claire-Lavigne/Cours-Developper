@@ -1,42 +1,17 @@
-# Include / Require
-```php
-// Intégrer une page php dans une autre
-<?php include("menus.php"); ?>
-// Intégrer fonction/classe...
-<?php require("menus.php"); ?>
-```
-
 # Object Initialization
 ```php
 <?php
-class foo
-{
-    function do_foo()
-    {
-        echo "Doing foo."; 
+class foo {
+    function do_foo() {
+        echo "Doing foo"; 
     }
 }
-
 $bar = new foo;
 $bar->do_foo();
 ?>
 ```
 
-
-```php
-<?php
-function chargerClasse($classe) {
-  // On inclut la classe correspondante au paramètre passé.
-  require $classe . '.php'; 
-}
-// On enregistre la fonction en autoload
-// pour qu'elle soit appelée dès qu'on instanciera une classe non déclarée.
-spl_autoload_register('chargerClasse'); 
-
-$perso = new Personnage;
-```
-
-# Créer une classe
+# Character Class
 ```php
 <?php
 class Personnage {
