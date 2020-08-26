@@ -16,3 +16,6 @@
 - **Observer/Event Dispatcher** : créer un système d’événements avec des objets capables "d’écouter" et de réagir au changement d’autres objets
 - **Strategy** : interchanger liste d'algorithmes
 - **State** : 1 objets = plsr états
+
+# [SOLID](https://guillaume-richard.fr/principe-solid-simplifies-avec-des-exemples-en-php/)
+- 1 classe = 1 responsabilité (idem avec fonctions)
