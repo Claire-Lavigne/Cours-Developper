@@ -1,3 +1,10 @@
+# MVC
+- **Model** = gestion des données (datas)
+- **View** = gestion du rendu
+- **Controler** = lien model-view, gestion de la réponse à l'utilisateur
+
+# 1 classe = 1 tâche (idem avec fonctions)
+
 # Design Patterns
 - Solutions aux problèmes communs
 
