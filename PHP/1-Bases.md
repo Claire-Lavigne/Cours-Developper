@@ -197,9 +197,12 @@ $value = calculCost(2, 3, 5);
 echo "The product cost $value"; // The product cost 30
 ```
 
-# Include page php into another
+# Include
 ```php
 <?php include("menus.php"); ?>
-// Best option
+// Same but gives error if file doesn't exist
 <?php require("menus.php"); ?>
+// Same but verify if file wasn't already imported
+<?php include_once("menus.php"); ?>
+<?php require_once("menus.php"); ?>
 ```
