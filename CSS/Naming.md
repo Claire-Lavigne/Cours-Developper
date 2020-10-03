@@ -1,10 +1,12 @@
 # Font Family
+```css
 $ff-base:      'Helvetica Neue', Helvetica, Arial, sans-serif;
 $ff-alt-alpha: 'Open Sans', sans-serif;
 $ff-alt-beta:  'Roboto', sans-serif;
 $ff-icon:      'My Icon Font';
-
+```
 # Font Size
+```css
 /* base font size - applied at body / html level */
 $fs-base: 16px;
 
@@ -35,8 +37,9 @@ h6 { font-size: $fs-h6;}
 
 .title     { font-size: $fs-h1;}
 .sub-title { font-size: $fs-h3;}
-
+```
 # Color
+```css
 /* our base color, with one tint, and one shade - body and typogaphry is generally the base colour */
 $clr-base:    #666;
 $clr-base-lt: #999;
@@ -59,3 +62,4 @@ $clr-secondary-dkr: darken($clr-secondary, 10%);
 /* neutrals */
 $clr-ntrl-min: #fff;
 $clr-ntrl-max: #000;
+```
