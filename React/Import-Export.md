@@ -1,3 +1,13 @@
+
+# Import
+```js
+// import const par défaut et { nommée } from js file
+import name, { coucou, salut } from './hello';
+
+// import const nommée from index.js
+import { render } from '.';
+```
+
 # Export
 ```js
 // const non exportée
@@ -15,11 +25,43 @@ const hello = () => 'hello';
 export default hello;
 ```
  
-# Import
+# Exemple Component/index.js
 ```js
-// import const par défaut et { nommée } from js file
-import name, { coucou, salut } from './hello';
+// Besoin JSX
+import React from 'react';
 
-// import const nommée from index.js
-import { render } from '.';
+// Besoin css
+import './component.scss';
+
+// Besoin Subcomponent
+import Subcomponent from 'src/components/Subcomponent';
+
+// Création Composant
+const Component = () => (
+ <div id="component">
+   <Subcomponent />
+ </div>
+);
+
+// Exportation Composant
+export default Component;
+```
+ 
+# Exemple Subcomponent/index.js
+```js
+// Besoin JSX
+import React from 'react';
+
+// Besoin css
+import './subcomponent.scss';
+
+// Création Subcomposant
+const Subcomponent = () => (
+ <div id="subcomponent">
+   Blabla
+ </div>
+);
+
+// Exportation Subcomposant
+export default Subcomponent;
 ```
