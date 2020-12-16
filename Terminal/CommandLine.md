@@ -67,3 +67,7 @@ chown -R af path/to/directory/     # The owner of files is now "af"
 | <kbd>alt</kbd> + Right click | Cursor moves to indicated location in the line          |
 | <kbd>q</kbd> or 'esc+maj+ZZ' | Quit VIM                                                |
 
+# List all filesname in a folder
+- Open folder with terminal
+- `dir > filenames.txt`
+- open file `filenames.txt` that have been created in the folder
