@@ -7,6 +7,9 @@
   - Hébreux 1:14 (tem angos espiritos e nao)
   - Hébreux 12:9 (Deus é Pai dos espiritos)
   - Genèse 2:7 (Dieu a formé l'homme comme âme vivante)
+  - Jean 3 (ce que la nouvelle naissance n'est pas)
+  - 1 Cor 6 (ce que c'est la nouvelle naissance)
+  - 1 Jean 5:18 (Dieu génère et garde l'esprit)
 ------
 - Notre monde réel/passager vient du monde invisible
 - Ce qui est réel pour Dieu : ce qui est éternel
@@ -30,3 +33,15 @@
 - Anges = esprit qui a une âme (intellec / volontés / sentiments)
 - Homme = âme (être, ce que je suis) qui a un esprit = 2 corps spirituel et naturel
 - Homme généré (âme) pour vivre sur terre (besoin corps) mais aussi être en relation avec Dieu (besoin esprit)
+
+Mort spirituelle : quand le saint-esprit est parti du jardin d'Eden => o espirito do homem foi desligado do espirito de Deus
+
+- Rédemption : procédé : nouvelle naissance
+- Un ange ne peut pas naitre de nouveau
+
+- Une âme = intellect/raison + sentiments/émotions + désirs/volonté = ser vivente / personnalité / personne
+- nouvelle naissance : pour voir le royaume de Dieu il faut renaitre / ce n'est pas retourner dans le ventre de sa mère et naitre / naitre d'eau et esprit / un même esprit /
+- l'esprit de l'homme est vide, à la nouvelle naissance, Dieu vient habiter dans notre esprit = nouvelle nature / personnalité
+- l'ange a déjà un esprit, Dieu ne peut pas y habiter
+- le corps et l'âme ne peuvent pas renaitrent, l'âme se transforme, le corps est ressuscité et glorifié
+- le péché c'est quand il n'est plus une pensée mais est pratiqué
