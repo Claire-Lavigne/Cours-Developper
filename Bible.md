@@ -1,7 +1,7 @@
 # Origine de l'Homme et des 2 mondes (visible / invisible)
 ------
 - Refs
-  - Hébreux 11:13 (univers / mondes : physique/spirituel)
+  - Hébreux 11:3 (univers / mondes : physique/spirituel)
   - Hébreux 8 (sacerdote sentado no ceus do lado do trono de Deus / ministro do centuario / vrai tabernacle)
   - Ephésiens 1:3-4 (Ele me elegiu nele antes da fondaçao do mundo)
   - Hébreux 1:14 (tem angos espiritos e nao)
