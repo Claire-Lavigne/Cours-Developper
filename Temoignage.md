@@ -11,6 +11,12 @@ Phimosis a continué + inquiétudes
 29/10/2020 médecin traitant
 
 24/02/21 : consultation urologue --> circoncision sous anesthésie générale car phimosis serré, indécalotable et orifice punctiforme (arrondie, petit)
+les rdv s'enchainent : 28/04 anesthésiste - 4/05 intervention
+1 semaine : renseigner sur l'intervention, le procédé, les suites
+Plus on se renseignait et moins on se sentait bien par rapport à ce qu'Abraham devait "subir" pour ne plus avoir de problèmes dans le futur
+Nous avons été plusieurs à prier. Moi j'ai dit à Dieu, Seigneur, je sais que rien n'est impossible pour toi, il y a quelques jours, notre soeur a témoigné
+
+Déjà eu d'autres témoignages précédemment : nous qui sommes sauvés en Christ, nous avons cette possibilité de ne pas resté bloqué sur un diagnostic, de ne pas l'accepter, parce que Dieu est capable de renverser les prognostics. Certes des médecins pouvaient le soigner mais pas sans conséquences.
 
 31/03/21 : consultation urologue pédiatrique : décalottage difficile + adhérences importantes mais normales et pas de phimose
 
