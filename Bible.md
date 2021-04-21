@@ -52,12 +52,12 @@
 _________________
 ## Ce qu'est la nouvelle naissance
 > **1 Corinthiens 6** ????
-______________
+_________________
+## L'esprit qui vient de Dieu ne pèche pas
 > **1 Jean 5:18** : "Nous savons que *quiconque est né de Dieu ne pèche point*; mais celui qui est né de Dieu se garde lui-même, et le malin ne le touche pas."
 - l'esprit est né de Dieu : il ne pèche pas
 - notre esprit est l'esprit de Dieu incorruptible
-
-------
+_________________
 - Anges et Dieu = même nature = esprits
 - Dieu = esprit qui a 3 âmes/personnalités (trinité : père fils/verbe esprit-saint)
 -   - trionidade VS trinité
