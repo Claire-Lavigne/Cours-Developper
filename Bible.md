@@ -20,10 +20,16 @@
 - puisqu'il nous a élu avant la fondation du monde, nous existions déjà
 - nous existions en lui, à l'intérieur de lui (en esprit)
 
+## Les anges sont des esprits
+> **Hébreux 1:14** : "Ne sont-ils [les anges] pas *tous des esprits* au service de Dieu, envoyés pour exercer un ministère en faveur de ceux qui doivent hériter du salut ?"
+- les anges sont des esprits
 
+## Dieu est le père des esprits
+> **Hébreux 12:9** : "D'ailleurs, puisque nos pères selon la chair nous ont châtiés, et que nous les avons respectés, ne devons-nous pas à bien plus forte raison nous soumettre au *Père des esprits*, pour avoir la vie ?"
+- châtier = punir / corriger / éduquer
+- Dieu est le père de tous les esprits = des Hommes et des anges
+- s'il est père, il nous a généré / conçu en esprit (comme une mère conçoit son enfant dans son ventre = copie de Dieu)
 ___
-  - Hébreux 1:14 (tem angos espiritos e nao)
-  - Hébreux 12:9 (Deus é Pai dos espiritos)
   - Genèse 2:7 (Dieu a formé l'homme comme âme vivante)
   - Jean 3 (ce que la nouvelle naissance n'est pas)
   - 1 Cor 6 (ce que c'est la nouvelle naissance)
@@ -31,10 +37,7 @@ ___
 ------
 - Ce qui est réel pour Dieu : ce qui est éternel
 ------
-**Dieu = père des esprits**
-- Dieu génère les esprits (nous esprit + anges esprit)
 - dans la Relation d'amour pericorèse (relation de Dieu avec Dieu : pere / fils / esprit)
-- la femme est une copie de Dieu (elle génère dans son ventre)
 - Peut importe qui est notre prochain : nous avons tous été générés par Dieu
 - **Dieu = créateur**
 - Dieu créé la matière (nous corps)
