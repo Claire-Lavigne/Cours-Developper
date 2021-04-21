@@ -1,37 +1,26 @@
-Abraham phimosis depuis naissance = peau prépuce trop serrée, impossible de décalotter donc nettoyage (impossible puis difficile) décollé
-- normal jusqu'à 5 ans, mais Abraham + compliqué car aucune ouverture possible pour nettoyer
+Abraham phimosis depuis naissance (peau prépuce trop serrée et rétrécissement orifice) - normal (50% 3 ans)
+- Abraham peau décolée à l'intérieur mais extrémité pas assez ouverte (juste un point) = difficile pipi + quasi impossible de nettoyer
 
-3ans 1/2 : infection balanite (zizi gonflé + bleu et rouge au bout + déformé + douleurs) --> balanophostite
---> medecin traitant  (16/06/20)--> urgences : 4 médecins pédiatriques : aucun traitement (doliprane + spray désinfectant )
+3ans 1/2 : balanophostite (infection du gland et du prépuce : gonflements + bleu et rouge à l'extrémité + déformé + douleurs)
+--> medecin traitant (16/06/20)--> urgences : 4 médecins pédiatriques : aucun traitement (doliprane + spray désinfectant)
 --> plus de docteurs disponibles
 --> lendemain médecin traitant : antibiotique
 
-Phimosis a continué + inquiétudes
+1 sem guérison mais Phimosis a continué + inquiétudes
 
 29/10/2020 médecin traitant
 
 24/02/21 : consultation urologue --> circoncision sous anesthésie générale car phimosis serré, indécalotable et orifice punctiforme (arrondie, petit)
 les rdv s'enchainent : 28/04 anesthésiste - 4/05 intervention
 1 semaine : renseigner sur l'intervention, le procédé, les suites
-Plus on se renseignait et moins on se sentait bien par rapport à ce qu'Abraham devait "subir" pour ne plus avoir de problèmes dans le futur
-Nous avons été plusieurs à prier. Moi j'ai dit à Dieu, Seigneur, je sais que rien n'est impossible pour toi, il y a quelques jours, notre soeur a témoigné
+Plus on se renseignait et moins on se sentait bien par rapport à cette opération
+Nous avons été plusieurs à prier. Moi j'ai dit à Dieu, Seigneur, je sais que rien n'est impossible pour toi, il y a quelques jours, notre soeur a témoigné de la guérison de son bébé avant même sa naissance
 
 Déjà eu d'autres témoignages précédemment : nous qui sommes sauvés en Christ, nous avons cette possibilité de ne pas resté bloqué sur un diagnostic, de ne pas l'accepter, parce que Dieu est capable de renverser les prognostics. Certes des médecins pouvaient le soigner mais pas sans conséquences.
 
 31/03/21 : consultation urologue pédiatrique : décalottage difficile + adhérences importantes mais normales et pas de phimose
 
-Le phimosis:
-C’est un rétrécissement du prépuce (l’orifice au bout de la peau qui recouvre le gland). Dans la très grande majorité des cas, il disparaitra avec l’âge. Il est très fréquent chez le nouveau-né, il y a juste la place qu’il faut pour laisser passer le jet urinaire et avec le temps (quelques années), cette peau va s’assouplir spontanément. Cette étroitesse est tout à fait physiologique (normale) pendant les 4/5 premières années. Cependant, le problème du décalotage doit être réglé suffisamment en amont de la puberté.
 
-Autrefois, on entendait qu’il fallait « décalotter » pour pouvoir bien nettoyer. Ce n’est plus du tout la conduite à tenir, il suffit de nettoyer le bout de peau, juste ce qu’il faut, sans chercher à ouvrir, ce qui la plupart du temps risque de « blesser » le nouveau-né ou le nourrisson.
-
-De plus, à chercher à forcer les choses, va provoquer des cicatrices et des zones qui vont adhérer entre le « col » du gland et la peau. À éviter !
-
-C’est en grandissant que cette peau va se détendre, devenir plus élastique et en particulier l’apparition d’érections chez le nourrisson va faire le reste.
-
-Dans certains cas très rares, l’orifice peut-être très petit et parfois favoriser des petites infections « sous » cette peau recouvrante (balanite: infection du gland avec des écoulements). Ou encore plus rarement, les urines auront du mal à sortir et peuvent alors se stocker en partie sous cette peau.
-
-Dans ces rares cas, il peut alors être indiqué de faire un traitement.
 
 Deux types de traitement sont proposés
 - crème locale à base de corticoïdes (80% de succès)
