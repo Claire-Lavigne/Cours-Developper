@@ -1,9 +1,27 @@
-# Origine de l'Homme et des 2 mondes (visible / invisible)
-------
-- Refs
-  - Hébreux 11:3 (univers / mondes : physique/spirituel)
-  - Hébreux 8 (sacerdote sentado no ceus do lado do trono de Deus / ministro do centuario / vrai tabernacle)
-  - Ephésiens 1:3-4 (Ele me elegiu nele antes da fondaçao do mundo)
+# L'Origine de l'Homme & des mondes (visible/invisible)
+
+## Le monde visible vient du monde invisible
+> **Hébreux 11:3** : "Par la foi, nous comprenons que *les mondes* ont été formés par la parole de Dieu, de sorte que *ce qu'on voit* n'a pas été fait de *choses visibles*."
+- les mondes (l'univers) = notre monde physique (visible) + le monde spirituel (invisible)
+
+## Les choses spirituelles existent avant les choses physiques
+> **Hébreux 8:1-2** : "[...] nous avons un tel souverain sacrificateur, qui s'est assis à la droite du *trône* de la majesté divine dans les cieux, comme ministre du sanctuaire et du *véritable tabernacle*, qui a été *dressé par le Seigneur et non par un Homme*"
+- souverain sacrificateur = Jésus
+- assis, trône, majesté, ministre, sanctuaire, tabernacle = tout ce qui existe dans notre monde, existe aussi dans le monde spirituel
+- véritable tabernacle = le vrai tabernacle est dans le ciel, pas sur terre
+
+> **Hébreux 8:5** : "[les sacrificateurs sur terre] célèbrent un culte, image et *ombre des choses célestes*, comme Moïse en fut divinement averti lorsqu’il allait construire le tabernacle: Aie soin, lui fut-il dit, de tout faire *d’après le modèle* qui t’a été montré sur la montagne".
+- céleste (ciel) = spirituel (monde des esprits)
+- tout ce qui existe / se passe dans notre monde est une copie du monde spirituel
+- tout existe / se passe d'abord dans le monde spirituel
+
+## Nous existions d'abord dans le monde spirituel
+> **Ephésiens 1:3-4** : "Béni soit Dieu, le Père de notre Seigneur Jésus-Christ, qui nous a bénis de toutes sortes de bénédictions spirituelles dans les lieux célestes en Christ! *En lui Dieu nous a élus avant la fondation du monde*, pour que nous soyons saints et irrépréhensibles devant lui,"
+- puisqu'il nous a élu avant la fondation du monde, nous existions déjà
+- nous existions en lui, à l'intérieur de lui (en esprit)
+
+
+___
   - Hébreux 1:14 (tem angos espiritos e nao)
   - Hébreux 12:9 (Deus é Pai dos espiritos)
   - Genèse 2:7 (Dieu a formé l'homme comme âme vivante)
@@ -11,13 +29,7 @@
   - 1 Cor 6 (ce que c'est la nouvelle naissance)
   - 1 Jean 5:18 (Dieu génère et garde l'esprit)
 ------
-- Notre monde réel/passager vient du monde invisible
 - Ce qui est réel pour Dieu : ce qui est éternel
-- Toute vérité est parallèle : 
-  - dans le ciel (monde des esprits) ça c'est passé / existe avant
-  - dans notre monde, c'est une copie
-  - ce qui ce passe dans notre monde a une réaction dans le monde spirituel
-  - nous existions en esprit dans le ciel avant
 ------
 **Dieu = père des esprits**
 - Dieu génère les esprits (nous esprit + anges esprit)
