@@ -1,8 +1,6 @@
 Temoignage par rapport à Abraham
 
-Claire : expliquer situation / Helio : continuera
-
-Il est né et a grandi avec un phimosis (peau prépuce trop serrée et orifice rétréci, rend très difficile hygiène quotidienne).
+Pour vous expliquer rapidement la situation : Abraham est né et a grandi avec un phimosis (peau prépuce trop serrée et orifice rétréci, rend très difficile hygiène quotidienne).
 
 3ans 1/2 (juin 2020) : balanophostite (inflammation et un gonflement du gland et du prépuce + douleurs)
 - --> urgences
@@ -11,10 +9,9 @@ Il est né et a grandi avec un phimosis (peau prépuce trop serrée et orifice r
 
 février 2021 : (moi + Abraham) consultation urologue 
 - --> circoncision sous anesthésie générale, autres traitements pas suffisants
-- --> rdv pris immédiatement : 05 mai intervention chirurgicale
+- --> rdv pris immédiatement : 05 mai intervention chirurgicale (mercredi dernier)
 - --> retour maison, j'ai expliqué la situation à Hélio (pas ce qu'on voulait mais nécessaire)
 
 HELIO
 
-31/03/21 : consultation urologue pédiatrique Toulouse : décalottage difficile + adhérences importantes mais normales et pas de phimose
-- --> il a pensé que l'autre médecin était incompétent
+31/03/21 : consultation urologue : même si décalottage difficile + adhérences importantes, pas de phimosis
