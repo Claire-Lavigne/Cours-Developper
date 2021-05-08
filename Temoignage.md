@@ -12,6 +12,6 @@ février 2021 : (moi + Abraham) consultation urologue
 - --> rdv pris immédiatement : 05 mai intervention chirurgicale (mercredi dernier)
 - --> retour maison, j'ai expliqué la situation à Hélio (pas ce qu'on voulait mais nécessaire)
 
-HELIO
+HELIO va vous expliquer la suite de l'histoire
 
 31/03/21 : consultation urologue : même si décalottage difficile + adhérences importantes, pas de phimosis
