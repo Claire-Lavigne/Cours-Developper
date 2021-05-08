@@ -11,7 +11,7 @@ Il est né et a grandi avec un phimosis (peau prépuce trop serrée et orifice r
 
 février 2021 : (moi + Abraham) consultation urologue 
 --> circoncision sous anesthésie générale, autres traitements pas suffisants
---> rdv pris immédiatement : fin avril anesthésiste - 05 mai intervention chirurgicale
+--> rdv pris immédiatement : 05 mai intervention chirurgicale
 --> retour maison, j'ai expliqué la situation à Hélio
 
 HELIO
