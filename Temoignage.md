@@ -1,3 +1,5 @@
+Temoignage par rapport à un pblm qu'Abraham a eu dès la naissance.
+
 Les bébés - garçons - naissent avec phimosis (peau prépuce trop serrée et orifice rétréci), ça disparait naturellement avec le temps.
 
 Abraham a continué de grandir avec et ça commençait a être de + en + gênant car sa peau était décolée à l'intérieur mais à cause de ce phimosis on arrivait très difficilement à nettoyer les dépots d'urines qui restaient coincés dedans (ex : essayer nettoyer l'intérieur d'une bouteille d'eau avec le bouchon fermé et juste un petit trou fait dans le bouchon).
