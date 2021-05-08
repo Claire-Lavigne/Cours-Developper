@@ -7,7 +7,7 @@ Pour vous expliquer rapidement la situation : Abraham est né et a grandi avec u
 - --> antibiotique
 - --> guérison infection mais Phimosis a continué
 
-février 2021 : (moi + Abraham) consultation urologue 
+février 2021 : (moi + Abraham / Hélio pouvait pas venir) consultation urologue 
 - --> circoncision sous anesthésie générale, autres traitements pas suffisants
 - --> rdv pris immédiatement : 05 mai intervention chirurgicale (mercredi dernier)
 - --> retour maison, j'ai expliqué la situation à Hélio (pas ce qu'on voulait mais nécessaire)
