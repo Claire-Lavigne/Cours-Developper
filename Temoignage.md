@@ -1,5 +1,7 @@
 Temoignage par rapport à Abraham
 
+Claire : expliquer situation / Helio : continuera
+
 Il est né et a grandi avec un phimosis (peau prépuce trop serrée et orifice rétréci, rend très difficile hygiène quotidienne).
 
 3ans 1/2 (juin 2020) : balanophostite (inflammation et un gonflement du gland et du prépuce + douleurs)
