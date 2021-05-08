@@ -5,7 +5,8 @@ Pour vous expliquer rapidement la situation : Abraham est né et a grandi avec u
 3ans 1/2 (juin 2020) : balanophostite (inflammation et un gonflement du gland et du prépuce + douleurs)
 - --> urgences
 - --> antibiotique
-- --> guérison infection mais Phimosis a continué
+- --> guérison infection 
+- --> mais Phimosis a continué et peur de réinfection tjs impossible de nettoyer à l'intérieur
 
 février 2021 : (moi + Abraham / Hélio pouvait pas venir) consultation urologue 
 - --> circoncision sous anesthésie générale, autres traitements pas suffisants
@@ -13,5 +14,7 @@ février 2021 : (moi + Abraham / Hélio pouvait pas venir) consultation urologue
 - --> retour maison, j'ai expliqué la situation à Hélio (pas ce qu'on voulait mais nécessaire)
 
 HELIO va vous expliquer la suite de l'histoire
+
+
 
 31/03/21 : consultation urologue : même si décalottage difficile + adhérences importantes, pas de phimosis
