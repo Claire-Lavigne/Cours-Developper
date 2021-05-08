@@ -27,9 +27,13 @@ Expliquer situation
 
 HELIO va vous expliquer la suite de l'histoire
 
-31/03/21 : consultation urologue : pas de phimosis (adhérences et difficultés mais processus naturel)
+31/03/21 : consultation urologue : 
+- pas de phimosis (adhérences et difficultés mais processus naturel)
 
 Conclusion :
-- repensé situation moi avant : sans Dieu --> personne vers qui me tourner, accepté réalisation intervention
-- avec Dieu --> différent : s'appuyer sur lui parce qu'il se fait présent & rien est impossible pour lui : médecin donne un pronostic A / Dieu donne B
+- repensé situation moi avant : sans Dieu 
+  - --> personne vers qui me tourner, accepté réalisation intervention
+- avec Dieu --> différent : 
+  - s'appuyer sur lui parce qu'il se fait présent & rien est impossible pour lui : 
+  - pas s'arrêter sur un diagnostic : médecin donne un pronostic A / Dieu donne B
 - Comme Dieu ns a béni à travers expérience --> espère que témoignage aussi bénédiction pr vs
