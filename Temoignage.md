@@ -1,4 +1,4 @@
-Temoignage par rapport à un pblm qu'Abraham a eu dès la naissance :
+Temoignage par rapport à Abraham
 
 Il est né et a grandi avec un phimosis (peau prépuce trop serrée et orifice rétréci, rend très difficile hygiène quotidienne).
 
