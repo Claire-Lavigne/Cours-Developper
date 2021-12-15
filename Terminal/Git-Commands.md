@@ -37,6 +37,11 @@ $ git config --global push.default simple
 
 # Get informations
 $ git --help
+
+# Créer des alias de commandes
+$ git config --global alias.st status # git st
+$ git config --global alias.lg "log --color --graph --pretty=format:'%C(red)%h %C(white)- %s %C(bold blue)(%an)' --abbrev-commit" # git lg
+$ git config alias.cm '! cm() { git commit -m "$*" ; } ; cm' # git cm My long message
 ```
 
 ### Create a repository
@@ -137,7 +142,11 @@ $ git diff-tree --no-commit-id --name-only -r <SHA>   # See files modified in co
 #### Graph
 ```bash
 $ git log                       # SEE all commits on current branch
-$ git log --pretty=oneline      # idem but PRETTY
+$ git log --oneline             # idem but PRETTY
+ca82a6d starting layout
+$ git log --pretty=format:"%h - %an, %ar : %s"
+ca82a6d - Scott Chacon, 6 years ago : starting layout
+
 $ git reflog                    # LIST local actions & commits
 $ git show <SHA>                # SEE code modifs
 $ git blame <file>              # SEE code modifs + author + SHA
