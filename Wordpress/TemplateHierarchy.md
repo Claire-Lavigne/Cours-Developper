@@ -1,6 +1,16 @@
 - [The WP Template Hierarchy](https://wphierarchy.com/)
 - [More infos](https://developer.wordpress.org/themes/basics/template-hierarchy/)
 
+
+- index.php: fallback for all website pages
+- home.php: blog page
+- front-page.php: static front page
+- page.php: default fallback for individual pages
+- single.php: single post page
+- header.php and footer.php
+
+
+
 # Which template files are used by ... ?
 ## home page
 1. `front-page.php` – If you are using a static front page, then WordPress will first look for this template file and use it to display front page.
