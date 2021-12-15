@@ -78,38 +78,35 @@ $ git status
 
 ### BRANCH
 ```bash
-$ git branch                    # list all branches created + actual branch
-$ git branch -a                 # list all branches of repo + actual branch
-$ git checkout <branch>         # switch to indicated branch
-$ git checkout -b <branch>      # create and switch to indicated branch
-$ git checkout --track origin/name  # download and switch to the remote branch indicated
-$ git branch -d <branch>        # Delete local branch
-$ git push origin --delete remoteBranchName # Delete remote branch
-$ git merge <branch>            # branch I want to merge (from branch that all will be merged in)
-$ git remote prune origin --dry-run   # List all orphaned branches (local ones that doesn't exist remote)
-$ git remote prune origin             # Delete the branches
-```
-#### Remove untracked branches
-```bash
-$ interactive git rebase    # => git rebase -i HEAD~3
-# Manually delete outdated pointers (commits, branches and objects) :
-# Open .git file in local repo, look at folders "objects", "index" and "ref"
+$ git branch                            # LIST my created branches
+$ git branch -a                         # LIST all repo branches
+$ git checkout <branch>                 # SWITCH to indicated branch
+$ git checkout -b <newbranch>           # CREATE and SWITCH to indicated branch
+$ git checkout --track origin/name      # DOWNLOAD and SWITCH to the remote branch indicated
+$ git switch <branch>                   # SWITCH to indicated branch
+$ git switch -c <newbranch>             # CREATE and SWITCH to indicated branch
+$ git branch -m <oldbranch> <newbranch> # RENAME branch
+$ git branch -c <oldbranch> <newbranch> # COPY branch
+$ git branch -D <branch>                # DELETE (force) local branch
+$ git push origin -D <branch>           # DELETE (force) remote branch
+$ git merge <branch>                    # MERGE one branch in my current branch
+$ git remote prune origin --dry-run     # LIST all orphaned branches (local branches that don't exist remote)
+$ git remote prune origin               # DELETE the branches
 ```
 #### Move changes on wrong branch to good branch
 ```bash
-# from wrong branch
-$ git stash save "message especific"
+$ git stash save "message"
 $ git checkout -b <goodbranch>
 $ git stash pop
 ```
 
 ### STAGE (Add files in local repo)
 ```bash
-$ git add .                     # add all files
-$ git add <file>                # add that specific file
-$ git add -p (+ y or n)         # see new changes and accept/refuse to add
-$ git reset <file>              # undo git add <file> before a commit
-$ git reset                     # undo git add before a commit
+$ git add .                     # ADD all files
+$ git add <file>                # ADD that specific file
+$ git add -p (+ y or n)         # SEE new changes and accept/refuse to add
+$ git reset <file>              # UNDO git add <file> before a commit
+$ git reset                     # UNDO git add before a commit
 ```
 #### Stash
 ```bash
@@ -137,53 +134,32 @@ $ git cherry-pick <SHA>         # add commit from another branch to actual branc
 $ git show --name-only SHA      # See files modified in commit
 $ git diff-tree --no-commit-id --name-only -r <SHA>   # See files modified in commit
 ```
-#### Log (list/show all commits)
-```bash
-$ git log                       # see all commits on branch (SHA, who, when, what ; most recent < oldest)
-$ git log --pretty=oneline      # show all commits in one line PRETTY
-$ git log --graph --decorate --oneline --all    # see all branches and commit
-```
 #### Graph
 ```bash
-$ git reflog                    # list all actions & commits on local repo
-$ git show <SHA>                # See modifications made in lines of code
-$ git blame <file.ext>          # See lines of code in file + author + SHA
+$ git log                       # SEE all commits on current branch
+$ git log --pretty=oneline      # idem but PRETTY
+$ git reflog                    # LIST local actions & commits
+$ git show <SHA>                # SEE code modifs
+$ git blame <file>              # SEE code modifs + author + SHA
 ```
 #### Undo commits pushed
 ```bash
 $ git reset --hard SHA          # undo all commits pushed before SHA indicated (local changes)
-$ git push origin +master       # actualize the distant repo on master (/!\ for every collaborators also)
-$ git push origin +branchname   # actualize the distant repo on branch (/!\ for every collaborators also)
 ```
-#### Organize commits (rename, fusionner)
+#### Modif commits history with text editor
 ```bash
-# FOR MULTIPLE COMMITS
-$ git rebase -i --root        # List all commits and open text editor
-# in text editor, tape all commits you want to combine in one
-# keep word "pick" for the commit that will stay
-# change the word "pick" for "squash" for all commits that will move into the "pick commit"
-# add a descriptive message in "pick commit"
-# save : maj+O and enter
-# quit : maj+X
-pick fda59df commit 1 this is my descriptive message
-squash x536897 commit 2
-squash c01a668 commit 3
-squash 8a9fbd7 commit 4
-$ git push origin +masterorbranchname
-
-# FOR ONLY TWO COMMITS THAT ARE THE MOST RECENTS (FIRST COMMIT + HEAD)
-$ git reset --soft "HEAD^"
-$ git commit --amend
-$ git push origin +masterorbranchname
+# List commits
+$ git rebase -i --root
+$ git rebase -i HEAD~3
+# Modif and save
 ```
 
-### PUSH (send from local to remote) / PULL (take from remote to local)
+### PUSH (from local to remote) / PULL (from remote to local)
 ```bash
-$ git push
-$ git push origin <branch>      # branch = master or my branch
-$ git fetch                     # check if their are new changes on distant repo
-$ git pull origin <branch>      # branch = master or another branch
-$ git push origin +master       # force push /!\ pas sure
+$ git push                      # PUSH current branch
+$ git fetch                     # DOWNLOAD branch changes from remote
+$ git pull                      # PULL remote branches
+$ git push +branchname          # force PUSH for everyone
 ```
 #### Cancel last push
 ```bash
@@ -201,7 +177,6 @@ $ git stash pop
 $ git revert SHA                # undo this commit (and save correction into new commit)
 $ git push origin +master       # forces push to remote repo
 # Delete a specific commit using git push directly
-# Exemple : git push myrepo +12345^:master
 $ git push <repo name> +<badcommitSHA>^ : <branch>   
 # Delete entire branch using git push directly
 $ git push <repo name> :<branch name>                 
@@ -260,8 +235,9 @@ $ git fetch origin
 $ git reset --hard origin/master
 $ git for-each-ref --format='delete %(refname)' refs/original | git update-ref --stdin
 $ git reflog expire --expire=now --all
+$ git count-objects -vH # see repo size before gc
 $ git gc --prune=now
-$ git count-objects -vH
+$ git count-objects -vH # see repo size after gc
 ```
 [More commands](https://stackoverflow.com/questions/10067848/remove-folder-and-its-contents-from-git-githubs-history)
 
