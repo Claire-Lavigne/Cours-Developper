@@ -3,10 +3,10 @@
 
 
 - index.php: fallback for all website pages
-- home.php: blog page
-- front-page.php: static front page
-- page.php: default fallback for individual pages
-- single.php: single post page
+- home.php: latest posts (blog)
+- front-page.php: custom front page
+- page.php: single pages
+- single.php: single posts
 - header.php and footer.php
 
 
