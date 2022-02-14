@@ -1,4 +1,14 @@
 # Vocabulaire
+
+# Want to become a ...
+- front-end developer : HTML, CSS, JS
+- back-end developer : client request + databases (PHP, SQL)
+- full-stack developer : front-end + back-end
+
+# What is this ... ?
+- Git : keepchanges of anything (files...)
+- Github : cloud for Git work
+
 ## MVC
 - index.php : le contrôleur (chef d'orchestre)
 - indexView.php : la vue (page HTML...)
