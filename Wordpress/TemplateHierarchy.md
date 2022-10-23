@@ -1,4 +1,5 @@
 - [The WP Template Hierarchy](https://wphierarchy.com/)
+- [The WP Template Hierarchy](https://developer.wordpress.org/files/2014/10/Screenshot-2019-01-23-00.20.04.png)
 - [More infos](https://developer.wordpress.org/themes/basics/template-hierarchy/)
 
 
