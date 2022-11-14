@@ -993,39 +993,23 @@ class Post
 #index.php
 <?php declare(strict_types=1);
 
-namespace App;
+require('classes/Post.php');
 
-require('classes/Author.php');
+use App\Post;
 
-class Post
-{
-    public static function getAll(): array
-    {
-        $author1 = new Author('Mark Shust');
-        $author2 = new Author('Betsy Sue');
-        return [
-            [
-                'title' => 'How to learn PHP',
-                'content' => 'This is how you learn PHP.',
-                'author' => $author1->getName(),
-            ],
-            [
-                'title' => 'How to learn MySQL',
-                'content' => 'This is how you learn MySQL.',
-                'author' => $author1->getName(),
-            ],
-            [
-                'title' => 'How to learn Nginx',
-                'content' => 'This is how you learn Nginx.',
-                'author' => $author2->getName(),
-            ],
-        ];
-    }
-    public static function getText(int $numPosts): string
-    {
-        return $numPosts === 1 ? 'post' : 'posts';
-    }
-}
+$title = 'My Blog';
+$posts = Post::getAll();
+$numPosts = count($posts);
+$postText = Post::getText($numPosts);
+$numPostsDisplay = "$numPosts $postText";
+?>
+<h1><?= $title ?></h1>
+<h2><?= $numPostsDisplay ?></h2>
+<?php for ($i = 0; $i < $numPosts; $i++) : ?>
+    <h3><?= $posts[$i]['title'] ?></h3>
+    <p><?= $posts[$i]['content'] ?></p>
+    <p>By <?= $posts[$i]['author'] ?></p>
+<?php endfor ?>
 ```
 
 # Replace PHP require statements with the Composer class autoloader
