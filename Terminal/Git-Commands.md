@@ -142,10 +142,8 @@ $ git diff-tree --no-commit-id --name-only -r <SHA>   # See files modified in co
 #### Graph
 ```bash
 $ git log                       # SEE all commits on current branch
-$ git log --oneline             # idem but PRETTY
-ca82a6d starting layout
-$ git log --pretty=format:"%h - %an, %ar : %s"
-ca82a6d - Scott Chacon, 6 years ago : starting layout
+$ git log --oneline             # idem but one line
+$ git log --pretty=oneline      # idem but PRETTY
 
 $ git reflog                    # LIST local actions & commits
 $ git show <SHA>                # SEE code modifs
