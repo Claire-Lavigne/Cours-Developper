@@ -1,0 +1,407 @@
+Widgets jQuery :
+================
+
+Documentation : https://developer.adobe.com/commerce/frontend-core/javascript/jquery-widgets/accordion/
+
+// accordion
+
+<div id="accordion" data-mage-init='{
+        "accordion":{
+            "active": [0], 					//-> tester avec [1,2]
+            "collapsible": true,
+            "openedState": "active",
+            "multipleCollapsible": true 	//-> tester avec false
+        }}'>
+    <div data-role="collapsible">
+        <div data-role="trigger">
+            <h2>Title 1</h2>
+        </div>
+    </div>
+    <div data-role="content">Ceci est le conteu du 1er bloc</div>
+    <div data-role="collapsible">
+        <div data-role="trigger">
+            <h2>Title 2</h2>
+        </div>
+    </div>
+    <div data-role="content">Ceci est le conteu du 2ème bloc</div>
+    <div data-role="collapsible">
+        <div data-role="trigger">
+            <h2>Title 3</h2>
+        </div>
+    </div>
+    <div data-role="content">Ceci est le conteu du 3ème bloc</div>
+</div>
+
+
+// tabs
+
+<div class="product data items"
+     data-mage-init='{"mage/tabs": {
+     	"openedState": "active", 
+     	"animate": {"duration": 100}, 
+     	"active": 1, 
+     	// "disabled": [2], 				//=> a tester
+     	"disabledState": "disabled"
+     }}'>
+    <div class="item title" data-role="collapsible">
+        <a class="switch" data-toggle="trigger" href="#tab-cars">Cars</a>
+    </div>
+    <div id="tab-cars" class="item content" data-role="content">Cars content</div>
+
+    <div class="item title" data-role="collapsible">
+        <a class="switch" data-toggle="trigger" href="#tab-movies">Movies</a>
+    </div>
+    <div id="tab-movies" class="item content" data-role="content">Movies content</div>
+
+    <div class="item title" data-role="collapsible">
+        <a class="switch" data-toggle="trigger" href="#tab-music">Music</a>
+    </div>
+    <div id="tab-music" class="item content" data-role="content">Music Content</div>
+</div>
+
+
+// dropdowndialog
+
+<div data-block="dropdown">
+    <button type="button" class="action" data-trigger="triggerDropdown">
+        <span data-bind="i18n: 'Click to open dropdown dialog'"></span>
+    </button>
+</div>
+<div class="block"
+     data-mage-init='{
+        "dropdownDialog": {
+            "appendTo": "[data-block=dropdown]",
+            "triggerTarget":"[data-trigger=triggerDropdown]",
+            "timeout": 2000,
+            "closeOnMouseLeave": false,
+            "closeOnEscape": true,
+            "autoOpen": false,
+            "triggerClass": "active",
+            "parentClass": "active",
+            "buttons": []
+        }
+     }'>
+    <div>
+        Here is our content
+    </div>
+</div>
+
+
+// on ajoute les classes style minicart
+<div data-block="dropdown" class="minicart-wrapper">
+    <button type="button" class="action" data-trigger="trigger">  
+        <span data-bind="i18n: 'Click to open modal'"></span>
+    </button>
+</div>
+<div class="block block-minicart"
+     data-mage-init='{
+        "dropdownDialog": {
+            "appendTo": "[data-block=dropdown]",
+            "triggerTarget":"[data-trigger=trigger]",
+            "timeout": 2000,
+            "closeOnMouseLeave": false,
+            "closeOnEscape": true,
+            "autoOpen": false,
+            "triggerClass": "active",
+            "parentClass": "active",
+            "buttons": []
+        }
+     }'>
+    <div id="minicart-content-wrapper">
+        Here is our content
+    </div>
+</div>
+
+
+
+// Modal
+
+<button type="button" class="action" data-trigger="trigger">
+    <span data-bind="i18n: 'Click Here'"></span>
+</button>
+<div data-bind="mageInit: {
+        'Magento_Ui/js/modal/modal':{
+            'type': 'popup',
+            'title': 'Popup title',
+            'trigger': '[data-trigger=trigger]',
+            'responsive': true,
+            'buttons': [{
+                text: jQuery.mage.__('Submit'),
+                class: 'action'
+            }]
+        }}">
+    <div class="content">
+        Popup Content
+    </div>
+</div>
+
+// on renomme les data-trigger pour éviter les conflits
+<button type="button" class="action" data-trigger="triggerModal">
+    <span data-bind="i18n: 'Click Here'"></span>
+</button>
+<div data-bind="mageInit: {
+        'Magento_Ui/js/modal/modal':{
+            'type': 'popup',
+            'title': 'Popup title',
+            'trigger': '[data-trigger=triggerModal]',
+            'responsive': true,
+            'buttons': [{
+                text: jQuery.mage.__('Submit'),
+                class: 'action'
+            }]
+        }}">
+    <div class="content">
+        Popup Content
+    </div>
+</div>
+
+
+// multiselect
+<div class="select-example">
+    <select id="multiselect" name="multiselect-field" multiple="multiple">
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+        <option value="4">Option 4</option>
+        <option value="5">Option 5</option>
+        <option value="6">Option 6</option>
+    </select>
+    <script>
+        require(['jquery', 'mage/multiselect'], function ($) {
+            $('#multiselect').multiselect();
+        });
+    </script>
+</div>
+
+// Password strength indicator
+
+<form action="BACKEND_ACTION" method="post" data-mage-init='{"validation":{}}'>
+    <fieldset class="fieldset">
+        <div class="field password required" 
+        	data-mage-init='{"passwordStrengthIndicator": {
+            	"passwordStrengthMeterSelector":"[data-role=strength-meter]",
+            	"passwordStrengthMeterLabelSelector":"[data-role=strength-meter-label]"
+        	}}'>
+            <label class="label" for="password">Password</label>
+            <div class="control">
+                <input type="password" class="input-text" name="password" id="password">
+                <div id="password-strength-meter-container" data-role="strength-meter" aria-live="polite">
+                    <div id="password-strength-meter" class="password-strength-meter">
+                        <span id="password-strength-meter-label" data-role="strength-meter-label">
+                            No Password
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+</form>
+
+// popup window
+
+<a href="#" class="action" title="Open Customer Login"
+   data-mage-init='{"popupWindow": {
+        "windowURL": "/customer/account/login",
+        "windowName": "customer-login",
+        "width": 400,
+        "height": 400,
+        "left": 0,
+        "top": 0,
+        "resizable": 1,
+        "scrollbars": 1,
+        "status": 1,
+        "menubar": 1
+    }}'>
+    <span>Open Customer Login</span>
+</a>
+
+
+// Calendar
+
+    <div class="field">
+        <label>Date : </label>
+        <input type="text" class="input-text" id="example-date" style="width: auto" name="example-date" />
+    </div>
+
+    <script>
+        require([
+            'jquery',
+            'mage/translate',
+            'mage/calendar'
+        ], function ($, $t) {
+            $('#example-date').calendar({
+                changeMonth: true,
+                changeYear: true,
+                showButtonPanel: true,
+                currentText: $t('Go Today'),
+                closeText: $t('Close'),
+                showWeek: true
+            });
+        })
+    </script>
+
+
+// quick search
+
+<form class="" id="new_search_form" action="/catalogsearch/result/" method="get">
+    <div class="field search">
+        <div class="control">
+            <input id="new-search"
+                   data-mage-init='{"quickSearch":{
+                     "formSelector":"#new_search_form",
+                     "minSearchLength": 1,
+                     "url":"/search/ajax/suggest",
+                     "destinationSelector":"#search_results"}
+                    }'
+                   type="text"
+                   name="q"
+                   placeholder="<?= __('Search entire store here...') ?>"
+                   class="input-text"/>
+            <div id="search_results" class="search-autocomplete"></div>
+        </div>
+    </div>
+    <div class="actions">
+        <button type="submit"
+                title="<?= __('Search') ?>"
+                class="action search"
+                aria-label="Search">
+            <span><?= __('Search') ?></span>
+        </button>
+    </div>
+</form>
+
+
+// Remaining characters
+
+<input id="remaining-characters" type="text"/>
+<p class="note">
+    <span class="character-counter"></span>
+</p>
+<script>
+    require([
+        "jquery",
+        "Magento_Catalog/js/product/remaining-characters"
+    ], function ($) {
+        'use strict';
+
+        $('#remaining-characters').remainingCharacters({
+            maxLength: 5,
+            noteSelector: '.note',
+            counterSelector: '.note .character-counter'
+        });
+    });
+</script>
+
+
+// row builder
+
+<script id="row-template" type="text/x-magento-template">
+    <div>
+        <div class="field name required">
+            <label for="field-name<%- data._index_ %>" class="label"><span>Item <%- data._index_ %> Field</span></label>
+            <div class="control">
+                <input name="field[name][<%- data._index_ %>]" type="text" title="<?= $block->escapeHtmlAttr(__('Name')) ?>" class="input-text"
+                       id="field-name<%- data._index_ %>"/>
+            </div>
+        </div>
+        <div class="actions-toolbar">
+            <div class="secondary">
+                <a href="#" id="btn-remove<%- data._index_ %>" class="action remove"
+                   title="Remove Item">
+                    <span>Remove Item</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</script>
+
+<div class="row-builder-example"
+     data-mage-init='{
+        "rowBuilder":{
+            "rowTemplate":"#row-template",
+            "rowContainer":"#row-container",
+            "rowParentElem":"<div></div>",
+            "remEventSelector":"a",
+            "btnRemoveSelector":".action.remove",
+            "maxRows":"5",
+            "maxRowsMsg":"#max-rows-message",
+            "addRowBtn":"#add-row-button",
+            "additionalRowClass":"additional"
+        }
+     }'>
+    <div id="max-rows-message" style="display: none;" class="message notice limit" role="alert">
+        <span>Number of rows exceeded.</span>
+    </div>
+    <button type="button" id="add-row-button" class="action add">
+        <span>Add Item</span>
+    </button>
+    <div id="row-container"></div>
+</div>
+
+
+// trim input
+
+    <input type="text" name="text" id="text" class="input-text"
+           data-mage-init='{"mage/trim-input":{}}'
+           placeholder="Type some text...">
+
+
+// media uploader 
+
+    <div id="uploader" class="uploader"
+         data-mage-init='{
+        "mediaUploader" : {
+            "maxFileSize": 1,
+            "maxWidth": 1920,
+            "maxHeight": 1200,
+            "isResizeEnabled": true,
+            "disabled": false
+        }
+    }'
+    >
+        <div class="fileinput-button form-buttons button">
+            <span>Browse Files...</span>
+            <input id="fileupload" type="file" name="image"
+                   data-url="AJAX_URL" multiple="multiple" />
+        </div>
+        <div class="clear"></div>
+        <script id="uploader-template" type="text/x-magento-template" data-template="uploader">
+            <div id="<%- data.id %>" class="file-row">
+                <span class="file-info"><%- data.name %> (<%- data.size %>)</span>
+                <div class="progressbar-container">
+                    <div class="progressbar upload-progress" style="width: 0%;"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </script>
+    </div>
+
+
+// menu
+
+    <nav class="navigation" data-action="navigation">
+        <ul id="menu" data-mage-init='{"menu":{
+        	"responsive":true, 
+        	"expanded":true, 
+        	"delay": 200, 
+        	"position":{"my":"left top","at":"left+10 top+30"}
+        }}'>
+            <li class="level0 level-top ui-menu-item">Toys</li>
+            <li class="level0 level-top parent ui-menu-item">Electronics
+                <ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all">
+                    <li class="ui-menu-item"><a href="#">Home Entertainment</a></li>
+                    <li class="ui-menu-item"><a href="#">Routers</a></li>
+                </ul>
+            </li>
+            <li class="level0 level-top ui-menu-item">Music
+                <ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all">
+                    <li class="ui-menu-item">
+                        <a href="#">Alternative</a>
+                    </li>
+                    <li class="ui-menu-item">
+                        <a href="#">Classic</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
