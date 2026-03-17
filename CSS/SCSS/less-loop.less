@@ -1,0 +1,55 @@
+/*
+ * Material Colors
+ */
+@m-white:                  #ffffff;
+@m-black:                  #000000;
+@m-blue:                   #2196F3;
+@m-red:                    #F44336;
+@m-purple:                 #9C27B0;
+@m-deeppurple:             #673AB7;
+@m-lightblue:              #03A9F4;  
+@m-cyan:                   #00BCD4;
+@m-teal:                   #009688;
+@m-green:                  #4CAF50;
+@m-lightgreen:             #8BC34A;
+@m-lime:                   #CDDC39;
+@m-yellow:                 #FFEB3B;
+@m-amber:                  #FFC107;
+@m-orange:                 #FF9800;
+@m-deeporange:             #FF5722;
+@m-gray:                   #9E9E9E;
+@m-bluegray:               #607D8B;
+@m-indigo:                 #3F51B5;
+@m-pink:                   #E91E63;
+@m-brown:                  #795548;
+
+.for(@i, @n) {.-each(@i)}
+.for(@n)     when (isnumber(@n)) {.for(1, @n)}
+.for(@i, @n) when not (@i = @n)  {
+    .for((@i + (@n - @i) / abs(@n - @i)), @n);
+}
+
+.for(@array)   when (default()) {.for-impl_(length(@array))}
+.for-impl_(@i) when (@i > 1)    {.for-impl_((@i - 1))}
+.for-impl_(@i) when (@i > 0)    {.-each(extract(@array, @i))}
+
+@array: c-white bgm-white @m-white, c-black bgm-black @m-black, c-brown bgm-brown @m-brown, c-pink bgm-pink @m-pink, c-red bgm-red @m-red, c-blue bgm-blue @m-blue, c-purple bgm-purple @m-purple, c-deeppurple bgm-deeppurple @m-deeppurple, c-lightblue bgm-lightblue @m-lightblue, c-cyan bgm-cyan @m-cyan, c-teal bgm-teal @m-teal, c-green bgm-green @m-green, c-lightgreen bgm-lightgreen @m-lightgreen, c-lime bgm-lime @m-lime, c-yellow bgm-yellow @m-yellow, c-amber bgm-amber @m-amber, c-orange bgm-orange @m-orange, c-deeporange bgm-deeporange @m-deeporange, c-gray bgm-gray @m-gray, c-bluegray bgm-bluegray @m-bluegray, c-indigo bgm-indigo @m-indigo;
+
+.for(@array); .-each(@value) {
+    @name:  extract(@value, 1);
+    @name2:  extract(@value, 2);
+    @color: extract(@value, 3); 
+    &.@{name2} {
+        background-color: @color !important;
+    }
+    
+    &.@{name} {
+        color: @color !important;
+    }
+}
+
+/* OUTPUT EXAMPLE */
+/*
+ * .bgm-white {background-color:#fff !important}
+ * .c-white {color:#fff !important}
+ */
