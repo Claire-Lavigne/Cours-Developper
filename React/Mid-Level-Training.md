@@ -51,7 +51,8 @@ import * as MathUtils from './mathUtils.js'; // Namespace import
 
 ## Variable Scope with `let` and `const`
 
-Modern JavaScript favors `let` and `const` over `var`.
+Modern JavaScript favors `let` and `const` over `var`.  
+Use const by default. Switch to let only when you know the variable needs to be reassigned.
 
 ### Example
 
@@ -75,6 +76,7 @@ const newArray = [...originalArray, 4, 5];
 const defaultProps = { size: 'medium', color: 'blue' };
 const userProps = { color: 'red' };
 const finalProps = { ...defaultProps, ...userProps };
+console.log(finalProps); // { size: 'medium', color: 'red' };
 ```
 
 ## Rest Parameters
@@ -84,10 +86,14 @@ Allows functions to accept a variable number of arguments.
 ### Example
 
 ```js
+function example(a, b, ...rest) {
+  return rest;
+}
+console.log(example(1, 2, 3, 4, 5)); // [3, 4, 5]
+
 function sum(...numbers) {
   return numbers.reduce((total, num) => total + num, 0);
 }
-
 console.log(sum(1, 2, 3, 4)); // 10
 ```
 
@@ -101,23 +107,75 @@ Simplifies extracting values from objects and arrays.
 const { name, age } = user;
 
 const [first, second] = [10, 20];
+
+const coordinates = [10, 20, 30];
+const [x, , y] = coordinates;
+// x = 10, y = 30
 ```
 
-## Arrow Functions
+## Traditional Functions vs Arrow Functions
 
-Shorter syntax for writing functions.
+Both traditional functions and arrow functions define reusable blocks of code, but they differ in syntax and behavior.
 
-### Example
+### Key Differences
 
-```js
-// Traditional
+| Traditional Function                 | Arrow Function                                              |
+| ------------------------------------ | ----------------------------------------------------------- |
+| Has its own `this`                   | Inherits `this` from the surrounding scope (lexical `this`) |
+| Can be used as a constructor (`new`) | Cannot be used as a constructor                             |
+| Has its own `arguments` object       | Does not have its own `arguments` object                    |
+| More verbose syntax                  | More concise syntax                                         |
+
+### Traditional Function
+
+```javascript
 function add(a, b) {
   return a + b;
 }
+```
 
-// Arrow
+### Arrow Function
+
+```javascript
 const add = (a, b) => a + b;
 ```
+
+### The `this` Keyword
+
+The most important difference is how `this` behaves.
+
+**Traditional function:**
+
+```javascript
+const person = {
+  name: "Alice",
+  greet: function () {
+    console.log(this.name);
+  }
+};
+
+person.greet(); // Alice
+```
+
+**Arrow function:**
+
+```javascript
+const person = {
+  name: "Alice",
+  greet: () => {
+    console.log(this.name);
+  }
+};
+
+person.greet(); // undefined
+```
+
+Arrow functions inherit `this` from their surrounding scope instead of creating their own.
+
+### Best Practices
+
+* Use **arrow functions** for callbacks, array methods (`map`, `filter`, `reduce`), and React components.
+* Use **traditional functions** for object methods, constructors, or when you need your own `this`.
 
 ## Array Methods
 
@@ -162,3 +220,49 @@ async function fetchData() {
   }
 }
 ```
+
+# Additional Notes
+
+Explore the following resources to reinforce your understanding of React fundamentals, including **components**, **props**, and **state**.
+
+---
+
+## Thinking in React
+
+The **Thinking in React** guide introduces React's approach to building user interfaces.
+
+### You'll learn how to:
+
+* Break a UI into a component hierarchy
+* Build a static version of the interface
+* Identify the minimal representation of state
+* Determine where state should live
+* Implement inverse data flow
+
+> **Why it matters:** This guide teaches the core React mindset and how to design scalable, maintainable applications.
+
+---
+
+## 🎮 Tutorial: Tic-Tac-Toe
+
+Build a complete Tic-Tac-Toe game while applying React fundamentals.
+
+### You'll practice:
+
+* Creating and nesting components
+* Passing data with props
+* Managing state
+* Handling user interactions
+* Implementing time travel (undo/redo)
+
+> **Why it matters:** This tutorial combines the core React concepts in a real-world project, helping you gain practical experience.
+
+---
+
+## ✅ Next Steps
+
+* Component-based architecture
+* Props and data flow
+* State management
+* React's declarative programming model
+* Building interactive React applications
